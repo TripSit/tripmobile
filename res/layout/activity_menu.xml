@@ -25,6 +25,7 @@
         android:id="@+id/btn_factSheets"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:onClick="clickFactsheets"
         android:text="@string/btn_factsheets" />
 
     <Button
