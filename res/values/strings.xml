@@ -2,6 +2,10 @@
 <resources>
 
     <string name="app_name">TripMobile</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="btn_tripsitChannel">Immediate assistance</string>
+    <string name="btn_generalChat">General chat</string>
+    <string name="btn_factsheets">Drug Factsheets</string>
+    <string name="btn_wiki">Wiki</string>
+    <string name="str_tripsitLogo">Tripsit Logo</string>
 
 </resources>
