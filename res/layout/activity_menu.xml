@@ -25,12 +25,14 @@
             android:id="@+id/btn_tripsitChannel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="clickTripsit"
             android:text="@string/btn_tripsitChannel" />
 
         <Button
             android:id="@+id/btn_generalChat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="clickGeneralChat"
             android:text="@string/btn_generalChat" />
 
         <Button
