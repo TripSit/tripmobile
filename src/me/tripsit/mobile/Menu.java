@@ -2,6 +2,7 @@ package me.tripsit.mobile;
 
 import me.tripsit.mobile.builders.LayoutBuilder;
 import me.tripsit.mobile.chat.Constants;
+import me.tripsit.mobile.factsheets.Factsheets;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
