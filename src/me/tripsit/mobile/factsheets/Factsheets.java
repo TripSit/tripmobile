@@ -59,7 +59,7 @@ public class Factsheets extends Activity {
 	
 	private void updateDrugView(Drug drug) {
 		ExpandableListView infoList = (ExpandableListView) findViewById(R.id.exlist_drugInfo);
-		LinkedHashMap<String, List<String>> map = new LinkedHashMap<String, List<String>>(); // Put them in reverse order as that's how the adapter processes them
+		LinkedHashMap<String, List<String>> map = new LinkedHashMap<String, List<String>>();
 		map.put("Name", Arrays.asList(drug.getName()));
 		map.put("Summary", Arrays.asList(drug.getSummary()));
 		map.put("Dose", Arrays.asList(drug.getDosages()));
