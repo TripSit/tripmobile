@@ -3,10 +3,9 @@ package me.tripsit.mobile.factsheets;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map.Entry;
-import java.util.TreeMap;
 
 import me.tripsit.mobile.R;
 import me.tripsit.mobile.builders.LayoutBuilder;
@@ -60,7 +59,7 @@ public class Factsheets extends Activity {
 	
 	private void updateDrugView(Drug drug) {
 		ExpandableListView infoList = (ExpandableListView) findViewById(R.id.exlist_drugInfo);
-		TreeMap<String, List<String>> map = new TreeMap<String, List<String>>(Collections.reverseOrder()); // Put them in reverse order as that's how the adapter processes them
+		LinkedHashMap<String, List<String>> map = new LinkedHashMap<String, List<String>>(); // Put them in reverse order as that's how the adapter processes them
 		map.put("Name", Arrays.asList(drug.getName()));
 		map.put("Summary", Arrays.asList(drug.getSummary()));
 		map.put("Dose", Arrays.asList(drug.getDosages()));

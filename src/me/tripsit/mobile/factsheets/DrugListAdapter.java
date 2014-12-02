@@ -1,7 +1,7 @@
 package me.tripsit.mobile.factsheets;
 
+import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.TreeMap;
 
 import me.tripsit.mobile.R;
 import android.content.Context;
@@ -15,9 +15,9 @@ import android.widget.TextView;
 public class DrugListAdapter extends BaseExpandableListAdapter {
 
 	private Context context;
-	private TreeMap<String, List<String>> content;
+	private LinkedHashMap<String, List<String>> content;
 	
-	public DrugListAdapter(Context context, TreeMap<String, List<String>> content) {
+	public DrugListAdapter(Context context, LinkedHashMap<String, List<String>> content) {
 		this.context = context;
 		this.content = content;
 	}
