@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map.Entry;
+import java.util.Set;
 
 import me.tripsit.mobile.R;
 import me.tripsit.mobile.builders.LayoutBuilder;
@@ -14,6 +15,7 @@ import me.tripsit.mobile.utils.CollectionUtils;
 
 import org.json.JSONException;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -70,7 +72,7 @@ public class Factsheets extends Activity {
 		try {
 			Drug drug = new Drug(JSONComms.retrieveObjectFromUrl(DRUG_URL + drugName));
 			if (drug != null) {
-				TextView disclaimer = (TextView) findViewById(R.id.txt_drugName);
+				TextView disclaimer = (TextView) findViewById(R.id.txt_drugDisclaimer);
 				disclaimer.setVisibility(View.GONE);
 				updateDrugView(drug);
 			}
@@ -82,18 +84,24 @@ public class Factsheets extends Activity {
 	}
 	
 	private void updateDrugView(Drug drug) {
+		TextView drugName = (TextView) findViewById(R.id.txt_drugName);
+		String updatedDrugName = manipulateDrugName(drug.getName(), drug.getAliases());
+		drugName.setText(updatedDrugName);
+		
 		ExpandableListView infoList = (ExpandableListView) findViewById(R.id.exlist_drugInfo);
 		LinkedHashMap<String, List<String>> map = new LinkedHashMap<String, List<String>>();
-		map.put("Name", Arrays.asList(drug.getName()));
 		map.put("Summary", Arrays.asList(drug.getSummary()));
 		map.put("Dose", Arrays.asList(drug.getDosages()));
 		map.put("Effects", Arrays.asList(drug.getEffects()));
 		if (drug.getCategories().size() > 0) {
 			map.put("Categories", CollectionUtils.collectionToList(drug.getCategories()));
 		}
-		if (drug.getAliases().size() > 0) {
+		
+		// If we didn't already put the aliases in the name
+		if (updatedDrugName.length() == drug.getName().length() && drug.getAliases().size() > 0) {
 			map.put("Aliases", CollectionUtils.collectionToList(drug.getAliases()));
 		}
+		
 		List<String> timing = getDrugTimings(drug);
 		if (timing.size() > 0) {
 			map.put("Timing", timing);
@@ -105,6 +113,24 @@ public class Factsheets extends Activity {
 			map.put(entry.getKey(), Arrays.asList(entry.getValue()));
 		}
 		infoList.setAdapter(new DrugListAdapter(this, map));
+	}
+	
+	
+	private String manipulateDrugName(String drugName, Set<String> set) {
+		// If the drug name is less than 4 characters long, assume it's an acronym and capitalise it
+		String name = drugName.length() < 4 ? drugName.toUpperCase() : drugName;
+		if (set.size() > 0) {
+			StringBuilder sb = new StringBuilder();
+			sb.append(' ').append('(');
+			for (String s : set) {
+				sb.append(s).append(',').append(' ');
+			}
+			if (name.length() + sb.length() < 40) { //TODO: check maximum length of String for smallest screen size
+				name = name + sb.toString().substring(0, sb.length() - 2) + ')';
+			}
+		}
+		
+		return name;
 	}
 
 	private List<String> getDrugTimings(Drug drug) {
