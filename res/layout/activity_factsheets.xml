@@ -20,20 +20,20 @@
 
         <AutoCompleteTextView
             android:id="@+id/drugNameSearch"
-            android:layout_width="wrap_content"
+            android:layout_width="0px"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.7"
             android:lines="1"
-            android:ems="10"
+            android:textColor="?autoCompleteTextColor"
             android:text="@string/txt_drugName" >
             <requestFocus />
         </AutoCompleteTextView>
 
         <Button
             android:id="@+id/btn_search"
-            android:layout_width="wrap_content"
+            android:layout_width="0px"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.3"
             android:onClick="clickSearch"
             android:text="@string/btn_search" />
         

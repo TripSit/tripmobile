@@ -1,20 +1,32 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
-    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+    <style name="LightBaseTheme" parent="Theme.AppCompat.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+        <item name="android:dropDownItemStyle">@style/LightDropDownItemStyle</item>
     </style>
 
     <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <style name="LightTheme" parent="LightBaseTheme">
+         <item name="android:buttonStyle">@style/LightButton</item>
+         <item name="android:fontFamily">candara</item>
+         <item name="autoCompleteTextColor">#555555</item>
+         
+    </style>
+    
+    <style name="LightButton" parent="android:style/Widget.Button">
+        <item name="android:background">@drawable/light</item>
+    </style>
+    
+    <style name="LightDropDownItemStyle" parent="android:style/Widget.DropDownItem">
+        <item name="android:textColor">#555555</item>
     </style>
 
 </resources>
