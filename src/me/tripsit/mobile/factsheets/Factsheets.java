@@ -20,6 +20,9 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ExpandableListView;
@@ -38,11 +41,32 @@ public class Factsheets extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_factsheets, LayoutBuilder.buildParams()));
 		downloadFactsheetInfo();
+		setDrugNameSearchListeners((AutoCompleteTextView) findViewById(R.id.drugNameSearch));
+	}
+	
+	private void setDrugNameSearchListeners(final AutoCompleteTextView findViewById) {
+		findViewById.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				findViewById.setText("");
+			}
+		});
+		findViewById.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				populateFormWithDrug((String)parent.getItemAtPosition(position));
+			}
+		});
 	}
 	
 	public void clickSearch(View v) {
 		AutoCompleteTextView searchBox = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
 		Editable drugName = searchBox.getText();
+		populateFormWithDrug(drugName.toString());
+	}
+
+	private void populateFormWithDrug(String drugName) {
 		try {
 			Drug drug = new Drug(JSONComms.retrieveObjectFromUrl(DRUG_URL + drugName));
 			if (drug != null) {
