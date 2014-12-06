@@ -12,8 +12,8 @@ public class Constants {
 	private static final String NICK = "TripMobileUser";
 	
 	private static final String TRIPSIT_CHAN = "#tripsit";
-	private static final String[] GENERAL_CHANNELS = new String[] {"#home", "#drugs"};
+	private static final String GENERAL_CHAN = "#home";
 	
 	public static final String TRIPSIT_URL = String.format(URL_FORMAT, URL_BASE, NICK, TRIPSIT_CHAN);
-	public static final String GENERAL_URL = String.format(URL_FORMAT, URL_BASE, NICK, android.text.TextUtils.join(",", GENERAL_CHANNELS));
+	public static final String GENERAL_URL = String.format(URL_FORMAT, URL_BASE, NICK, GENERAL_CHAN);
 }
