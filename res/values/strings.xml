@@ -11,6 +11,10 @@
     <string name="str_factsheets_intro">All data is taken from the tripbot API which can be found at http://tripbot.tripsit.me/factsheet. Please use this as rough guidelines, and check as many sources as possible before ingesting a substance.</string>
     <string name="title_activity_factsheets">Tripsit Factsheets</string>
     <string name="title_activity_wiki">Wiki</string>
+    <string name="tab_images">Images</string>
+    <string name="tab_wiki">Wiki Page</string>
     <string name="txt_drugName">Drug or alias</string>
+    <string name="txt_wikiSearch">Search</string>
+    <string name="wikiLogoAlt">Wiki logo</string>
 
 </resources>
