@@ -1,12 +1,12 @@
 package me.tripsit.mobile;
 
 import me.tripsit.mobile.builders.LayoutBuilder;
+import me.tripsit.mobile.chat.Chat;
 import me.tripsit.mobile.chat.Constants;
 import me.tripsit.mobile.factsheets.Factsheets;
 import me.tripsit.mobile.wiki.Wiki;
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -23,11 +23,11 @@ public class Menu extends Activity {
 	}
 	
 	public void clickTripsit(View view) {
-		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.TRIPSIT_URL)));
+		startChatActivity(Constants.TRIPSIT_URL);
 	}
 	
 	public void clickGeneralChat(View view) {
-		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.GENERAL_URL)));
+		startChatActivity(Constants.GENERAL_URL);
 	}
 	
 	public void clickFactsheets(View view) {
@@ -37,6 +37,12 @@ public class Menu extends Activity {
 	
 	public void clickWiki(View view) {
 		Intent intent = new Intent(this, Wiki.class);
+		startActivity(intent);
+	}
+
+	private void startChatActivity(String chatUrl) {
+		Intent intent = new Intent(this, Chat.class);
+		intent.putExtra("url", chatUrl);
 		startActivity(intent);
 	}
 }

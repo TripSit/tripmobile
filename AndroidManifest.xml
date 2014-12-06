@@ -37,6 +37,10 @@
             android:name="me.tripsit.mobile.wiki.Wiki"
             android:label="@string/title_activity_wiki" >
         </activity>
+        <activity
+            android:name="me.tripsit.mobile.chat.Chat"
+            android:label="@string/title_activity_chat" >
+        </activity>
     </application>
 
 </manifest>
