@@ -15,7 +15,6 @@ import me.tripsit.mobile.utils.CollectionUtils;
 
 import org.json.JSONException;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
