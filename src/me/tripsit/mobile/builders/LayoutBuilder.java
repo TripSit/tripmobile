@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 
 public class LayoutBuilder {
 	
@@ -23,13 +22,6 @@ public class LayoutBuilder {
 		baseLayout.addView(inflater.inflate(viewId, null), params);
 		return baseLayout;
 	}
-	
-	public static ScrollView buildScrollView(Activity origin, int viewId, LayoutParams params) {
-		ScrollView baseLayout = new ScrollView(origin);		
-		baseLayout.addView(buildLinearLayout(origin, viewId, params));
-		return baseLayout;
-	}
-
 
 	public static LinearLayout.LayoutParams buildParams() {
 		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
