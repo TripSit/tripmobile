@@ -12,6 +12,7 @@ import org.json.JSONObject;
 
 public class JSONComms {
 
+    //TODO: where called, this needs to be done in a separate thread or AsyncTask
 	public static JSONObject retrieveObjectFromUrl(String url) throws JSONException, IOException {
 		InputStream is = new URL(url).openStream();
 		try {

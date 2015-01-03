@@ -183,7 +183,7 @@ public class Factsheets extends Activity {
 	}
 	
 	private void initialiseDrugList() throws JSONException, IOException {
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_dropdown_item_1line, DrugList.instance().getDrugNames());
         AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
         textView.setAdapter(adapter);
