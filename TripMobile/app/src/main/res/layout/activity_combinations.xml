@@ -5,4 +5,14 @@
     tools:context="${packageName}.${activityClass}" >
 
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_combinations" />
+    </LinearLayout>
 </RelativeLayout>
