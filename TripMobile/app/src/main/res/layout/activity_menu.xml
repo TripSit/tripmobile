@@ -29,6 +29,12 @@
         android:text="@string/btn_factsheets" />
 
     <Button
+        android:id="@+id/btn_combinations"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickCombinations"
+        android:text="@string/btn_combinations" />
+    <Button
         android:id="@+id/btn_wiki"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
