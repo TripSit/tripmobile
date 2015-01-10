@@ -69,11 +69,11 @@ public class Factsheets extends ErrorHandlingActivity implements FactsheetsCallb
 	}
 
 	private void populateFormWithDrug(String drugName) {
-        new DrugInfoAsyncTask(this, this, drugName).execute();
+        new DrugInfoAsyncTask(this, this, drugName).execute(this);
 	}
 
 	private void downloadFactsheetInfo() {
-        new DrugNamesAsyncTask(this, this).execute();
+        new DrugNamesAsyncTask(this, this).execute(this);
 	}
 
     @Override
