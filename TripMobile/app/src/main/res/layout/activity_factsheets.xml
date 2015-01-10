@@ -5,16 +5,9 @@
     android:orientation="vertical"
     tools:context="${packageName}.${activityClass}" >
 
-    <TextView
-        android:id="@+id/txt_drugDisclaimer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autoLink="all"
-        android:text="@string/str_factsheets_intro" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         tools:context="${packageName}.${activityClass}" >
 
@@ -38,6 +31,13 @@
             android:text="@string/btn_search" />
         
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_drugDisclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:autoLink="all"
+        android:text="@string/str_factsheets_intro" />
 
     <TextView
         android:id="@+id/txt_drugName"
