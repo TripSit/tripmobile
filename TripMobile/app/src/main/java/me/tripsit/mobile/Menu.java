@@ -3,6 +3,7 @@ package me.tripsit.mobile;
 import me.tripsit.mobile.builders.LayoutBuilder;
 import me.tripsit.mobile.chat.Chat;
 import me.tripsit.mobile.chat.Constants;
+import me.tripsit.mobile.combinations.Combinations;
 import me.tripsit.mobile.factsheets.Factsheets;
 import me.tripsit.mobile.wiki.Wiki;
 import android.app.Activity;
@@ -34,6 +35,11 @@ public class Menu extends Activity {
 		Intent intent = new Intent(this, Factsheets.class);
 		startActivity(intent);
 	}
+
+    public void clickCombinations(View view) {
+        Intent intent = new Intent(this, Combinations.class);
+        startActivity(intent);
+    }
 	
 	public void clickWiki(View view) {
 		Intent intent = new Intent(this, Wiki.class);

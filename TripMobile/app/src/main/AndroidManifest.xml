@@ -10,13 +10,21 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/thumbnail"
         android:label="@string/app_name"
         android:theme="@style/LightTheme" >
         <activity
-            android:name="me.tripsit.mobile.Menu"
+            android:name=".Menu"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="me.tripsit.mobile.factsheets.Factsheets"
+            android:name=".factsheets.Factsheets"
             android:label="@string/title_activity_factsheets" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,12 +42,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="me.tripsit.mobile.wiki.Wiki"
+            android:name=".wiki.Wiki"
             android:label="@string/title_activity_wiki" >
         </activity>
         <activity
-            android:name="me.tripsit.mobile.chat.Chat"
+            android:name=".chat.Chat"
             android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name=".combinations.Combinations"
+            android:label="@string/title_activity_combinations" >
         </activity>
     </application>
 

@@ -16,5 +16,8 @@
     <string name="tab_images">Images</string>
     <string name="tab_wiki">Wiki Page</string>
     <string name="txt_drugName">Drug or alias</string>
+    <string name="title_activity_combinations">Combinations</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
