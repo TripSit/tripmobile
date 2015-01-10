@@ -119,7 +119,9 @@ public class Factsheets extends Activity implements FactsheetsCallback, ErrorHan
         LinkedHashMap<String, List<String>> map = new LinkedHashMap<String, List<String>>();
         map.put("Summary", Arrays.asList(drug.getSummary()));
         map.put("Dose", Arrays.asList(drug.getDosages()));
-        map.put("Effects", Arrays.asList(drug.getEffects()));
+        if (drug.getEffects() != null) {
+            map.put("Effects", Arrays.asList(drug.getEffects()));
+        }
         if (drug.getCategories().size() > 0) {
             map.put("Categories", CollectionUtils.collectionToList(drug.getCategories()));
         }
