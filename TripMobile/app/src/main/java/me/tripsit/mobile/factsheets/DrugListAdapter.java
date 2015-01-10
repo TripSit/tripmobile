@@ -1,9 +1,5 @@
 package me.tripsit.mobile.factsheets;
 
-import java.util.LinkedHashMap;
-import java.util.List;
-
-import me.tripsit.mobile.R;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
@@ -11,6 +7,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
+
+import java.util.LinkedHashMap;
+import java.util.List;
+
+import me.tripsit.mobile.R;
 
 public class DrugListAdapter extends BaseExpandableListAdapter {
 
