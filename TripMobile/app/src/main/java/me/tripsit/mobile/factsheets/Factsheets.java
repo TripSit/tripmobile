@@ -27,6 +27,7 @@ import java.util.Set;
 
 import me.tripsit.mobile.R;
 import me.tripsit.mobile.builders.LayoutBuilder;
+import me.tripsit.mobile.common.ErrorHandlingActivity;
 import me.tripsit.mobile.comms.JSONComms;
 import me.tripsit.mobile.error.ErrorHandler;
 import me.tripsit.mobile.utils.CollectionUtils;
@@ -35,7 +36,7 @@ import me.tripsit.mobile.utils.CollectionUtils;
  * The factsheets activity is used to retrieve data about particular drugs from the tripbot API
  * @author Eddie Curtis
  */
-public class Factsheets extends Activity implements FactsheetsCallback, ErrorHandler {
+public class Factsheets extends ErrorHandlingActivity implements FactsheetsCallback, ErrorHandler {
 
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -74,19 +75,6 @@ public class Factsheets extends Activity implements FactsheetsCallback, ErrorHan
 	private void downloadFactsheetInfo() {
         new DrugNamesAsyncTask(this, this).execute();
 	}
-
-    @Override
-    public void handleGenericError(String error) {
-        new AlertDialog.Builder(this)
-                .setTitle("Operation failed")
-                .setMessage(error)
-                .setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Do nothing
-                    }
-                })
-                .show();
-    }
 
     @Override
     public void finishActivity() {
