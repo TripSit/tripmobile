@@ -1,15 +1,16 @@
 package me.tripsit.mobile;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
 import me.tripsit.mobile.builders.LayoutBuilder;
 import me.tripsit.mobile.chat.Chat;
 import me.tripsit.mobile.chat.Constants;
 import me.tripsit.mobile.combinations.Combinations;
 import me.tripsit.mobile.factsheets.Factsheets;
 import me.tripsit.mobile.wiki.Wiki;
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
 
 /**
  * The main menu activity which is shown to the user on startup

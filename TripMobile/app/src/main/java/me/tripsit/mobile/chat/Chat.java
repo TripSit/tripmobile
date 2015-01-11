@@ -1,10 +1,11 @@
 package me.tripsit.mobile.chat;
 
-import me.tripsit.mobile.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import me.tripsit.mobile.R;
 
 public class Chat extends Activity {
 

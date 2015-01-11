@@ -8,8 +8,6 @@ import android.os.AsyncTask;
 import org.json.JSONException;
 
 import java.io.IOException;
-import java.util.Hashtable;
-import java.util.Map;
 
 import me.tripsit.mobile.comms.JSONComms;
 import me.tripsit.mobile.error.ErrorHandler;

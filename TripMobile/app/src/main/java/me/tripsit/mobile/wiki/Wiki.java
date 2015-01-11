@@ -1,13 +1,14 @@
 package me.tripsit.mobile.wiki;
 
-import me.tripsit.mobile.R;
-import me.tripsit.mobile.builders.LayoutBuilder;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import me.tripsit.mobile.R;
+import me.tripsit.mobile.builders.LayoutBuilder;
 
 public class Wiki extends Activity {
 

@@ -1,6 +1,5 @@
 package me.tripsit.mobile.builders;
 
-import me.tripsit.mobile.R;
 import android.app.Activity;
 import android.content.Context;
 import android.view.Gravity;
@@ -8,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+
+import me.tripsit.mobile.R;
 
 public class LayoutBuilder {
 	

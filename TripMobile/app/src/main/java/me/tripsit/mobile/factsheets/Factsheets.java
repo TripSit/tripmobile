@@ -1,8 +1,5 @@
 package me.tripsit.mobile.factsheets;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
@@ -14,9 +11,6 @@ import android.widget.AutoCompleteTextView;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
-import org.json.JSONException;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -28,7 +22,6 @@ import java.util.Set;
 import me.tripsit.mobile.R;
 import me.tripsit.mobile.builders.LayoutBuilder;
 import me.tripsit.mobile.common.ErrorHandlingActivity;
-import me.tripsit.mobile.comms.JSONComms;
 import me.tripsit.mobile.error.ErrorHandler;
 import me.tripsit.mobile.utils.CollectionUtils;
 
