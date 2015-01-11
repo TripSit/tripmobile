@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     tools:context="${packageName}.${activityClass}" >
 
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -14,5 +13,82 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_combinations" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    style="@style/CombinationsHeader"
+                    android:background="@color/deadly_background"
+                    android:text="@string/str_deadly_header"
+                    android:id="@+id/txt_deadly_header" />
+
+                <TextView
+                    style="@style/CombinationsContent"
+                    android:background="@color/deadly_background"
+                    android:id="@+id/txt_deadly_content" />
+
+                <TextView
+                    style="@style/CombinationsHeader"
+                    android:background="@color/serotoninsyndrome_background"
+                    android:text="@string/str_serotoninsyndrome_header"
+                    android:id="@+id/txt_serotoninsyndrome_header" />
+
+                <TextView
+                    style="@style/CombinationsContent"
+                    android:background="@color/serotoninsyndrome_background"
+                    android:id="@+id/txt_serotoninsyndrome_content" />
+
+                <TextView
+                    style="@style/CombinationsHeader"
+                    android:background="@color/unsafe_background"
+                    android:text="@string/str_unsafe_header"
+                    android:id="@+id/txt_unsafe_header" />
+
+                <TextView
+                    style="@style/CombinationsContent"
+                    android:background="@color/unsafe_background"
+                    android:id="@+id/txt_unsafe_content" />
+
+                <TextView
+                    style="@style/CombinationsHeader"
+                    android:background="@color/safedecrease_background"
+                    android:text="@string/str_safedecrease_header"
+                    android:id="@+id/txt_safedecrease_header" />
+
+                <TextView
+                    style="@style/CombinationsContent"
+                    android:background="@color/safedecrease_background"
+                    android:id="@+id/txt_safedecrease_content" />
+
+                <TextView
+                    style="@style/CombinationsHeader"
+                    android:background="@color/safenosynergy_background"
+                    android:text="@string/str_safenosynergy_header"
+                    android:id="@+id/txt_safenosynergy_header" />
+
+                <TextView
+                    style="@style/CombinationsContent"
+                    android:background="@color/safenosynergy_background"
+                    android:id="@+id/txt_safenosynergy_content" />
+
+                <TextView
+                    style="@style/CombinationsHeader"
+                    android:background="@color/safesynergy_background"
+                    android:text="@string/str_safesynergy_header"
+                    android:id="@+id/txt_safesynergy_header" />
+
+                <TextView
+                    style="@style/CombinationsContent"
+                    android:background="@color/safesynergy_background"
+                    android:id="@+id/txt_safesynergy_content" />
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 </RelativeLayout>

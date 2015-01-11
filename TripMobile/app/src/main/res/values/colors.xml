@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="safesynergy_background">#00FF00</color>
+    <color name="safenosynergy_background">#888888</color>
+    <color name="safedecrease_background">#8888FF</color>
+    <color name="unsafe_background">#FFFF00</color>
+    <color name="serotoninsyndrome_background">#880088</color>
+    <color name="deadly_background">#FF0000</color>
+</resources>

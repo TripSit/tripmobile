@@ -19,5 +19,11 @@
     <string name="title_activity_combinations">Combinations</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="str_safesynergy_header"><![CDATA[Safe & Synergy]]></string>
+    <string name="str_safenosynergy_header"><![CDATA[Safe & No Synergy]]></string>
+    <string name="str_safedecrease_header"><![CDATA[Safe & Decrease]]></string>
+    <string name="str_unsafe_header">Unsafe</string>
+    <string name="str_serotoninsyndrome_header">Serotonin Syndrome</string>
+    <string name="str_deadly_header">Deadly</string>
 
 </resources>
