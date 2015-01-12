@@ -12,6 +12,8 @@ import me.tripsit.mobile.builders.LayoutBuilder;
 
 public class Wiki extends Activity {
 
+    private WebView webView = null;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -20,18 +22,34 @@ public class Wiki extends Activity {
 	}
 
 	private void initialiseWebView() {
-		WebView myWebView = (WebView) findViewById(R.id.web_wiki);
-		myWebView.setWebViewClient(new WebViewClient() {
-		    @Override
-		    public boolean shouldOverrideUrlLoading(WebView view, String url) {
-		        if (Uri.parse(url).getHost().equals("wiki.tripsit.me")) {
-		            return false;
-		        }
-		        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-		        startActivity(intent);
-		        return true;
-		    }
-		});
-		myWebView.loadUrl("https://wiki.tripsit.me/wiki/Main_Page");
+        if (webView != null) {
+            webView = (WebView) findViewById(R.id.web_wiki);
+            webView.setWebViewClient(new WebViewClient() {
+                @Override
+                public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                    if (Uri.parse(url).getHost().equals("wiki.tripsit.me")) {
+                        return false;
+                    }
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    startActivity(intent);
+                    return true;
+                }
+            });
+            webView.loadUrl("https://wiki.tripsit.me/wiki/Main_Page");
+        }
 	}
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState )
+    {
+        super.onSaveInstanceState(outState);
+        webView.saveState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState)
+    {
+        super.onRestoreInstanceState(savedInstanceState);
+        webView.restoreState(savedInstanceState);
+    }
 }
