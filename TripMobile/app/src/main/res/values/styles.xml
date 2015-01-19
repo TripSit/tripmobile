@@ -44,4 +44,12 @@
         <item name="android:visibility">gone</item>
     </style>
 
+    <style name="ProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:max">100</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">10dip</item>
+    </style>
+
 </resources>

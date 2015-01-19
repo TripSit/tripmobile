@@ -6,9 +6,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 
 import me.tripsit.mobile.R;
 import me.tripsit.mobile.builders.LayoutBuilder;
+import me.tripsit.mobile.common.LoadingWebChromeClient;
+import me.tripsit.mobile.common.LoadingWebViewClient;
 
 public class Wiki extends Activity {
 
@@ -22,9 +25,10 @@ public class Wiki extends Activity {
 	}
 
 	private void initialiseWebView() {
-        if (webView != null) {
+        if (webView == null) {
             webView = (WebView) findViewById(R.id.web_wiki);
-            webView.setWebViewClient(new WebViewClient() {
+            ProgressBar progressBar = (ProgressBar) findViewById(R.id.wiki_progress);
+            webView.setWebViewClient(new LoadingWebViewClient(progressBar) {
                 @Override
                 public boolean shouldOverrideUrlLoading(WebView view, String url) {
                     if (Uri.parse(url).getHost().equals("wiki.tripsit.me")) {
@@ -35,6 +39,7 @@ public class Wiki extends Activity {
                     return true;
                 }
             });
+            webView.setWebChromeClient(new LoadingWebChromeClient(progressBar));
             webView.loadUrl("https://wiki.tripsit.me/wiki/Main_Page");
         }
 	}

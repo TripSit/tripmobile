@@ -1,11 +1,18 @@
 package me.tripsit.mobile.chat;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 
 import me.tripsit.mobile.R;
+import me.tripsit.mobile.common.LoadingWebChromeClient;
+import me.tripsit.mobile.common.LoadingWebViewClient;
 
 public class Chat extends Activity {
 
@@ -14,20 +21,20 @@ public class Chat extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+        this.requestWindowFeature(Window.FEATURE_PROGRESS);
+        this.setProgressBarVisibility(true);
 		setContentView(R.layout.activity_chat);
 		initialiseWebView();
 	}
 
 	private void initialiseWebView() {
+        final Activity activity = this;
         if (webView == null) {
             webView = (WebView) findViewById(R.id.web_irc);
             webView.getSettings().setJavaScriptEnabled(true);
-            webView.setWebViewClient(new WebViewClient() {
-                @Override
-                public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                    return false;
-                }
-            });
+            final ProgressBar progressBar = (ProgressBar) findViewById(R.id.chat_progress);
+            webView.setWebViewClient(new LoadingWebViewClient(progressBar));
+            webView.setWebChromeClient(new LoadingWebChromeClient(progressBar));
             webView.loadUrl((String) getIntent().getExtras().get("url"));
         }
 	}
