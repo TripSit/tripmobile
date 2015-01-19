@@ -1,9 +1,11 @@
 package me.tripsit.mobile.factsheets;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
@@ -62,6 +64,10 @@ public class Factsheets extends ErrorHandlingActivity implements FactsheetsCallb
 	}
 
 	private void populateFormWithDrug(String drugName) {
+        InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+        AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
+        textView.clearFocus();
         new DrugInfoAsyncTask(this, this, drugName).execute(this);
 	}
 

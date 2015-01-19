@@ -3,6 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context="${packageName}.${activityClass}" >
 
     <LinearLayout
@@ -16,7 +18,7 @@
             android:layout_width="0px"
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
-            android:lines="1"
+            android:singleLine="true"
             android:textColor="?autoCompleteTextColor"
             android:text="@string/txt_drugName" >
             <requestFocus />

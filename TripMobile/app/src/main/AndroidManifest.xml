@@ -34,7 +34,8 @@
         </activity>
         <activity
             android:name=".factsheets.Factsheets"
-            android:label="@string/title_activity_factsheets" >
+            android:label="@string/title_activity_factsheets"
+            android:windowSoftInputMode="stateAlwaysHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
