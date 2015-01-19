@@ -104,6 +104,12 @@ public class Factsheets extends ErrorHandlingActivity implements FactsheetsCallb
 
         ExpandableListView infoList = (ExpandableListView) findViewById(R.id.exlist_drugInfo);
         LinkedHashMap<String, List<String>> map = new LinkedHashMap<String, List<String>>();
+
+        // If we didn't already put the aliases in the name
+        if (updatedDrugName.length() == drug.getName().length() && drug.getAliases().size() > 0) {
+            map.put("Aliases", CollectionUtils.collectionToList(drug.getAliases()));
+        }
+
         map.put("Summary", Arrays.asList(drug.getSummary()));
         map.put("Dose", Arrays.asList(drug.getDosages()));
         if (drug.getEffects() != null) {
@@ -113,20 +119,15 @@ public class Factsheets extends ErrorHandlingActivity implements FactsheetsCallb
             map.put("Categories", CollectionUtils.collectionToList(drug.getCategories()));
         }
 
-        // If we didn't already put the aliases in the name
-        if (updatedDrugName.length() == drug.getName().length() && drug.getAliases().size() > 0) {
-            map.put("Aliases", CollectionUtils.collectionToList(drug.getAliases()));
-        }
-
         List<String> timing = getDrugTimings(drug);
         if (timing.size() > 0) {
             map.put("Timing", timing);
         }
         if (drug.getWiki() != null) {
-            drug.getWiki();
+            map.put("Wiki", Arrays.asList(drug.getWiki()));
         }
         for (Entry<String, String> entry : drug.getOtherInfo().entrySet()) {
-            map.put(entry.getKey(), Arrays.asList(entry.getValue()));
+            map.put(capitalise(entry.getKey()), Arrays.asList(entry.getValue()));
         }
         infoList.setAdapter(new DrugListAdapter(this, map));
     }
@@ -157,5 +158,10 @@ public class Factsheets extends ErrorHandlingActivity implements FactsheetsCallb
             timing.add("Duration: " + drug.getDuration());
         }
         return timing;
+    }
+
+    private String capitalise(String string) {
+        return string == null || string.length() < 2 ? string :
+                Character.toUpperCase(string.charAt(0)) + string.substring(1);
     }
 }
