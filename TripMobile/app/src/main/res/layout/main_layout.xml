@@ -9,6 +9,7 @@
     tools:context="${packageName}.${activityClass}" >
 
     <ImageView
+        android:background="@color/background"
         android:id="@+id/img_Logo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

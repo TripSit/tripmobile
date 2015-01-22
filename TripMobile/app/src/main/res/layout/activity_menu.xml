@@ -1,44 +1,96 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/layout_menuButtons"
-    android:layout_width="wrap_content"
+    android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="14dp"
     android:gravity="center_vertical|center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#ff000000">
 
-    <Button
-        android:id="@+id/btn_tripsitChannel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="clickTripsit"
-        android:text="@string/btn_tripsitChannel" />
+    <LinearLayout style="@style/MenuRow">
 
-    <Button
-        android:id="@+id/btn_generalChat"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="clickGeneralChat"
-        android:text="@string/btn_generalChat" />
+        <LinearLayout style="@style/MenuColumn">
+            <ImageButton
+                style="@style/MenuButton"
+                android:id="@+id/btn_tripsitChannel"
+                android:onClick="clickTripsit"
+                android:background="@drawable/tripsit_glow_dark" />
 
-    <Button
-        android:id="@+id/btn_factSheets"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="clickFactsheets"
-        android:text="@string/btn_factsheets" />
+            <TextView
+                style="@style/MenuTextWhite"
+                android:text="@string/btn_tripsitChannel" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_combinations"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="clickCombinations"
-        android:text="@string/btn_combinations" />
+        <LinearLayout style="@style/MenuColumnBuffer" />
 
-    <Button
-        android:id="@+id/btn_wiki"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="clickWiki"
-        android:text="@string/btn_wiki" />
+        <LinearLayout style="@style/MenuColumn">
+            <ImageButton
+                style="@style/MenuButton"
+                android:id="@+id/btn_generalChat"
+                android:onClick="clickGeneralChat"
+                android:background="@drawable/chat_glow_dark" />
+            <TextView
+                style="@style/MenuTextWhite"
+                android:text="@string/btn_generalChat"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/MenuRow">
+
+        <LinearLayout style="@style/MenuColumn">
+            <ImageButton
+                style="@style/MenuButton"
+                android:id="@+id/btn_factSheets"
+                android:onClick="clickFactsheets"
+                android:background="@drawable/factsheets_glow_dark" />
+
+            <TextView
+                style="@style/MenuTextWhite"
+                android:text="@string/btn_factsheets" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MenuColumnBuffer" />
+
+        <LinearLayout style="@style/MenuColumn">
+            <ImageButton
+                style="@style/MenuButton"
+                android:id="@+id/btn_combinations"
+                android:onClick="clickCombinations"
+                android:background="@drawable/combos_glow_dark" />
+            <TextView
+                style="@style/MenuTextWhite"
+                android:text="@string/btn_combinations"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/MenuRow">
+
+        <LinearLayout style="@style/MenuColumn">
+            <ImageButton
+                style="@style/MenuButton"
+                android:id="@+id/btn_wiki"
+                android:onClick="clickWiki"
+                android:background="@drawable/wiki_glow_dark" />
+
+            <TextView
+                style="@style/MenuTextWhite"
+                android:text="@string/btn_wiki" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MenuColumnBuffer" />
+
+        <LinearLayout style="@style/MenuColumn">
+            <ImageButton
+                style="@style/MenuButton"
+                android:id="@+id/btn_settings"
+                android:onClick="clickSettings"
+                android:background="@drawable/settings_glow_dark" />
+            <TextView
+                style="@style/MenuTextWhite"
+                android:text="@string/btn_settings"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

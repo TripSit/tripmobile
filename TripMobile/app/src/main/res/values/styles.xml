@@ -52,4 +52,38 @@
         <item name="android:layout_height">10dip</item>
     </style>
 
+    <style name="MenuTextWhite" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="MenuButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="MenuRow">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MenuColumn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MenuColumnBuffer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.1</item>
+    </style>
+
 </resources>

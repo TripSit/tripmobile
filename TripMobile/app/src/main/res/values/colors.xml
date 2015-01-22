@@ -6,4 +6,5 @@
     <color name="unsafe_background">#FFFF00</color>
     <color name="serotoninsyndrome_background">#880088</color>
     <color name="deadly_background">#FF0000</color>
+    <color name="background">#000000</color>
 </resources>

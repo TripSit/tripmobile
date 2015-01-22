@@ -2,11 +2,11 @@
 <resources>
 
     <string name="app_name">TripMobile</string>
-    <string name="btn_combinations">Drug Combinations</string>
-    <string name="btn_factsheets">Drug Factsheets</string>
-    <string name="btn_generalChat">General Chat</string>
+    <string name="btn_combinations">Combinations</string>
+    <string name="btn_factsheets">Factsheets</string>
+    <string name="btn_generalChat">Chat</string>
     <string name="btn_search">Search</string>
-    <string name="btn_tripsitChannel">Immediate Assistance</string>
+    <string name="btn_tripsitChannel">Tripsit</string>
     <string name="btn_wiki">Wiki</string>
     <string name="str_tripsitLogo">Tripsit Logo</string>
     <string name="str_factsheets_intro">All data is taken from the tripbot API which can be found at http://tripbot.tripsit.me/factsheet. Please use this as rough guidelines, and check as many sources as possible before ingesting a substance.</string>
@@ -25,5 +25,6 @@
     <string name="str_unsafe_header">Unsafe</string>
     <string name="str_serotoninsyndrome_header">Serotonin Syndrome</string>
     <string name="str_deadly_header">Deadly</string>
+    <string name="btn_settings">Settings</string>
 
 </resources>
