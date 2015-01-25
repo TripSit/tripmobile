@@ -50,6 +50,10 @@
             android:name=".combinations.Combinations"
             android:label="@string/title_activity_combinations" >
         </activity>
+        <activity
+            android:name=".settings.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@ import me.tripsit.mobile.chat.Chat;
 import me.tripsit.mobile.chat.Constants;
 import me.tripsit.mobile.combinations.Combinations;
 import me.tripsit.mobile.factsheets.Factsheets;
+import me.tripsit.mobile.settings.Settings;
 import me.tripsit.mobile.wiki.Wiki;
 
 /**
@@ -46,6 +47,11 @@ public class Menu extends Activity {
 		Intent intent = new Intent(this, Wiki.class);
 		startActivity(intent);
 	}
+
+    public void clickSettings(View view) {
+        Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
+    }
 
 	private void startChatActivity(String chatUrl) {
 		Intent intent = new Intent(this, Chat.class);

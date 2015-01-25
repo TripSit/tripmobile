@@ -16,7 +16,7 @@
                 android:background="@drawable/tripsit_glow_dark" />
 
             <TextView
-                style="@style/MenuTextWhite"
+                style="@style/MenuText"
                 android:text="@string/btn_tripsitChannel" />
         </LinearLayout>
 
@@ -29,7 +29,7 @@
                 android:onClick="clickGeneralChat"
                 android:background="@drawable/chat_glow_dark" />
             <TextView
-                style="@style/MenuTextWhite"
+                style="@style/MenuText"
                 android:text="@string/btn_generalChat"/>
         </LinearLayout>
 
@@ -45,7 +45,7 @@
                 android:background="@drawable/factsheets_glow_dark" />
 
             <TextView
-                style="@style/MenuTextWhite"
+                style="@style/MenuText"
                 android:text="@string/btn_factsheets" />
         </LinearLayout>
 
@@ -58,7 +58,7 @@
                 android:onClick="clickCombinations"
                 android:background="@drawable/combos_glow_dark" />
             <TextView
-                style="@style/MenuTextWhite"
+                style="@style/MenuText"
                 android:text="@string/btn_combinations"/>
         </LinearLayout>
 
@@ -74,7 +74,7 @@
                 android:background="@drawable/wiki_glow_dark" />
 
             <TextView
-                style="@style/MenuTextWhite"
+                style="@style/MenuText"
                 android:text="@string/btn_wiki" />
         </LinearLayout>
 
@@ -87,7 +87,7 @@
                 android:onClick="clickSettings"
                 android:background="@drawable/settings_glow_dark" />
             <TextView
-                style="@style/MenuTextWhite"
+                style="@style/MenuText"
                 android:text="@string/btn_settings"/>
         </LinearLayout>
 

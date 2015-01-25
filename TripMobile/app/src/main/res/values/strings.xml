@@ -17,7 +17,6 @@
     <string name="tab_wiki">Wiki Page</string>
     <string name="txt_drugName">Drug or alias</string>
     <string name="title_activity_combinations">Combinations</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="str_safesynergy_header"><![CDATA[Safe & Synergy]]></string>
     <string name="str_safenosynergy_header"><![CDATA[Safe & No Synergy]]></string>
@@ -26,5 +25,11 @@
     <string name="str_serotoninsyndrome_header">Serotonin Syndrome</string>
     <string name="str_deadly_header">Deadly</string>
     <string name="btn_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="str_cache_header">Cache Freshness</string>
+    <!-- Use 'getString(R.string.str_cache_content, getString(R.string.app_name)))' to retrieve the following String -->
+    <string name="str_cache_content">%1$s automatically saves downloaded information to minimise your data usage. This setting lets you modify how long that data is kept before being downloaded again.</string>
+    <string name="str_cache_days">0\ndays</string>
+    <string name="str_preferences_cache_freshness">me.tripsit.mobile.cachefreshness</string>
 
 </resources>

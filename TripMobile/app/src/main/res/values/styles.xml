@@ -15,9 +15,11 @@
 
     <!-- Application theme. -->
     <style name="LightTheme" parent="LightBaseTheme">
-         <item name="android:buttonStyle">@style/LightButton</item>
-         <item name="android:fontFamily">candara</item>
-         <item name="autoCompleteTextColor">#555555</item>
+        <item name="android:buttonStyle">@style/LightButton</item>
+        <item name="android:background">#000000</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">candara</item>
+        <item name="autoCompleteTextColor">#777777</item>
          
     </style>
     
@@ -26,7 +28,7 @@
     </style>
     
     <style name="LightDropDownItemStyle" parent="android:style/Widget.DropDownItem">
-        <item name="android:textColor">#555555</item>
+        <item name="android:textColor">#777777</item>
     </style>
 
     <style name="CombinationsHeader" parent="@android:style/TextAppearance.Large">
@@ -52,7 +54,7 @@
         <item name="android:layout_height">10dip</item>
     </style>
 
-    <style name="MenuTextWhite" parent="@android:style/TextAppearance.Large">
+    <style name="MenuText" parent="@android:style/TextAppearance.Large">
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">0dp</item>
