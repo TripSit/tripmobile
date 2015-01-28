@@ -30,6 +30,9 @@
     <!-- Use 'getString(R.string.str_cache_content, getString(R.string.app_name)))' to retrieve the following String -->
     <string name="str_cache_content">%1$s automatically saves downloaded information to minimise your data usage. This setting lets you modify how long that data is kept before being downloaded again.</string>
     <string name="str_cache_days">0\ndays</string>
-    <string name="str_preferences_cache_freshness">me.tripsit.mobile.cachefreshness</string>
+    <string name="shared_preferences_cache_freshness">CACHE.FRESHNESS</string>
+    <string name="shared_preferences">me.tripsit.mobile.sharedpreferences</string>
+    <string name="shared_preferences_url">URL.</string>
+    <string name="shared_preferences_date">DATE.</string>
 
 </resources>

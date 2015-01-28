@@ -1,7 +1,7 @@
 package me.tripsit.mobile.combinations;
 
+import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 
@@ -15,10 +15,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import me.tripsit.mobile.comms.JSONComms;
+import me.tripsit.mobile.comms.ContentRetriever;
 import me.tripsit.mobile.error.ErrorHandler;
 
-public class CombinationsAsyncTask extends AsyncTask<Context, Void, Void> {
+public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
 
     private static final String URL = "http://tripsit.me/combo.json";
 
@@ -33,9 +33,10 @@ public class CombinationsAsyncTask extends AsyncTask<Context, Void, Void> {
     }
 
     @Override
-    protected Void doInBackground(final Context... context) {
+    protected Void doInBackground(final Activity... activity) {
         try {
-            JSONObject combinations = JSONComms.retrieveObjectFromUrl(URL);
+            String response = new ContentRetriever(activity[0]).getResponseFromURL(URL);
+            JSONObject combinations = new JSONObject(response);
             JSONArray drugNames = combinations.names();
             for (int i = 0; i < drugNames.length(); i++) {
                 String drugName = drugNames.getString(i);
@@ -45,12 +46,12 @@ public class CombinationsAsyncTask extends AsyncTask<Context, Void, Void> {
         } catch (JSONException e) {
             errorHandler.handleGenericError(String.format("Failed to parse combinations text, please report this error: " + e.toString()));
         } catch (IOException e) {
-            new AlertDialog.Builder(context[0])
+            new AlertDialog.Builder(activity[0])
                     .setTitle("Operation failed")
                     .setMessage("Failed to combinations information. Please check your internet connection and try again.")
                     .setPositiveButton("Retry", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            doInBackground(context);
+                            doInBackground(activity);
                         }
                     })
                     .setNegativeButton("Return to menu", new DialogInterface.OnClickListener() {

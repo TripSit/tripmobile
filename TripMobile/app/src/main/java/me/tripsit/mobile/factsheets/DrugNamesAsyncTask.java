@@ -1,7 +1,7 @@
 package me.tripsit.mobile.factsheets;
 
+import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 
@@ -13,10 +13,10 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.TreeSet;
 
-import me.tripsit.mobile.comms.JSONComms;
+import me.tripsit.mobile.comms.ContentRetriever;
 import me.tripsit.mobile.error.ErrorHandler;
 
-public class DrugNamesAsyncTask extends AsyncTask<Context, Void, Void>  {
+public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
 
 	private static final String ALL_DRUGS_URL = "http://tripbot.tripsit.me/api/tripsit/getAllDrugNames";
 	private static final String DATA = "data";
@@ -33,9 +33,10 @@ public class DrugNamesAsyncTask extends AsyncTask<Context, Void, Void>  {
 	}
 
     @Override
-    protected Void doInBackground(final Context... context) {
+    protected Void doInBackground(final Activity... context) {
         try {
-            JSONObject drugs = JSONComms.retrieveObjectFromUrl(ALL_DRUGS_URL);
+            String response = new ContentRetriever(context[0]).getResponseFromURL(ALL_DRUGS_URL);
+            JSONObject drugs = new JSONObject(response);
             JSONArray list = drugs.getJSONArray(DATA);
             for (int i = 0; i < list.length(); i++) {
                 String drugList = list.getString(i);
