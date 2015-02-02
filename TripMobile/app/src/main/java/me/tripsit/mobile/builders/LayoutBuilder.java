@@ -26,8 +26,8 @@ public class LayoutBuilder {
 
 	public static LinearLayout.LayoutParams buildParams() {
 		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-				LinearLayout.LayoutParams.WRAP_CONTENT,
-				LinearLayout.LayoutParams.WRAP_CONTENT);
+				LinearLayout.LayoutParams.MATCH_PARENT,
+				LinearLayout.LayoutParams.MATCH_PARENT);
 		return params;
 	}
 	
