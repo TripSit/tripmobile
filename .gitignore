@@ -2,3 +2,8 @@ bin
 gen
 .project
 .gitignore
+.gradle
+.idea
+local.properties
+TripMobile/build/
+TripMobile/app/build/
