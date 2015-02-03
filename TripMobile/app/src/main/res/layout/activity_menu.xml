@@ -13,7 +13,7 @@
                 style="@style/MenuButton"
                 android:id="@+id/btn_tripsitChannel"
                 android:onClick="clickTripsit"
-                android:background="@drawable/tripsit_glow_dark" />
+                android:background="@drawable/selector_trippy_ts"/>
 
             <TextView
                 style="@style/MenuText"
@@ -27,7 +27,7 @@
                 style="@style/MenuButton"
                 android:id="@+id/btn_generalChat"
                 android:onClick="clickGeneralChat"
-                android:background="@drawable/chat_glow_dark" />
+                android:background="@drawable/selector_trippy_chat" />
             <TextView
                 style="@style/MenuText"
                 android:text="@string/btn_generalChat"/>
@@ -42,7 +42,7 @@
                 style="@style/MenuButton"
                 android:id="@+id/btn_factSheets"
                 android:onClick="clickFactsheets"
-                android:background="@drawable/factsheets_glow_dark" />
+                android:background="@drawable/selector_trippy_document" />
 
             <TextView
                 style="@style/MenuText"
@@ -56,7 +56,7 @@
                 style="@style/MenuButton"
                 android:id="@+id/btn_combinations"
                 android:onClick="clickCombinations"
-                android:background="@drawable/combos_glow_dark" />
+                android:background="@drawable/selector_trippy_flasks" />
             <TextView
                 style="@style/MenuText"
                 android:text="@string/btn_combinations"/>
@@ -71,7 +71,7 @@
                 style="@style/MenuButton"
                 android:id="@+id/btn_wiki"
                 android:onClick="clickWiki"
-                android:background="@drawable/wiki_glow_dark" />
+                android:background="@drawable/selector_trippy_globe" />
 
             <TextView
                 style="@style/MenuText"
@@ -85,7 +85,7 @@
                 style="@style/MenuButton"
                 android:id="@+id/btn_settings"
                 android:onClick="clickSettings"
-                android:background="@drawable/settings_glow_dark" />
+                android:background="@drawable/selector_trippy_gears" />
             <TextView
                 style="@style/MenuText"
                 android:text="@string/btn_settings"/>
