@@ -40,6 +40,11 @@ public class Chat extends Activity {
 	}
 
     @Override
+    public void onBackPressed() {
+        finish();
+    }
+
+    @Override
     protected void onSaveInstanceState(Bundle outState )
     {
         super.onSaveInstanceState(outState);
