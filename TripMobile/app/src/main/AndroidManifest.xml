@@ -39,6 +39,7 @@
         </activity>
         <activity
             android:name=".wiki.Wiki"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_wiki" >
         </activity>
         <activity
