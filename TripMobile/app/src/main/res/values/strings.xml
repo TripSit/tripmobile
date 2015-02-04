@@ -31,8 +31,19 @@
     <string name="str_cache_content">%1$s automatically saves downloaded information to minimise your data usage. This setting lets you modify how long that data is kept before being downloaded again.</string>
     <string name="str_cache_days">0\ndays</string>
     <string name="shared_preferences_cache_freshness">CACHE.FRESHNESS</string>
+    <string name="shared_preferences_chat_channel">CHAT.CHANNEL</string>
     <string name="shared_preferences">me.tripsit.mobile.sharedpreferences</string>
     <string name="shared_preferences_url">URL.</string>
     <string name="shared_preferences_date">DATE.</string>
+    <string name="str_channel_header">Chat channel</string>
+    <string name="str_channel_content">Modify the default channel you will connect to when using the \"Chat\" option from the main menu.</string>
+    <string name="btn_chat_save">Save</string>
+    <string name="txt_chat">drugs</string>
+    <string name="str_channel_prefix">#</string>
+    <!-- Use 'getString(R.string.str_savedChannel, "#channel")' to retrieve the following String -->
+    <string name="str_savedChannel">New default channel is now #%1$s</string>
+    <!-- Use 'getString(R.string.str_invalidChannel, "#channel")' to retrieve the following String -->
+    <string name="str_invalidChannel">#%1$s is not a valid channel name</string>
+
 
 </resources>

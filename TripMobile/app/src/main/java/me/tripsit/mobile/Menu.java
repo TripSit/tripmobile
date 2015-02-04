@@ -9,6 +9,7 @@ import me.tripsit.mobile.builders.LayoutBuilder;
 import me.tripsit.mobile.chat.Chat;
 import me.tripsit.mobile.chat.Constants;
 import me.tripsit.mobile.combinations.Combinations;
+import me.tripsit.mobile.common.SharedPreferencesManager;
 import me.tripsit.mobile.factsheets.Factsheets;
 import me.tripsit.mobile.settings.Settings;
 import me.tripsit.mobile.wiki.Wiki;
@@ -30,7 +31,7 @@ public class Menu extends Activity {
 	}
 	
 	public void clickGeneralChat(View view) {
-		startChatActivity(Constants.GENERAL_URL);
+		startChatActivity(Constants.GENERAL_URL + SharedPreferencesManager.getChatChannel(this));
 	}
 	
 	public void clickFactsheets(View view) {

@@ -21,6 +21,19 @@ public class SharedPreferencesManager {
      */
     private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyyMMdd");
     private static final int DEFAULT_FRESHNESS = 14;
+    private static final String DEFAULT_CHANNEL = "home";
+
+    public static void saveChatChannel(Activity activity, String channel) {
+        SharedPreferences sharedPref = getSharedPreferences(activity);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString(activity.getString(R.string.shared_preferences_chat_channel), channel);
+        editor.commit();
+    }
+
+    public static String getChatChannel(Activity activity) {
+        SharedPreferences sharedPref = getSharedPreferences(activity);
+        return sharedPref.getString(activity.getString(R.string.shared_preferences_chat_channel), DEFAULT_CHANNEL);
+    }
 
     public static void saveCacheFreshness(Activity activity, int newValue) {
         SharedPreferences sharedPref = getSharedPreferences(activity);

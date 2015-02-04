@@ -2,6 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical"
     tools:context="me.tripsit.mobile.settings.Settings">
 
@@ -26,7 +28,8 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
 
             <TextView
                 android:ems="2"
@@ -44,6 +47,56 @@
                 android:gravity="center"
                 android:id="@+id/seek_cache" />
 
+
+        </LinearLayout>
+
+        <View style="@style/Divider"/>
+
+        <TextView
+            android:paddingTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/str_channel_header"
+            android:id="@+id/txt_channel_header" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/str_channel_content"
+            android:id="@+id/txt_channel_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context="${packageName}.${activityClass}" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/str_channel_prefix" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete_channel"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:text="@string/txt_chat" >
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <Button
+                android:id="@+id/btn_chat_save"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:onClick="saveChatChannel"
+                android:text="@string/btn_chat_save" />
 
         </LinearLayout>
     </LinearLayout>
