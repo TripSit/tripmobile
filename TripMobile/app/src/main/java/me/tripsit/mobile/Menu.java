@@ -32,12 +32,17 @@ public class Menu extends TripMobileActivity {
     }
 
     public void clickTripsit(View view) {
-		startChatActivity(Constants.TRIPSIT_URL);
+		startChatActivity(generateUrl(Constants.TRIPSIT_CHAN));
 	}
 	
 	public void clickGeneralChat(View view) {
-		startChatActivity(Constants.GENERAL_URL + SharedPreferencesManager.getChatChannel(this));
+		startChatActivity(generateUrl(Constants.PREFIX + SharedPreferencesManager.getChatChannel(this)));
 	}
+
+    private String generateUrl(String channel) {
+        String kiwiTheme = SharedPreferencesManager.getTheme(this).getKiwiTheme();
+        return String.format(Constants.URL_BASE, kiwiTheme, channel);
+    }
 	
 	public void clickFactsheets(View view) {
 		Intent intent = new Intent(this, Factsheets.class);
