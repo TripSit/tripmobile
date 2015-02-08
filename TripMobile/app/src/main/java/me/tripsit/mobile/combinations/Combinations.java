@@ -195,7 +195,7 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
     }
 
     private String getSingleCombinationText(String drug1, String drug2, CombinationSeverity severity) {
-        return String.format(severity.getSingleCombinationText(), drug1, drug2, drug2.endsWith("s") ? "are" : "is");
+        return String.format(severity.getSingleCombinationText(), drug1, drug2, drug2.endsWith("s") || drug1.endsWith("s") ? "are" : "is");
     }
 
     private String convertListToText(List<String> values) {
