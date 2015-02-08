@@ -23,19 +23,21 @@ import me.tripsit.mobile.error.ErrorHandler;
 public class Combinations extends ErrorHandlingActivity implements CombinationsCallback, ErrorHandler {
 
     private enum CombinationSeverity {
-        SAFE_SYNERGY("Safe & Synergy", R.id.txt_safesynergy_header, R.id.txt_safesynergy_content),
-        SAFE_NO_SYNERGY("Safe & No Synergy", R.id.txt_safenosynergy_header, R.id.txt_safenosynergy_content),
-        SAFE_DECREASE_SYNERGY("Safe & Decrease", R.id.txt_safedecrease_header, R.id.txt_safedecrease_content),
-        UNSAFE("Unsafe", R.id.txt_unsafe_header, R.id.txt_unsafe_content),
-        SEROTONIN_SYNDROME("Serotonin Syndrome", R.id.txt_serotoninsyndrome_header, R.id.txt_serotoninsyndrome_content),
-        DEADLY("Deadly", R.id.txt_deadly_header, R.id.txt_deadly_content);
+        SAFE_SYNERGY("Safe & Synergy", "%s and %s %s a safe combination, which provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.", R.id.txt_safesynergy_header, R.id.txt_safesynergy_content),
+        SAFE_NO_SYNERGY("Safe & No Synergy", "%s and %s %s a safe combination, which doesn't provide any notable potentiated or decreased effects.", R.id.txt_safenosynergy_header, R.id.txt_safenosynergy_content),
+        SAFE_DECREASE_SYNERGY("Safe & Decrease", "%s and %s %s a safe combination, however one or more of the drugs will have decreased effects when they are combined.", R.id.txt_safedecrease_header, R.id.txt_safedecrease_content),
+        UNSAFE("Unsafe", "%s and %s %s an unsafe combination and should be taken with extreme caution, or ideally avoided entirely.", R.id.txt_unsafe_header, R.id.txt_unsafe_content),
+        SEROTONIN_SYNDROME("Serotonin Syndrome", "%s and %s should not be combined as they increase the risks of getting serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.", R.id.txt_serotoninsyndrome_header, R.id.txt_serotoninsyndrome_content),
+        DEADLY("Deadly", "%s and %s %s a potentially deadly combination, and should be avoided even in low dosages", R.id.txt_deadly_header, R.id.txt_deadly_content);
 
-        private String text;
-        private int headerId;
-        private int contentId;
+        private final String text;
+        private final String singleCombinationText;
+        private final int headerId;
+        private final int contentId;
 
-        private CombinationSeverity(String text, int headerId, int contentId) {
+        private CombinationSeverity(String text, String singleCombinationText, int headerId, int contentId) {
             this.text = text;
+            this.singleCombinationText = singleCombinationText;
             this.headerId = headerId;
             this.contentId = contentId;
         }
@@ -55,6 +57,10 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
 
         private int getContentId() {
             return contentId;
+        }
+
+        private String getSingleCombinationText() {
+            return singleCombinationText;
         }
     }
 
@@ -78,14 +84,7 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
 
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                leftDrug = null;
-                for (String drug : combinationsMap.keySet()) {
-                    if (position == 0) {
-                        leftDrug = drug;
-                        break;
-                    }
-                    position--;
-                }
+                leftDrug = getSelectedDrugName(combinationsMap.keySet(), position);
 
                 Map<String, List<String>> interactions = combinationsMap.get(leftDrug);
 
@@ -103,7 +102,37 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
             }
 
         });
+
+        Spinner spinner2 = (Spinner) findViewById(R.id.spinner_combinations_2);
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (leftDrug != null) {
+                    String drugName = getSelectedDrugName(getCombinationsSetExcludingLeftDrug(), position);
+                    if (drugName != null && !EMPTY_SELECTION.equals(drugName)) {
+                        updateViewWithSingleInteraction(combinationsMap.get(leftDrug), drugName);
+                    }
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                // Do nothing
+            }
+        });
+
+
         super.onStart();
+    }
+
+    private String getSelectedDrugName(Set<String> potentialNames, int position) {
+        for (String drug : potentialNames) {
+            if (position == 0) {
+                return drug;
+            }
+            position--;
+        }
+        return null;
     }
 
     private void updateSpinner2() {
@@ -111,14 +140,19 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
         if (EMPTY_SELECTION.equals(leftDrug)) {
             spinner2.setVisibility(View.GONE);
         } else {
-            Set<String> combinations = new TreeSet<>(combinationsMap.keySet());
-            if (leftDrug != null) {
-                combinations.remove(leftDrug);
-            }
+            Set<String> combinations = getCombinationsSetExcludingLeftDrug();
             spinner2.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,
                     combinations.toArray(new String[combinations.size()])));
             spinner2.setVisibility(View.VISIBLE);
         }
+    }
+
+    private Set<String> getCombinationsSetExcludingLeftDrug() {
+        Set<String> combinations = new TreeSet<>(combinationsMap.keySet());
+        if (leftDrug != null) {
+            combinations.remove(leftDrug);
+        }
+        return combinations;
     }
 
     private void updateViewWithInteractions(Map<String, List<String>> interactionsMap) {
@@ -138,6 +172,30 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
         }
     }
 
+    private void updateViewWithSingleInteraction(Map<String, List<String>> interactionsMap, String drugName) {
+        resetCombinationVisibilities();
+
+        for (Map.Entry<String, List<String>> entry : interactionsMap.entrySet()) {
+            List<String> list = entry.getValue();
+            if (list != null) {
+                for (String interactionDrug : list) {
+                    if (interactionDrug.equals(drugName)) {
+                        CombinationSeverity severity = CombinationSeverity.getSeverityWithText(entry.getKey());
+                        TextView textView = (TextView) findViewById(R.id.txt_single_combination);
+                        textView.setText(getSingleCombinationText(leftDrug, drugName, severity));
+                        textView.setVisibility(View.VISIBLE);
+                        return;
+                    }
+                }
+            }
+        }
+
+    }
+
+    private String getSingleCombinationText(String drug1, String drug2, CombinationSeverity severity) {
+        return String.format(severity.getSingleCombinationText(), drug1, drug2, drug2.endsWith("s") ? "are" : "is");
+    }
+
     private String convertListToText(List<String> values) {
         StringBuilder sb = new StringBuilder();
         for (String s : values) {
@@ -147,6 +205,10 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
     }
 
     private void resetCombinationVisibilities() {
+
+        TextView textView = (TextView) findViewById(R.id.txt_single_combination);
+        textView.setVisibility(View.GONE);
+
         for (CombinationSeverity severity : CombinationSeverity.values()) {
             TextView header = (TextView) findViewById(severity.getHeaderId());
             header.setVisibility(View.GONE);

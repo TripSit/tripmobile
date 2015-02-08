@@ -23,6 +23,7 @@
             <Spinner
                 android:layout_weight="0.5"
                 android:layout_width="0dp"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_combinations_2" />
 
@@ -32,10 +33,19 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
+
+
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
+
+                <TextView
+                    style="@style/SingleCombinationText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:id="@+id/txt_single_combination" />
 
                 <TextView
                     style="@style/CombinationsHeader"

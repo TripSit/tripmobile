@@ -104,4 +104,8 @@
         <item name="android:textColor">?secondaryTextColour</item>
     </style>
 
+    <style name="SingleCombinationText">
+        <item name="android:textSize">38dp</item>
+    </style>
+
 </resources>
