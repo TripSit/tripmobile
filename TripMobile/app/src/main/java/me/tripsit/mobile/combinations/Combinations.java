@@ -7,9 +7,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 import me.tripsit.mobile.R;
 import me.tripsit.mobile.builders.LayoutBuilder;
@@ -54,6 +58,10 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
         }
     }
 
+    private static final String EMPTY_SELECTION = "";
+    private String leftDrug = null;
+    private String rightDrug = null;
+
     private Map<String, Map<String, List<String>>> combinationsMap = new TreeMap<String, Map<String, List<String>>>();
 
     @Override
@@ -65,25 +73,28 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
 
     @Override
     protected void onStart() {
-        Spinner spinner = (Spinner) findViewById(R.id.spinner_combinations);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner_combinations_1);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                String drugNameSelected = null;
+                leftDrug = null;
                 for (String drug : combinationsMap.keySet()) {
                     if (position == 0) {
-                        drugNameSelected = drug;
+                        leftDrug = drug;
                         break;
                     }
                     position--;
                 }
 
-                Map<String, List<String>> interactions = combinationsMap.get(drugNameSelected);
+                Map<String, List<String>> interactions = combinationsMap.get(leftDrug);
 
                 if (interactions != null) {
                     updateViewWithInteractions(interactions);
                 }
+
+                updateSpinner2();
+
             }
 
             @Override
@@ -93,6 +104,21 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
 
         });
         super.onStart();
+    }
+
+    private void updateSpinner2() {
+        Spinner spinner2 = (Spinner) findViewById(R.id.spinner_combinations_2);
+        if (EMPTY_SELECTION.equals(leftDrug)) {
+            spinner2.setVisibility(View.GONE);
+        } else {
+            Set<String> combinations = new TreeSet<>(combinationsMap.keySet());
+            if (leftDrug != null) {
+                combinations.remove(leftDrug);
+            }
+            spinner2.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,
+                    combinations.toArray(new String[combinations.size()])));
+            spinner2.setVisibility(View.VISIBLE);
+        }
     }
 
     private void updateViewWithInteractions(Map<String, List<String>> interactionsMap) {
@@ -132,14 +158,16 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
 
     @Override
     public void updateCombinationsMap(Map<String, Map<String, List<String>>> combinations) {
+        combinationsMap.put(EMPTY_SELECTION, new TreeMap<String, List<String>>());
         combinationsMap.putAll(combinations);
         refreshSpinner();
     }
 
     private void refreshSpinner() {
-        Spinner spinner = (Spinner) findViewById(R.id.spinner_combinations);
-        spinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,
+        Spinner spinner1 = (Spinner) findViewById(R.id.spinner_combinations_1);
+        spinner1.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,
                 combinationsMap.keySet().toArray(new String[combinationsMap.size()])));
+        updateSpinner2();
     }
 
     @Override

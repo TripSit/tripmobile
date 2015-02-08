@@ -9,10 +9,24 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <Spinner
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner_combinations" />
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_combinations_1" />
+
+            <Spinner
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_combinations_2" />
+
+        </LinearLayout>
 
         <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
