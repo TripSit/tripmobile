@@ -18,15 +18,20 @@ import me.tripsit.mobile.wiki.Wiki;
  * The main menu activity which is shown to the user on startup
  * @author Eddie Curtis
  */
-public class Menu extends Activity {
+public class Menu extends TripMobileActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_menu, LayoutBuilder.buildParamsLinearCenterHorizontal()));
 	}
-	
-	public void clickTripsit(View view) {
+
+    @Override
+    public void onBackPressed() {
+        // Do nothing
+    }
+
+    public void clickTripsit(View view) {
 		startChatActivity(Constants.TRIPSIT_URL);
 	}
 	

@@ -50,7 +50,7 @@
 
         </LinearLayout>
 
-        <View style="@style/Divider"/>
+        <View style="@style/Divider" />
 
         <TextView
             android:paddingTop="3dp"
@@ -71,6 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:paddingBottom="3dp"
             tools:context="${packageName}.${activityClass}" >
 
             <TextView
@@ -85,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
                 android:singleLine="true"
-                android:textColor="@android:color/white"
+                android:textColor="?attr/primaryTextColour"
                 android:text="@string/txt_chat" >
                 <requestFocus />
             </AutoCompleteTextView>
@@ -99,5 +100,42 @@
                 android:text="@string/btn_chat_save" />
 
         </LinearLayout>
+
+        <View style="@style/Divider"/>
+
+        <TextView
+            android:paddingTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/str_theme_header"
+            android:id="@+id/txt_theme_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            tools:context="${packageName}.${activityClass}" >
+
+            <Button
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/light"
+                android:text="@string/btn_lightTheme"
+                android:onClick="setThemeLight"/>
+
+            <Button
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/dark"
+                android:text="@string/btn_darkTheme"
+                android:onClick="setThemeDark"/>
+
+        </LinearLayout>
+
+
     </LinearLayout>
 </ScrollView>

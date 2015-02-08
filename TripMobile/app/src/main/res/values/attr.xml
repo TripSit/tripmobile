@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <attr name="autoCompleteTextColor" format="reference|color" />
+    <attr name="backgroundColour" format="reference|color" />
+    <attr name="dividerColour" format="reference|color" />
+    <attr name="primaryTextColour" format="reference|color" />
+    <attr name="secondaryTextColour" format="reference|color" />
+    <attr name="dropDownColour" format="reference|color" />
 </resources>

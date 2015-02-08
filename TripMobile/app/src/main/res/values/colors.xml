@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- General colours -->
     <color name="safesynergy_background">#00FF00</color>
     <color name="safenosynergy_background">#888888</color>
     <color name="safedecrease_background">#8888FF</color>
     <color name="unsafe_background">#FFFF00</color>
     <color name="serotoninsyndrome_background">#880088</color>
     <color name="deadly_background">#FF0000</color>
-    <color name="background">#000000</color>
+
+    <!-- Colours for the dark theme -->
+    <color name="dark_background">#000000</color>
+    <color name="dark_text">#FFFFFF</color>
+    <color name="dark_text_secondary">#CCCCCC</color>
+    <color name="dark_divider">#CCCCCC</color>
+
+    <!-- Colours for the light theme -->
+    <color name="light_background">#EEEEEE</color>
+    <color name="light_text">#000000</color>
+    <color name="light_text_secondary">#888888</color>
+    <color name="light_divider">#333333</color>
 </resources>

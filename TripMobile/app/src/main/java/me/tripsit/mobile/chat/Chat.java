@@ -11,10 +11,11 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import me.tripsit.mobile.R;
+import me.tripsit.mobile.TripMobileActivity;
 import me.tripsit.mobile.common.LoadingWebChromeClient;
 import me.tripsit.mobile.common.LoadingWebViewClient;
 
-public class Chat extends Activity {
+public class Chat extends TripMobileActivity {
 
     private WebView webView = null;
 

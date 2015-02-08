@@ -23,6 +23,19 @@ public class SharedPreferencesManager {
     private static final int DEFAULT_FRESHNESS = 14;
     private static final String DEFAULT_CHANNEL = "home";
 
+    public static void saveTheme(Activity activity, Theme theme) {
+        SharedPreferences sharedPref = getSharedPreferences(activity);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putInt(activity.getString(R.string.shared_preferences_theme), theme.getId());
+        editor.commit();
+    }
+
+    public static Theme getTheme(Activity activity) {
+        SharedPreferences sharedPref = getSharedPreferences(activity);
+        int id = sharedPref.getInt(activity.getString(R.string.shared_preferences_theme), Theme.DEFAULT.getId());
+        return Theme.forId(id);
+    }
+
     public static void saveChatChannel(Activity activity, String channel) {
         SharedPreferences sharedPref = getSharedPreferences(activity);
         SharedPreferences.Editor editor = sharedPref.edit();

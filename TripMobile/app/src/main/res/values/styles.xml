@@ -1,34 +1,37 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="LightBaseTheme" parent="Theme.AppCompat.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-        <item name="android:dropDownItemStyle">@style/LightDropDownItemStyle</item>
+    <style name="BaseTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">?backgroundColour</item>
+        <item name="autoCompleteTextColor">?secondaryTextColour</item>
+        <item name="android:dropDownItemStyle">@style/DropDownItem</item>
+        <item name="android:textColor">?primaryTextColour</item>
     </style>
 
-    <!-- Application theme. -->
-    <style name="LightTheme" parent="LightBaseTheme">
-        <item name="android:buttonStyle">@style/LightButton</item>
-        <item name="android:background">#000000</item>
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:fontFamily">candara</item>
-        <item name="autoCompleteTextColor">#777777</item>
-         
+    <style name="DarkTheme" parent="BaseTheme">
+        <item name="android:buttonStyle">@style/DarkButton</item>
+        <item name="dividerColour">@color/dark_divider</item>
+        <item name="primaryTextColour">@color/dark_text</item>
+        <item name="secondaryTextColour">@color/dark_text_secondary</item>
+        <item name="dropDownColour">@color/dark_text_secondary</item>
+        <item name="backgroundColour">@color/dark_background</item>
+        <item name="android:dropDownItemStyle">@style/DropDownItem</item>
     </style>
-    
+
+    <style name="LightTheme" parent="BaseTheme">
+        <item name="android:buttonStyle">@style/LightButton</item>
+        <item name="dividerColour">@color/light_divider</item>
+        <item name="primaryTextColour">@color/light_text</item>
+        <item name="secondaryTextColour">@color/light_text_secondary</item>
+        <item name="dropDownColour">@color/light_text_secondary</item>
+        <item name="backgroundColour">@color/light_background</item>
+    </style>
+
     <style name="LightButton" parent="android:style/Widget.Button">
         <item name="android:background">@drawable/light</item>
     </style>
-    
-    <style name="LightDropDownItemStyle" parent="android:style/Widget.DropDownItem">
-        <item name="android:textColor">#777777</item>
+
+    <style name="DarkButton" parent="android:style/Widget.Button">
+        <item name="android:background">@drawable/dark</item>
     </style>
 
     <style name="CombinationsHeader" parent="@android:style/TextAppearance.Large">
@@ -55,7 +58,7 @@
     </style>
 
     <style name="MenuText" parent="@android:style/TextAppearance.Large">
-        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColor">?primaryTextColour</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">0.1</item>
@@ -94,7 +97,11 @@
     <style name="Divider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">2dp</item>
-        <item name="android:background">@android:color/white</item>
+        <item name="android:background">?dividerColour</item>
+    </style>
+
+    <style name="DropDownItem" parent="android:style/Widget.DropDownItem">
+        <item name="android:textColor">?secondaryTextColour</item>
     </style>
 
 </resources>

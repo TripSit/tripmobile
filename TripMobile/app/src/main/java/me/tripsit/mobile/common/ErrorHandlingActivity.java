@@ -4,9 +4,10 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 
+import me.tripsit.mobile.TripMobileActivity;
 import me.tripsit.mobile.error.ErrorHandler;
 
-public abstract class ErrorHandlingActivity extends Activity implements ErrorHandler {
+public abstract class ErrorHandlingActivity extends TripMobileActivity implements ErrorHandler {
 
     @Override
     public void handleGenericError(String error) {

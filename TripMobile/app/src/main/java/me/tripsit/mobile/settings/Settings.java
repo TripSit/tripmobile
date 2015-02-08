@@ -2,6 +2,7 @@ package me.tripsit.mobile.settings;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -13,11 +14,14 @@ import android.widget.Toast;
 
 import java.util.Arrays;
 
+import me.tripsit.mobile.Menu;
 import me.tripsit.mobile.R;
+import me.tripsit.mobile.TripMobileActivity;
 import me.tripsit.mobile.builders.LayoutBuilder;
 import me.tripsit.mobile.common.SharedPreferencesManager;
+import me.tripsit.mobile.common.Theme;
 
-public class Settings extends Activity {
+public class Settings extends TripMobileActivity {
 
     private static final String[] CHAT_CHANNELS = new String[] {
       "home","drugs","sanctuary","psychonaut","dreaming","opiates","stims", "psychopharm","news","gaming","compsci","music"
@@ -31,6 +35,16 @@ public class Settings extends Activity {
         setAppNameOnTextContent();
         setUpSeekBar();
         setChatChannels(CHAT_CHANNELS);
+    }
+
+    /**
+     * Override onBackPressed so that we can "return" to the main menu but using a new theme if the theme setting was changed
+     */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, Menu.class);
+        startActivity(intent);
+        finish();
     }
 
     public void saveChatChannel(View view) {
@@ -47,6 +61,20 @@ public class Settings extends Activity {
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         textView.clearFocus();
+    }
+
+    public void setThemeLight(View view) {
+        if (SharedPreferencesManager.getTheme(this) != Theme.LIGHT) {
+            SharedPreferencesManager.saveTheme(this, Theme.LIGHT);
+            restartActivity();
+        }
+    }
+
+    public void setThemeDark(View view) {
+        if (SharedPreferencesManager.getTheme(this) != Theme.DARK) {
+            SharedPreferencesManager.saveTheme(this, Theme.DARK);
+            restartActivity();
+        }
     }
 
     private void setChatChannels(String[] channels) {
