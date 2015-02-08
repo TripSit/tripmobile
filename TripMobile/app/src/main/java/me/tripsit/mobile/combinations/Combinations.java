@@ -111,6 +111,8 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
                     String drugName = getSelectedDrugName(getCombinationsSetExcludingLeftDrug(), position);
                     if (drugName != null && !EMPTY_SELECTION.equals(drugName)) {
                         updateViewWithSingleInteraction(combinationsMap.get(leftDrug), drugName);
+                    } else {
+                        updateViewWithInteractions(combinationsMap.get(leftDrug));
                     }
                 }
             }
