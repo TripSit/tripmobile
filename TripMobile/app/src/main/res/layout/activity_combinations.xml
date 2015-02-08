@@ -44,7 +44,6 @@
                     style="@style/SingleCombinationText"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-
                     android:id="@+id/txt_single_combination" />
 
                 <TextView
