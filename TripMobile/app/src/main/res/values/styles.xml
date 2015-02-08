@@ -106,6 +106,7 @@
     </style>
 
     <style name="SingleCombinationText">
+        <item name="android:paddingLeft">5dp</item>
         <item name="android:visibility">gone</item>
         <item name="android:textSize">38dp</item>
     </style>
