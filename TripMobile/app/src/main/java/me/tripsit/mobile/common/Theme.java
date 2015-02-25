@@ -1,7 +1,5 @@
 package me.tripsit.mobile.common;
 
-import android.app.Activity;
-
 import me.tripsit.mobile.R;
 
 /**
