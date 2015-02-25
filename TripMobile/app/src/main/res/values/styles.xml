@@ -27,11 +27,11 @@
     </style>
 
     <style name="LightButton" parent="android:style/Widget.Button">
-        <item name="android:background">@drawable/light</item>
+        <item name="android:background">@drawable/selector_button_light</item>
     </style>
 
     <style name="DarkButton" parent="android:style/Widget.Button">
-        <item name="android:background">@drawable/dark</item>
+        <item name="android:background">@drawable/selector_button_dark</item>
     </style>
 
     <style name="CombinationsHeader" parent="@android:style/TextAppearance.Large">

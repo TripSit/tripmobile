@@ -122,7 +122,7 @@
                 android:layout_weight="0.5"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:background="@drawable/light"
+                android:background="@drawable/selector_button_light"
                 android:text="@string/btn_lightTheme"
                 android:onClick="setThemeLight"/>
 
@@ -130,7 +130,7 @@
                 android:layout_weight="0.5"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:background="@drawable/dark"
+                android:background="@drawable/selector_button_dark"
                 android:text="@string/btn_darkTheme"
                 android:onClick="setThemeDark"/>
 
