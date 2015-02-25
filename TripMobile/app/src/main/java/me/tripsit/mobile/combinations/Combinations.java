@@ -62,7 +62,7 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
         }
     }
 
-    private static final String EMPTY_SELECTION = "";
+    private static final String EMPTY_SELECTION = " <Select drug>";
     private String leftDrug = null;
     private String rightDrug = null;
 
