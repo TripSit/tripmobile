@@ -48,5 +48,11 @@
     <string name="str_theme_header">Theme</string>
     <string name="btn_lightTheme">Light</string>
     <string name="btn_darkTheme">Dark</string>
+    <string name="btn_contact">Contact</string>
+    <string name="btn_about">About</string>
+    <string name="title_activity_about">About</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_contact">Contact</string>
 
 </resources>

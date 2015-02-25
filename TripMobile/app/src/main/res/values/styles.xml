@@ -67,8 +67,8 @@
     </style>
 
     <style name="MenuButton">
-        <item name="android:layout_width">125dp</item>
-        <item name="android:layout_height">125dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
         <item name="android:layout_gravity">center</item>
     </style>
 

@@ -93,4 +93,33 @@
 
     </LinearLayout>
 
+    <LinearLayout style="@style/MenuRow">
+
+        <LinearLayout style="@style/MenuColumn">
+            <ImageButton
+                style="@style/MenuButton"
+                android:id="@+id/btn_about"
+                android:onClick="clickAbout"
+                android:background="@drawable/selector_trippy_ts" /> <!-- TODO: needs its own icon -->
+
+            <TextView
+                style="@style/MenuText"
+                android:text="@string/btn_about" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MenuColumnBuffer" />
+
+        <LinearLayout style="@style/MenuColumn">
+            <ImageButton
+                style="@style/MenuButton"
+                android:id="@+id/btn_contact"
+                android:onClick="clickContact"
+                android:background="@drawable/selector_trippy_ts" /> <!-- TODO: needs its own icon -->
+            <TextView
+                style="@style/MenuText"
+                android:text="@string/btn_contact"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
 </LinearLayout>
