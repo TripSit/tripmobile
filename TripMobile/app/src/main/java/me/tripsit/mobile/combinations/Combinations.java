@@ -7,8 +7,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -27,7 +25,7 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
         SAFE_NO_SYNERGY("Safe & No Synergy", "%s and %s %s a safe combination, which doesn't provide any notable potentiated or decreased effects.", R.id.txt_safenosynergy_header, R.id.txt_safenosynergy_content),
         SAFE_DECREASE_SYNERGY("Safe & Decrease", "%s and %s %s a safe combination, however one or more of the drugs will have decreased effects when they are combined.", R.id.txt_safedecrease_header, R.id.txt_safedecrease_content),
         UNSAFE("Unsafe", "%s and %s %s an unsafe combination and should be taken with extreme caution, or ideally avoided entirely.", R.id.txt_unsafe_header, R.id.txt_unsafe_content),
-        SEROTONIN_SYNDROME("Serotonin Syndrome", "%s and %s should not be combined as they increase the risks of getting serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.", R.id.txt_serotoninsyndrome_header, R.id.txt_serotoninsyndrome_content),
+        SEROTONIN_SYNDROME("Serotonin Syndrome", "%s and %s should not be combined as they increase the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.", R.id.txt_serotoninsyndrome_header, R.id.txt_serotoninsyndrome_content),
         DEADLY("Deadly", "%s and %s %s a potentially deadly combination, and should be avoided even in low dosages", R.id.txt_deadly_header, R.id.txt_deadly_content);
 
         private final String text;
