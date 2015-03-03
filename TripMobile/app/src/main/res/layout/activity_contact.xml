@@ -1,9 +1,75 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="me.tripsit.mobile.Contact">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
 
-</RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/str_contact_header"
+            android:id="@+id/txt_conctact_header" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/str_contact_content"
+            android:id="@+id/txt_channel_content" />
+
+        <LinearLayout
+            android:layout_height="10dp"
+            android:layout_width="fill_parent"/>
+
+        <Button
+            android:id="@+id/btn_bug_report"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bugReport"
+            android:text="@string/btn_bug_report_text" />
+
+        <LinearLayout
+            android:layout_height="10dp"
+            android:layout_width="fill_parent"/>
+
+        <Button
+            android:id="@+id/btn_suggestions"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="suggestions"
+            android:text="@string/btn_suggestions_text" />
+
+        <LinearLayout
+            android:layout_height="10dp"
+            android:layout_width="fill_parent"/>
+
+        <Button
+            android:id="@+id/btn_content"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="content"
+            android:text="@string/btn_content_text" />
+
+        <LinearLayout
+            android:layout_height="10dp"
+            android:layout_width="fill_parent"/>
+
+        <Button
+            android:id="@+id/btn_say_hi"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sayHi"
+            android:text="@string/btn_say_hi_text" />
+    </LinearLayout>
+
+</ScrollView>
