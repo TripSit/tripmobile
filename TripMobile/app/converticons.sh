@@ -1,5 +1,5 @@
 #!/bin/bash -e
-SIZE=125
+SIZE=80
 ./pngconvert.sh -w$SIZE plain_book_reverse.svg
 ./pngconvert.sh -w$SIZE plain_book.svg
 ./pngconvert.sh -w$SIZE plain_chat_reversel.svg
