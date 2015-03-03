@@ -55,7 +55,7 @@ public class Contact extends TripMobileActivity {
      * Code modified from http://stackoverflow.com/a/2197841/1044603
      */
     private void sendEmail(String email, String subject, String text) {
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("message/rfc822");
         intent.putExtra(Intent.EXTRA_EMAIL, new String[]{email});
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
