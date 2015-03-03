@@ -55,7 +55,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_contact">Contact</string>
     <string name="str_contact_header">Contact Us</string>
-    <string name="str_contact_content">Got any feedback about the app or any of the information we display? Or maybe you just want to say hello or ask a question? The links below will let you email us with any feedback, or you can always go back to the main menu and chat with us live on IRC. Join the #content channel for more information.</string>
+    <string name="str_contact_content">Got any feedback about the app or any of the information we display? Or maybe you just want to say hello or ask a question? The links below will let you email us with any feedback, or you can always go back to the main menu and chat with us live on IRC. Join the #content channel for sources and more information on the content we provide.</string>
     <string name="btn_bug_report_text">Report a bug</string>
     <string name="btn_suggestions_text">Suggestions / Requests</string>
     <string name="btn_content_text">Issues with content / information</string>
