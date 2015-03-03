@@ -17,12 +17,14 @@ public class Contact extends TripMobileActivity {
     private static final String CONTENT_SUBJECT = PREFIX + "Content Update Request";
     private static final String SAY_HI_ADDRESS = "tripsitters@tripsit.me";
     private static final String SAY_HI_SUBJECT = PREFIX + "Social Message";
+    private static final String MAILTO = "mailto:";
     private static final String BUG_REPORT_TEXT = "Please fill out the following information before sending this email.\n" +
             "Version of android: \n" +
             "Device: \n" +
             "What happened before you saw the bug: \n" +
             "What is the bug? Does the app crash or function unusually: \n" +
             "If you're happy for us to contact you to request more details, please provide your IRC nick or email address: ";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,9 +57,9 @@ public class Contact extends TripMobileActivity {
      * Code modified from http://stackoverflow.com/a/2197841/1044603
      */
     private void sendEmail(String email, String subject, String text) {
-        Intent intent = new Intent(Intent.ACTION_SEND);
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setType("message/rfc822");
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{email});
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{MAILTO + email});
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         if (text != null) {
             intent.putExtra(Intent.EXTRA_TEXT, text);
