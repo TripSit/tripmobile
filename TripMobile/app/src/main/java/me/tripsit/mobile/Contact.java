@@ -12,9 +12,9 @@ public class Contact extends TripMobileActivity {
     private static final String PREFIX = "[TripMobile] ";
     private static final String ANDROID_ADDRESS = "android@tripsit.me";
     private static final String BUG_REPORT_SUBJECT = PREFIX + "Bug Report";
-    private static final String SUGGESTIONS_SUBJECT = PREFIX + "Bug Report";
+    private static final String SUGGESTIONS_SUBJECT = PREFIX + "Feature Suggestion";
     private static final String CONTENT_ADDRESS = "content@tripsit.me";
-    private static final String CONTENT_SUBJECT = PREFIX + "Bug Report";
+    private static final String CONTENT_SUBJECT = PREFIX + "Content Update Request";
     private static final String SAY_HI_ADDRESS = "tripsitters@tripsit.me";
     private static final String SAY_HI_SUBJECT = PREFIX + "Social Message";
     private static final String BUG_REPORT_TEXT = "Please fill out the following information before sending this email.\n" +
