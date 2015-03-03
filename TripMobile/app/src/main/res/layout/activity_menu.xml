@@ -113,7 +113,7 @@
                 style="@style/MenuButton"
                 android:id="@+id/btn_contact"
                 android:onClick="clickContact"
-                android:background="@drawable/selector_trippy_ts" /> <!-- TODO: needs its own icon -->
+                android:background="@drawable/selector_trippy_contact" /> <!-- TODO: needs its own icon -->
             <TextView
                 style="@style/MenuText"
                 android:text="@string/btn_contact"/>
