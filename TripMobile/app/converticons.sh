@@ -18,6 +18,8 @@ SIZE=125
 ./pngconvert.sh -w$SIZE plain_ts.svg
 ./pngconvert.sh -w$SIZE trippy_book_reverse.svg
 ./pngconvert.sh -w$SIZE trippy_book.svg
+./pngconvert.sh -w$SIZE trippy_contact.svg
+./pngconvert.sh -w$SIZE trippy_contact_reverse.svg
 ./pngconvert.sh -w$SIZE trippy_chat_reverse.svg
 ./pngconvert.sh -w$SIZE trippy_chat.svg
 ./pngconvert.sh -w$SIZE trippy_document_reverse.svg
@@ -32,3 +34,4 @@ SIZE=125
 ./pngconvert.sh -w$SIZE trippy_scale.svg
 ./pngconvert.sh -w$SIZE trippy_ts_reverse.svg
 ./pngconvert.sh -w$SIZE trippy_ts.svg
+
