@@ -1,6 +1,7 @@
 package me.tripsit.mobile;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -53,13 +54,10 @@ public class Contact extends TripMobileActivity {
         sendEmail(email, subject, null);
     }
 
-    /*
-     * Code modified from http://stackoverflow.com/a/2197841/1044603
-     */
     private void sendEmail(String email, String subject, String text) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setType("message/rfc822");
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{MAILTO + email});
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{email});
+        intent.setData(Uri.parse(MAILTO + email));
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         if (text != null) {
             intent.putExtra(Intent.EXTRA_TEXT, text);
