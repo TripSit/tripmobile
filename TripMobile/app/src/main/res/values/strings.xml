@@ -60,5 +60,11 @@
     <string name="btn_suggestions_text">Suggestions / Requests</string>
     <string name="btn_content_text">Issues with content / information</string>
     <string name="btn_say_hi_text">Say hello!</string>
+    <string name="str_about_header">About TripSit</string>
+    <string name="str_about_content">This app is created by TripSit, an organisation which helps to provide factual information about drugs and how to reduce the harms involved in using them. We also have an active IRC (internet relay chat) network where we provide tripsitting services, harm reduction advice, and general chat.</string>
+    <string name="str_disclaimer_header">Disclaimer</string>
+    <string name="str_disclaimer_content">Although we have a team dedicated to keeping the information on this app up to date, it is not always possible to provide 100% accurate information on the safety level of drugs. The information here should be used as guidelines only, and it is important to do your own research from multiple sources before ingesting a substance. We also strongly advise using a testing kit and scales to ensure you are taking the correct dosage. These can both be bought online for reasonable prices.</string>
+    <string name="str_support_header">Support TripSit</string>
+    <string name="str_support_content">TripSit is a completely free service run by volunteers. If you wish to help out, feel free to join the IRC, follow and share our content on social media, or make a donation to keep the servers running.</string>
 
 </resources>
