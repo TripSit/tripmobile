@@ -22,6 +22,7 @@ function export {
   eval $CMD
 } 
 
+export 0.75 drawable-ldpi
 export 1 drawable-mdpi
 export 1.5 drawable-hdpi
 export 2 drawable-xhdpi
