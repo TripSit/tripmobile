@@ -16,26 +16,25 @@ import java.util.List;
 import java.util.Map;
 
 import me.tripsit.mobile.comms.ContentRetriever;
-import me.tripsit.mobile.error.ErrorHandler;
 
 public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
 
     private static final String URL = "http://tripsit.me/combo.json";
 
     private final CombinationsCallback callback;
-    private final ErrorHandler errorHandler;
+    private final Activity activity;
     private final Map<String, Map<String, List<String>>> combinationsMap;
 
-    CombinationsAsyncTask(CombinationsCallback callback, ErrorHandler errorHandler) {
+    CombinationsAsyncTask(CombinationsCallback callback, Activity activity) {
         this.callback = callback;
-        this.errorHandler = errorHandler;
+        this.activity = activity;
         combinationsMap = new HashMap<String, Map<String, List<String>>>();
     }
 
     @Override
-    protected Void doInBackground(final Activity... activity) {
+    protected Void doInBackground(final Activity... context) {
         try {
-            String response = new ContentRetriever(activity[0]).getResponseFromURL(URL);
+            String response = new ContentRetriever(context[0]).getResponseFromURL(URL);
             JSONObject combinations = new JSONObject(response);
             JSONArray drugNames = combinations.names();
             for (int i = 0; i < drugNames.length(); i++) {
@@ -43,23 +42,41 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
                 Map<String, List<String>> interactionsMap = buildInteractionsMap(combinations, drugName);
                 combinationsMap.put(drugName, interactionsMap);
             }
-        } catch (JSONException e) {
-            errorHandler.handleGenericError(String.format("Failed to parse combinations text, please report this error: " + e.toString()));
-        } catch (IOException e) {
-            new AlertDialog.Builder(activity[0])
-                    .setTitle("Operation failed")
-                    .setMessage("Failed to combinations information. Please check your internet connection and try again.")
-                    .setPositiveButton("Retry", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            doInBackground(activity);
-                        }
-                    })
-                    .setNegativeButton("Return to menu", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            callback.finishActivity();
-                        }
-                    })
-                    .show();
+        } catch (final JSONException e) {
+            context[0].runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    new AlertDialog.Builder(activity)
+                            .setTitle("Operation failed")
+                            .setMessage("Failed to parse combinations text, please report this error: " + e.getMessage())
+                            .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    callback.finishActivity();
+                                }
+                            })
+                            .show();
+                }
+            });
+        } catch (final IOException e) {
+            context[0].runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    new AlertDialog.Builder(activity)
+                            .setTitle("Operation failed")
+                            .setMessage("Failed to download combinations information. Please check your internet connection and try again.")
+                            .setPositiveButton("Retry", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    callback.downloadCombinations();
+                                }
+                            })
+                            .setNegativeButton("Return to menu", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    callback.finishActivity();
+                                }
+                            })
+                            .show();
+                }
+            });
         }
         return null;
     }

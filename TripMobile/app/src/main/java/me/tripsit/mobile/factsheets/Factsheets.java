@@ -22,22 +22,21 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 import me.tripsit.mobile.R;
+import me.tripsit.mobile.TripMobileActivity;
 import me.tripsit.mobile.builders.LayoutBuilder;
-import me.tripsit.mobile.common.ErrorHandlingActivity;
-import me.tripsit.mobile.error.ErrorHandler;
 import me.tripsit.mobile.utils.CollectionUtils;
 
 /**
  * The factsheets activity is used to retrieve data about particular drugs from the tripbot API
  * @author Eddie Curtis
  */
-public class Factsheets extends ErrorHandlingActivity implements FactsheetsCallback, ErrorHandler {
+public class Factsheets extends TripMobileActivity implements FactsheetsCallback {
 
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_factsheets, LayoutBuilder.buildParams()));
-		downloadFactsheetInfo();
+		searchDrugNames();
 		setDrugNameSearchListeners((AutoCompleteTextView) findViewById(R.id.drugNameSearch));
 	}
 	
@@ -52,7 +51,7 @@ public class Factsheets extends ErrorHandlingActivity implements FactsheetsCallb
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				populateFormWithDrug((String)parent.getItemAtPosition(position));
+                searchDrug((String)parent.getItemAtPosition(position));
 			}
 		});
 	}
@@ -60,20 +59,17 @@ public class Factsheets extends ErrorHandlingActivity implements FactsheetsCallb
 	public void clickSearch(View v) {
 		AutoCompleteTextView searchBox = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
 		Editable drugName = searchBox.getText();
-		populateFormWithDrug(drugName.toString());
+        searchDrug(drugName.toString());
 	}
 
-	private void populateFormWithDrug(String drugName) {
+    @Override
+    public void searchDrug(String drugName) {
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
         textView.clearFocus();
         new DrugInfoAsyncTask(this, this, drugName).execute(this);
-	}
-
-	private void downloadFactsheetInfo() {
-        new DrugNamesAsyncTask(this, this).execute(this);
-	}
+    }
 
     @Override
     public void finishActivity() {
@@ -95,6 +91,11 @@ public class Factsheets extends ErrorHandlingActivity implements FactsheetsCallb
             disclaimer.setVisibility(View.GONE);
             updateDrugView(drug);
         }
+    }
+
+    @Override
+    public void searchDrugNames() {
+        new DrugNamesAsyncTask(this, this).execute(this);
     }
 
     private void updateDrugView(Drug drug) {

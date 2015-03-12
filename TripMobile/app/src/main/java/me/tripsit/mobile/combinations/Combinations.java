@@ -14,11 +14,10 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import me.tripsit.mobile.R;
+import me.tripsit.mobile.TripMobileActivity;
 import me.tripsit.mobile.builders.LayoutBuilder;
-import me.tripsit.mobile.common.ErrorHandlingActivity;
-import me.tripsit.mobile.error.ErrorHandler;
 
-public class Combinations extends ErrorHandlingActivity implements CombinationsCallback, ErrorHandler {
+public class Combinations extends TripMobileActivity implements CombinationsCallback {
 
     private enum CombinationSeverity {
         SAFE_SYNERGY("Safe & Synergy", "%s and %s %s a safe combination, which provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.", R.id.txt_safesynergy_header, R.id.txt_safesynergy_content),
@@ -72,6 +71,11 @@ public class Combinations extends ErrorHandlingActivity implements CombinationsC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_combinations, LayoutBuilder.buildParams()));
+        downloadCombinations();
+    }
+
+    @Override
+    public void downloadCombinations() {
         new CombinationsAsyncTask(this, this).execute(this);
     }
 

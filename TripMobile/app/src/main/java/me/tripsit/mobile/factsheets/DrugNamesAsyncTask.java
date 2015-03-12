@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -14,7 +15,6 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import me.tripsit.mobile.comms.ContentRetriever;
-import me.tripsit.mobile.error.ErrorHandler;
 
 public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
 
@@ -23,13 +23,13 @@ public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
 	private static final String SPLIT = "\",\""; // Split by ","
 
     private final FactsheetsCallback callback;
-    private final ErrorHandler errorHandler;
+    private final Activity activity;
 
 	private Set<String> drugNames = new TreeSet<String>(String.CASE_INSENSITIVE_ORDER);
 	
-	DrugNamesAsyncTask(FactsheetsCallback callback, ErrorHandler errorHandler) {
+	DrugNamesAsyncTask(FactsheetsCallback callback, Activity activity) {
         this.callback = callback;
-        this.errorHandler = errorHandler;
+        this.activity = activity;
 	}
 
     @Override
@@ -47,22 +47,32 @@ public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
                 }
             }
         } catch (JSONException e) {
-            errorHandler.handleGenericError("Could not retrieve drug names from tripbot interface. Search may still work but autocomplete suggestions will not be present.");
+            context[0].runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    Toast.makeText(activity.getBaseContext(), "Could not retrieve drug names from tripbot interface. Search may still work but autocomplete suggestions will not be present.", Toast.LENGTH_LONG).show();
+                }
+            });
         } catch (IOException e) {
-            new AlertDialog.Builder(context[0])
-                    .setTitle("Operation failed")
-                    .setMessage("Failed to download drug information. Please check your internet connection and try again.")
-                    .setPositiveButton("Retry", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            doInBackground(context);
-                        }
-                    })
-                    .setNegativeButton("Return to menu", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            callback.finishActivity();
-                        }
-                    })
-                    .show();
+            context[0].runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    new AlertDialog.Builder(activity)
+                            .setTitle("Operation failed")
+                            .setMessage("Failed to download drug information. Please check your internet connection and try again.")
+                            .setPositiveButton("Retry", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    callback.searchDrugNames();
+                                }
+                            })
+                            .setNegativeButton("Return to menu", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    callback.finishActivity();
+                                }
+                            })
+                            .show();
+                }
+            });
         }
         return null;
     }

@@ -5,6 +5,7 @@ import java.util.Map;
 
 public interface CombinationsCallback {
 
+    public void downloadCombinations();
     public void updateCombinationsMap(Map<String, Map<String, List<String>>> combinations);
     public void finishActivity();
 
