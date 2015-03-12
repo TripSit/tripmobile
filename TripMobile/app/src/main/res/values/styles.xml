@@ -5,6 +5,7 @@
         <item name="autoCompleteTextColor">?secondaryTextColour</item>
         <item name="android:dropDownItemStyle">@style/DropDownItem</item>
         <item name="android:textColor">?primaryTextColour</item>
+        <item name="android:expandableListViewStyle">@style/ExpandableListView</item>
     </style>
 
     <style name="DarkTheme" parent="BaseTheme">
@@ -65,6 +66,13 @@
         <item name="android:layout_weight">0.1</item>
         <item name="android:textSize">@dimen/menu_text</item>
         <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="ExpandableListView" parent="android:Widget.ExpandableListView">
+        <item name="android:divider">?dividerColour</item>
+        <item name="android:childDivider">?dividerColour</item>
+        <item name="android:footerDividersEnabled">true</item>
+        <item name="android:dividerHeight">1sp</item>
     </style>
 
     <style name="MenuButton">
