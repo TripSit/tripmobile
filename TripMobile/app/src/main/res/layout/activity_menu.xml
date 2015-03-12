@@ -105,6 +105,19 @@
                 android:text="@string/btn_contact"/>
         </LinearLayout>
 
+        <LinearLayout style="@style/MenuColumnBuffer" />
+
+        <LinearLayout style="@style/MenuColumn">
+            <ImageButton
+                style="@style/MenuButton"
+                android:id="@+id/btn_about"
+                android:onClick="clickAbout"
+                android:background="@drawable/selector_trippy_about" />
+            <TextView
+                style="@style/MenuText"
+                android:text="@string/btn_about"/>
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

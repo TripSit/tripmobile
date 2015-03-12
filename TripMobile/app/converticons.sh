@@ -16,6 +16,8 @@ SIZE=80
 ./pngconvert.sh -w$SIZE plain_scale.svg
 ./pngconvert.sh -w$SIZE plain_ts_reverse.svg
 ./pngconvert.sh -w$SIZE plain_ts.svg
+./pngconvert.sh -w$SIZE trippy_about.svg
+./pngconvert.sh -w$SIZE trippy_about_reverse.svg
 ./pngconvert.sh -w$SIZE trippy_book_reverse.svg
 ./pngconvert.sh -w$SIZE trippy_book.svg
 ./pngconvert.sh -w$SIZE trippy_contact.svg
