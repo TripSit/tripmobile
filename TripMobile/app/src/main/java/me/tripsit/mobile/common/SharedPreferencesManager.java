@@ -80,6 +80,14 @@ public class SharedPreferencesManager {
         editor.commit();
     }
 
+    public static void invalidateURLResponse(String url, Activity activity) {
+        SharedPreferences sharedPref = getSharedPreferences(activity);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.remove(getResponseKey(url, activity));
+        editor.remove(getDateKey(url, activity));
+        editor.commit();
+    }
+
     private static boolean isDateWithinNumDays(String date, int numDays) {
         boolean isWithinNumDays = false;
         try {

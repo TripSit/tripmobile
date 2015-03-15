@@ -34,8 +34,9 @@ public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
 
     @Override
     protected Void doInBackground(final Activity... context) {
+        ContentRetriever contentRetriever = new ContentRetriever(context[0]);
         try {
-            String response = new ContentRetriever(context[0]).getResponseFromURL(ALL_DRUGS_URL);
+            String response = contentRetriever.getResponseFromURL(ALL_DRUGS_URL);
             JSONObject drugs = new JSONObject(response);
             JSONArray list = drugs.getJSONArray(DATA);
             for (int i = 0; i < list.length(); i++) {
@@ -47,6 +48,7 @@ public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
                 }
             }
         } catch (JSONException e) {
+            contentRetriever.invalidateResponse(ALL_DRUGS_URL);
             context[0].runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -54,6 +56,7 @@ public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
                 }
             });
         } catch (IOException e) {
+            contentRetriever.invalidateResponse(ALL_DRUGS_URL);
             context[0].runOnUiThread(new Runnable() {
                 @Override
                 public void run() {

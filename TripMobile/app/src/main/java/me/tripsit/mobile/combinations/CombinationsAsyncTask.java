@@ -33,8 +33,9 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
 
     @Override
     protected Void doInBackground(final Activity... context) {
+        ContentRetriever contentRetriever = new ContentRetriever(context[0]);
         try {
-            String response = new ContentRetriever(context[0]).getResponseFromURL(URL);
+            String response = contentRetriever.getResponseFromURL(URL);
             JSONObject combinations = new JSONObject(response);
             JSONArray drugNames = combinations.names();
             for (int i = 0; i < drugNames.length(); i++) {
@@ -43,6 +44,7 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
                 combinationsMap.put(drugName, interactionsMap);
             }
         } catch (final JSONException e) {
+            contentRetriever.invalidateResponse(URL);
             context[0].runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -58,6 +60,7 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
                 }
             });
         } catch (final IOException e) {
+            contentRetriever.invalidateResponse(URL);
             context[0].runOnUiThread(new Runnable() {
                 @Override
                 public void run() {

@@ -20,6 +20,7 @@ public class DrugInfoAsyncTask extends AsyncTask<Activity, Void, Void>  {
     private final FactsheetsCallback callback;
     private final Activity activity;
     private final String drugName;
+    private final String url;
 
     private Drug result = null;
 
@@ -27,15 +28,17 @@ public class DrugInfoAsyncTask extends AsyncTask<Activity, Void, Void>  {
         this.callback = callback;
         this.activity = activity;
         this.drugName = drugName;
+        this.url = DRUG_URL + drugName;
     }
 
     @Override
     protected Void doInBackground(final Activity... activities) {
+        ContentRetriever contentRetriever = new ContentRetriever(activities[0]);
         try {
-            String response = new ContentRetriever(activities[0]).getResponseFromURL(DRUG_URL + drugName);
+            String response = contentRetriever.getResponseFromURL(url);
             result = new Drug(new JSONObject(response));
-            throw new IOException("test");
         } catch (final JSONException e) {
+            contentRetriever.invalidateResponse(url);
             activities[0].runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -43,6 +46,7 @@ public class DrugInfoAsyncTask extends AsyncTask<Activity, Void, Void>  {
                 }
             });
         } catch (IOException e) {
+            contentRetriever.invalidateResponse(url);
             activities[0].runOnUiThread(new Runnable() {
                 @Override
                 public void run() {

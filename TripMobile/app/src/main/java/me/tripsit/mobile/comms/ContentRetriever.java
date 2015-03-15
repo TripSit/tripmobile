@@ -22,6 +22,10 @@ public class ContentRetriever {
         this.activity = activity;
     }
 
+    public void invalidateResponse(String url) {
+        SharedPreferencesManager.invalidateURLResponse(url, activity);
+    }
+
     public String getResponseFromURL(String url) throws IOException {
         String cachedResponse = SharedPreferencesManager.getCachedURLResponse(url, activity);
         String response = cachedResponse;
