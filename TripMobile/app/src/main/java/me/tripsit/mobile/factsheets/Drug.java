@@ -26,15 +26,12 @@ public class Drug {
 
 	
 	public Drug(JSONObject drugObject) throws JSONException {
-		
-		if (drugObject.has("err")) {
-			String error = drugObject.getString("err");
-			if (error != null && error.trim().length() > 0 && !"null".equals(error)) {
-				throw new JSONException("Error returned when fetching drug information: " + error);
-			}
-		}
-		JSONObject data = (JSONObject) drugObject.getJSONArray("data").get(0);
-		@SuppressWarnings("unchecked")
+
+        checkError(drugObject);
+        JSONObject data = (JSONObject) drugObject.getJSONArray("data").get(0);
+        checkError(data);
+
+        @SuppressWarnings("unchecked")
 		Iterator<String> it = data.keys();
 		while(it.hasNext()) {
 			String key = it.next();
@@ -54,7 +51,17 @@ public class Drug {
 		}
 	}
 
-	private void processProperties(JSONObject object) throws JSONException {
+    private void checkError(JSONObject data) throws JSONException {
+        if (data.has("err")) {
+            String error = data.getString("err");
+            if (error != null && error.trim().length() > 0 && !"null".equals(error) && !"false".equals(error)) {
+                String message = data.has("msg") ? data.getString("msg") : error;
+                throw new JSONException("Error returned when fetching drug information: " + message);
+            }
+        }
+    }
+
+    private void processProperties(JSONObject object) throws JSONException {
 		@SuppressWarnings("unchecked")
 		Iterator<String> keys = object.keys();
 		while (keys.hasNext()) {
