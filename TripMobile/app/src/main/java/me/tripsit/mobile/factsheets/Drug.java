@@ -27,7 +27,6 @@ public class Drug {
 	
 	public Drug(JSONObject drugObject) throws JSONException {
 
-        checkError(drugObject);
         JSONObject data = (JSONObject) drugObject.getJSONArray("data").get(0);
         checkError(data);
 
