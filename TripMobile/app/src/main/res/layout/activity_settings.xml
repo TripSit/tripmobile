@@ -18,14 +18,16 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/str_cache_header"
-            android:id="@+id/txt_cache_header" />
+            android:id="@+id/txt_cache_header"
+            style="@style/LargeText" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/str_cache_content"
-            android:id="@+id/txt_cache_content" />
+            android:id="@+id/txt_cache_content"
+            style="@style/MediumText" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -59,14 +61,16 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/str_channel_header"
-            android:id="@+id/txt_channel_header" />
+            android:id="@+id/txt_channel_header"
+            style="@style/LargeText"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/str_channel_content"
-            android:id="@+id/txt_channel_content" />
+            android:id="@+id/txt_channel_content"
+            style="@style/MediumText" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -110,7 +114,8 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/str_theme_header"
-            android:id="@+id/txt_theme_header" />
+            android:id="@+id/txt_theme_header"
+            style="@style/LargeText" />
 
         <LinearLayout
             android:layout_width="match_parent"

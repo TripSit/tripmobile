@@ -2,4 +2,8 @@
 <resources>
     <dimen name="menu_button">160dp</dimen>
     <dimen name="menu_text">45sp</dimen>
+    <dimen name="heading_padding">4dp</dimen>
+    <dimen name="heading_size">45sp</dimen>
+    <dimen name="text_padding">12dp</dimen>
+    <dimen name="text_size">30sp</dimen>
 </resources>

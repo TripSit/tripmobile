@@ -5,10 +5,24 @@
         <item name="android:dropDownItemStyle">@style/DropDownItem</item>
         <item name="android:expandableListViewStyle">@style/ExpandableListView</item>
         <item name="android:textViewStyle">@style/DefaultText</item>
+        <item name="android:textAppearanceMedium">@style/MediumText</item>
+        <item name="android:textAppearanceLarge">@style/LargeText</item>
     </style>
 
     <style name="DefaultText" parent="android:Widget.TextView">
         <item name="android:textColor">?primaryTextColour</item>
+    </style>
+
+    <style name="MediumText" parent="DefaultText">
+        <item name="android:paddingLeft">@dimen/text_padding</item>
+        <item name="android:paddingRight">@dimen/text_padding</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="LargeText" parent="DefaultText">
+        <item name="android:paddingLeft">@dimen/heading_padding</item>
+        <item name="android:paddingRight">@dimen/heading_padding</item>
+        <item name="android:textSize">@dimen/heading_size</item>
     </style>
 
     <style name="BaseThemeWithBackground" parent="BaseTheme">
