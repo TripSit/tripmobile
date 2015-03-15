@@ -1,11 +1,18 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="BaseTheme" parent="Theme.AppCompat.Light">
-        <item name="android:background">?backgroundColour</item>
         <item name="autoCompleteTextColor">?secondaryTextColour</item>
         <item name="android:dropDownItemStyle">@style/DropDownItem</item>
-        <item name="android:textColor">?primaryTextColour</item>
         <item name="android:expandableListViewStyle">@style/ExpandableListView</item>
+        <item name="android:textViewStyle">@style/DefaultText</item>
+    </style>
+
+    <style name="DefaultText" parent="android:Widget.TextView">
+        <item name="android:textColor">?primaryTextColour</item>
+    </style>
+
+    <style name="BaseThemeWithBackground" parent="BaseTheme">
+        <item name="android:background">?backgroundColour</item>
     </style>
 
     <style name="DarkTheme" parent="BaseTheme">
@@ -112,6 +119,7 @@
 
     <style name="DropDownItem" parent="android:style/Widget.DropDownItem">
         <item name="android:textColor">?secondaryTextColour</item>
+        <item name="android:background">?backgroundColour</item>
     </style>
 
     <style name="SingleCombinationText">

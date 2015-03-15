@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="me.tripsit.mobile.Contact">
+    tools:context="me.tripsit.mobile.Contact"
+    style="@style/BaseThemeWithBackground">
 
         <LinearLayout
             android:layout_width="fill_parent"

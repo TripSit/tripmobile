@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical|center_horizontal"
     android:orientation="vertical"
-    tools:context="${packageName}.${activityClass}" >
+    tools:context="${packageName}.${activityClass}"
+    style="@style/BaseThemeWithBackground">
 
     <ImageView
         android:id="@+id/img_Logo"
