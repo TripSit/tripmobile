@@ -72,6 +72,15 @@
     <string name="reddit_url">http://www.reddit.com/r/tripsit</string>
     <string name="twitter_app">twitter://user?screen_name=teamtripsit</string>
     <string name="twitter_url">https://mobile.twitter.com/teamtripsit</string>
+    <string name="aliases">Aliases</string>
+    <string name="summary">Summary</string>
+    <string name="dose">Dose</string>
+    <string name="effects">Effects</string>
+    <string name="categories">Categories</string>
+    <string name="timing">Timing</string>
+    <string name="wiki">Wiki</string>
+    <string name="onset">"Onset: "</string>
+    <string name="duration">"Duration: "</string>
     <!-- ID comes from https://graph.facebook.com/tripsitme -->
 
 </resources>

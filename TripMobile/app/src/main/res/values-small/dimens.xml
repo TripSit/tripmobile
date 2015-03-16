@@ -6,4 +6,5 @@
     <dimen name="heading_size">15sp</dimen>
     <dimen name="text_padding">6dp</dimen>
     <dimen name="text_size">11sp</dimen>
+    <dimen name="factsheets_text_width">10dp</dimen>
 </resources>

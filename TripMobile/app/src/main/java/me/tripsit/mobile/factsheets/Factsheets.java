@@ -1,6 +1,7 @@
 package me.tripsit.mobile.factsheets;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
@@ -108,24 +109,24 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
 
         // If we didn't already put the aliases in the name
         if (updatedDrugName.length() == drug.getName().length() && drug.getAliases().size() > 0) {
-            map.put("Aliases", CollectionUtils.collectionToList(drug.getAliases()));
+            map.put(getString(R.string.aliases), CollectionUtils.collectionToList(drug.getAliases()));
         }
 
-        map.put("Summary", Arrays.asList(drug.getSummary()));
-        map.put("Dose", Arrays.asList(drug.getDosages()));
+        map.put(getString(R.string.summary), Arrays.asList(drug.getSummary()));
+        map.put(getString(R.string.dose), Arrays.asList(drug.getDosages()));
         if (drug.getEffects() != null) {
-            map.put("Effects", Arrays.asList(drug.getEffects()));
+            map.put(getString(R.string.effects), Arrays.asList(drug.getEffects()));
         }
         if (drug.getCategories().size() > 0) {
-            map.put("Categories", CollectionUtils.collectionToList(drug.getCategories()));
+            map.put(getString(R.string.categories), CollectionUtils.collectionToList(drug.getCategories()));
         }
 
         List<String> timing = getDrugTimings(drug);
         if (timing.size() > 0) {
-            map.put("Timing", timing);
+            map.put(getString(R.string.timing), timing);
         }
         if (drug.getWiki() != null) {
-            map.put("Wiki", Arrays.asList(drug.getWiki()));
+            map.put(getString(R.string.wiki), Arrays.asList(drug.getWiki()));
         }
         for (Entry<String, String> entry : drug.getOtherInfo().entrySet()) {
             map.put(capitalise(entry.getKey()), Arrays.asList(entry.getValue()));
@@ -142,7 +143,10 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
             for (String s : set) {
                 sb.append(s).append(',').append(' ');
             }
-            if (name.length() + sb.length() < 40) { //TODO: check maximum length of String for smallest screen size
+
+            int dimensionPixelSize = calculateMaxTextWidth();
+
+            if (name.length() + sb.length() < dimensionPixelSize) {
                 name = name + sb.toString().substring(0, sb.length() - 2) + ')';
             }
         }
@@ -150,13 +154,21 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
         return name;
     }
 
+    private int calculateMaxTextWidth() {
+        int dimensionPixelSize = getResources().getDimensionPixelSize(R.dimen.factsheets_text_width);
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            dimensionPixelSize *= 2;
+        }
+        return dimensionPixelSize;
+    }
+
     private List<String> getDrugTimings(Drug drug) {
         List<String> timing = new ArrayList<String>();
         if (drug.getOnset() != null) {
-            timing.add("Onset: " + drug.getOnset());
+            timing.add(getString(R.string.onset) + drug.getOnset());
         }
         if (drug.getDuration() != null) {
-            timing.add("Duration: " + drug.getDuration());
+            timing.add(getString(R.string.duration) + drug.getDuration());
         }
         return timing;
     }
