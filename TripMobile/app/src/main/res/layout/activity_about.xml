@@ -23,6 +23,7 @@
             style="@style/MediumText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:autoLink="all"
             android:text="@string/str_about_content"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
