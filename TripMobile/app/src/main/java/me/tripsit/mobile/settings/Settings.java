@@ -121,10 +121,9 @@ public class Settings extends TripMobileActivity {
     private void updateCacheFreshnessLabel(int newValue) {
         final TextView daysText = (TextView) findViewById(R.id.txt_cache_days);
         StringBuilder sb = new StringBuilder(Integer.toString(newValue));
-        sb.append("\nday");
-        if (newValue != 1) {
-            sb.append('s');
-        }
+        sb.append("\n")
+        .append(getResources().getQuantityString(R.plurals.days, newValue));
+
         daysText.setText(sb.toString());
     }
 }

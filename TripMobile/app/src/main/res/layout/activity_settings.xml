@@ -41,7 +41,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textAlignment="gravity"
                 android:gravity="center"
-                android:text="@string/str_cache_days"
+                android:text="@string/default_cache_days"
                 android:id="@+id/txt_cache_days" />
 
             <SeekBar

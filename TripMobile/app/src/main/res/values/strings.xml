@@ -29,7 +29,11 @@
     <string name="str_cache_header">Cache Freshness</string>
     <!-- Use 'getString(R.string.str_cache_content, getString(R.string.app_name)))' to retrieve the following String -->
     <string name="str_cache_content">%1$s automatically saves downloaded information to minimise your data usage. This setting lets you modify how long that data is kept before being downloaded again.</string>
-    <string name="str_cache_days">0\ndays</string>
+    <string name="default_cache_days">0\ndays</string>
+    <plurals name="days">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
     <string name="shared_preferences_cache_freshness">CACHE.FRESHNESS</string>
     <string name="shared_preferences_chat_channel">CHAT.CHANNEL</string>
     <string name="shared_preferences_theme">THEME</string>
@@ -66,6 +70,7 @@
     <string name="str_disclaimer_content">Although we have a team dedicated to keeping the information on this app up to date, it is not always possible to provide 100% accurate information on the safety level of drugs. The information here should be used as guidelines only, and it is important to do your own research from multiple sources before ingesting a substance. We also strongly advise using a testing kit and scales to ensure you are taking the correct dosage. These can both be bought online for reasonable prices.</string>
     <string name="str_support_header">Support TripSit</string>
     <string name="str_support_content">TripSit is a completely free service run by volunteers. If you wish to help out, feel free to join the IRC, follow and share our content on social media, or make a donation to keep the servers running.</string>
+    <!-- ID comes from https://graph.facebook.com/tripsitme -->
     <string name="facebook_app">fb://page/575082419170561</string>
     <string name="facebook_url">https://www.facebook.com/tripsitme</string>
     <string name="facebook_package">com.facebook.katana</string>
@@ -93,6 +98,5 @@
     <string name="wiki_main_page">https://wiki.tripsit.me/wiki/Main_Page</string>
     <string name="wiki_domain">wiki.tripsit.me</string>
     <string name="error_email_client">You need to install an email client to use the email feature</string>
-    <!-- ID comes from https://graph.facebook.com/tripsitme -->
 
 </resources>
