@@ -58,6 +58,28 @@
             android:text="@string/str_support_content"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                style="@style/MenuButton"
+                android:onClick="clickFacebook"
+                android:background="@drawable/selector_trippy_facebook" />
+
+            <ImageButton
+                style="@style/MenuButton"
+                android:onClick="clickReddit"
+                android:background="@drawable/selector_trippy_reddit" />
+
+            <ImageButton
+                style="@style/MenuButton"
+                android:onClick="clickTwitter"
+                android:background="@drawable/selector_trippy_twitter" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </ScrollView>
