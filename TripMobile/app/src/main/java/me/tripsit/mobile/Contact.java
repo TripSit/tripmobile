@@ -20,6 +20,7 @@ public class Contact extends TripMobileActivity {
     private static final String SAY_HI_SUBJECT = PREFIX + "Social Message";
     private static final String MAILTO = "mailto:";
     private static final String BUG_REPORT_TEXT = "Please fill out the following information before sending this email.\n" +
+            "\n" +
             "Version of android: \n" +
             "Device: \n" +
             "What happened before you saw the bug: \n" +
