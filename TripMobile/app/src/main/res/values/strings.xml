@@ -90,6 +90,8 @@
     <string name="failed_parse_combinations">"Failed to parse combinations text, please report this error: "</string>
     <string name="failed_download_combinations">Failed to download combinations information. Please check your internet connection and try again.</string>
     <string name="failed_download_drug_information">"Error returned when fetching drug information: "</string>
+    <string name="wiki_main_page">https://wiki.tripsit.me/wiki/Main_Page</string>
+    <string name="wiki_domain">wiki.tripsit.me</string>
     <!-- ID comes from https://graph.facebook.com/tripsitme -->
 
 </resources>

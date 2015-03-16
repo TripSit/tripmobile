@@ -30,7 +30,7 @@ public class Wiki extends TripMobileActivity {
             webView.setWebViewClient(new LoadingWebViewClient(progressBar) {
                 @Override
                 public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                    if (Uri.parse(url).getHost().equals("wiki.tripsit.me")) {
+                    if (Uri.parse(url).getHost().equals(getString(R.string.wiki_domain))) {
                         return false;
                     }
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
@@ -39,7 +39,7 @@ public class Wiki extends TripMobileActivity {
                 }
             });
             webView.setWebChromeClient(new LoadingWebChromeClient(progressBar));
-            webView.loadUrl("https://wiki.tripsit.me/wiki/Main_Page");
+            webView.loadUrl(getString(R.string.wiki_main_page));
         }
 	}
 
