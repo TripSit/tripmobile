@@ -89,6 +89,7 @@
     <string name="failed_download_drug_names">Could not retrieve drug names from tripbot interface. Search may still work but autocomplete suggestions will not be present.</string>
     <string name="failed_parse_combinations">"Failed to parse combinations text, please report this error: "</string>
     <string name="failed_download_combinations">Failed to download combinations information. Please check your internet connection and try again.</string>
+    <string name="failed_download_drug_information">"Error returned when fetching drug information: "</string>
     <!-- ID comes from https://graph.facebook.com/tripsitme -->
 
 </resources>

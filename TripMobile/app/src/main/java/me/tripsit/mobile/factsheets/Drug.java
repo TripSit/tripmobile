@@ -1,5 +1,7 @@
 package me.tripsit.mobile.factsheets;
 
+import android.app.Activity;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -10,6 +12,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+
+import me.tripsit.mobile.R;
 
 public class Drug {
 
@@ -24,8 +28,11 @@ public class Drug {
 	private Set<String> categories = new HashSet<String>();
 	private Map<String, String> otherInfo = new HashMap<String, String>();
 
+    private final Activity activity;
 	
-	public Drug(JSONObject drugObject) throws JSONException {
+	public Drug(JSONObject drugObject, Activity activity) throws JSONException {
+
+        this.activity = activity;
 
         JSONObject data = (JSONObject) drugObject.getJSONArray("data").get(0);
         checkError(data);
@@ -55,7 +62,7 @@ public class Drug {
             String error = data.getString("err");
             if (error != null && error.trim().length() > 0 && !"null".equals(error) && !"false".equals(error)) {
                 String message = data.has("msg") ? data.getString("msg") : error;
-                throw new JSONException("Error returned when fetching drug information: " + message);
+                throw new JSONException(activity.getString(R.string.failed_download_drug_information) + message);
             }
         }
     }

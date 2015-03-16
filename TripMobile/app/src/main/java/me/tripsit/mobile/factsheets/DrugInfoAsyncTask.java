@@ -37,7 +37,7 @@ public class DrugInfoAsyncTask extends AsyncTask<Activity, Void, Void>  {
         ContentRetriever contentRetriever = new ContentRetriever(activities[0]);
         try {
             String response = contentRetriever.getResponseFromURL(url);
-            result = new Drug(new JSONObject(response));
+            result = new Drug(new JSONObject(response), activity);
         } catch (final JSONException e) {
             contentRetriever.invalidateResponse(url);
             activities[0].runOnUiThread(new Runnable() {
