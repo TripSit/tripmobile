@@ -65,7 +65,7 @@ public class Contact extends TripMobileActivity {
         try {
             startActivity(Intent.createChooser(intent, "Send mail..."));
         } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(this, "You need to install an email client to use the email feature", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.error_email_client), Toast.LENGTH_SHORT).show();
         }
     }
 }
