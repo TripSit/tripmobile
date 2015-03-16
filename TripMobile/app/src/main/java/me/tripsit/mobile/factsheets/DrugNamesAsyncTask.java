@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.TreeSet;
 
+import me.tripsit.mobile.R;
 import me.tripsit.mobile.comms.ContentRetriever;
 
 public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
@@ -52,7 +53,7 @@ public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
             context[0].runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(activity.getBaseContext(), "Could not retrieve drug names from tripbot interface. Search may still work but autocomplete suggestions will not be present.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity.getBaseContext(), activity.getString(R.string.failed_download_drug_names), Toast.LENGTH_LONG).show();
                 }
             });
         } catch (IOException e) {
@@ -61,14 +62,14 @@ public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
                 @Override
                 public void run() {
                     new AlertDialog.Builder(activity)
-                            .setTitle("Operation failed")
-                            .setMessage("Failed to download drug information. Please check your internet connection and try again.")
-                            .setPositiveButton("Retry", new DialogInterface.OnClickListener() {
+                            .setTitle(activity.getString(R.string.operation_failed))
+                            .setMessage(activity.getString(R.string.failed_download_drug_info))
+                            .setPositiveButton(activity.getString(R.string.retry), new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     callback.searchDrugNames();
                                 }
                             })
-                            .setNegativeButton("Return to menu", new DialogInterface.OnClickListener() {
+                            .setNegativeButton(activity.getString(R.string.return_to_menu), new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     callback.finishActivity();
                                 }

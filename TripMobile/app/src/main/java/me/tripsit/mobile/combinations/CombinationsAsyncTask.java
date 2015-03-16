@@ -15,6 +15,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import me.tripsit.mobile.R;
 import me.tripsit.mobile.comms.ContentRetriever;
 
 public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
@@ -49,9 +50,9 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
                 @Override
                 public void run() {
                     new AlertDialog.Builder(activity)
-                            .setTitle("Operation failed")
-                            .setMessage("Failed to parse combinations text, please report this error: " + e.getMessage())
-                            .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                            .setTitle(activity.getString(R.string.operation_failed))
+                            .setMessage(activity.getString(R.string.failed_parse_combinations) + e.getMessage())
+                            .setNeutralButton(activity.getString(R.string.ok), new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     callback.finishActivity();
                                 }
@@ -65,14 +66,14 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
                 @Override
                 public void run() {
                     new AlertDialog.Builder(activity)
-                            .setTitle("Operation failed")
-                            .setMessage("Failed to download combinations information. Please check your internet connection and try again.")
-                            .setPositiveButton("Retry", new DialogInterface.OnClickListener() {
+                            .setTitle(activity.getString(R.string.operation_failed))
+                            .setMessage(activity.getString(R.string.failed_download_combinations))
+                            .setPositiveButton(activity.getString(R.string.retry), new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     callback.downloadCombinations();
                                 }
                             })
-                            .setNegativeButton("Return to menu", new DialogInterface.OnClickListener() {
+                            .setNegativeButton(activity.getString(R.string.return_to_menu), new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     callback.finishActivity();
                                 }

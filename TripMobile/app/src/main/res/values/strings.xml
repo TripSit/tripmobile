@@ -81,6 +81,14 @@
     <string name="wiki">Wiki</string>
     <string name="onset">"Onset: "</string>
     <string name="duration">"Duration: "</string>
+    <string name="operation_failed">Operation failed</string>
+    <string name="retry">Retry</string>
+    <string name="return_to_menu">Return to menu</string>
+    <string name="ok">Ok</string>
+    <string name="failed_download_drug_info">Failed to download drug information. Please check your internet connection and try again.</string>
+    <string name="failed_download_drug_names">Could not retrieve drug names from tripbot interface. Search may still work but autocomplete suggestions will not be present.</string>
+    <string name="failed_parse_combinations">"Failed to parse combinations text, please report this error: "</string>
+    <string name="failed_download_combinations">Failed to download combinations information. Please check your internet connection and try again.</string>
     <!-- ID comes from https://graph.facebook.com/tripsitme -->
 
 </resources>

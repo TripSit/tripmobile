@@ -11,6 +11,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
+import me.tripsit.mobile.R;
 import me.tripsit.mobile.comms.ContentRetriever;
 
 public class DrugInfoAsyncTask extends AsyncTask<Activity, Void, Void>  {
@@ -51,14 +52,14 @@ public class DrugInfoAsyncTask extends AsyncTask<Activity, Void, Void>  {
                 @Override
                 public void run() {
                     new AlertDialog.Builder(activity)
-                            .setTitle("Operation failed")
-                            .setMessage("Failed to download drug information. Please check your internet connection and try again.")
-                            .setPositiveButton("Retry", new DialogInterface.OnClickListener() {
+                            .setTitle(activity.getString(R.string.operation_failed))
+                            .setMessage(activity.getString(R.string.failed_download_drug_info))
+                            .setPositiveButton(activity.getString(R.string.retry), new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     callback.searchDrug(drugName);
                                 }
                             })
-                            .setNegativeButton("Return to menu", new DialogInterface.OnClickListener() {
+                            .setNegativeButton(activity.getString(R.string.return_to_menu), new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     callback.finishActivity();
                                 }
