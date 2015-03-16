@@ -165,4 +165,12 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
         return string == null || string.length() < 2 ? string :
                 Character.toUpperCase(string.charAt(0)) + string.substring(1);
     }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState)
+    {
+        super.onRestoreInstanceState(savedInstanceState);
+        clickSearch(null);
+    }
+
 }
