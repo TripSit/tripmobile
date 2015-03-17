@@ -3,7 +3,7 @@
 
     <!-- USER FACING STRINGS -->
     <!-- The following Strings are seen by the user and need translation and proper grammar -->
-    <string name="app_name">TripMobile</string>
+    <string name="app_name">TripSit</string>
     <string name="btn_combinations">Combinations</string>
     <string name="btn_factsheets">Factsheets</string>
     <string name="btn_generalChat">Chat</string>
