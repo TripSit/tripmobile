@@ -30,10 +30,8 @@
         <activity
             android:name=".factsheets.Factsheets"
             android:label="@string/title_activity_factsheets"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:windowSoftInputMode="stateAlwaysHidden" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".wiki.Wiki"
@@ -47,18 +45,22 @@
         </activity>
         <activity
             android:name=".combinations.Combinations"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_combinations" >
         </activity>
         <activity
             android:name=".settings.Settings"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_settings" >
         </activity>
         <activity
             android:name=".About"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_about" >
         </activity>
         <activity
             android:name=".Contact"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_contact" >
         </activity>
     </application>
