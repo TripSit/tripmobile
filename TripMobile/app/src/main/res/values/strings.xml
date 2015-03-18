@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- User facing, non translating Strings -->
+    <string name="app_name">TripSit</string>
+    <!-- Although these strings technically could be translated, we'd prefer to only receive emails in English right now -->
+    <string name="email_header_prefix">"[TripMobile] "</string>
+    <string name="email_bug_report_header">Bug Report</string>
+    <string name="email_feature_header">Feature Suggestion</string>
+    <string name="email_content_header">Content Update Request</string>
+    <string name="email_say_hi_header">Social Message</string>
+
+    <!-- #################################################### -->
+
     <!-- USER FACING STRINGS -->
     <!-- The following Strings are seen by the user and need translation and proper grammar -->
-    <string name="app_name">TripSit</string>
     <string name="btn_combinations">Combinations</string>
     <string name="btn_factsheets">Factsheets</string>
     <string name="btn_generalChat">Chat</string>
@@ -82,6 +92,15 @@
     <string name="failed_download_combinations">Failed to download combinations information. Please check your internet connection and try again.</string>
     <string name="failed_download_drug_information">"Error returned when fetching drug information: "</string>
     <string name="error_email_client">You need to install an email client to use the email feature</string>
+    <string name="bug_report_email">Please fill out the following information before sending this email.\n
+\n
+Version of android: \n
+Device: \n
+What happened before you saw the bug:\n
+What is the bug? Does the app crash or function unusually: \n
+If you\'re happy for us to contact you to request more details, please provide your IRC nick or email address: </string>
+
+    <!-- #################################################### -->
 
     <!-- HIDDEN STRINGS -->
     <!-- The following Strings should be hidden from the user, and therefore don't require any translation -->
@@ -102,5 +121,10 @@
     <string name="shared_preferences_date">DATE.</string>
     <string name="txt_chat">drugs</string>
     <string name="str_channel_prefix">#</string>
+    <string name="mailto">mailto:</string>
+    <string name="android_email_address">android@tripsit.me</string>
+    <string name="content_email_address">content@tripsit.me</string>
+    <string name="say_hi_email_address">tripsitters@tripsit.me</string>
+
 
 </resources>

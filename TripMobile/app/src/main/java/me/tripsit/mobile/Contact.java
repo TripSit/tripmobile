@@ -10,24 +10,6 @@ import me.tripsit.mobile.builders.LayoutBuilder;
 
 public class Contact extends TripMobileActivity {
 
-    private static final String PREFIX = "[TripMobile] ";
-    private static final String ANDROID_ADDRESS = "android@tripsit.me";
-    private static final String BUG_REPORT_SUBJECT = PREFIX + "Bug Report";
-    private static final String SUGGESTIONS_SUBJECT = PREFIX + "Feature Suggestion";
-    private static final String CONTENT_ADDRESS = "content@tripsit.me";
-    private static final String CONTENT_SUBJECT = PREFIX + "Content Update Request";
-    private static final String SAY_HI_ADDRESS = "tripsitters@tripsit.me";
-    private static final String SAY_HI_SUBJECT = PREFIX + "Social Message";
-    private static final String MAILTO = "mailto:";
-    private static final String BUG_REPORT_TEXT = "Please fill out the following information before sending this email.\n" +
-            "\n" +
-            "Version of android: \n" +
-            "Device: \n" +
-            "What happened before you saw the bug: \n" +
-            "What is the bug? Does the app crash or function unusually: \n" +
-            "If you're happy for us to contact you to request more details, please provide your IRC nick or email address: ";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,21 +17,24 @@ public class Contact extends TripMobileActivity {
     }
 
     public void bugReport(View view) {
-        sendEmail(ANDROID_ADDRESS, BUG_REPORT_SUBJECT, BUG_REPORT_TEXT);
+        sendEmail(getString(R.string.android_email_address), getEmailHeader(R.string.email_bug_report_header), getString(R.string.bug_report_email));
     }
 
     public void suggestions(View view) {
-        sendEmail(ANDROID_ADDRESS, SUGGESTIONS_SUBJECT);
+        sendEmail(getString(R.string.android_email_address), getEmailHeader(R.string.email_feature_header));
     }
 
     public void content(View view) {
-        sendEmail(CONTENT_ADDRESS, CONTENT_SUBJECT);
+        sendEmail(getString(R.string.content_email_address), getEmailHeader(R.string.email_content_header));
     }
 
     public void sayHi(View view) {
-        sendEmail(SAY_HI_ADDRESS, SAY_HI_SUBJECT);
+        sendEmail(getString(R.string.say_hi_email_address), getEmailHeader(R.string.email_say_hi_header));
     }
 
+    private String getEmailHeader(int headerStringId) {
+        return getString(R.string.email_header_prefix) + getString(headerStringId);
+    }
 
     private void sendEmail(String email, String subject) {
         sendEmail(email, subject, null);
@@ -58,7 +43,7 @@ public class Contact extends TripMobileActivity {
     private void sendEmail(String email, String subject, String text) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.putExtra(Intent.EXTRA_EMAIL, new String[]{email});
-        intent.setData(Uri.parse(MAILTO + email));
+        intent.setData(Uri.parse(getString(R.string.mailto) + email));
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         if (text != null) {
             intent.putExtra(Intent.EXTRA_TEXT, text);
