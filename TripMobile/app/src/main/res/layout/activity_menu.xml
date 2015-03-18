@@ -17,7 +17,7 @@
 
             <TextView
                 style="@style/MenuText"
-                android:text="@string/btn_tripsitChannel" />
+                android:text="@string/tripsit" />
         </LinearLayout>
 
         <LinearLayout style="@style/MenuColumnBuffer" />
@@ -30,7 +30,7 @@
                 android:background="@drawable/selector_trippy_chat" />
             <TextView
                 style="@style/MenuText"
-                android:text="@string/btn_generalChat"/>
+                android:text="@string/chat"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -46,7 +46,7 @@
 
             <TextView
                 style="@style/MenuText"
-                android:text="@string/btn_factsheets" />
+                android:text="@string/factsheets" />
         </LinearLayout>
 
         <LinearLayout style="@style/MenuColumnBuffer" />
@@ -59,7 +59,7 @@
                 android:background="@drawable/selector_trippy_flasks" />
             <TextView
                 style="@style/MenuText"
-                android:text="@string/btn_combinations"/>
+                android:text="@string/combinations"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -75,7 +75,7 @@
 
             <TextView
                 style="@style/MenuText"
-                android:text="@string/btn_wiki" />
+                android:text="@string/wiki" />
         </LinearLayout>
 
         <LinearLayout style="@style/MenuColumnBuffer" />
@@ -88,7 +88,7 @@
                 android:background="@drawable/selector_trippy_gears" />
             <TextView
                 style="@style/MenuText"
-                android:text="@string/btn_settings"/>
+                android:text="@string/settings"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -103,7 +103,7 @@
                 android:background="@drawable/selector_trippy_contact" />
             <TextView
                 style="@style/MenuText"
-                android:text="@string/btn_contact"/>
+                android:text="@string/contact"/>
         </LinearLayout>
 
         <LinearLayout style="@style/MenuColumnBuffer" />
@@ -116,7 +116,7 @@
                 android:background="@drawable/selector_trippy_about" />
             <TextView
                 style="@style/MenuText"
-                android:text="@string/btn_about"/>
+                android:text="@string/about"/>
         </LinearLayout>
 
     </LinearLayout>

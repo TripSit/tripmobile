@@ -4,7 +4,7 @@
     <!-- User facing, non translating Strings -->
     <string name="app_name">TripSit</string>
     <!-- Although these strings technically could be translated, we'd prefer to only receive emails in English right now -->
-    <string name="email_header_prefix">"[TripMobile] "</string>
+    <string name="email_header_prefix">[TripMobile] </string>
     <string name="email_bug_report_header">Bug Report</string>
     <string name="email_feature_header">Feature Suggestion</string>
     <string name="email_content_header">Content Update Request</string>
@@ -14,30 +14,42 @@
 
     <!-- USER FACING STRINGS -->
     <!-- The following Strings are seen by the user and need translation and proper grammar -->
-    <string name="btn_combinations">Combinations</string>
-    <string name="btn_factsheets">Factsheets</string>
-    <string name="btn_generalChat">Chat</string>
-    <string name="btn_search">Search</string>
-    <string name="btn_tripsitChannel">Tripsit</string>
-    <string name="btn_wiki">Wiki</string>
-    <string name="str_tripsitLogo">Tripsit Logo</string>
-    <string name="str_factsheets_intro">All data is taken from the tripbot API which can be found at http://tripbot.tripsit.me/factsheet. Please use this as rough guidelines, and check as many sources as possible before ingesting a substance.</string>
-    <string name="title_activity_chat">ChatActivity</string>
-    <string name="title_activity_factsheets">Tripsit Factsheets</string>
-    <string name="title_activity_wiki">Wiki</string>
-    <string name="tab_images">Images</string>
-    <string name="tab_wiki">Wiki Page</string>
-    <string name="txt_drugName">Drug or alias</string>
-    <string name="title_activity_combinations">Combinations</string>
-    <string name="action_settings">Settings</string>
+    <string name="logo">Tripsit Logo</string>
+    <!-- Menu -->
+    <string name="combinations">Combinations</string>
+    <string name="factsheets">Factsheets</string>
+    <string name="chat">Chat</string>
+    <string name="tripsit">Tripsit</string>
+    <string name="wiki">Wiki</string>
+    <string name="settings">Settings</string>
+    <string name="contact">Contact</string>
+    <string name="about">About</string>
+
+    <!-- Chat -->
+    <string name="chat_activity">Chat</string>
+
+    <!-- Factsheets -->
+    <string name="factsheets_default_search">Drug or alias</string>
+    <string name="factsheets_intro">All data is taken from the tripbot API which can be found at http://tripbot.tripsit.me/factsheet. Please use this as rough guidelines, and check as many sources as possible before ingesting a substance.</string>
+    <string name="search">Search</string>
+    <string name="aliases">Aliases</string>
+    <string name="summary">Summary</string>
+    <string name="dose">Dose</string>
+    <string name="effects">Effects</string>
+    <string name="categories">Categories</string>
+    <string name="timing">Timing</string>
+    <string name="onset">Onset: </string>
+    <string name="duration">Duration: </string>
+
+    <!-- Combinations -->
     <string name="str_safesynergy_header"><![CDATA[Safe & Synergy]]></string>
     <string name="str_safenosynergy_header"><![CDATA[Safe & No Synergy]]></string>
     <string name="str_safedecrease_header"><![CDATA[Safe & Decrease]]></string>
     <string name="str_unsafe_header">Unsafe</string>
     <string name="str_serotoninsyndrome_header">Serotonin Syndrome</string>
     <string name="str_deadly_header">Deadly</string>
-    <string name="btn_settings">Settings</string>
-    <string name="title_activity_settings">Settings</string>
+
+    <!-- Settings -->
     <string name="str_cache_header">Cache Freshness</string>
     <!-- Use 'getString(R.string.str_cache_content, getString(R.string.app_name)))' to retrieve the following String -->
     <string name="str_cache_content">%1$s automatically saves downloaded information to minimise your data usage. This setting lets you modify how long that data is kept before being downloaded again.</string>
@@ -56,42 +68,22 @@
     <string name="str_theme_header">Theme</string>
     <string name="btn_lightTheme">Light</string>
     <string name="btn_darkTheme">Dark</string>
-    <string name="btn_contact">Contact</string>
-    <string name="btn_about">About</string>
-    <string name="title_activity_about">About</string>
-    <string name="hello_world">Hello world!</string> <!-- TODO: remove -->
-    <string name="title_activity_contact">Contact</string>
-    <string name="str_contact_header">Contact Us</string>
-    <string name="str_contact_content">Got any feedback about the app or any of the information we display? Or maybe you just want to say hello or ask a question? The links below will let you email us with any feedback, or you can always go back to the main menu and chat with us live on IRC. Join the #content channel for sources and more information on the content we provide.</string>
-    <string name="btn_bug_report_text">Report a bug</string>
-    <string name="btn_suggestions_text">Suggestions / Requests</string>
-    <string name="btn_content_text">Issues with content / information</string>
-    <string name="btn_say_hi_text">Say hello!</string>
+
+    <!-- About -->
     <string name="str_about_header">About TripSit</string>
     <string name="str_about_content">This app is created by TripSit, an organisation which helps to provide factual information about drugs and how to reduce the harms involved in using them. We also have an active IRC (internet relay chat) network where we provide tripsitting services, harm reduction advice, and general chat.\nhttp://www.tripsit.me/</string>
     <string name="str_disclaimer_header">Disclaimer</string>
     <string name="str_disclaimer_content">Although we have a team dedicated to keeping the information on this app up to date, it is not always possible to provide 100% accurate information on the safety level of drugs. The information here should be used as guidelines only, and it is important to do your own research from multiple sources before ingesting a substance. We also strongly advise using a testing kit and scales to ensure you are taking the correct dosage. These can both be bought online for reasonable prices.</string>
     <string name="str_support_header">Support TripSit</string>
     <string name="str_support_content">TripSit is a completely free service run by volunteers. If you wish to help out, feel free to join the IRC, follow and share our content on social media, or make a donation to keep the servers running.</string>
-    <string name="aliases">Aliases</string>
-    <string name="summary">Summary</string>
-    <string name="dose">Dose</string>
-    <string name="effects">Effects</string>
-    <string name="categories">Categories</string>
-    <string name="timing">Timing</string>
-    <string name="wiki">Wiki</string>
-    <string name="onset">"Onset: "</string>
-    <string name="duration">"Duration: "</string>
-    <string name="operation_failed">Operation failed</string>
-    <string name="retry">Retry</string>
-    <string name="return_to_menu">Return to menu</string>
-    <string name="ok">Ok</string>
-    <string name="failed_download_drug_info">Failed to download drug information. Please check your internet connection and try again.</string>
-    <string name="failed_download_drug_names">Could not retrieve drug names from tripbot interface. Search may still work but autocomplete suggestions will not be present.</string>
-    <string name="failed_parse_combinations">"Failed to parse combinations text, please report this error: "</string>
-    <string name="failed_download_combinations">Failed to download combinations information. Please check your internet connection and try again.</string>
-    <string name="failed_download_drug_information">"Error returned when fetching drug information: "</string>
-    <string name="error_email_client">You need to install an email client to use the email feature</string>
+
+    <!-- Contact -->
+    <string name="str_contact_header">Contact Us</string>
+    <string name="str_contact_content">Got any feedback about the app or any of the information we display? Or maybe you just want to say hello or ask a question? The links below will let you email us with any feedback, or you can always go back to the main menu and chat with us live on IRC. Join the #content channel for sources and more information on the content we provide.</string>
+    <string name="btn_bug_report_text">Report a bug</string>
+    <string name="btn_suggestions_text">Suggestions / Requests</string>
+    <string name="btn_content_text">Issues with content / information</string>
+    <string name="btn_say_hi_text">Say hello!</string>
     <string name="bug_report_email">Please fill out the following information before sending this email.\n
 \n
 Version of android: \n
@@ -99,6 +91,18 @@ Device: \n
 What happened before you saw the bug:\n
 What is the bug? Does the app crash or function unusually: \n
 If you\'re happy for us to contact you to request more details, please provide your IRC nick or email address: </string>
+
+    <!-- Error handling -->
+    <string name="operation_failed">Operation failed</string>
+    <string name="retry">Retry</string>
+    <string name="return_to_menu">Return to menu</string>
+    <string name="ok">Ok</string>
+    <string name="failed_download_drug_info">Failed to download drug information. Please check your internet connection and try again.</string>
+    <string name="failed_download_drug_names">Could not retrieve drug names from tripbot interface. Search may still work but autocomplete suggestions will not be present.</string>
+    <string name="failed_parse_combinations">Failed to parse combinations text, please report this error: </string>
+    <string name="failed_download_combinations">Failed to download combinations information. Please check your internet connection and try again.</string>
+    <string name="failed_download_drug_information">Error returned when fetching drug information: </string>
+    <string name="error_email_client">You need to install an email client to use the email feature</string>
 
     <!-- #################################################### -->
 
