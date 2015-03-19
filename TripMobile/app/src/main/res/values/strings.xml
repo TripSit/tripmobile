@@ -38,8 +38,8 @@
     <string name="effects">Effects</string>
     <string name="categories">Categories</string>
     <string name="timing">Timing</string>
-    <string name="onset">Onset: </string>
-    <string name="duration">Duration: </string>
+    <string name="onset">"Onset: "</string>
+    <string name="duration">"Duration: "</string>
 
     <!-- Combinations -->
     <string name="str_safesynergy_header"><![CDATA[Safe & Synergy]]></string>
@@ -100,7 +100,7 @@ If you\'re happy for us to contact you to request more details, please provide y
     <string name="failed_download_drug_info">Failed to download drug information. Please check your internet connection and try again.</string>
     <string name="failed_parse_drug_info">"Failed parsing drug: "</string>
     <string name="failed_download_drug_names">Could not retrieve drug names from tripbot interface. Search may still work but autocomplete suggestions will not be present.</string>
-    <string name="failed_parse_combinations">"Failed to parse combinations text, please report this error: </string>
+    <string name="failed_parse_combinations">"Failed to parse combinations text, please report this error: "</string>
     <string name="failed_download_combinations">Failed to download combinations information. Please check your internet connection and try again.</string>
     <string name="error_email_client">You need to install an email client to use the email feature</string>
 
