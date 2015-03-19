@@ -1,0 +1,13 @@
+Title: TripSit Mobile
+Short Description: Harm reduction information and live online support for drug users, from TripSit. (80 chars)
+An easy way to check drug information and access live support for drug users. (Teknos' suggestion, 77 chars)
+
+Full Description: Brought to you by TripSit, an organisation leading the online harm reduction community, this app provides a substantial amount of content intended to help users reduce the harm involved in taking drugs. TripSit collects relevant and easily digestible data on most recreational drugs, including recommended dosages and interactions with other substances, and publishes it online at http://factsheets.tripsit.me. This app pulls data directly from our database, which is constantly updated to reflect the latest scientific and anecdotal research.
+
+We also provide chat rooms where people can get advice from real people without fear of persecution or judgement. The chat option connects to the #tripsit channel, which is used to provide care and assistance to people having a difficult time on a substance. Our other channels can be used for general conversation, to ask questions about the content we provide or to get more information on how to reduce the harm involved in drug use.
+
+Please note that this information is presented for educational purposes only, and cannot include all of the information required to make informed decisions regarding drug use; all drugs affect every user differently. Dosage and combination data is provided as a general guideline, not as a recommendation and not as medical advice. If you believe you are in need of medical aid, then seek medical attention immediately. TripSit does not endorse drug use, and while our team makes a best effort to provide accurate information, we do not claim that it is 100% correct. Always do your research and be safe.
+
+While this app comes in many languages, we ask that users use English in the main chat rooms. This helps ensure the best level of communication to get advice across to users. We also ask that users are mindful of the two primary rules: Keep a positive attitude, and no solicitation. The full rules of our chat network can be found at https://wiki.tripsit.me/wiki/Rules.
+
+http://tripsit.me/

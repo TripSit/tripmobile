@@ -1,0 +1,108 @@
+Please tranlsate all text except for that inside the < and > brackets. Join http://chat.tripsit.me and ask jimmycarr or the team in #content if you have any questions. Thanks :)
+
+<!--Store Description-->
+Title: TripSit Mobile
+Short Description: Harm reduction information and live online support for drug users, from TripSit. (80 chars)
+An easy way to check drug information and access live support for drug users. (Teknos' suggestion, 77 chars)
+
+Full Description: Brought to you by TripSit, an organisation leading the online harm reduction community, this app provides a substantial amount of content intended to help users reduce the harm involved in taking drugs. TripSit collects relevant and easily digestible data on most recreational drugs, including recommended dosages and interactions with other substances, and publishes it online at http://factsheets.tripsit.me. This app pulls data directly from our database, which is constantly updated to reflect the latest scientific and anecdotal research.
+
+We also provide chat rooms where people can get advice from real people without fear of persecution or judgement. The chat option connects to the #tripsit channel, which is used to provide care and assistance to people having a difficult time on a substance. Our other channels can be used for general conversation, to ask questions about the content we provide or to get more information on how to reduce the harm involved in drug use.
+
+Please note that this information is presented for educational purposes only, and cannot include all of the information required to make informed decisions regarding drug use; all drugs affect every user differently. Dosage and combination data is provided as a general guideline, not as a recommendation and not as medical advice. If you believe you are in need of medical aid, then seek medical attention immediately. TripSit does not endorse drug use, and while our team makes a best effort to provide accurate information, we do not claim that it is 100% correct. Always do your research and be safe.
+
+While this app comes in many languages, we ask that users use English in the main chat rooms. This helps ensure the best level of communication to get advice across to users. We also ask that users are mindful of the two primary rules: Keep a positive attitude, and no solicitation. The full rules of our chat network can be found at https://wiki.tripsit.me/wiki/Rules.
+
+http://tripsit.me/
+
+<!--Application Strings-->
+
+<!-- The following Strings are seen by the user and need translation and proper grammar -->
+Tripsit Logo
+<!-- Menu -->
+Combinations
+Factsheets
+Chat
+Tripsit
+Wiki
+Settings
+Contact
+About
+
+<!-- Chat -->
+Chat
+
+<!-- Factsheets -->
+Drug or alias
+All data is taken from the tripbot API which can be found at http://tripbot.tripsit.me/factsheet. Please use this as rough guidelines, and check as many sources as possible before ingesting a substance.
+Search
+Aliases
+Summary
+Dose
+Effects
+Categories
+Timing
+
+<!-- Combinations -->
+Safe & Synergy
+Safe & No Synergy
+Safe & Decrease
+Unsafe
+Serotonin Syndrome
+Deadly
+
+<!-- Settings -->
+Cache Freshness
+
+___ automatically saves downloaded information to minimise your data usage. This setting lets you modify how long that data is kept before being downloaded again.
+0days
+
+day
+days
+
+Chat channel
+option from the main menu.
+Save
+
+New default channel is now #___
+
+#___ is not a valid channel name
+Theme
+Light
+Dark
+
+<!-- About -->
+About TripSit
+This app is created by TripSit, an organisation which helps to provide factual information about drugs and how to reduce the harms involved in using them. We also have an active IRC (internet relay chat) network where we provide tripsitting services, harm reduction advice, and general chat.http://www.tripsit.me/
+Disclaimer
+Although we have a team dedicated to keeping the information on this app up to date, it is not always possible to provide 100% accurate information on the safety level of drugs. The information here should be used as guidelines only, and it is important to do your own research from multiple sources before ingesting a substance. We also strongly advise using a testing kit and scales to ensure you are taking the correct dosage. These can both be bought online for reasonable prices.
+Support TripSit
+TripSit is a completely free service run by volunteers. If you wish to help out, feel free to join the IRC, follow and share our content on social media, or make a donation to keep the servers running.
+
+<!-- Contact -->
+Contact Us
+Got any feedback about the app or any of the information we display? Or maybe you just want to say hello or ask a question? The links below will let you email us with any feedback, or you can always go back to the main menu and chat with us live on IRC. Join the #content channel for sources and more information on the content we provide.
+Report a bug
+Suggestions / Requests
+Issues with content / information
+Say hello!
+Please fill out the following information before sending this email.
+
+Version of android: 
+Device: 
+What happened before you saw the bug:
+What is the bug? Does the app crash or function unusually: 
+If you're happy for us to contact you to request more details, please provide your IRC nick or email address: 
+
+<!-- Error handling -->
+Operation failed
+Retry
+Return to menu
+Ok
+Failed to download drug information. Please check your internet connection and try again.
+
+Could not retrieve drug names from tripbot interface. Search may still work but autocomplete suggestions will not be present.
+
+Failed to download combinations information. Please check your internet connection and try again.
+You need to install an email client to use the email feature
+
