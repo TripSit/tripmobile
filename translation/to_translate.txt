@@ -2,8 +2,7 @@ Please tranlsate all text except for that inside the < and > brackets. Join http
 
 <!--Store Description-->
 Title: TripSit Mobile
-Short Description: Harm reduction information and live online support for drug users, from TripSit. (80 chars)
-An easy way to check drug information and access live support for drug users. (Teknos' suggestion, 77 chars)
+Short Description (80 CHARACTERS OR LESS): Harm reduction information and live online support for drug users from TripSit
 
 Full Description: Brought to you by TripSit, an organisation leading the online harm reduction community, this app provides a substantial amount of content intended to help users reduce the harm involved in taking drugs. TripSit collects relevant and easily digestible data on most recreational drugs, including recommended dosages and interactions with other substances, and publishes it online at http://factsheets.tripsit.me. This app pulls data directly from our database, which is constantly updated to reflect the latest scientific and anecdotal research.
 
