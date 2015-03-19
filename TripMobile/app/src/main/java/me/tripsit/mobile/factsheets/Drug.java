@@ -62,7 +62,7 @@ public class Drug {
             String error = data.getString("err");
             if (error != null && error.trim().length() > 0 && !"null".equals(error) && !"false".equals(error)) {
                 String message = data.has("msg") ? data.getString("msg") : error;
-                throw new JSONException(activity.getString(R.string.failed_download_drug_information) + message);
+                throw new JSONException(activity.getString(R.string.failed_parse_drug_info) + message);
             }
         }
     }
