@@ -50,7 +50,7 @@
                 <TextView
                     style="@style/CombinationsHeader"
                     android:background="@color/deadly_background"
-                    android:text="@string/str_deadly_header"
+                    android:text="@string/deadly"
                     android:id="@+id/txt_deadly_header" />
 
                 <TextView
@@ -61,7 +61,7 @@
                 <TextView
                     style="@style/CombinationsHeader"
                     android:background="@color/serotoninsyndrome_background"
-                    android:text="@string/str_serotoninsyndrome_header"
+                    android:text="@string/serotonin_syndrome"
                     android:id="@+id/txt_serotoninsyndrome_header" />
 
                 <TextView
@@ -72,7 +72,7 @@
                 <TextView
                     style="@style/CombinationsHeader"
                     android:background="@color/unsafe_background"
-                    android:text="@string/str_unsafe_header"
+                    android:text="@string/unsafe"
                     android:id="@+id/txt_unsafe_header" />
 
                 <TextView
@@ -83,7 +83,7 @@
                 <TextView
                     style="@style/CombinationsHeader"
                     android:background="@color/safedecrease_background"
-                    android:text="@string/str_safedecrease_header"
+                    android:text="@string/safe_decrease"
                     android:id="@+id/txt_safedecrease_header" />
 
                 <TextView
@@ -94,7 +94,7 @@
                 <TextView
                     style="@style/CombinationsHeader"
                     android:background="@color/safenosynergy_background"
-                    android:text="@string/str_safenosynergy_header"
+                    android:text="@string/safe_no_synergy"
                     android:id="@+id/txt_safenosynergy_header" />
 
                 <TextView
@@ -105,7 +105,7 @@
                 <TextView
                     style="@style/CombinationsHeader"
                     android:background="@color/safesynergy_background"
-                    android:text="@string/str_safesynergy_header"
+                    android:text="@string/safe_synergy"
                     android:id="@+id/txt_safesynergy_header" />
 
                 <TextView

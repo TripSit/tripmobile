@@ -15,7 +15,7 @@
             style="@style/LargeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/str_about_header"
+            android:text="@string/about_header"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:autoLink="all"
-            android:text="@string/str_about_content"
+            android:text="@string/about_content"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
@@ -32,7 +32,7 @@
             style="@style/LargeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/str_disclaimer_header"
+            android:text="@string/disclaimer_header"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
@@ -40,7 +40,7 @@
             style="@style/MediumText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/str_disclaimer_content"
+            android:text="@string/disclaimer_content"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
@@ -48,7 +48,7 @@
             style="@style/LargeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/str_support_header"
+            android:text="@string/support_header"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
@@ -56,7 +56,7 @@
             style="@style/MediumText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/str_support_content"
+            android:text="@string/support_content"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <LinearLayout

@@ -42,48 +42,48 @@
     <string name="duration">"Duration: "</string>
 
     <!-- Combinations -->
-    <string name="str_safesynergy_header"><![CDATA[Safe & Synergy]]></string>
-    <string name="str_safenosynergy_header"><![CDATA[Safe & No Synergy]]></string>
-    <string name="str_safedecrease_header"><![CDATA[Safe & Decrease]]></string>
-    <string name="str_unsafe_header">Unsafe</string>
-    <string name="str_serotoninsyndrome_header">Serotonin Syndrome</string>
-    <string name="str_deadly_header">Deadly</string>
+    <string name="safe_synergy"><![CDATA[Safe & Synergy]]></string>
+    <string name="safe_no_synergy"><![CDATA[Safe & No Synergy]]></string>
+    <string name="safe_decrease"><![CDATA[Safe & Decrease]]></string>
+    <string name="unsafe">Unsafe</string>
+    <string name="serotonin_syndrome">Serotonin Syndrome</string>
+    <string name="deadly">Deadly</string>
 
     <!-- Settings -->
-    <string name="str_cache_header">Cache Freshness</string>
+    <string name="cache_freshness">Cache Freshness</string>
     <!-- Use 'getString(R.string.str_cache_content, getString(R.string.app_name)))' to retrieve the following String -->
-    <string name="str_cache_content">%1$s automatically saves downloaded information to minimise your data usage. This setting lets you modify how long that data is kept before being downloaded again.</string>
+    <string name="cache_freshness_description">%1$s automatically saves downloaded information to minimise your data usage. This setting lets you modify how long that data is kept before being downloaded again.</string>
     <string name="default_cache_days">0\ndays</string>
     <plurals name="days">
         <item quantity="one">day</item>
         <item quantity="other">days</item>
     </plurals>
-    <string name="str_channel_header">Chat channel</string>
-    <string name="str_channel_content">Modify the default channel you will connect to when using the \"Chat\" option from the main menu.</string>
-    <string name="btn_chat_save">Save</string>
-    <!-- Use 'getString(R.string.str_savedChannel, "#channel")' to retrieve the following String -->
-    <string name="str_savedChannel">New default channel is now #%1$s</string>
-    <!-- Use 'getString(R.string.str_invalidChannel, "#channel")' to retrieve the following String -->
-    <string name="str_invalidChannel">#%1$s is not a valid channel name</string>
-    <string name="str_theme_header">Theme</string>
-    <string name="btn_lightTheme">Light</string>
-    <string name="btn_darkTheme">Dark</string>
+    <string name="chat_channel">Chat channel</string>
+    <string name="chat_channel_content">Modify the default channel you will connect to when using the \"Chat\" option from the main menu.</string>
+    <string name="save">Save</string>
+    <!-- Use 'getString(R.string.chat_channel_toast, "#channel")' to retrieve the following String -->
+    <string name="chat_channel_toast">New default channel is now #%1$s</string>
+    <!-- Use 'getString(R.string.invalid_channel, "#channel")' to retrieve the following String -->
+    <string name="invalid_channel">#%1$s is not a valid channel name</string>
+    <string name="theme">Theme</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
 
     <!-- About -->
-    <string name="str_about_header">About TripSit</string>
-    <string name="str_about_content">This app is created by TripSit, an organisation which helps to provide factual information about drugs and how to reduce the harms involved in using them. We also have an active IRC (internet relay chat) network where we provide tripsitting services, harm reduction advice, and general chat.\nhttp://www.tripsit.me/</string>
-    <string name="str_disclaimer_header">Disclaimer</string>
-    <string name="str_disclaimer_content">Although we have a team dedicated to keeping the information on this app up to date, it is not always possible to provide 100% accurate information on the safety level of drugs. The information here should be used as guidelines only, and it is important to do your own research from multiple sources before ingesting a substance. We also strongly advise using a testing kit and scales to ensure you are taking the correct dosage. These can both be bought online for reasonable prices.</string>
-    <string name="str_support_header">Support TripSit</string>
-    <string name="str_support_content">TripSit is a completely free service run by volunteers. If you wish to help out, feel free to join the IRC, follow and share our content on social media, or make a donation to keep the servers running.</string>
+    <string name="about_header">About TripSit</string>
+    <string name="about_content">This app is created by TripSit, an organisation which helps to provide factual information about drugs and how to reduce the harms involved in using them. We also have an active IRC (internet relay chat) network where we provide tripsitting services, harm reduction advice, and general chat.\nhttp://www.tripsit.me/</string>
+    <string name="disclaimer_header">Disclaimer</string>
+    <string name="disclaimer_content">Although we have a team dedicated to keeping the information on this app up to date, it is not always possible to provide 100% accurate information on the safety level of drugs. The information here should be used as guidelines only, and it is important to do your own research from multiple sources before ingesting a substance. We also strongly advise using a testing kit and scales to ensure you are taking the correct dosage. These can both be bought online for reasonable prices.</string>
+    <string name="support_header">Support TripSit</string>
+    <string name="support_content">TripSit is a completely free service run by volunteers. If you wish to help out, feel free to join the IRC, follow and share our content on social media, or make a donation to keep the servers running.</string>
 
     <!-- Contact -->
-    <string name="str_contact_header">Contact Us</string>
-    <string name="str_contact_content">Got any feedback about the app or any of the information we display? Or maybe you just want to say hello or ask a question? The links below will let you email us with any feedback, or you can always go back to the main menu and chat with us live on IRC. Join the #content channel for sources and more information on the content we provide.</string>
-    <string name="btn_bug_report_text">Report a bug</string>
-    <string name="btn_suggestions_text">Suggestions / Requests</string>
-    <string name="btn_content_text">Issues with content / information</string>
-    <string name="btn_say_hi_text">Say hello!</string>
+    <string name="contact_header">Contact Us</string>
+    <string name="contact_content">Got any feedback about the app or any of the information we display? Or maybe you just want to say hello or ask a question? The links below will let you email us with any feedback, or you can always go back to the main menu and chat with us live on IRC. Join the #content channel for sources and more information on the content we provide.</string>
+    <string name="bug_report">Report a bug</string>
+    <string name="suggestions">Suggestions / Requests</string>
+    <string name="content_issues">Issues with content / information</string>
+    <string name="say_hi">Say hello!</string>
     <string name="bug_report_email">Please fill out the following information before sending this email.\n
 \n
 Version of android: \n

@@ -53,9 +53,9 @@ public class Settings extends TripMobileActivity {
         Toast toast;
         if (channel.matches("[a-zA-Z0-9]+")) {
             SharedPreferencesManager.saveChatChannel(this, channel);
-            toast = Toast.makeText(getApplicationContext(), getString(R.string.str_savedChannel, channel), Toast.LENGTH_SHORT);
+            toast = Toast.makeText(getApplicationContext(), getString(R.string.chat_channel_toast, channel), Toast.LENGTH_SHORT);
         } else {
-            toast = Toast.makeText(getApplicationContext(), getString(R.string.str_invalidChannel, channel), Toast.LENGTH_SHORT);
+            toast = Toast.makeText(getApplicationContext(), getString(R.string.invalid_channel, channel), Toast.LENGTH_SHORT);
         }
         toast.show();
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -88,7 +88,7 @@ public class Settings extends TripMobileActivity {
 
     private void setAppNameOnTextContent() {
         TextView cacheContent = (TextView) findViewById(R.id.txt_cache_content);
-        cacheContent.setText(getString(R.string.str_cache_content, getString(R.string.app_name)));
+        cacheContent.setText(getString(R.string.cache_freshness_description, getString(R.string.app_name)));
     }
 
     private void setUpSeekBar() {

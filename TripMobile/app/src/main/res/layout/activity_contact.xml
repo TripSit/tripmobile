@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/str_contact_header"
+            android:text="@string/contact_header"
             android:id="@+id/txt_conctact_header" />
 
         <TextView
@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/str_contact_content"
+            android:text="@string/contact_content"
             android:id="@+id/txt_channel_content" />
 
         <LinearLayout
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="bugReport"
-            android:text="@string/btn_bug_report_text" />
+            android:text="@string/bug_report" />
 
         <LinearLayout
             android:layout_height="10dp"
@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="suggestions"
-            android:text="@string/btn_suggestions_text" />
+            android:text="@string/suggestions" />
 
         <LinearLayout
             android:layout_height="10dp"
@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="content"
-            android:text="@string/btn_content_text" />
+            android:text="@string/content_issues" />
 
         <LinearLayout
             android:layout_height="10dp"
@@ -72,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="sayHi"
-            android:text="@string/btn_say_hi_text" />
+            android:text="@string/say_hi" />
     </LinearLayout>
 
 </ScrollView>

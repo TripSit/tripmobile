@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/str_cache_header"
+            android:text="@string/cache_freshness"
             android:id="@+id/txt_cache_header"
             style="@style/LargeText" />
 
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/str_cache_content"
+            android:text="@string/cache_freshness_description"
             android:id="@+id/txt_cache_content"
             style="@style/MediumText" />
 
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/str_channel_header"
+            android:text="@string/chat_channel"
             android:id="@+id/txt_channel_header"
             style="@style/LargeText"/>
 
@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/str_channel_content"
+            android:text="@string/chat_channel_content"
             android:id="@+id/txt_channel_content"
             style="@style/MediumText" />
 
@@ -102,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3"
                 android:onClick="saveChatChannel"
-                android:text="@string/btn_chat_save" />
+                android:text="@string/save" />
 
         </LinearLayout>
 
@@ -113,7 +113,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/str_theme_header"
+            android:text="@string/theme"
             android:id="@+id/txt_theme_header"
             style="@style/LargeText" />
 
@@ -129,7 +129,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:background="@drawable/selector_button_light"
-                android:text="@string/btn_lightTheme"
+                android:text="@string/light"
                 android:onClick="setThemeLight"/>
 
             <Button
@@ -137,7 +137,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:background="@drawable/selector_button_dark"
-                android:text="@string/btn_darkTheme"
+                android:text="@string/dark"
                 android:onClick="setThemeDark"/>
 
         </LinearLayout>
