@@ -1,0 +1,101 @@
+## TripSit App translation (Dutch, by sevenforall) ##
+
+<!--Store Description-->
+Title: TripSit Mobiel
+Short Description (80 CHARACTERS OR LESS): TripSit's informatie en online hulpverlening voor veilig drugsgebruik
+
+Full Description: TripSit, de toonaangevende online adviseur voor het veilig gebruiken van drugs, verzamelt van vrijwel alle genotsmiddelen de belangrijkste gegevens, zoals doseringen en wisselwerkingen, en publiceert deze op http://factsheets.tripsit.me. Deze gegevens worden voortdurend bijgewerkt op basis van de recentste wetenschappelijke en anekdotische onderzoeken. TripSit heeft deze app ontwikkeld om de belangrijkste informatie mobiel beschikbaar te maken, om het bewustzijn van de risico's van drugsgebruik verder te vergroten.
+
+TripSit biedt ook chatrooms waar zowel drugsgebruikers als deskundigen objectief en onbevooroordeeld advies geven. Onze app verbindt gebruikers met de #tripsit chatroom, waar persoonlijke aandacht wordt besteed aan drugsgebruikers die zich na het nemen van een drug in een moeilijke situatie bevinden. TripSit heeft meerdere chatrooms, waar we ons best doen alle vragen over de verschillende aspecten van drugs of onze organisatie te beantwoorden.
+
+Graag willen wij duidelijk maken dat de informatie en diensten die wij aanbieden enkel voor educatieve doeleinden bedoeld en geschikt is. Wij kunnen niet garanderen dat onze informatie voor elk individu juist en relevant is. Onze gegevens zijn slechts bedoeld als een hulpmiddel, en zeker niet als aanbeveling of medisch advies. Als je onmiddelijke medische zorg nodig hebt, neem dan direct op met de eerste hulp! TripSit moedigt drugsgebruik niet aan, en hoewel wij ons inzetten voor de juistheid van onze informatie, kunnen wij uiteraard niet garanderen dat deze foutloos is. Jezelf goed informeren en een veilige houding heb je zelf in de hand!
+
+Hoewel wij onze app in meerdere talen aanbieden, zouden wij de gebruikers van onze chatrooms willen verzoeken in het Engels te communiceren, om de inhoud van de gesprekken voor iedereen begrijpelijk te houden. Ook willen we je graag op de hoogte brengen van onze twee belangrijkste regels: Wij verwachten een positieve houding, en toleren absoluut geen discussies gerelateerd aan het verhandelen van psychoactieve substanties, of betaalmiddelen. Een overzicht van alle TripSit regels kan worden gevonden op https://wiki.tripsit.me/wiki/Rules.
+
+http://tripsit.me/
+
+<!--Application Strings-->
+
+<!-- The following Strings are seen by the user and need translation and proper grammar -->
+Tripsit Logo
+<!-- Menu -->
+Combinaties
+Tabellen
+Chat
+Tripsit
+Wiki
+Instellingen
+Contact
+Over ons
+
+<!-- Chat -->
+Chat
+
+<!-- Factsheets -->
+Drug of alias
+Alle gegevens zijn afkomstig van de tripbot API op http://tripbot.tripsit.me/factsheet. Gebruik deze gegevens slechts als hulpmiddel, en doe uitvoerig onderzoek voordat je een substantie inneemt.
+Zoeken
+Aliasen
+Samenvatting
+Dosis
+Effecten
+Categorien
+Timing
+
+<!-- Combinations -->
+Veilig & Voordelig
+Veilig & Neutraal
+Veilig & Nadelig
+Onveilig
+Serotoninesyndroom
+Dodelijk
+
+<!-- Settings -->
+Cache retentie
+
+___ slaat gedownloade informatie automatisch op om dataverbruik te beperken. Deze instelling geeft aan hoe vaak de informatie ververst zal worden.
+0dagen
+
+dag
+dagen
+
+Chatroom
+optie in het hoofdmenu.
+Save
+
+Nieuwe standaard chatroom is nu #___
+
+#___ is geen geldige chatroom
+Thema
+Licht
+Donker
+
+<!-- About -->
+Deze app is ontwikkeld door TripSit, een organisatie die objectieve informatie over drugs en het gebruik ervan verstrekt om nadelige gevolgen te voorkomen. We hebben tevens een IRC (Internet Relay Chat) netwerk waar we trippers in nood hulp bieden, adviseren over het veilig gebruiken van drugs, en algemene vragen beantwoorden.http://www.tripsit.me/
+Voorwaarden
+Hoewel we ons best doen deze app van de juiste informatie te voorzien, kunnen wij niet garanderen dat deze informatie ten alle tijden foutloos zal zijn. Gebruik deze gegevens slechts als een hulpmiddel, en doe uitvoerig onderzoek voordat je een substantie inneemt. We adviseren om testkits en nauwkeurige weegschalen aan te schaffen als essentieel hulpmiddel bij het nemen en doseren van drugs. Deze hulpmiddelen zijn makkelijk en goedkoop online te bestellen.
+Steun TripSit
+TripSit is een dienst die gratis door vrijwilligers wordt aangeboden. Wij nodigen je graag uit om jouw bijdrage te leveren op ons IRC netwerk, onze informatie te delen op social media, of te doneren om onze servers online te houden.
+
+<!-- Contact -->
+Contact
+Heb je vragen of opmerkingen over onze app of de informatie die wij verstrekken? Stuur ons dan een e-mail via de onderstaande links, of gebruik ons IRC netwerk dat te vinden is in het hoofdmenu. In de #content chatroom kunnen wij je meer vertellen over onze diensten en je helpen met het vinden van de bronnen voor onze informatie.
+
+Android versie: 
+Apparaat: 
+Wat er gebeurde voordat je de bug opmerkte:
+Wat betreft de bug? Crasht de app, of functioneert deze naar verwachting:
+Als we contact met je mogen opnemen, verstrek dan je IRC gebruikersnaam of je e-mail adres:
+
+<!-- Error handling -->
+Handeling mislukt
+Opnieuw proberen
+Terug naar menu
+Ok
+Informatie over deze drug kon niet worden gedownload. Controleer je internet verbinding en probeer het nogmaals.
+
+Namen van deze drug konden niet worden opgehaald uit de tripbot interface. De zoekfunctie werkt mogelijk wel nog, maar er zullen geen suggesties worden gegeven.
+
+Informatie over combinaties kon niet worden gedownload. Controleer je internet verbinding en probeer het nogmaals.
+Je hebt een e-mailprogramma nodig om de e-mail functie te gebruiken.
+
