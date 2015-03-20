@@ -16,7 +16,6 @@ http://tripsit.me/
 
 <!--Application Strings-->
 
-<!-- The following Strings are seen by the user and need translation and proper grammar -->
 Tripsit Logo
 <!-- Menu -->
 Combinations
