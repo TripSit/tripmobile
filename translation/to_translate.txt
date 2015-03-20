@@ -40,8 +40,8 @@ Dose
 Effects
 Categories
 Timing
-"Onset: "
-"Duration: "
+Onset: 
+Duration: 
 
 <!-- Combinations -->
 Safe & Synergy
@@ -100,9 +100,9 @@ Retry
 Return to menu
 Ok
 Failed to download drug information. Please check your internet connection and try again.
-"Failed parsing drug: "
+Failed parsing drug: 
 Could not retrieve drug names from tripbot interface. Search may still work but autocomplete suggestions will not be present.
-"Failed to parse combinations text, please report this error: "
+Failed to parse combinations text, please report this error: 
 Failed to download combinations information. Please check your internet connection and try again.
 You need to install an email client to use the email feature.
 
