@@ -1,7 +1,7 @@
 Title: TripSit Mobiel
 Short Description (80 CHARACTERS OR LESS): TripSit's informatie en online hulpverlening voor veilig drugsgebruik
 
-Full Description: TripSit, de toonaangevende online adviseur voor het veilig gebruiken van drugs, verzamelt van vrijwel alle genotsmiddelen de belangrijkste gegevens, zoals doseringen en wisselwerkingen, en publiceert deze op http://factsheets.tripsit.me. Deze gegevens worden voortdurend bijgewerkt op basis van de recentste wetenschappelijke en anekdotische onderzoeken. TripSit heeft deze app ontwikkeld om de belangrijkste informatie mobiel beschikbaar te maken, om het bewustzijn van de risico's van drugsgebruik verder te vergroten.
+Full Description: TripSit, de toonaangevende online adviseur voor het veilig gebruiken van drugs, verzamelt van vrijwel alle genotsmiddelen de belangrijkste gegevens, zoals doseringen en wisselwerkingen, en publiceert deze op http://factsheet.tripsit.me. Deze gegevens worden voortdurend bijgewerkt op basis van de recentste wetenschappelijke en anekdotische onderzoeken. TripSit heeft deze app ontwikkeld om de belangrijkste informatie mobiel beschikbaar te maken, om het bewustzijn van de risico's van drugsgebruik verder te vergroten.
 
 TripSit biedt ook chatrooms waar zowel drugsgebruikers als deskundigen objectief en onbevooroordeeld advies geven. Onze app verbindt gebruikers met de #tripsit chatroom, waar persoonlijke aandacht wordt besteed aan drugsgebruikers die zich na het nemen van een drug in een moeilijke situatie bevinden. TripSit heeft meerdere chatrooms, waar we ons best doen alle vragen over de verschillende aspecten van drugs of onze organisatie te beantwoorden.
 

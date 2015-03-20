@@ -1,7 +1,7 @@
 Title: TripSit Mobile
 Short Description (80 CHARACTERS OR LESS): Harm reduction information and live online support for drug users from TripSit
 
-Full Description: Brought to you by TripSit, an organisation leading the online harm reduction community, this app provides a substantial amount of content intended to help users reduce the harm involved in taking drugs. TripSit collects relevant and easily digestible data on most recreational drugs, including recommended dosages and interactions with other substances, and publishes it online at http://factsheets.tripsit.me. This app pulls data directly from our database, which is constantly updated to reflect the latest scientific and anecdotal research.
+Full Description: Brought to you by TripSit, an organisation leading the online harm reduction community, this app provides a substantial amount of content intended to help users reduce the harm involved in taking drugs. TripSit collects relevant and easily digestible data on most recreational drugs, including recommended dosages and interactions with other substances, and publishes it online at http://factsheet.tripsit.me. This app pulls data directly from our database, which is constantly updated to reflect the latest scientific and anecdotal research.
 
 We also provide chat rooms where people can get advice from real people without fear of persecution or judgement. The chat option connects to the #tripsit channel, which is used to provide care and assistance to people having a difficult time on a substance. Our other channels can be used for general conversation, to ask questions about the content we provide or to get more information on how to reduce the harm involved in drug use.
 
