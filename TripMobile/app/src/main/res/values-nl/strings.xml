@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- USER FACING STRINGS -->
+    <!-- The following Strings are seen by the user and need translation and proper grammar -->
+    <string name="logo">Tripsit Logo</string>
+    <!-- Menu -->
+    <string name="combinations">Combinaties</string>
+    <string name="factsheets">Tabellen</string>
+    <string name="chat">Chat</string>
+    <string name="tripsit">Tripsit</string>
+    <string name="wiki">Wiki</string>
+    <string name="settings">Instellingen</string>
+    <string name="contact">Contact</string>
+    <string name="about">Over ons</string>
+
+    <!-- Chat -->
+    <string name="chat_activity">Chat</string>
+
+    <!-- Factsheets -->
+    <string name="factsheets_default_search">Drug of alias</string>
+    <string name="factsheets_intro">Alle gegevens zijn afkomstig van de tripbot API op http://tripbot.tripsit.me/factsheet. Gebruik deze gegevens slechts als hulpmiddel, en doe uitvoerig onderzoek voordat je een substantie inneemt.</string>
+    <string name="search">Zoeken</string>
+    <string name="aliases">Aliasen</string>
+    <string name="summary">Samenvatting</string>
+    <string name="dose">Dosis</string>
+    <string name="effects">Effecten</string>
+    <string name="categories">Categoriën</string>
+    <string name="timing">Timing</string>
+    <string name="onset">"Duur tot effect: "</string>
+    <string name="duration">"Totale duur: "</string>
+
+    <!-- Combinations -->
+    <string name="safe_synergy"><![CDATA[Veilig & Voordelig]]></string>
+    <string name="safe_no_synergy"><![CDATA[Veilig & Neutraal]]></string>
+    <string name="safe_decrease"><![CDATA[Veilig & Nadelig]]></string>
+    <string name="unsafe">Onveilig</string>
+    <string name="serotonin_syndrome">Serotoninesyndroom</string>
+    <string name="deadly">Dodelijk</string>
+
+    <!-- Settings -->
+    <string name="cache_freshness">Cache retentie</string>
+    <!-- Use 'getString(R.string.str_cache_content, getString(R.string.app_name)))' to retrieve the following String -->
+    <string name="cache_freshness_description">%1$s slaat gedownloade informatie automatisch op om dataverbruik te beperken. Deze instelling geeft aan hoe vaak de informatie ververst zal worden.</string>
+    <string name="default_cache_days">0\ndagen</string>
+    <plurals name="days">
+        <item quantity="one">dag</item>
+        <item quantity="other">dagen</item>
+    </plurals>
+    <string name="chat_channel">Chatroom</string>
+    <string name="chat_channel_content">Pas de chatroom aan waarmee je wordt verbonden als je de \"Chat\" optie in het hoofdmenu gebruikt</string>
+    <string name="save">Save</string>
+    <!-- Use 'getString(R.string.chat_channel_toast, "#channel")' to retrieve the following String -->
+    <string name="chat_channel_toast">Nieuwe standaard chatroom is nu #%1$s</string>
+    <!-- Use 'getString(R.string.invalid_channel, "#channel")' to retrieve the following String -->
+    <string name="invalid_channel">#%1$s is geen geldige chatroom</string>
+    <string name="theme">Thema</string>
+    <string name="light">Licht</string>
+    <string name="dark">Donker</string>
+
+    <!-- About -->
+    <string name="about_header">About TripSit</string>
+    <string name="about_content">Deze app is ontwikkeld door TripSit, een organisatie die objectieve informatie over drugs en het gebruik ervan verstrekt om nadelige gevolgen te voorkomen. We hebben tevens een IRC (Internet Relay Chat) netwerk waar we trippers in nood hulp bieden, adviseren over het veilig gebruiken van drugs, en algemene vragen beantwoorden.\nhttp://www.tripsit.me/</string>
+    <string name="disclaimer_header">Voorwaarden</string>
+    <string name="disclaimer_content">Hoewel we ons best doen deze app van de juiste informatie te voorzien, kunnen wij niet garanderen dat deze informatie ten alle tijden foutloos zal zijn. Gebruik deze gegevens slechts als een hulpmiddel, en doe uitvoerig onderzoek voordat je een substantie inneemt. We adviseren om testkits en nauwkeurige weegschalen aan te schaffen als essentieel hulpmiddel bij het nemen en doseren van drugs. Deze hulpmiddelen zijn makkelijk en goedkoop online te bestellen.</string>
+    <string name="support_header">Steun TripSit</string>
+    <string name="support_content">TripSit is een dienst die gratis door vrijwilligers wordt aangeboden. Wij nodigen je graag uit om jouw bijdrage te leveren op ons IRC netwerk, onze informatie te delen op social media, of te doneren om onze servers online te houden.</string>
+
+    <!-- Contact -->
+    <string name="contact_header">Contact</string>
+    <string name="contact_content">Heb je vragen of opmerkingen over onze app of de informatie die wij verstrekken? Stuur ons dan een e-mail via de onderstaande links, of gebruik ons IRC netwerk dat te vinden is in het hoofdmenu. In de #content chatroom kunnen wij je meer vertellen over onze diensten en je helpen met het vinden van de bronnen voor onze informatie.</string>
+    <string name="bug_report">Meld een bug</string>
+    <string name="suggestions">Suggesties / Verzoeken</string>
+    <string name="content_issues">Problemen met inhoud / informatie</string>
+    <string name="say_hi">Zeg hallo!</string>
+    <string name="bug_report_email">Gelieve de volgende gegevens in te vullen voordat je deze e-mail verstuurt.\n
+\n
+Android versie: \n
+Apparaat: \n
+Wat er gebeurde voordat je de bug opmerkte:\n
+Wat betreft de bug? Crasht de app, of functioneert deze naar verwachting: \n
+Als we contact met je mogen opnemen, verstrek dan je IRC gebruikersnaam of je e-mail adres: </string>
+
+    <!-- Error handling -->
+    <string name="operation_failed">Handeling mislukt</string>
+    <string name="retry">Opnieuw proberen</string>
+    <string name="return_to_menu">Terug naar menu</string>
+    <string name="ok">Ok</string>
+    <string name="failed_download_drug_info">Informatie over deze drug kon niet worden gedownload. Controleer je internet verbinding en probeer het nogmaals.</string>
+    <string name="failed_parse_drug_info">"Parsen van drug mislukt: "</string>
+    <string name="failed_download_drug_names">Namen van deze drug konden niet worden opgehaald uit de tripbot interface. De zoekfunctie werkt mogelijk wel nog, maar er zullen geen suggesties worden gegeven.</string>
+    <string name="failed_parse_combinations">"Parsen van combinatie tekst mislukt. Gelieve dit probleem te melden: "</string>
+    <string name="failed_download_combinations">Informatie over combinaties kon niet worden gedownload. Controleer je internet verbinding en probeer het nogmaals.</string>
+    <string name="error_email_client">Je hebt een e-mailprogramma nodig om de e-mail functie te gebruiken.</string>
+
+</resources>
