@@ -35,7 +35,7 @@
             android:paddingBottom="10dp">
 
             <TextView
-                android:ems="2"
+                android:ems="@integer/days_width"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
