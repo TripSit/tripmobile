@@ -39,7 +39,7 @@ Aliasen
 Samenvatting
 Dosis
 Effecten
-Categorien
+Categoriën
 Timing
 
 <!-- Combinations -->
