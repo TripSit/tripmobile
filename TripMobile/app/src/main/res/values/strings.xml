@@ -2,13 +2,13 @@
 <resources>
 
     <!-- User facing, non translating Strings -->
-    <string name="app_name">TripSit</string>
+    <string name="app_name" translatable="false">TripSit</string>
     <!-- Although these strings technically could be translated, we'd prefer to only receive emails in English right now -->
-    <string name="email_header_prefix">[TripMobile] </string>
-    <string name="email_bug_report_header">Bug Report</string>
-    <string name="email_feature_header">Feature Suggestion</string>
-    <string name="email_content_header">Content Update Request</string>
-    <string name="email_say_hi_header">Social Message</string>
+    <string name="email_header_prefix" translatable="false">[TripMobile] </string>
+    <string name="email_bug_report_header" translatable="false">Bug Report</string>
+    <string name="email_feature_header" translatable="false">Feature Suggestion</string>
+    <string name="email_content_header" translatable="false">Content Update Request</string>
+    <string name="email_say_hi_header" translatable="false">Social Message</string>
 
     <!-- #################################################### -->
 
@@ -108,27 +108,27 @@ If you\'re happy for us to contact you to request more details, please provide y
 
     <!-- HIDDEN STRINGS -->
     <!-- The following Strings should be hidden from the user, and therefore don't require any translation -->
-    <string name="wiki_main_page">https://wiki.tripsit.me/wiki/Main_Page</string>
-    <string name="wiki_domain">wiki.tripsit.me</string>
+    <string name="wiki_main_page" translatable="false">https://wiki.tripsit.me/wiki/Main_Page</string>
+    <string name="wiki_domain" translatable="false">wiki.tripsit.me</string>
     <!-- ID comes from https://graph.facebook.com/tripsitme -->
-    <string name="facebook_app">fb://page/575082419170561</string>
-    <string name="facebook_url">https://www.facebook.com/tripsitme</string>
-    <string name="facebook_package">com.facebook.katana</string>
-    <string name="reddit_url">http://www.reddit.com/r/tripsit</string>
-    <string name="twitter_app">twitter://user?screen_name=teamtripsit</string>
-    <string name="twitter_url">https://mobile.twitter.com/teamtripsit</string>
-    <string name="shared_preferences_cache_freshness">CACHE.FRESHNESS</string>
-    <string name="shared_preferences_chat_channel">CHAT.CHANNEL</string>
-    <string name="shared_preferences_theme">THEME</string>
-    <string name="shared_preferences">me.tripsit.mobile.sharedpreferences</string>
-    <string name="shared_preferences_url">URL.</string>
-    <string name="shared_preferences_date">DATE.</string>
-    <string name="txt_chat">drugs</string>
-    <string name="str_channel_prefix">#</string>
-    <string name="mailto">mailto:</string>
-    <string name="android_email_address">android@tripsit.me</string>
-    <string name="content_email_address">content@tripsit.me</string>
-    <string name="say_hi_email_address">tripsitters@tripsit.me</string>
+    <string name="facebook_app" translatable="false">fb://page/575082419170561</string>
+    <string name="facebook_url" translatable="false">https://www.facebook.com/tripsitme</string>
+    <string name="facebook_package" translatable="false">com.facebook.katana</string>
+    <string name="reddit_url" translatable="false">http://www.reddit.com/r/tripsit</string>
+    <string name="twitter_app" translatable="false">twitter://user?screen_name=teamtripsit</string>
+    <string name="twitter_url" translatable="false">https://mobile.twitter.com/teamtripsit</string>
+    <string name="shared_preferences_cache_freshness" translatable="false">CACHE.FRESHNESS</string>
+    <string name="shared_preferences_chat_channel" translatable="false">CHAT.CHANNEL</string>
+    <string name="shared_preferences_theme" translatable="false">THEME</string>
+    <string name="shared_preferences" translatable="false">me.tripsit.mobile.sharedpreferences</string>
+    <string name="shared_preferences_url" translatable="false">URL.</string>
+    <string name="shared_preferences_date" translatable="false">DATE.</string>
+    <string name="txt_chat" translatable="false">drugs</string>
+    <string name="str_channel_prefix" translatable="false">#</string>
+    <string name="mailto" translatable="false">mailto:</string>
+    <string name="android_email_address" translatable="false">android@tripsit.me</string>
+    <string name="content_email_address" translatable="false">content@tripsit.me</string>
+    <string name="say_hi_email_address" translatable="false">tripsitters@tripsit.me</string>
 
 
 </resources>
