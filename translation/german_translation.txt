@@ -1,0 +1,97 @@
+<!--Application Strings-->
+ 
+Tripsit Logo
+<!-- Menu -->
+Kombinationen
+Merkblätter
+Chat
+Tripsit
+Wiki
+Einstellungen
+Kontakt
+Über Uns
+ 
+<!-- Chat -->
+Chat
+ 
+<!-- Factsheets -->
+Droge oder Pseudonym
+ 
+Alle Informationen wird über die tripbot API abgerufen, welche auf http://tripbot.tripsit.me/factsheet gefunden werden kann. Bitte sehe diese als allgemeine Richtlinien an und suche so viele Quellen wie möglich, bevor du eine Substanz konsumierst.
+Suche
+Pseudonyme
+Zusammenfassung
+Dosis
+Effekt
+Kategorien
+Zeit
+Eintritt:
+Dauer:
+ 
+<!-- Combinations -->
+Sicher & Harmonie
+Sicher & Antagonie
+Sicher & Verminderung
+Unsicher
+Serotonin-Syndrom
+Tödlich
+ 
+<!-- Settings -->
+Frische der Daten
+ 
+___ speichert automatisch heruntergelandene Informationen, um deine Bandbreitennutzung zu minimieren. Diese Einstellung lässt dich verändern, wie lange Informationen gespeichert werden, bevor sie erneut heruntergeladen werden.
+0Tage
+ 
+Tag
+Tage
+ 
+Chatraum
+Modifiziert den voreingestellten Chatram, in den du über die "Chat" Option im Hauptmenü verbindest.
+Speichern
+ 
+Der neue voreingestellte Kanal ist nun #___
+ 
+#___ ist nicht der Name eines Kanals
+Theme
+Hell
+Dunkel
+ 
+<!-- About -->
+Über TripSit
+Diese App wurde von TripSit erschaffen, einer Organisation, die dabei hilft, Informationen über Drogen bereitzustellen und die Gefahr deren Benutzung zu minimieren.
+Außerdem haben wir haben einen aktives IRC (internet relay chat) Netzwerk, wo wir einen tripsitting Dienst, Tipps für die Schadensminimierung und einen allgemeinen Chat bereitstelllen.http://www.tripsit.me/
+Enthaftung
+Obwohl unser Team eifrig Informationen zusammenträgt, um diese App stets aktuell zu halten, ist es nicht immer möglich, 100% korrekte Informationen über die Sicherheit von Drogen anzubieten.
+Die hier bereitgestellten Informationen sollten lediglich als Richtlinien angesehen werden, und es ist wichtig, dass du selbst Eigene Forschung mit Hilfe so vieler Quellen wie möglich betreibst, bevor du eie Substanz konsumierst.
+Außerdem raten wir dringend zur Benutzung von Drogentests und Waagen, un sicherzugehen, dass du die richtige Dosis einnimmst. Beides kann für kleines Geld online erworben werden.
+Unterstütze TripSit
+TripSit ist ein komplett kostenloser Dienst, der von Freiwilligen bereitgestellt wird. Falls du mithelfen willst, kannst du gerne im IRC vorbeischauen, folge und teile unsere Inhalte über soziale Netzwerke, oder spende, um das Fortbestehen unserer Server zu garantieren.
+ 
+<!-- Contact -->
+Kontaktiere uns
+Du hast eine Rückmeldung über die App oder die bereitgestellten Daten? Oder willst einfach nur Hallo sagen oder eine Frage stellen? Über die unten stehenden Links kannst du uns eine Email schreiben, und natürlich kannst du auch über das Hauptmenü in den Chat gelangen, um mit uns live im IRC zu reden.
+Trete dem #content Kanal bei, um über unsere Quellen oder mehr Informationen, die wir bereitstellen, zu reden.
+Berichte über Fehler
+Anregungen / Wünsche
+Probleme mit dem Inhalt / Daten
+Sag Hallo!
+Bitte fülle die folgenden Informationen aus, bevor du uns eine Email schickst.
+ 
+Android Version:
+Gerät:
+Was geschah, bevor der Fehler aufgetreten ist:
+Was ist der Fehler? Ist die App abgestürzt oder funktioniert nicht mehr richtig?:
+Falls du Rücksprache benötigst oder mehr Details wissen willst, trage hier bitte deine Email-Addresse oder IRC Namen ein:
+ 
+<!-- Error handling -->
+Operation fehlgeschlagen
+Wiederholung
+Ins Menü zurückkehren
+Ok
+Fehler beim Herunterladen der Daten. Bitte überprüfe deine Verbindung und versuche es erneut.
+Fehler beim
+Failed beim Parsen der Substanz:
+Fehler beim Empfangen der Substanznamen aus der tripbot Schnittstelle. Die Suche kann noch funktionieren, aber die automatische Verwollständigung wird nicht vorhanden sein.
+Fehler beim Parsen des Kombinationstexts, bitte melde diesen Fehler:
+Fehler beim Herunterladen der Kombinationsdaten. Bitte überprüfe deine Verbindung und versuche es erneut.
+Du musst eine Email App installieren, um diese Funktion zu benutzen.
