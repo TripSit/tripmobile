@@ -1,0 +1,13 @@
+<!--Store Description-->
+Título: TripSit Mobile
+Descripción Corta (80 CARACTERES O MENOS): Información para reducir daño y chat de soporte en vivo para los usuarios de drogas de TripSit.
+ 
+Descripción Completa: Traído a ti de TripSit, una organización líder en la comunidad online para la reducción de daño, esta aplicación brinda una cantidad sustancial de contenido con la intención de ayudar a los usuarios a reducir el daño involucrado en el consumo de drogas. TripSit recoge datos relevantes y fáciles de entender en la mayoría de las drogas recreativas, incluyendo dosis recomendada, interacciones con otras sustancias, y todo se publica online en http://factsheets.tripsit.me. Esta aplicación toma los datos directamente de nuestra base de datos, que actualiza constantemente para reflejar las últimas investigaciones científicas y anecdóticas.
+ 
+También nosotros tenemos salas de chat donde uno puede recibir consejos de personas reales sin la preocupación de persecución o juicio. La opción “chat” se conecta al canal #tripsit, que se utiliza para proveer atención y asistencia a las personas que tienen un momento difícil en una sustancia. Los otros canales se pueden utilizar para conversar, hacer preguntas el contenido que proveemos, o para obtener más información sobre cómo reducir el daño involucrado en el uso de las drogas.
+ 
+Por favor tenga en cuenta que esta información se presenta solo con fines educativos, y no puede incluir toda la información necesaria para tomar decisiones informadas sobre el uso de las drogas; todas las drogas afectan a cada usuario de una manera diferente. Los datos sobre dosificación y combinación se ofrece como una guía general y no como una recomendación ni como un consejo médico.  Si crees que estas en necesidad ayuda médica entonces busque asistencia medica inmediatamente. Tripsit no endosa el uso de las drogas, y aunque nuestro equipo hace un mayor esfuerzo para proveer información precisa, no reclamos que es 100% correcto. Siempre hacer tu investigación y cuidar de ti mismo.
+ 
+Aunque esta aplicación viene en muchos idiomas, pedimos que los usuarios usen ingles en las principales salas de chat. Esto ayuda a asegurar el mejor nivel de comunicación para dar consejos a los usuarios. También pedimos que todos los usuarios sean conscientes de las dos reglas principales: Mantener una actitud positiva, y no solicitación. Todas las reglas de nuestro chat se puede encontrar en https://wiki.tripsit.me/wiki/Rules.
+ 
+http://tripsit.me/

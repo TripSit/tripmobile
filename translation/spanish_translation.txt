@@ -1,0 +1,89 @@
+<!--Application Strings-->
+ 
+<!-- The following Strings are seen by the user and need translation and proper grammar -->
+Logo de Tripsit
+<!-- Menu -->
+Combinaciones
+Hoja de datos
+Chat
+Tripsit
+Wiki
+Ajustes
+Contáctanos
+Quienes Somos
+ 
+<!-- Chat -->
+Chat
+ 
+<!-- Factsheets -->
+Droga o alias
+Todos los datos se obtienen de la tripbot IPA que puedes encontrar en http://tripbot.tripsit.me/factsheet. Por favor, use esto como una guía aproximada, y revise todas las fuentes posibles antes de consumir una sustancia.
+Buscar
+Alias
+Resumen
+Dosis
+Efectos
+Categorías
+Sincronización
+ 
+<!-- Combinations -->
+Seguro & Sinergia
+Seguro & No Sinergia
+Seguro & Disminución
+Inseguro
+Síndrome de Serotonina
+Mortal
+ 
+<!-- Settings -->
+Frescura de la Cache
+ 
+___ guarda automáticamente información descargada para minimizar el uso de datos. Esta configuración te permite modificar el tiempo que se conserva los datos antes de ser descargados de nuevo.
+0días
+ 
+día
+días
+ 
+Canal de Chat
+Opción del menú principal.
+Guardar
+ 
+El nuevo canal predeterminado es #___
+ 
+#___ no es un canal valido
+Tema
+Claro
+Oscuro
+ 
+<!-- About -->
+Cerca de TripSit
+Esta aplicación es creada por Tripsit, una organización que ayuda a proveer información concreta sobre el uso de las drogas y como reducir los daños que están involucrados al usarlas. También tenemos una red activa de IRC (Internet Relay Chat) donde ofrecemos servicios de trip sitting (cuidadores), consejos para reducción de daño, y un chat general.  http://www.tripsit.me/
+Descargo d Responsabilidad
+Aunque tenemos un equipo dedicado a mantener la información en esta aplicación es hasta la fecha, no es siempre posible a proveer información 100% precisa sobre el nivel de seguridad de las drogas. La información que ofrecemos aquí se debe usar solamente como una guía, y es importante que hagas tu propia investigación de muchas fuentes diferentes antes de ingerir una sustancia. También recomendamos seriamente  utilizar un kit de prueba de drogas y una balanza para asegurarte de que estas tomando la dosis correcta. Estos dos pueden ser comprados online a precios razonables.
+Apoya a TripSit
+TripSit es un servicio completamente gratuito gestionado por voluntarios. Si deseas ayudar no dude en unirte al IRC, seguir y compartir nuestros contenidos en las redes sociales, o hacer una donación para mantener los servidores funcionando.
+ 
+<!-- Contact -->
+Contáctanos
+¿Tienes algún comentario acerca de la aplicación o de la información que presentamos? O tal vez solo quieres saludar o hacer una pregunta? Los enlaces que aparecen debajo te permitirán enviarnos un correo electrónico con cualquier comentario, o siempre puedes volver al menú principal y chatear con nosotros en vivo en el IRC. Únete al canal #content para fuentes y más información sobre el contenido que ofrecemos.
+Informar de un error
+Sugerencias / Solicitudes
+Problemas con el contenido / información
+Saluda a nosotros!
+Por favor llene la siguiente información antes de enviar el correo.
+ 
+Versión de Android:
+Dispositivo:
+¿Qué pasó antes de ver el error?:
+¿Cuál es el error? Se cuelga la aplicación o funciona inusualmente?:
+Si está bien que ponemos en contacto contigo para pedirte más detalles, por favor provea tu nick de IRC o tu correo electrónico.:
+ 
+<!-- Error handling -->
+Error en la Operación
+Reintentar
+Volver al menú
+Ok
+Error al descargar información de la droga. Por favor, revisa tu conexión e intentar de nuevo.
+ 
+No se pudo obtener los nombres de drogas de interfaz tripbot. La búsqueda aún puede funcionar pero las sugerencias de autocompletado no estará presente.
+ 
+Error al descargar la información de combinaciones. Por favor, revisa tu conexión e intentar de nuevo. Es necesario instalar un cliente de correo electrónico para utilizar la función de correo electrónico.
