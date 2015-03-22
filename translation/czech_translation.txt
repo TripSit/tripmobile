@@ -1,0 +1,90 @@
+<!--Application Strings-->
+ 
+Logo TripSit
+<!-- Menu -->
+Kombinace
+Tabulka informací
+Chat
+TripSit
+Wiki
+Nastavení
+Kontakt
+Info
+ 
+<!-- Chat -->
+Chat
+ 
+<!-- Factsheets -->
+Droga
+Všechna data jsou převzata z tripbot API, které najdete na http://tripbot.tripsit.me/factsheet. Používejte tyto informace jako shrnutí faktů, a před požitím substancí si dohledejte co nejvíce informací.
+Hledat
+Přezdívky
+Shrnutí
+Dávka
+Účinky
+Kategorie
+Načasování
+Náběh:
+Trvání:
+ 
+<!-- Combinations -->
+Bezpečné + Synergie
+Bezpečné + Bez Synergie
+Bezpečné & Zeslabení
+Nebezpečné
+Serotoninový syndrom
+Smrtelné
+ 
+<!-- Settings -->
+Čerstvost cache
+ 
+___ automaticky ukládá stažené informace pro minimalizaci užívání dat. Toto nastavení Vám umožňuje ovlivnit po jakou dobu jsou tyto data skladovány.
+0dní
+ 
+den
+dní
+ 
+Kanál chatu
+Upravte výchozí kanál ke kterému se připojíte po klepnutí na "Chat" v hlavním menu.
+Uložit
+ 
+Nový výchozí kanál je #___
+#___ není platné jméno kanálu
+Vzhled
+Světlý
+Tmavý
+ 
+<!-- About -->
+O TripSitu
+Tato apolikace je vytvořena organizací TripSit, která pomáhá poskytovat přesné informace o drogách, a o minimalizaci škod spojených s jejich užíváním. Máme také Chat, kde poskytujeme rady ohledně minimalizace škod, a promluvu.http://www.tripsit.me/
+Prohlášení
+I když máme tým který se stará o aktualizace informací v této aplikaci, není vždy možné poskytovat 100% přesné informace o bezpečnostní úrovni drog. Poskytované informace by měly být používány pouze jako shrnutí faktů, a před požitím substance je důležité zjistit si detailní informace z více zdrojů. Také doporučujeme používat testovací sady a váhy, aby jste se ujistili že aplikujete správnou dávku. Vše potřebné se dá levně koupit na internetu.
+Podpořte TripSit
+TripSit je služba provozovaná dobrovolníky, zdarma. Pokud si přejete pomoci, připojte se k nám na chat, sdílejte náš obsah na sociálních médiích, nebo poskytněte dar na provoz serverů.
+ 
+<!-- Contact -->
+Kontaktujte nás
+Chcete poskytnout zpětnou vazbu na aplikaci či informace které zobrazujeme? Nebo se jen chcete na něco zeptat? Odkazy níže Vám umožní poslat nám email, nebo můžete zpět do hlavního menu za námi na chat. Připojte se na kanál #content pro zdroje, a více informací k obsahu který poskytujeme.
+Nahlásit chybu
+Návrhy / Požadavky
+Potíže s obsahem / informacemi
+Řekněte ahoj!
+Před posláním emailu prosím vyplňte tyto informace.
+ 
+Verze androidu:
+Zařízení:
+Co se stalo než jste viděli chybu?:
+O jakou chybu jde? Padá aplikace, nebo se chová nezvykle?:
+Pokud chcete aby jsme Vás kontaktovali při řešení této chybi, prosím napište nám svoji přezdívku z Chatu, nebo email:
+ 
+<!-- Error handling -->
+Akce selhala
+Znovu
+Zpět do menu
+Ok
+Nezdařilo se stáhnout informace o droze. Prosím zkontrolujte připojení k internetu, a zkuste to znovu.
+Chyba v analýze drogy:
+Could not retrieve drug names from tripbot interface. Vyhledávání stále může fungovat, ale našeptávač nebude k dispozici.
+Nezdařilo se analyzovat text o kombinacích, prosím nahlašte tuto chybu:
+Nezdařilo se stáhnout informace o kombinacích. Prosím zkontrolujte připojení k internetu, a zkuste to znovu.
+Pro užití emailu si musíte stáhnout email klienta.
