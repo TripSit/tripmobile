@@ -5,3 +5,4 @@ sevenforall - Dutch translation
 roi - German translation
 WeLove-DaggaCouple - Italian translation
 Ntrance - Spanish translation
+Daniel Mokrý - Czech translation
