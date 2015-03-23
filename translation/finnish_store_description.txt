@@ -1,0 +1,12 @@
+Otsikko: TripSit Mobiili
+Lyhyt kuvaus (80 MERKKIÄ TAI VÄHEMMÄN) Haittojen vähennys-informaatiota ja live-tukea huumeiden käyttäjille TripSitiltä
+ 
+Täysi kuvaus: TripSit, organisaatio joka johtaa verkossa toimivaa haittojen vähennys-yhteisöä, tuo sinulle sovelluksen joka tarjoaa suuren määrän sisältöä tarkoituksena auttaa käyttäjiä vähentämään päihteiden käytöstä syntyviä haittoja. TripSit kerää oleellista ja helposti omaksuttavaa tietoa useimmista päihdyttävistä aineista, sisältäen suositellut annokset sekä vuorovaikutukset toisten aineiden kanssa ja julkaisee ne verkossa osoitteessa http://factsheets.tripsit.me. Tämä sovellus hakee tiedot suoraan tietokannastamme, jota päivitetään jatkuvasti heijastamaan viimeisintä tieteellistä ja anekdoottista tutkimusta.
+ 
+Tarjoamme myös chat-huoneita, joissa ihmiset voivat saada neuvoa oikeilta ihmisiltä ilman pelkoa vainoamisesta tai tuomitsemisesta. Chat-painike yhdistää #tripsit kanavalle, missä tarjotaan hoitoa ja apua ihmisille joilla on vaikeaa aikaa vaikutuksen alaisena. Meidän muita kanavia voi käyttää yleiseen keskusteluun, kysymysten esittämiseen tarjoamastamme sisällöstä tai lisätiedon hankkimiseen siitä, kuinka vähentää päihteiden käyttöön liittyviä haittoja.
+ 
+Olkaa hyvä ja ottakaa huomioon että tämä informaatio on esitetty vain koulutuksellisiin tarpeisiin. Se ei voi sisältää kaikkea informaatiota jota tarvitaan informoidun päätöksen tekemiseen päihteiden käyttöön liittyen; kaikki päihteet vaikuttavat jokaiseen käyttäjään eri tavalla. Komboihin ja annostukseen liittyvä data on tarjottu yleisenä ohjenuorana, ei suosituksena eikä terveydenhuollon ammattilaisen ohjeena. Jos uskot että terveytesi on vakavassa vaarassa etsi ammattiapua välittömästi. TripSit ei kannata päihteiden käyttöä ja vaikka tiimimme tekee parhaansa tarjotakseen tarkkaa informaatiota emme väitä että se olisi 100% oikeassa. Tutki aihetta aina itse ja ole varovainen.
+ 
+Vaikka tämä sovellus tulee monella eri kielellä, pyydämme käyttäjiltä että käyttäisitte englantia pää chat-huoneissa. Tämä auttaa varmistamaan parhaimman kommunikaation tason jotta neuvoja saadaan läpi käyttäjille. Pyydämme myös että käyttäjät ovat tietoisia kahdesta pääsäännöstä: pidä positiivinen asenne, ja älä hanki/myy päihteitä tai huumeita tätä kautta. Chat-verkkomme kaikki säännöt löytyvät täältä https://wiki.tripsit.me/wiki/Rules.
+ 
+http://tripsit.me/

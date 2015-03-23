@@ -42,6 +42,7 @@
     <string name="duration">"Duration: "</string>
 
     <!-- Combinations -->
+    <string name="select_drug"><![CDATA[" <Select drug>"]]></string>
     <string name="safe_synergy"><![CDATA[Safe & Synergy]]></string>
     <string name="safe_no_synergy"><![CDATA[Safe & No Synergy]]></string>
     <string name="safe_decrease"><![CDATA[Safe & Decrease]]></string>
@@ -131,6 +132,5 @@ If you\'re happy for us to contact you to request more details, please provide y
     <string name="android_email_address" translatable="false">android@tripsit.me</string>
     <string name="content_email_address" translatable="false">content@tripsit.me</string>
     <string name="say_hi_email_address" translatable="false">tripsitters@tripsit.me</string>
-
 
 </resources>

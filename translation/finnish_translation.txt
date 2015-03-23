@@ -1,0 +1,91 @@
+<!--Application Strings-->
+ 
+Tripsit Logo
+<!-- Menu -->
+Kombot
+Tietosivut
+Chat
+Trippivahti
+Wiki
+Asetukset
+Ota yhteyttä
+TripSitistä
+ 
+<!-- Chat -->
+Chat
+ 
+<!-- Factsheets -->
+Päihde tai alias (englanniksi)
+Kaikki data on otettu tripbot API:sta jonka voi löytää osoitteesta http://tripbot.tripsit.me/factsheet. Käytä tätä suuntaa antavana arviona ja käytä avuksesi mahdollisimman monta eri lähdettä ennen kuin nautit jotain ainetta.
+Hae
+Aliakset
+Yhteenveto
+Annostus
+Vaikutukset
+Kategoriat
+Ajoitus
+Vaikutusten alku:
+Kesto:
+ 
+<!-- Combinations -->
+Turvallinen & Synergiaa
+Turvallinen & Ei synergiaa
+Turvallinen & Vähenemistä
+Vaarallinen
+Serotoniinisyndrooma
+Tappava
+ 
+<!-- Settings -->
+Välimuistin tuoreus
+ 
+___ tallentaa automaattisesti ladatun informaation datan käytön minimoimiseksi. Tämä asetus antaa sinun muokata kuinka kauan tätä dataa pidetään ennen kuin se ladataan uudestaan.
+0päivää
+ 
+päivä
+päivää
+ 
+Chat-kanava
+Muokkaa oletuskanavaa johon yhdistät käyttäessäsi "Chat"-painiketta päävalikosta.
+Tallenna
+ 
+Uusi oletuskanava on nyt #___
+ 
+#___ ei ole ole voimassa oleva kanavan nimi
+Teema
+Vaalea
+Tumma
+ 
+<!-- About -->
+Tietoa TripSitistä
+Tämän sovelluksen on luonut TripSit, organisaatio joka auttaa tuottamaan faktaperäistä informaatiota päihteistä ja kuinka vähentää haittoja niiden käytöstä. Meillä on myös aktiivinen IRC (internet relay chat) verkosto jossa me tarjoamme trippivahtipalveluita, haittojen-vähennys neuvontaa ja yleistä chattia.http://www.tripsit.me/
+Vastuuvapauslauseke
+Vaikka meillä on tiimi omistautuneena pitämään tämän sovelluksen informaation ajan tasalla, ei ole aina mahdollista tarjota 100% tarkkaa tietoa päihteiden turvallisuudesta. Täällä olevaa informaatiota pitäisi käyttää vain yleisohjeena ja on tärkeää tehdä omaa tutkimusta lukuisista lähteistä ennen aineen nauttimista. Suosittelemme myös vahvasti käyttämään test kittiä ja vaakoja varmistaaksesi että olet ottamassa oikean annoksen. Nämä molemmat voi ostaa internetistä kohtuullisilla hinnoilla.
+Tue TripSittiä
+TripSit on täysin ilmainen palvelu joka on vapaaehtoisten vetämä. Jos tahdot auttaa, ole hyvä ja liity IRC:iin, seuraa ja jaa meidän sisältöä sosiaalisessa mediassa tai tee lahjoitus jotta serverit jatkavat toimintaansa.
+ 
+<!-- Contact -->
+Ota yhteyttä
+Onko sinulla yhtään palautetta sovelluksesta tai mistään näyttämästämme informaatiosta? Tai ehkä sinä vain haluat sanoa "Hei!" ja kysyä kysymyksen? Linkeistä alhaalla voit lähettää meille sähköpostissa palautetta, tai voit myös mennä takaisin päävalikkoon ja chatata meidän kanssa livenä IRC:ssä. Liity #content kanavalle uusille ja opi uusista lähteistä ja lisää meidän tarjoamastamme sisällöstä.
+Raportoi bugi
+Ehdotuksia / Pyyntöjä
+Ongelmia sisällön tai informaation kanssa
+Tule sanomaan moi!
+Ole hyvä ja täytä seuraavat tiedot ennen tämän sähköpostin lähettämistä.
+ 
+Androidin versio:
+Laite:
+Mitä tapahtui ennen kuin näit bugin:
+Mikä bugi on? Kaatuuko sovellus vai toimiiko se epätavallisesti:
+Jos haluat meidän ottavan sinuun yhteyttä lisätiedoista, ole hyvä ja kerro sinun IRC nickkisi tai sähköpostiosoitteesi:
+ 
+<!-- Error handling -->
+Toiminto epäonnistui
+Yritä uudestaan
+Palaa valikkoon
+Ok
+Päihdeinformaation lataus epäonnistu. Tarkista Internet-yhteytesi ja yritä uudestaan.
+Päihteen lajittelu epäonnistui:
+Päihteiden nimiä ei voitu noutaa tripbot käyttöliittymästä. Haku saattaa vielä toimia mutta automaattinen täydennys ei ole käytössä.
+Kombojen tekstien jäsennys epäonnistui, ole hyvä ja raportoi tästä virheestä:
+Kombojen tietojen lataus epäonnistui. Ole hyvä ja tarkista internet-yhteytesi ja yritä uudestaan.
+Sinun täytyy asentaa sähköpostiohjelma jotta voit käyttää sähköpostiominaisuutta.
