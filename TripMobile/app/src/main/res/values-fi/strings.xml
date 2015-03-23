@@ -12,7 +12,7 @@
     <string name="wiki">Wiki</string>
     <string name="settings">Asetukset</string>
     <string name="contact">Ota yhteyttä</string>
-    <string name="about">TripSitistä</string>
+    <string name="about">Tietoa meistä</string>
 
     <!-- Chat -->
     <string name="chat_activity">Chat</string>
