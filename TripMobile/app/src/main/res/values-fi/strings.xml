@@ -87,7 +87,7 @@ Jos haluat meidän ottavan sinuun yhteyttä lisätiedoista, ole hyvä ja kerro s
     <string name="retry">Yritä uudestaan</string>
     <string name="return_to_menu">Palaa valikkoon</string>
     <string name="ok">Ok</string>
-    <string name="failed_download_drug_info">Päihdeinformaation lataus epäonnistu. Tarkista Internet-yhteytesi ja yritä uudestaan.</string>
+    <string name="failed_download_drug_info">Päihdeinformaation lataus epäonnistui. Tarkista Internet-yhteytesi ja yritä uudestaan.</string>
     <string name="failed_parse_drug_info">"Päihteen lajittelu epäonnistui: "</string>
     <string name="failed_download_drug_names">Päihteiden nimiä ei voitu noutaa tripbot käyttöliittymästä. Haku saattaa vielä toimia mutta automaattinen täydennys ei ole käytössä.</string>
     <string name="failed_parse_combinations">"Kombojen tekstien jäsennys epäonnistui, ole hyvä ja raportoi tästä virheestä: "</string>
