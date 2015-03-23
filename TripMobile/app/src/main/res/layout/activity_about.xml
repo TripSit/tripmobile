@@ -79,6 +79,11 @@
                 android:onClick="clickTwitter"
                 android:background="@drawable/selector_trippy_twitter" />
 
+            <ImageButton
+                style="@style/MenuButton"
+                android:onClick="clickBitcoin"
+                android:background="@drawable/selector_trippy_bitcoin" />
+
         </LinearLayout>
 
     </LinearLayout>

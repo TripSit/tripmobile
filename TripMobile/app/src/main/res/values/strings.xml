@@ -110,6 +110,8 @@ If you\'re happy for us to contact you to request more details, please provide y
     <!-- The following Strings should be hidden from the user, and therefore don't require any translation -->
     <string name="wiki_main_page" translatable="false">https://wiki.tripsit.me/wiki/Main_Page</string>
     <string name="wiki_domain" translatable="false">wiki.tripsit.me</string>
+    <string name="bitcoin_url" translatable="false">bitcoin:1EDqf32gw73tc1WtgdT2FymfmDN4RyC9RN</string>
+    <string name="donate_url" translatable="false">http://tripsit.me/support-tripsit</string>
     <!-- ID comes from https://graph.facebook.com/tripsitme -->
     <string name="facebook_app" translatable="false">fb://page/575082419170561</string>
     <string name="facebook_url" translatable="false">https://www.facebook.com/tripsitme</string>
