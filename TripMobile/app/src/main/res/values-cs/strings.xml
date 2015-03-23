@@ -6,7 +6,7 @@
     <string name="logo">Logo TripSit</string>
     <!-- Menu -->
     <string name="combinations">Kombinace</string>
-    <string name="factsheets">Tabulka informací</string>
+    <string name="factsheets">Informací</string>
     <string name="chat">Chat</string>
     <string name="tripsit">Tripsit</string>
     <string name="wiki">Wiki</string>
