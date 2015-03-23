@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- USER FACING STRINGS -->
+    <!-- The following Strings are seen by the user and need translation and proper grammar -->
+    <string name="logo">Tripsit Logo</string>
+    <!-- Menu -->
+    <string name="combinations">Kombinationen</string>
+    <string name="factsheets">Merkblätter</string>
+    <string name="chat">Chat</string>
+    <string name="tripsit">Tripsit</string>
+    <string name="wiki">Wiki</string>
+    <string name="settings">Einstellungen</string>
+    <string name="contact">Kontakt</string>
+    <string name="about">Über Uns</string>
+
+    <!-- Chat -->
+    <string name="chat_activity">Chat</string>
+
+    <!-- Factsheets -->
+    <string name="factsheets_default_search">Droge oder Pseudonym</string>
+    <string name="factsheets_intro">Alle Informationen wird über die tripbot API abgerufen, welche auf http://tripbot.tripsit.me/factsheet gefunden werden kann. Bitte sehe diese als allgemeine</string>
+    <string name="search">Suche</string>
+    <string name="aliases">Pseudonyme</string>
+    <string name="summary">Zusammenfassung</string>
+    <string name="dose">Dosis</string>
+    <string name="effects">Effekt</string>
+    <string name="categories">Kategorien</string>
+    <string name="timing">Zeit</string>
+    <string name="onset">"Eintritt: "</string>
+    <string name="duration">"Dauer: "</string>
+
+    <!-- Combinations -->
+    <string name="safe_synergy"><![CDATA[Sicher & Harmonie]]></string>
+    <string name="safe_no_synergy"><![CDATA[Sicher & Antagonie]]></string>
+    <string name="safe_decrease"><![CDATA[Sicher & Verminderung]]></string>
+    <string name="unsafe">Unsicher</string>
+    <string name="serotonin_syndrome">Serotonin-Syndrom</string>
+    <string name="deadly">Tödlich</string>
+
+    <!-- Settings -->
+    <string name="cache_freshness">Frische der Daten</string>
+    <!-- Use 'getString(R.string.str_cache_content, getString(R.string.app_name)))' to retrieve the following String -->
+    <string name="cache_freshness_description">%1$s speichert automatisch heruntergelandene Informationen, um deine Bandbreitennutzung zu minimieren. Diese Einstellung lässt dich verändern, wie lange Informationen gespeichert werden, bevor sie erneut heruntergeladen werden.</string>
+    <string name="default_cache_days">0\ntage</string>
+    <plurals name="days">
+        <item quantity="one">tag</item>
+        <item quantity="other">tage</item>
+    </plurals>
+    <string name="chat_channel">Chatraum</string>
+    <string name="chat_channel_content">Modifiziert den voreingestellten Chatram, in den du über die \"Chat\" Option im Hauptmenü verbindest.</string>
+    <string name="save">Speichern</string>
+    <!-- Use 'getString(R.string.chat_channel_toast, "#channel")' to retrieve the following String -->
+    <string name="chat_channel_toast">Der neue voreingestellte Kanal ist nun #%1$s</string>
+    <!-- Use 'getString(R.string.invalid_channel, "#channel")' to retrieve the following String -->
+    <string name="invalid_channel">#%1$s ist nicht der Name eines Kanals</string>
+    <string name="theme">Theme</string>
+    <string name="light">Hell</string>
+    <string name="dark">Dunkel</string>
+
+    <!-- About -->
+    <string name="about_header">Über TripSit</string>
+    <string name="about_content">Diese App wurde von TripSit erschaffen, einer Organisation, die dabei hilft, Informationen über Drogen bereitzustellen und die Gefahr deren Benutzung zu minimieren. Außerdem haben wir haben einen aktives IRC (internet relay chat) Netzwerk, wo wir einen tripsitting Dienst, Tipps für die Schadensminimierung und einen allgemeinen Chat bereitstelllen.\nhttp://www.tripsit.me/</string>
+    <string name="disclaimer_header">Enthaftung</string>
+    <string name="disclaimer_content">Obwohl unser Team eifrig Informationen zusammenträgt, um diese App stets aktuell zu halten, ist es nicht immer möglich, 100% korrekte Informationen über die Sicherheit von Drogen anzubieten. Die hier bereitgestellten Informationen sollten lediglich als Richtlinien angesehen werden, und es ist wichtig, dass du selbst Eigene Forschung mit Hilfe so vieler Quellen wie möglich betreibst, bevor du eie Substanz konsumierst. Außerdem raten wir dringend zur Benutzung von Drogentests und Waagen, un sicherzugehen, dass du die richtige Dosis einnimmst. Beides kann für kleines Geld online erworben werden.</string>
+    <string name="support_header">Unterstütze TripSit</string>
+    <string name="support_content">TripSit ist ein komplett kostenloser Dienst, der von Freiwilligen bereitgestellt wird. Falls du mithelfen willst, kannst du gerne im IRC vorbeischauen, folge und teile unsere Inhalte über soziale Netzwerke, oder spende, um das Fortbestehen unserer Server zu garantieren.</string>
+
+    <!-- Contact -->
+    <string name="contact_header">Kontaktiere uns</string>
+    <string name="contact_content">Du hast eine Rückmeldung über die App oder die bereitgestellten Daten? Oder willst einfach nur Hallo sagen oder eine Frage stellen? Über die unten stehenden Links kannst du uns eine Email schreiben, und natürlich kannst du auch über das Hauptmenü in den Chat gelangen, um mit uns live im IRC zu reden. Trete dem #content Kanal bei, um über unsere Quellen oder mehr Informationen, die wir bereitstellen, zu reden.</string>
+    <string name="bug_report">Berichte über Fehler</string>
+    <string name="suggestions">Anregungen / Wünsche</string>
+    <string name="content_issues">Probleme mit dem Inhalt / Daten</string>
+    <string name="say_hi">Sag Hallo!</string>
+    <string name="bug_report_email">Bitte fülle die folgenden Informationen aus, bevor du uns eine Email schickst.\n
+\n
+Android version: \n
+Gerät: \n
+Was geschah, bevor der Fehler aufgetreten ist:\n
+Was ist der Fehler? Ist die App abgestürzt oder funktioniert nicht mehr richtig?: \n
+Falls du Rücksprache benötigst oder mehr Details wissen willst, trage hier bitte deine Email-Addresse oder IRC Namen ein: </string>
+
+    <!-- Error handling -->
+    <string name="operation_failed">Operation fehlgeschlagen</string>
+    <string name="retry">Wiederholung</string>
+    <string name="return_to_menu">Ins Menü zurückkehren</string>
+    <string name="ok">Ok</string>
+    <string name="failed_download_drug_info">Fehler beim Herunterladen der Daten. Bitte überprüfe deine Verbindung und versuche es erneut.</string>
+    <string name="failed_parse_drug_info">"Failed beim Parsen der Substanz: "</string>
+    <string name="failed_download_drug_names">Fehler beim Empfangen der Substanznamen aus der tripbot Schnittstelle. Die Suche kann noch funktionieren, aber die automatische Verwollständigung wird nicht vorhanden sein.</string>
+    <string name="failed_parse_combinations">"Fehler beim Parsen des Kombinationstexts, bitte melde diesen Fehler: "</string>
+    <string name="failed_download_combinations">Fehler beim Herunterladen der Kombinationsdaten. Bitte überprüfe deine Verbindung und versuche es erneut.</string>
+    <string name="error_email_client">Du musst eine Email App installieren, um diese Funktion zu benutzen.</string>
+
+</resources>
