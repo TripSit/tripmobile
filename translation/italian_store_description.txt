@@ -1,5 +1,5 @@
 Titolo: Tripsit Mobile
-Descrizione veloce (80 caratteri o meno): Informazioni sulla prevenzione del rischio e supporto online live dagli utenti di TripSit
+Descrizione veloce (80 caratteri o meno): Info sulla prevenzione del rischio e supporto online dagli utenti di TripSit
 
 Descrizione completa: A voi da Tripsit, un'organizzazione a capo della comunita` online per la prevenzione del rischio, quest'app rende disponibile una vasta quantita` di contenuti rivolti ad aiutare gli utenti a ridurre il danno derivato dall'uso di sostanze. TripSit raccoglie dati rilevanti e comprensibili sulla maggior parte delle sostanze ricreative, incluse le dosi raccomandate e le interazioni con altre sostanze, e le pubblica online all'indirizzo http://factsheets.TripSit.me. Quest'app recupera i dati direttamente dal nostro database, che e` costantemente aggiornato per riflettere le ultime ricerche scientifiche e anedottali.
 
