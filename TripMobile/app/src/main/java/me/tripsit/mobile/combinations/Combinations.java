@@ -61,7 +61,6 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
         }
     }
 
-    private static final String EMPTY_SELECTION = " <Select drug>";
     private String leftDrug = null;
     private String rightDrug = null;
 
@@ -111,7 +110,7 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (leftDrug != null) {
                     String drugName = getSelectedDrugName(getCombinationsSetExcludingLeftDrug(), position);
-                    if (drugName != null && !EMPTY_SELECTION.equals(drugName)) {
+                    if (drugName != null && !getString(R.string.select_drug).equals(drugName)) {
                         updateViewWithSingleInteraction(combinationsMap.get(leftDrug), drugName);
                     } else {
                         updateViewWithInteractions(combinationsMap.get(leftDrug));
@@ -141,7 +140,7 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
 
     private void updateSpinner2() {
         Spinner spinner2 = (Spinner) findViewById(R.id.spinner_combinations_2);
-        if (EMPTY_SELECTION.equals(leftDrug)) {
+        if (getString(R.string.select_drug).equals(leftDrug)) {
             spinner2.setVisibility(View.GONE);
         } else {
             Set<String> combinations = getCombinationsSetExcludingLeftDrug();
@@ -224,7 +223,7 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
 
     @Override
     public void updateCombinationsMap(Map<String, Map<String, List<String>>> combinations) {
-        combinationsMap.put(EMPTY_SELECTION, new TreeMap<String, List<String>>());
+        combinationsMap.put(getString(R.string.select_drug), new TreeMap<String, List<String>>());
         combinationsMap.putAll(combinations);
         refreshSpinner();
     }

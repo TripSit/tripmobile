@@ -31,6 +31,7 @@
     <string name="duration">"Kesto: "</string>
 
     <!-- Combinations -->
+    <string name="select_drug"><![CDATA[" <Valitse päihde>"]]></string>
     <string name="safe_synergy"><![CDATA[Turvallinen & Synergiaa]]></string>
     <string name="safe_no_synergy"><![CDATA[Turvallinen & Ei synergiaa]]></string>
     <string name="safe_decrease"><![CDATA[Turvallinen & Vähenemistä]]></string>
