@@ -38,6 +38,15 @@
     <string name="unsafe">Onveilig</string>
     <string name="serotonin_syndrome">Serotoninesyndroom</string>
     <string name="deadly">Dodelijk</string>
+    <string name="is_singular">is</string> <!-- TODO: translate -->
+    <string name="is_plural">are</string> <!-- TODO: translate -->
+    <!-- The following strings are in the format "Drug1 and Drug2 is/are ...", where 'are' is used for plural combinations such as benzos -->
+    <string name="safe_synergy_description">%1$s and %2$s %3$s a safe combination, which provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.</string> <!-- TODO: translate -->
+    <string name="safe_no_synergy_description">%1$s and %2$s %3$s a safe combination, which doesn\'t provide any notable potentiated or decreased effects.</string> <!-- TODO: translate -->
+    <string name="safe_decrease_description">%1$s and %2$s %3$s a safe combination, however one or more of the drugs will have decreased effects when they are combined.</string> <!-- TODO: translate -->
+    <string name="unsafe_description">%1$s and %2$s %3$s an unsafe combination and should be taken with extreme caution, or ideally avoided entirely.</string> <!-- TODO: translate -->
+    <string name="serotonin_syndrome_description">%1$s and %2$s should not be combined as they increase the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.</string> <!-- TODO: translate -->
+    <string name="deadly_description">%1$s and %2$s %3$s a potentially deadly combination, and should be avoided even in low dosages</string> <!-- TODO: translate -->
 
     <!-- Settings -->
     <string name="cache_freshness">Cache retentie</string>
