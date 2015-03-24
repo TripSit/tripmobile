@@ -20,21 +20,21 @@ import me.tripsit.mobile.builders.LayoutBuilder;
 public class Combinations extends TripMobileActivity implements CombinationsCallback {
 
     private enum CombinationSeverity {
-        SAFE_SYNERGY("Safe & Synergy", "%s and %s %s a safe combination, which provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.", R.id.txt_safesynergy_header, R.id.txt_safesynergy_content),
-        SAFE_NO_SYNERGY("Safe & No Synergy", "%s and %s %s a safe combination, which doesn't provide any notable potentiated or decreased effects.", R.id.txt_safenosynergy_header, R.id.txt_safenosynergy_content),
-        SAFE_DECREASE_SYNERGY("Safe & Decrease", "%s and %s %s a safe combination, however one or more of the drugs will have decreased effects when they are combined.", R.id.txt_safedecrease_header, R.id.txt_safedecrease_content),
-        UNSAFE("Unsafe", "%s and %s %s an unsafe combination and should be taken with extreme caution, or ideally avoided entirely.", R.id.txt_unsafe_header, R.id.txt_unsafe_content),
-        SEROTONIN_SYNDROME("Serotonin Syndrome", "%s and %s should not be combined as they increase the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.", R.id.txt_serotoninsyndrome_header, R.id.txt_serotoninsyndrome_content),
-        DEADLY("Deadly", "%s and %s %s a potentially deadly combination, and should be avoided even in low dosages", R.id.txt_deadly_header, R.id.txt_deadly_content);
+        SAFE_SYNERGY("Safe & Synergy", R.string.safe_synergy_description, R.id.txt_safesynergy_header, R.id.txt_safesynergy_content),
+        SAFE_NO_SYNERGY("Safe & No Synergy", R.string.safe_no_synergy_description, R.id.txt_safenosynergy_header, R.id.txt_safenosynergy_content),
+        SAFE_DECREASE_SYNERGY("Safe & Decrease", R.string.safe_decrease_description, R.id.txt_safedecrease_header, R.id.txt_safedecrease_content),
+        UNSAFE("Unsafe", R.string.unsafe_description, R.id.txt_unsafe_header, R.id.txt_unsafe_content),
+        SEROTONIN_SYNDROME("Serotonin Syndrome", R.string.serotonin_syndrome_description, R.id.txt_serotoninsyndrome_header, R.id.txt_serotoninsyndrome_content),
+        DEADLY("Deadly", R.string.deadly_description, R.id.txt_deadly_header, R.id.txt_deadly_content);
 
         private final String text;
-        private final String singleCombinationText;
+        private final int descriptionId;
         private final int headerId;
         private final int contentId;
 
-        private CombinationSeverity(String text, String singleCombinationText, int headerId, int contentId) {
+        private CombinationSeverity(String text, int description, int headerId, int contentId) {
             this.text = text;
-            this.singleCombinationText = singleCombinationText;
+            this.descriptionId = description;
             this.headerId = headerId;
             this.contentId = contentId;
         }
@@ -56,8 +56,8 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
             return contentId;
         }
 
-        private String getSingleCombinationText() {
-            return singleCombinationText;
+        private int getDescriptionId() {
+            return descriptionId;
         }
     }
 
@@ -196,7 +196,7 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
     }
 
     private String getSingleCombinationText(String drug1, String drug2, CombinationSeverity severity) {
-        return String.format(severity.getSingleCombinationText(), drug1, drug2, drug2.endsWith("s") || drug1.endsWith("s") ? "are" : "is");
+        return getString(severity.getDescriptionId(), drug1, drug2, drug2.endsWith("s") || drug1.endsWith("s") ? getString(R.string.is_plural) : getString(R.string.is_singular));
     }
 
     private String convertListToText(List<String> values) {
