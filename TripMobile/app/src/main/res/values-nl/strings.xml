@@ -31,7 +31,7 @@
     <string name="duration">"Totale duur: "</string>
 
     <!-- Combinations -->
-    <string name="select_drug"><![CDATA[" <Select drug>"]]></string> <!-- TODO: translate -->
+    <string name="select_drug"><![CDATA[" <Kies Drug>"]]></string>
     <string name="safe_synergy"><![CDATA[Veilig & Voordelig]]></string>
     <string name="safe_no_synergy"><![CDATA[Veilig & Neutraal]]></string>
     <string name="safe_decrease"><![CDATA[Veilig & Nadelig]]></string>
