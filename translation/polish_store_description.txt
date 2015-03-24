@@ -1,0 +1,12 @@
+Tytuł: Aplikacja mobilna TripSit
+Krótki opis: Informacje od TripSit związane z redukcją szkód oraz pomoc online dla użytkowników narkotyków.
+ 
+Pełen opis: Dostarczono przez TripSit, organizację prowadzącą działalność online skierowaną na redukcję szkód. Aplikacja oferuje pokaźną ilość informacji, które mają za zadanie pomóc w zmiejszeniu szkód spowodowanych przez branie narkotyków. TripSit zbiera istotne i łatwo przyswajalne informacje na temat rekreacyjnych substancji psychoaktywnych, w tym dane o dawkowaniu i interakcjach z innymi substancjami. Następnie publikuje je na stronie http://factsheet.tripsit.me. Aplikacja ściąga informacje bezpośrednio z naszej bazy danych, która jest nieustatnnie aktualizowana po to, aby informować o najnowszych badaniach naukowych oraz indywidualnych doświadczeniach.
+ 
+Oferujemy również kanały komunikacyjne, na których użytkownicy mogą otrzymać porady bez obaw o prześladowanie czy osądzanie. Opcja czatu łączy się z kanałem #tripsit, oferującego opiekę i pomoc dla tych, którzy nie radzą sobie z doświadczeniem po zażyciu jakiegoś narkotyku. Nasze inne kanały są używane do ogólnych rozmów, zapytań o nasze zasoby, bądź informacje o tym jak zredukować szkody spowodowane użyciem substancji psychoaktywncych.
+ 
+Należy pamietać, że te informacje prezentowane są wyłącznie do celów edukacyjnych i mogą nie zawierać wszystkich danych potrzebych do oceny sytuacji związanej z przyjmowaniem narkotyków. Każda substancja na każdego może zadziałać inaczej. Dane o dawkowaniu i łączeniu substancji są dostarczane jako ogólne wytyczne, nie rekomendacja lub medyczna porada. Jeżeli uważasz, że potrzebujesz porady lekarskiej, natychmiast skontaktuj się ze służbą zdrowia. TripSit nie aprobuje używania narkotyków i pomimo tego, że staramy się oferować rzetelne informacje, nie twierdzimy, że są one w 100% poprawne. Zawsze na własną rękę szukaj informacji o substancji i staraj się zachować bezpieczeństwo.
+ 
+Aplikacja jest oferowana w wielu językach, ale prosimy naszych użytkowników o rozmowy w języku angielskim na naszym czacie. Pomaga to zapewnić najlepszy poziom komunikacji. Prosimy również o pamiętaniu o naszych głównych zasadach:  Utrzymuj pozytywne nastawienie i nie bądź natrętny. Pełen spis naszych reguł jest dostępny na https://wiki.tripsit.me/wiki/Rules.
+ 
+http://tripsit.me/

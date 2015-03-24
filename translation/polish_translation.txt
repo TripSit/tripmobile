@@ -1,0 +1,90 @@
+<!--Application Strings-->
+ 
+Logo TripSita
+<!-- Menu -->
+Kombinacje
+Arkusze informacyjne
+Czat
+TripSit
+Wiki
+Ustawienia
+Kontakt
+O nas
+ 
+<!-- Chat -->
+Czat
+ 
+<!-- Factsheets -->
+Substancja lub alias
+Wszystkie dane pochodzą z API tripbota, który jest dostepny na http://tripbot.tripsit.me/factsheet. Prosimy o korzystanie z tych informacji jako ogólnych wytycznych i o sprawdzanie możliwie jak najwiekszej ilości źródeł przed przyjęciem jakiegoś narkotyku.
+ 
+Szukaj
+Aliasy
+Podsumowanie
+Dawkowanie
+Efekty
+Kategorie
+Czas trwania
+ 
+<!-- Combinations -->
+Bezpieczne: synergia
+Bezpieczne: brak synergii
+Bezpieczne: osłabienie działania
+Niebezpieczne
+Zespół serotoninowy
+Śmiertelne
+ 
+<!-- Settings -->
+Cache Freshness
+ 
+___ automatycznie zapisuje pobrane informacje aby zminimalizować zużycie danych. Ta opcja pozwala na modyfikacje tego jak długo dane są przetrzymywane, zanim będą musiały zostać pobrane ponownie.
+0dni
+ 
+dzień
+dni
+ 
+Kanał czatu
+Modyfikuj domyślny kanał z którym się połączysz, podczas używania opcji "Chat" z menu głównego.
+Zapis
+ 
+Nowy kanał domyślny to teraz #___
+ 
+#___ nie jest prawidłową nazwą kanału
+Motyw
+Jasny
+Ciemny
+ 
+<!-- About -->
+O TripSicie
+Aplikacja została stworzona przez TripSit; organizację, która pomaga w dostarczaniu rzetelnych informacji na temat narkotyków, oraz tym jak zminimalować szkody związane z używaniem ich. Mamy aktywną sieć IRC (Internet Relay Chat), gdzie oferujemy pomoc, informacje o redukcji szkód oraz ogólny czat. http://www.tripsit.me/
+Zastrzeżenia
+Pomimo tego, że mamy dedykowany zespół do utrzymywania w tej aplikacji aktualnych informacji, nie zawsze możliwym jest, aby z pełną dokładnością przekazać jak bezbieczny lub nie jest narkotyk. Informacje oferowane tutaj są tylko ogólnymi wytycznymi i bardzo ważne jest to, aby sprawdzać możliwie jak najwięcej źródeł na własną rękę przed przyjeciem jakiegoś narkotyku. Zdecydowanie doradzamy używanie wag i test-kitów, aby mieć pewność, że przyjmujesz odpowiednią dawkę. Obie te rzeczy można zakupić w internecie za rozsądne pieniądze.
+Wspieraj TripSit
+TripSit jest całkowicie darmową usługą oferowaną przez ochotników. Jeżeli chcesz nam pomóc, wejdź na nasz IRC, śledź i udostępniaj nasze zasoby na portalach społecznościowych, lub wpłać dotację na utrzymanie naszych serwerów.
+ 
+<!-- Contact -->
+Skontaktuj się z nami
+Masz jakieś uwagi dotyczące aplikacji, bądź informacji, które udostępniamy? Może po prostu chcesz z nami porozmawiać lub zadać jakieś pytanie? Odnośniki poniżej pozwolą ci na wysłanie nam e-maila, zawsze możesz też wejść na czat z menu głównego i porozmawiać z nami na żywo na IRCu. Wejdź na kanał #content aby porozmawiać o naszych źródłach danych bądź innych zasobach, które udostępniamy.
+ 
+Zgłoś błąd
+Sugestie / Prośby
+Problemy z zasobami / informacjami
+Przywitaj się!
+Proszę wypełnić poniższe informacje przed wysłaniem tej wiadomości.
+ 
+Wersja androida:
+Urządzenie:
+Co się stało zanim pojawił się błąd:
+Jaki to błąd? Czy aplikacja nie działa, lub działa w nietypowy sposób:
+Jeżeli chcesz abyśmy się z tobą skontaktowali aby uzyskać więcej informacji, prosimy podać swoją ksywkę na IRC lub adres e-mail:
+ 
+<!-- Error handling -->
+Operacja nie powiodła się
+Ponów próbę
+Powrót do menu
+Ok
+Nie udało się pobrać informacji o substancji. Proszę sprawdzić swoje połączenie internetowe i spróbować ponownie.
+Nie można pobrać informacji o substancji z interfesju tripbota. Szukanie może wciąż działać, ale autouzupełnianie może nie być dostępne.
+ 
+Nie udało się pobrać informacji o kombinacji substancji.  Proszę sprawdzić swoje połączenie internetowe i spróbować ponownie.
+Musisz zainstalować klienta poczty, aby korzystać z funkcji e-mail.
