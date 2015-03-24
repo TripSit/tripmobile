@@ -4,7 +4,7 @@ Please tranlsate all text except for that inside the < and > brackets. Join http
 Title: TripSit Mobile
 Short Description (80 CHARACTERS OR LESS): Harm reduction information and live online support for drug users from TripSit
 
-Full Description: Brought to you by TripSit, an organisation leading the online harm reduction community, this app provides a substantial amount of content intended to help users reduce the harm involved in taking drugs. TripSit collects relevant and easily digestible data on most recreational drugs, including recommended dosages and interactions with other substances, and publishes it online at http://factsheets.tripsit.me. This app pulls data directly from our database, which is constantly updated to reflect the latest scientific and anecdotal research.
+Full Description: Brought to you by TripSit, an organisation leading the online harm reduction community, this app provides a substantial amount of content intended to help users reduce the harm involved in taking drugs. TripSit collects relevant and easily digestible data on most recreational drugs, including recommended dosages and interactions with other substances, and publishes it online at http://factsheet.tripsit.me. This app pulls data directly from our database, which is constantly updated to reflect the latest scientific and anecdotal research.
 
 We also provide chat rooms where people can get advice from real people without fear of persecution or judgement. The chat option connects to the #tripsit channel, which is used to provide care and assistance to people having a difficult time on a substance. Our other channels can be used for general conversation, to ask questions about the content we provide or to get more information on how to reduce the harm involved in drug use.
 
@@ -44,12 +44,22 @@ Onset:
 Duration: 
 
 <!-- Combinations -->
+ <Select drug>
 Safe & Synergy
 Safe & No Synergy
 Safe & Decrease
 Unsafe
 Serotonin Syndrome
 Deadly
+is
+are
+<!-- The following strings are in the format "Drug1 and Drug2 is/are ...", where 'are' is used for plural combinations such as benzos -->
+___ and ___ ___ a safe combination, which provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.
+___ and ___ ___ a safe combination, which doesn't provide any notable potentiated or decreased effects.
+___ and ___ ___ a safe combination, however one or more of the drugs will have decreased effects when they are combined.
+___ and ___ ___ an unsafe combination and should be taken with extreme caution, or ideally avoided entirely.
+___ and ___ should not be combined as they increase the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.
+___ and ___ ___ a potentially deadly combination, and should be avoided even in low dosages
 
 <!-- Settings -->
 Cache Freshness
