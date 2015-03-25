@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- USER FACING STRINGS -->
+    <!-- The following Strings are seen by the user and need translation and proper grammar -->
+    <string name="logo">Logo TripSita</string>
+    <!-- Menu -->
+    <string name="combinations">Kombinacje</string>
+    <string name="factsheets">Arkusze informacyjne</string>
+    <string name="chat">Czat</string>
+    <string name="tripsit">TripSit</string>
+    <string name="wiki">Wiki</string>
+    <string name="settings">Ustawienia</string>
+    <string name="contact">Kontakt</string>
+    <string name="about">O nas</string>
+
+    <!-- Chat -->
+    <string name="chat_activity">Czat</string>
+
+    <!-- Factsheets -->
+    <string name="factsheets_default_search">Substancja lub alias</string>
+    <string name="factsheets_intro">Wszystkie dane pochodzą z API tripbota, który jest dostepny na http://tripbot.tripsit.me/factsheet. Prosimy o korzystanie z tych informacji jako ogólnych wytycznych i o sprawdzanie możliwie jak najwiekszej ilości źródeł przed przyjęciem jakiegoś narkotyku.</string>
+    <string name="search">Szukaj</string>
+    <string name="aliases">Aliasy</string>
+    <string name="summary">Podsumowanie</string>
+    <string name="dose">Dawkowanie</string>
+    <string name="effects">Efekty</string>
+    <string name="categories">Kategorie</string>
+    <string name="timing">Czas trwania</string>
+    <string name="onset">"Onset: "</string> <!-- TODO: translate -->
+    <string name="duration">"Duration: "</string> <!-- TODO: translate -->
+
+    <!-- Combinations -->
+    <string name="select_drug"><![CDATA[" <Select Drug>"]]></string> <!-- TODO: translate -->
+    <string name="safe_synergy">Bezpieczne: synergia></string>
+    <string name="safe_no_synergy">Bezpieczne: brak synergii</string>
+    <string name="safe_decrease">Bezpieczne: osłabienie działania</string>
+    <string name="unsafe">Niebezpieczne</string>
+    <string name="serotonin_syndrome">Zespół serotoninowy</string>
+    <string name="deadly">Śmiertelne</string>
+    <!-- First and second arguments are the names of the drugs being combined -->
+    <string name="safe_synergy_description">Combining %1$s and %2$s is generally safe and provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.</string> <!-- TODO translate -->
+    <string name="safe_no_synergy_description">Combining %1$s and %2$s is generally safe, and doesn\'t provide any notable potentiated or decreased effects.</string> <!-- TODO translate -->
+    <string name="safe_decrease_description">Combining %1$s and %2$s is generally safe, however one or more of the drugs will have decreased effects when they are combined.</string> <!-- TODO translate -->
+    <string name="unsafe_description">Combining %1$s and %2$s is unsafe and they should be taken with extreme caution, or ideally avoided entirely.</string> <!-- TODO translate -->
+    <string name="serotonin_syndrome_description">Combining %1$s and %2$s increases the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.</string> <!-- TODO translate -->
+    <string name="deadly_description">Combining %1$s and %2$s can be deadly, and should be avoided entirely even in low dosages</string> <!-- TODO translate -->
+
+    <!-- Settings -->
+    <string name="cache_freshness">Cache Freshness</string>
+    <!-- Use 'getString(R.string.str_cache_content, getString(R.string.app_name)))' to retrieve the following String -->
+    <string name="cache_freshness_description">%1$s automatycznie zapisuje pobrane informacje aby zminimalizować zużycie danych. Ta opcja pozwala na modyfikacje tego jak długo dane są przetrzymywane, zanim będą musiały zostać pobrane ponownie.</string>
+    <string name="default_cache_days">0\ndni</string>
+    <plurals name="days">
+        <item quantity="one">dzień</item>
+        <item quantity="few">dni</item>
+        <item quantity="many">dni</item>
+        <item quantity="other">dni</item>
+    </plurals>
+    <string name="chat_channel">Kanał czatu</string>
+    <string name="chat_channel_content">Modyfikuj domyślny kanał z którym się połączysz, podczas używania opcji \"Chat\" z menu głównego.</string>
+    <string name="save">Zapis</string>
+    <!-- Use 'getString(R.string.chat_channel_toast, "#channel")' to retrieve the following String -->
+    <string name="chat_channel_toast">Nowy kanał domyślny to teraz #%1$s</string>
+    <!-- Use 'getString(R.string.invalid_channel, "#channel")' to retrieve the following String -->
+    <string name="invalid_channel">#%1$s nie jest prawidłową nazwą kanału</string>
+    <string name="theme">Motyw</string>
+    <string name="light">Jasny</string>
+    <string name="dark">Ciemny</string>
+
+    <!-- About -->
+    <string name="about_header">O TripSicie</string>
+    <string name="about_content">plikacja została stworzona przez TripSit; organizację, która pomaga w dostarczaniu rzetelnych informacji na temat narkotyków, oraz tym jak zminimalować szkody związane z używaniem ich. Mamy aktywną sieć IRC (Internet Relay Chat), gdzie oferujemy pomoc, informacje o redukcji szkód oraz ogólny czat.\nhttp://www.tripsit.me/</string>
+    <string name="disclaimer_header">Zastrzeżenia</string>
+    <string name="disclaimer_content">omimo tego, że mamy dedykowany zespół do utrzymywania w tej aplikacji aktualnych informacji, nie zawsze możliwym jest, aby z pełną dokładnością przekazać jak bezbieczny lub nie jest narkotyk. Informacje oferowane tutaj są tylko ogólnymi wytycznymi i bardzo ważne jest to, aby sprawdzać możliwie jak najwięcej źródeł na własną rękę przed przyjeciem jakiegoś narkotyku. Zdecydowanie doradzamy używanie wag i test-kitów, aby mieć pewność, że przyjmujesz odpowiednią dawkę. Obie te rzeczy można zakupić w internecie za rozsądne pieniądze.</string>
+    <string name="support_header">Wspieraj TripSit</string>
+    <string name="support_content">TripSit jest całkowicie darmową usługą oferowaną przez ochotników. Jeżeli chcesz nam pomóc, wejdź na nasz IRC, śledź i udostępniaj nasze zasoby na portalach społecznościowych, lub wpłać dotację na utrzymanie naszych serwerów.</string>
+
+    <!-- Contact -->
+    <string name="contact_header">Skontaktuj się z nami</string>
+    <string name="contact_content">Masz jakieś uwagi dotyczące aplikacji, bądź informacji, które udostępniamy? Może po prostu chcesz z nami porozmawiać lub zadać jakieś pytanie? Odnośniki poniżej pozwolą ci na wysłanie nam e-maila, zawsze możesz też wejść na czat z menu głównego i porozmawiać z nami na żywo na IRCu. Wejdź na kanał #content aby porozmawiać o naszych źródłach danych bądź innych zasobach, które udostępniamy.</string>
+    <string name="bug_report">Zgłoś błąd</string>
+    <string name="suggestions">Sugestie / Prośby</string>
+    <string name="content_issues">Problemy z zasobami / informacjami</string>
+    <string name="say_hi">Przywitaj się!</string>
+    <string name="bug_report_email">Proszę wypełnić poniższe informacje przed wysłaniem tej wiadomości.\n
+\n
+Wersja androida: \n
+Urządzenie: \n
+Co się stało zanim pojawił się błąd:\n
+Jaki to błąd? Czy aplikacja nie działa, lub działa w nietypowy sposób: \n
+Jeżeli chcesz abyśmy się z tobą skontaktowali aby uzyskać więcej informacji, prosimy podać swoją ksywkę na IRC lub adres e-mail: </string>
+
+    <!-- Error handling -->
+    <string name="operation_failed">Operacja nie powiodła się</string>
+    <string name="retry">Ponów próbę</string>
+    <string name="return_to_menu">Powrót do menu</string>
+    <string name="ok">Ok</string>
+    <string name="failed_download_drug_info">Nie udało się pobrać informacji o substancji. Proszę sprawdzić swoje połączenie internetowe i spróbować ponownie.</string>
+    <string name="failed_parse_drug_info">"Failed parsing drug: "</string> <!-- TODO: translate -->
+    <string name="failed_download_drug_names">Nie można pobrać informacji o substancji z interfesju tripbota. Szukanie może wciąż działać, ale autouzupełnianie może nie być dostępne.</string>
+    <string name="failed_parse_combinations">"Failed to parse combinations text, please report this error: "</string> <!-- TODO: translate -->
+    <string name="failed_download_combinations">Nie udało się pobrać informacji o kombinacji substancji.  Proszę sprawdzić swoje połączenie internetowe i spróbować ponownie.</string>
+    <string name="error_email_client">Musisz zainstalować klienta poczty, aby korzystać z funkcji e-mail.</string>
+
+</resources>
