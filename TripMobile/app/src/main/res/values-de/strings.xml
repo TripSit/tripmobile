@@ -39,12 +39,12 @@
     <string name="serotonin_syndrome">Serotonin-Syndrom</string>
     <string name="deadly">Tödlich</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="safe_synergy_description">Combining %1$s and %2$s is generally safe and provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.</string> <!-- TODO translate -->
-    <string name="safe_no_synergy_description">Combining %1$s and %2$s is generally safe, and doesn\'t provide any notable potentiated or decreased effects.</string> <!-- TODO translate -->
-    <string name="safe_decrease_description">Combining %1$s and %2$s is generally safe, however one or more of the drugs will have decreased effects when they are combined.</string> <!-- TODO translate -->
-    <string name="unsafe_description">Combining %1$s and %2$s is unsafe and they should be taken with extreme caution, or ideally avoided entirely.</string> <!-- TODO translate -->
-    <string name="serotonin_syndrome_description">Combining %1$s and %2$s increases the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.</string> <!-- TODO translate -->
-    <string name="deadly_description">Combining %1$s and %2$s can be deadly, and should be avoided entirely even in low dosages</string> <!-- TODO translate -->
+    <string name="safe_synergy_description">Die Kombination von %1$s und %2$s ist generell sicher und verursacht eine synergistische Reaktion. Denke daran, die Dosis beider Substanzen zu reduzieren, da sie sich gegenseitig verstärken.</string>
+    <string name="safe_no_synergy_description">Die Kombination von %1$s und %2$s ist generell sicher und verursacht keine signifikant abgeschwächte oder verstärkte Reaktion.</string>
+    <string name="safe_decrease_description">Die Kombination von %1$s und %2$s ist generell sicher, jedoch wird die gemeinsame Einnahme eine abgeschwächte Reaktion verursachen.</string>
+    <string name="unsafe_description">Die Kombination von %1$s und %2$s ist nicht sicher und sollte nur mit extremer Vorsicht oder besser gar nicht eingenommen werden.</string>
+    <string name="serotonin_syndrome_description">Die Kombination von %1$s und %2$s verursacht die Gefahr des Serotoninsyndroms. Eine Substanz sollte deinen Körper komplett verlassen haben, bevor du die Andere einnimmst.</string>
+    <string name="deadly_description">Die Kombination von %1$s und %2$s ist möglicherweise tödlich, und sollte selbst in geringen Dosierungen unbedingt vermieden werden.</string>
 
     <!-- Settings -->
     <string name="cache_freshness">Frische der Daten</string>
