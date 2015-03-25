@@ -57,7 +57,7 @@ Combining ___ and ___ is generally safe, and doesn't provide any notable potenti
 Combining ___ and ___ is generally safe, however one or more of the drugs will have decreased effects when they are combined.
 Combining ___ and ___ is unsafe and they should be taken with extreme caution, or ideally avoided entirely.
 Combining ___ and ___ increases the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.
-Combining ___ and ___ ___ can be deadly, and should be avoided entirely even in low dosages
+Combining ___ and ___ can be deadly, and should be avoided entirely even in low dosages
 
 <!-- Settings -->
 Cache Freshness

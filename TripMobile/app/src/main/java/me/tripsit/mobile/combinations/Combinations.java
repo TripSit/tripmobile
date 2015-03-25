@@ -185,7 +185,7 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
                     if (interactionDrug.equals(drugName)) {
                         CombinationSeverity severity = CombinationSeverity.getSeverityWithText(entry.getKey());
                         TextView textView = (TextView) findViewById(R.id.txt_single_combination);
-                        textView.setText(getSingleCombinationText(leftDrug, drugName, severity));
+                        textView.setText(getString(severity.getDescriptionId(), leftDrug, drugName));
                         textView.setVisibility(View.VISIBLE);
                         return;
                     }
@@ -193,10 +193,6 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
             }
         }
 
-    }
-
-    private String getSingleCombinationText(String drug1, String drug2, CombinationSeverity severity) {
-        return getString(severity.getDescriptionId(), drug1, drug2, drug2.endsWith("s") || drug1.endsWith("s") ? getString(R.string.is_plural) : getString(R.string.is_singular));
     }
 
     private String convertListToText(List<String> values) {

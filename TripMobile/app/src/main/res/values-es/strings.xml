@@ -44,7 +44,7 @@
     <string name="safe_decrease_description">Combining %1$s and %2$s is generally safe, however one or more of the drugs will have decreased effects when they are combined.</string> <!-- TODO translate -->
     <string name="unsafe_description">Combining %1$s and %2$s is unsafe and they should be taken with extreme caution, or ideally avoided entirely.</string> <!-- TODO translate -->
     <string name="serotonin_syndrome_description">Combining %1$s and %2$s increases the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.</string> <!-- TODO translate -->
-    <string name="deadly_description">Combining %1$s and %2$s %3$s can be deadly, and should be avoided entirely even in low dosages</string> <!-- TODO translate -->
+    <string name="deadly_description">Combining %1$s and %2$s can be deadly, and should be avoided entirely even in low dosages</string> <!-- TODO translate -->
 
     <!-- Settings -->
     <string name="cache_freshness">Frescura de la Cache</string>
