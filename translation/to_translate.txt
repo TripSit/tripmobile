@@ -51,15 +51,13 @@ Safe & Decrease
 Unsafe
 Serotonin Syndrome
 Deadly
-is
-are
-<!-- The following strings are in the format "Drug1 and Drug2 is/are ...", where 'are' is used for plural combinations such as benzos -->
-___ and ___ ___ a safe combination, which provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.
-___ and ___ ___ a safe combination, which doesn't provide any notable potentiated or decreased effects.
-___ and ___ ___ a safe combination, however one or more of the drugs will have decreased effects when they are combined.
-___ and ___ ___ an unsafe combination and should be taken with extreme caution, or ideally avoided entirely.
-___ and ___ should not be combined as they increase the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.
-___ and ___ ___ a potentially deadly combination, and should be avoided even in low dosages
+<!-- First and second arguments are the names of the drugs being combined -->
+Combining ___ and ___ is generally safe and provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.
+Combining ___ and ___ is generally safe, and doesn't provide any notable potentiated or decreased effects.
+Combining ___ and ___ is generally safe, however one or more of the drugs will have decreased effects when they are combined.
+Combining ___ and ___ is unsafe and they should be taken with extreme caution, or ideally avoided entirely.
+Combining ___ and ___ increases the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.
+Combining ___ and ___ ___ can be deadly, and should be avoided entirely even in low dosages
 
 <!-- Settings -->
 Cache Freshness
