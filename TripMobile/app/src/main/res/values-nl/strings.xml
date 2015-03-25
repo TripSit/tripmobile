@@ -57,7 +57,7 @@
     </plurals>
     <string name="chat_channel">Chatroom</string>
     <string name="chat_channel_content">Pas de chatroom aan waarmee je wordt verbonden als je de \"Chat\" optie in het hoofdmenu gebruikt</string>
-    <string name="save">Save</string>
+    <string name="save">Opslaan</string>
     <!-- Use 'getString(R.string.chat_channel_toast, "#channel")' to retrieve the following String -->
     <string name="chat_channel_toast">Nieuwe standaard chatroom is nu #%1$s</string>
     <!-- Use 'getString(R.string.invalid_channel, "#channel")' to retrieve the following String -->
