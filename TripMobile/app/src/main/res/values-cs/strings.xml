@@ -31,7 +31,7 @@
     <string name="duration">"Trvání: "</string>
 
     <!-- Combinations -->
-    <string name="select_drug"><![CDATA[" <Select drug>"]]></string> <!-- TODO: translate -->
+    <string name="select_drug"><![CDATA[" <Zvolit drogu>"]]></string>
     <string name="safe_synergy">Bezpečné + Synergie</string>
     <string name="safe_no_synergy">Bezpečné + Bez Synergie</string>
     <string name="safe_decrease"><![CDATA[Bezpečné & Zeslabení]]></string>
@@ -39,12 +39,12 @@
     <string name="serotonin_syndrome">Serotoninový syndrom</string>
     <string name="deadly">Smrtelné</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="safe_synergy_description">Combining %1$s and %2$s is generally safe and provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.</string> <!-- TODO translate -->
-    <string name="safe_no_synergy_description">Combining %1$s and %2$s is generally safe, and doesn\'t provide any notable potentiated or decreased effects.</string> <!-- TODO translate -->
-    <string name="safe_decrease_description">Combining %1$s and %2$s is generally safe, however one or more of the drugs will have decreased effects when they are combined.</string> <!-- TODO translate -->
-    <string name="unsafe_description">Combining %1$s and %2$s is unsafe and they should be taken with extreme caution, or ideally avoided entirely.</string> <!-- TODO translate -->
-    <string name="serotonin_syndrome_description">Combining %1$s and %2$s increases the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.</string> <!-- TODO translate -->
-    <string name="deadly_description">Combining %1$s and %2$s can be deadly, and should be avoided entirely even in low dosages</string> <!-- TODO translate -->
+    <string name="safe_synergy_description">Kombinace %1$s a %2$s bývá bezpečná, a poskytuje synergii mezi efekty. Ujistěte se že snížíte dávkování, jelikož se drogy navzájem zesilují.</string>
+    <string name="safe_no_synergy_description">Kombinace %1$s a %2$s bývá bezpečná, a neposkytuje výrazně zeslabený nebo zesílený efekt.</string>
+    <string name="safe_decrease_description">Kombinace %1$s a %2$s bývá bezpečná, ale jedna nebo více z kombinovaných drog bude mít zeslabený efekt.</string>
+    <string name="unsafe_description">Kombinace %1$s a %2$s je nebezpečná, a mělo by se k ní přistupovat s velkou opatrností, nebo se jí vyhnout.</string>
+    <string name="serotonin_syndrome_description">Kombinace %1$s a %2$s zvyšuje risk vzniku serotoninového syndromu. Ujistěte se že droga kompletně opustila váš systém předtím, než požijete další.</string>
+    <string name="deadly_description">Kombinace %1$s a %2$s může být smrtelná, a mělo by se jí vyhnout i co se týče malých dávek.</string>
 
     <!-- Settings -->
     <string name="cache_freshness">Čerstvost cache</string>
@@ -96,7 +96,7 @@ Pokud chcete aby jsme Vás kontaktovali při řešení této chybi, prosím napi
     <string name="ok">Ok</string>
     <string name="failed_download_drug_info">Nezdařilo se stáhnout informace o droze. Prosím zkontrolujte připojení k internetu, a zkuste to znovu.</string>
     <string name="failed_parse_drug_info">"Chyba v analýze drogy: "</string>
-    <string name="failed_download_drug_names">Could not retrieve drug names from tripbot interface. Vyhledávání stále může fungovat, ale našeptávač nebude k dispozici.</string> <!-- TODO: this is only partially translated -->
+    <string name="failed_download_drug_names">Nezdařilo se získat názvy drog z interface tripbot. Vyhledávání stále může fungovat, ale našeptávač nebude k dispozici.</string>
     <string name="failed_parse_combinations">"Nezdařilo se analyzovat text o kombinacích, prosím nahlašte tuto chybu: "</string>
     <string name="failed_download_combinations">Nezdařilo se stáhnout informace o kombinacích. Prosím zkontrolujte připojení k internetu, a zkuste to znovu</string>
     <string name="error_email_client">Pro užití emailu si musíte stáhnout email klienta.</string>
