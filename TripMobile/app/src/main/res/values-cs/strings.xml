@@ -53,6 +53,7 @@
     <string name="default_cache_days">0\ndní</string>
     <plurals name="days">
         <item quantity="one">den</item>
+        <item quantity="few">dny</item>
         <item quantity="other">dní</item>
     </plurals>
     <string name="chat_channel">Kanál chatu</string>
