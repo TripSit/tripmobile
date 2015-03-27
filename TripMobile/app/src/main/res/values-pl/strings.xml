@@ -27,11 +27,11 @@
     <string name="effects">Efekty</string>
     <string name="categories">Kategorie</string>
     <string name="timing">Czas trwania</string>
-    <string name="onset">"Onset: "</string> <!-- TODO: translate -->
-    <string name="duration">"Duration: "</string> <!-- TODO: translate -->
+    <string name="onset">"Początek: "</string>
+    <string name="duration">"Trwanie: "</string>
 
     <!-- Combinations -->
-    <string name="select_drug"><![CDATA[" <Select Drug>"]]></string> <!-- TODO: translate -->
+    <string name="select_drug"><![CDATA[" <Wybierz substancję>"]]></string>
     <string name="safe_synergy">Bezpieczne: synergia></string>
     <string name="safe_no_synergy">Bezpieczne: brak synergii</string>
     <string name="safe_decrease">Bezpieczne: osłabienie działania</string>
@@ -39,12 +39,12 @@
     <string name="serotonin_syndrome">Zespół serotoninowy</string>
     <string name="deadly">Śmiertelne</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="safe_synergy_description">Combining %1$s and %2$s is generally safe and provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.</string> <!-- TODO translate -->
-    <string name="safe_no_synergy_description">Combining %1$s and %2$s is generally safe, and doesn\'t provide any notable potentiated or decreased effects.</string> <!-- TODO translate -->
-    <string name="safe_decrease_description">Combining %1$s and %2$s is generally safe, however one or more of the drugs will have decreased effects when they are combined.</string> <!-- TODO translate -->
-    <string name="unsafe_description">Combining %1$s and %2$s is unsafe and they should be taken with extreme caution, or ideally avoided entirely.</string> <!-- TODO translate -->
-    <string name="serotonin_syndrome_description">Combining %1$s and %2$s increases the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.</string> <!-- TODO translate -->
-    <string name="deadly_description">Combining %1$s and %2$s can be deadly, and should be avoided entirely even in low dosages</string> <!-- TODO translate -->
+    <string name="safe_synergy_description">%1$s i %2$s. Połączenie jest w zasadzie bezpieczne i powoduje efekt synergii. Pamiętaj, aby zastosować obniżone dawki obu substancji, ponieważ takie połączenie wzmacnia działanie każdej z nich.</string>
+    <string name="safe_no_synergy_description">%1$s i %2$s. Połączenie jest w zasadzie bezpieczne i nie powoduje odczuwalnego wzmocnienia ani obniżenia działania żadnej z użytych substancji.</string>
+    <string name="safe_decrease_description">%1$s i %2$s. Połączenie jest w zasadzie bezpieczne, jednak powoduje, że efekty działania jednej lub obu substancji są zmniejszone.</string>
+    <string name="unsafe_description">%1$s i %2$s. Połączenie jest niebezpieczne i powinno być stosowane z zachowaniem szczególnej ostrożności, a najlepiej całkiem z niego zrezygnować.</string>
+    <string name="serotonin_syndrome_description">%1$s i %2$s. Połączenie powoduje duże ryzyko wystąpienia syndromu serotoninowego. Zanim zażyjesz drugą substancję upewnij się, że pierwsza z nich została całkowicie usunięta z twojego organizmu.</string>
+    <string name="deadly_description">%1$s i %2$s. Połączenie grozi śmiercią. Nie stosować nawet w niewielkich dawkach.</string>
 
     <!-- Settings -->
     <string name="cache_freshness">Cache Freshness</string>
@@ -97,9 +97,9 @@ Jeżeli chcesz abyśmy się z tobą skontaktowali aby uzyskać więcej informacj
     <string name="return_to_menu">Powrót do menu</string>
     <string name="ok">Ok</string>
     <string name="failed_download_drug_info">Nie udało się pobrać informacji o substancji. Proszę sprawdzić swoje połączenie internetowe i spróbować ponownie.</string>
-    <string name="failed_parse_drug_info">"Failed parsing drug: "</string> <!-- TODO: translate -->
+    <string name="failed_parse_drug_info">"Nie rozpoznano substancji: "</string>
     <string name="failed_download_drug_names">Nie można pobrać informacji o substancji z interfesju tripbota. Szukanie może wciąż działać, ale autouzupełnianie może nie być dostępne.</string>
-    <string name="failed_parse_combinations">"Failed to parse combinations text, please report this error: "</string> <!-- TODO: translate -->
+    <string name="failed_parse_combinations">"Nie rozpoznano kombinacji. Prosimy o zgłoszenie tego błędu: "</string>
     <string name="failed_download_combinations">Nie udało się pobrać informacji o kombinacji substancji.  Proszę sprawdzić swoje połączenie internetowe i spróbować ponownie.</string>
     <string name="error_email_client">Musisz zainstalować klienta poczty, aby korzystać z funkcji e-mail.</string>
 
