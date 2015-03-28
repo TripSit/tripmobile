@@ -90,9 +90,8 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
     }
 
     @Override
-    public void onDrugListComplete(Collection<String> drugNames) {
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,
-                drugNames.toArray(new String[drugNames.size()]));
+    public void onDrugListComplete(List<String> drugNames) {
+        ArrayAdapter<String> adapter = new DrugNamesAdapter(this, android.R.layout.simple_dropdown_item_1line, drugNames);
         AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
         textView.setAdapter(adapter);
     }
