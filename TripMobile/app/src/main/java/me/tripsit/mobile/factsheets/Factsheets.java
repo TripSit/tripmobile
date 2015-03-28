@@ -49,7 +49,9 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
 		findViewById.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				findViewById.setText("");
+                if (getString(R.string.factsheets_default_search).equals(findViewById.getText().toString())) {
+                    findViewById.setText("");
+                }
 			}
 		});
 		findViewById.setOnItemClickListener(new OnItemClickListener() {
