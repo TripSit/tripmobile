@@ -10,6 +10,7 @@
     </style>
 
     <style name="DefaultText" parent="android:Widget.TextView">
+        <item name="android:autoLink">web</item>
         <item name="android:textColor">?primaryTextColour</item>
     </style>
 

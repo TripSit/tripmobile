@@ -39,7 +39,6 @@
         android:id="@+id/txt_drugDisclaimer"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:autoLink="all"
         android:text="@string/factsheets_intro" />
 
     <ProgressBar
