@@ -31,7 +31,7 @@
     <string name="duration">"Durata: "</string>
 
     <!-- Combinations -->
-    <string name="select_drug"><![CDATA[" <Select drug>"]]></string> <!-- TODO: translate -->
+    <string name="select_drug"><![CDATA[" <Scegli il tipo di sostanza>"]]></string>
     <string name="safe_synergy"><![CDATA[Sicure & Sinergetiche]]></string>
     <string name="safe_no_synergy"><![CDATA[Sicure & Non sinergetiche]]></string>
     <string name="safe_decrease"><![CDATA[Sicure & Diminuzione]]></string>
