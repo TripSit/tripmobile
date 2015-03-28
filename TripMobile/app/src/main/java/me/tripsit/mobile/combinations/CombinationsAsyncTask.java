@@ -17,6 +17,7 @@ import java.util.Map;
 
 import me.tripsit.mobile.R;
 import me.tripsit.mobile.comms.ContentRetriever;
+import me.tripsit.mobile.utils.StringUtils;
 
 public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
 
@@ -42,7 +43,7 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
             for (int i = 0; i < drugNames.length(); i++) {
                 String drugName = drugNames.getString(i);
                 Map<String, List<String>> interactionsMap = buildInteractionsMap(combinations, drugName);
-                combinationsMap.put(drugName, interactionsMap);
+                combinationsMap.put(StringUtils.formatDrugName(drugName), interactionsMap);
             }
         } catch (final JSONException e) {
             contentRetriever.invalidateResponse(URL);

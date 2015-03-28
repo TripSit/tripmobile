@@ -26,6 +26,7 @@ import me.tripsit.mobile.R;
 import me.tripsit.mobile.TripMobileActivity;
 import me.tripsit.mobile.builders.LayoutBuilder;
 import me.tripsit.mobile.utils.CollectionUtils;
+import me.tripsit.mobile.utils.StringUtils;
 
 /**
  * The factsheets activity is used to retrieve data about particular drugs from the tripbot API
@@ -135,8 +136,7 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
     }
 
     private String manipulateDrugName(String drugName, Set<String> set) {
-        // If the drug name is less than 4 characters long, assume it's an acronym and capitalise it
-        String name = drugName.length() < 4 ? drugName.toUpperCase() : drugName;
+        String name = StringUtils.formatDrugName(drugName);
         if (set.size() > 0) {
             StringBuilder sb = new StringBuilder();
             sb.append(' ').append('(');
