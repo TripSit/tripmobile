@@ -6,12 +6,7 @@ import android.widget.Filter;
 import android.widget.Filterable;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
-
-import me.tripsit.mobile.utils.CollectionUtils;
 
 /**
  * Created by eddie on 28/03/15.
