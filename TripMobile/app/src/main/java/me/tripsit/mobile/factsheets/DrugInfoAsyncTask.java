@@ -34,11 +34,6 @@ public class DrugInfoAsyncTask extends AsyncTask<Activity, Void, Void>  {
 
     @Override
     protected Void doInBackground(final Activity... activities) {
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         ContentRetriever contentRetriever = new ContentRetriever(activities[0]);
         try {
             String response = contentRetriever.getResponseFromURL(url);
