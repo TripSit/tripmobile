@@ -2,8 +2,10 @@ package me.tripsit.mobile.combinations;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -76,6 +78,9 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
 
     @Override
     public void downloadCombinations() {
+        setProgressBarIndeterminateVisibility(true);
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progress_combinations);
+        progressBar.setVisibility(View.VISIBLE);
         new CombinationsAsyncTask(this, this).execute(this);
     }
 
@@ -224,6 +229,9 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
 
     @Override
     public void updateCombinationsMap(Map<String, Map<String, List<String>>> combinations) {
+        setProgressBarIndeterminateVisibility(false);
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progress_combinations);
+        progressBar.setVisibility(View.GONE);
         combinationsMap.put(EMPTY_SELECTION, new TreeMap<String, List<String>>());
         combinationsMap.putAll(combinations);
         refreshSpinner();

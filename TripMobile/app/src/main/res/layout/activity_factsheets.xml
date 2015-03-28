@@ -42,6 +42,11 @@
         android:autoLink="all"
         android:text="@string/factsheets_intro" />
 
+    <ProgressBar
+        style="@style/LoadingSpinner"
+        android:id="@+id/progress_factsheets"
+        android:visibility="gone"/>
+
     <TextView
         android:id="@+id/txt_drugName"
         android:layout_width="match_parent"

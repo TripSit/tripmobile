@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ExpandableListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -27,6 +29,7 @@ import me.tripsit.mobile.TripMobileActivity;
 import me.tripsit.mobile.builders.LayoutBuilder;
 import me.tripsit.mobile.utils.CollectionUtils;
 import me.tripsit.mobile.utils.StringUtils;
+import me.tripsit.mobile.utils.ViewUtils;
 
 /**
  * The factsheets activity is used to retrieve data about particular drugs from the tripbot API
@@ -66,10 +69,16 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
 
     @Override
     public void searchDrug(String drugName) {
+        ViewUtils.hideViewsWithId(this, R.id.txt_drugDisclaimer, R.id.exlist_drugInfo, R.id.txt_drugName);
+        ViewUtils.showViewsWithId(this, R.id.progress_factsheets);
+
+        // Hide keyboard
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
         textView.clearFocus();
+
+        // Search for drug
         new DrugInfoAsyncTask(this, this, drugName).execute(this);
     }
 
@@ -88,9 +97,10 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
 
     @Override
     public void onDrugSearchComplete(Drug drug) {
+        ViewUtils.showViewsWithId(this, R.id.exlist_drugInfo, R.id.txt_drugName);
+        ViewUtils.hideViewsWithId(this, R.id.progress_factsheets);
+
         if (drug != null) {
-            TextView disclaimer = (TextView) findViewById(R.id.txt_drugDisclaimer);
-            disclaimer.setVisibility(View.GONE);
             updateDrugView(drug);
         }
     }
