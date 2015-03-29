@@ -27,11 +27,11 @@
     <string name="effects">Efectos</string>
     <string name="categories">Categorías</string>
     <string name="timing">Sincronización</string>
-    <string name="onset">"Onset: "</string> <!-- TODO no translation? -->
-    <string name="duration">"Duration: "</string> <!-- TODO no translation? -->
+    <string name="onset">"Principio: "</string>
+    <string name="duration">"Duración: "</string>
 
     <!-- Combinations -->
-    <string name="select_drug"><![CDATA[" <Select drug>"]]></string> <!-- TODO: translate -->
+    <string name="select_drug"><![CDATA[" <Selecciona una droga>"]]></string>
     <string name="safe_synergy"><![CDATA[Seguro & Sinergia]]></string>
     <string name="safe_no_synergy"><![CDATA[Seguro & No Sinergia]]></string>
     <string name="safe_decrease"><![CDATA[Seguro & Disminución]]></string>
@@ -39,12 +39,12 @@
     <string name="serotonin_syndrome">Síndrome de Serotonina</string>
     <string name="deadly">Mortal</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="safe_synergy_description">Combining %1$s and %2$s is generally safe and provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.</string> <!-- TODO translate -->
-    <string name="safe_no_synergy_description">Combining %1$s and %2$s is generally safe, and doesn\'t provide any notable potentiated or decreased effects.</string> <!-- TODO translate -->
-    <string name="safe_decrease_description">Combining %1$s and %2$s is generally safe, however one or more of the drugs will have decreased effects when they are combined.</string> <!-- TODO translate -->
-    <string name="unsafe_description">Combining %1$s and %2$s is unsafe and they should be taken with extreme caution, or ideally avoided entirely.</string> <!-- TODO translate -->
-    <string name="serotonin_syndrome_description">Combining %1$s and %2$s increases the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.</string> <!-- TODO translate -->
-    <string name="deadly_description">Combining %1$s and %2$s can be deadly, and should be avoided entirely even in low dosages</string> <!-- TODO translate -->
+    <string name="safe_synergy_description">Combinar %1$s y %2$s es generalmente seguro, y los efectos de ambos se combinan. Baja las dosis de cada droga, ya que sus efectos se potencian mutuamente.</string> 
+    <string name="safe_no_synergy_description">Combinar %1$s y %2$s es generalmente seguro, y los efectos no se potencian ni aminoran.</string> 
+    <string name="safe_decrease_description">Combinar %1$s y %2$s es generalmente seguro, aunque una o mas de estas verá sus efectos reducidos al ser combinadas.</string> 
+    <string name="unsafe_description">Combinar %1$s y %2$s no es seguro y debería tomarse con mucha cautela, e incluso evitarlas.</string> 
+    <string name="serotonin_syndrome_description">Combinar %1$s y %2$s aumenta los riesgos del síndrome de seratonina. Estate seguro de que una de las drogas se ha ido de tu cuerpo por completo antes de tomar la otra.</string> 
+    <string name="deadly_description">Combinar %1$s y %2$s es potencialmente mortal, y se debe evitar juntarlas, incluso en mínimas dosis.</string> 
 
     <!-- Settings -->
     <string name="cache_freshness">Frescura de la Cache</string>
@@ -95,9 +95,9 @@ Si está bien que ponemos en contacto contigo para pedirte más detalles, por fa
     <string name="return_to_menu">Volver al menú</string>
     <string name="ok">Ok</string>
     <string name="failed_download_drug_info">Error al descargar información de la droga. Por favor, revisa tu conexión e intentar de nuevo.</string>
-    <string name="failed_parse_drug_info">"ERROR: "</string> <!-- TODO: needs translation -->
+    <string name="failed_parse_drug_info">"Failed parsing drug: "</string> <!-- TODO: needs translation -->
     <string name="failed_download_drug_names">No se pudo obtener los nombres de drogas de interfaz tripbot. La búsqueda aún puede funcionar pero las sugerencias de autocompletado no estará presente.</string>
-    <string name="failed_parse_combinations">"ERROR: "</string> <!-- TODO: needs translation -->
+    <string name="failed_parse_combinations">"Failed to parse combinations text, please report this error: "</string> <!-- TODO: needs translation -->
     <string name="failed_download_combinations">Error al descargar la información de combinaciones. Por favor, revisa tu conexión e intentar de nuevo.</string>
     <string name="error_email_client">Es necesario instalar un cliente de correo electrónico para utilizar la función de correo electrónico.</string>
 
