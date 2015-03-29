@@ -95,9 +95,9 @@ Si está bien que ponemos en contacto contigo para pedirte más detalles, por fa
     <string name="return_to_menu">Volver al menú</string>
     <string name="ok">Ok</string>
     <string name="failed_download_drug_info">Error al descargar información de la droga. Por favor, revisa tu conexión e intentar de nuevo.</string>
-    <string name="failed_parse_drug_info">"Failed parsing drug: "</string> <!-- TODO: needs translation -->
+    <string name="failed_parse_drug_info">"No se ha encontrado la droga: "</string> <!-- TODO: needs translation -->
     <string name="failed_download_drug_names">No se pudo obtener los nombres de drogas de interfaz tripbot. La búsqueda aún puede funcionar pero las sugerencias de autocompletado no estará presente.</string>
-    <string name="failed_parse_combinations">"Failed to parse combinations text, please report this error: "</string> <!-- TODO: needs translation -->
+    <string name="failed_parse_combinations">"No se ha encontrado la combinación. Por favor, reporta este error: "</string>
     <string name="failed_download_combinations">Error al descargar la información de combinaciones. Por favor, revisa tu conexión e intentar de nuevo.</string>
     <string name="error_email_client">Es necesario instalar un cliente de correo electrónico para utilizar la función de correo electrónico.</string>
 
