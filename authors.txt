@@ -6,3 +6,5 @@ roi - German translation
 WeLove-DaggaCouple - Italian translation
 Ntrance - Spanish translation
 Daniel Mokrý - Czech translation
+Puri - Finnish translation
+GrimReaper - Polish translation

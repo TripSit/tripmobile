@@ -31,12 +31,20 @@
     <string name="duration">"Totale duur: "</string>
 
     <!-- Combinations -->
+    <string name="select_drug"><![CDATA[" <Selecteer Drug>"]]></string>
     <string name="safe_synergy"><![CDATA[Veilig & Voordelig]]></string>
     <string name="safe_no_synergy"><![CDATA[Veilig & Neutraal]]></string>
     <string name="safe_decrease"><![CDATA[Veilig & Nadelig]]></string>
     <string name="unsafe">Onveilig</string>
     <string name="serotonin_syndrome">Serotoninesyndroom</string>
     <string name="deadly">Dodelijk</string>
+    <!-- First and second arguments are the names of the drugs being combined -->
+    <string name="safe_synergy_description">%1$s en %2$s combineren is over het algemeen veilig, en heeft een voordelige wisselwerking. Houdt er rekening mee dat de substanties elkaars effecten versterken, en doseer lager.</string> 
+    <string name="safe_no_synergy_description">%1$s en %2$s combineren is over het algemeen veilig, maar heeft geen voordelige of verminderende wisselwerking.</string> 
+    <string name="safe_decrease_description">%1$s en %2$s combineren is over het algemeen veilig, maar één of beide substanties verminderen de effecten van de ander.</string> 
+    <string name="unsafe_description">%1$s en %2$s combineren is onveilig en bij voorkeur vermeden. Het is van groot belang zéér behoedzaam te zijn voor deze combinatie.</string> 
+    <string name="serotonin_syndrome_description">%1$s en %2$s combineren verhoogt het risico op serotoninesyndroom. Zorg ervoor dat deze substanties nooit gelijktijdig in het lichaam aanwezig kunnen zijn.</string> 
+    <string name="deadly_description">%1$s en %2$s combineren kan dodelijk zijn. Het is van levensbelang deze combinatie te vermijden, zelfs in lage dosissen.</string> 
 
     <!-- Settings -->
     <string name="cache_freshness">Cache retentie</string>
@@ -49,7 +57,7 @@
     </plurals>
     <string name="chat_channel">Chatroom</string>
     <string name="chat_channel_content">Pas de chatroom aan waarmee je wordt verbonden als je de \"Chat\" optie in het hoofdmenu gebruikt</string>
-    <string name="save">Save</string>
+    <string name="save">Opslaan</string>
     <!-- Use 'getString(R.string.chat_channel_toast, "#channel")' to retrieve the following String -->
     <string name="chat_channel_toast">Nieuwe standaard chatroom is nu #%1$s</string>
     <!-- Use 'getString(R.string.invalid_channel, "#channel")' to retrieve the following String -->
@@ -59,7 +67,7 @@
     <string name="dark">Donker</string>
 
     <!-- About -->
-    <string name="about_header">About TripSit</string>
+    <string name="about_header">Over TripSit</string>
     <string name="about_content">Deze app is ontwikkeld door TripSit, een organisatie die objectieve informatie over drugs en het gebruik ervan verstrekt om nadelige gevolgen te voorkomen. We hebben tevens een IRC (Internet Relay Chat) netwerk waar we trippers in nood hulp bieden, adviseren over het veilig gebruiken van drugs, en algemene vragen beantwoorden.\nhttp://www.tripsit.me/</string>
     <string name="disclaimer_header">Voorwaarden</string>
     <string name="disclaimer_content">Hoewel we ons best doen deze app van de juiste informatie te voorzien, kunnen wij niet garanderen dat deze informatie ten alle tijden foutloos zal zijn. Gebruik deze gegevens slechts als een hulpmiddel, en doe uitvoerig onderzoek voordat je een substantie inneemt. We adviseren om testkits en nauwkeurige weegschalen aan te schaffen als essentieel hulpmiddel bij het nemen en doseren van drugs. Deze hulpmiddelen zijn makkelijk en goedkoop online te bestellen.</string>

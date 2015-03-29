@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- USER FACING STRINGS -->
+    <!-- The following Strings are seen by the user and need translation and proper grammar -->
+    <string name="logo">Logo TripSit</string>
+    <!-- Menu -->
+    <string name="combinations">Kombinace</string>
+    <string name="factsheets">Informací</string>
+    <string name="chat">Chat</string>
+    <string name="tripsit">Tripsit</string>
+    <string name="wiki">Wiki</string>
+    <string name="settings">Nastavení</string>
+    <string name="contact">Kontakt</string>
+    <string name="about">Info</string>
+
+    <!-- Chat -->
+    <string name="chat_activity">Chat</string>
+
+    <!-- Factsheets -->
+    <string name="factsheets_default_search">Droga</string>
+    <string name="factsheets_intro">Všechna data jsou převzata z tripbot API, které najdete na http://tripbot.tripsit.me/factsheet. Používejte tyto informace jako shrnutí faktů, a před požitím substancí si dohledejte co nejvíce informací.</string>
+    <string name="search">Hledat</string>
+    <string name="aliases">Přezdívky</string>
+    <string name="summary">Shrnutí</string>
+    <string name="dose">Dávka</string>
+    <string name="effects">Účinky</string>
+    <string name="categories">Kategorie</string>
+    <string name="timing">Načasování</string>
+    <string name="onset">"Náběh: "</string>
+    <string name="duration">"Trvání: "</string>
+
+    <!-- Combinations -->
+    <string name="select_drug"><![CDATA[" <Zvolit drogu>"]]></string>
+    <string name="safe_synergy">Bezpečné + Synergie</string>
+    <string name="safe_no_synergy">Bezpečné + Bez Synergie</string>
+    <string name="safe_decrease"><![CDATA[Bezpečné & Zeslabení]]></string>
+    <string name="unsafe">Nebezpečné</string>
+    <string name="serotonin_syndrome">Serotoninový syndrom</string>
+    <string name="deadly">Smrtelné</string>
+    <!-- First and second arguments are the names of the drugs being combined -->
+    <string name="safe_synergy_description">Kombinace %1$s a %2$s bývá bezpečná, a poskytuje synergii mezi efekty. Ujistěte se že snížíte dávkování, jelikož se drogy navzájem zesilují.</string>
+    <string name="safe_no_synergy_description">Kombinace %1$s a %2$s bývá bezpečná, a neposkytuje výrazně zeslabený nebo zesílený efekt.</string>
+    <string name="safe_decrease_description">Kombinace %1$s a %2$s bývá bezpečná, ale jedna nebo více z kombinovaných drog bude mít zeslabený efekt.</string>
+    <string name="unsafe_description">Kombinace %1$s a %2$s je nebezpečná, a mělo by se k ní přistupovat s velkou opatrností, nebo se jí vyhnout.</string>
+    <string name="serotonin_syndrome_description">Kombinace %1$s a %2$s zvyšuje risk vzniku serotoninového syndromu. Ujistěte se že droga kompletně opustila váš systém předtím, než požijete další.</string>
+    <string name="deadly_description">Kombinace %1$s a %2$s může být smrtelná, a mělo by se jí vyhnout i co se týče malých dávek.</string>
+
+    <!-- Settings -->
+    <string name="cache_freshness">Čerstvost cache</string>
+    <!-- Use 'getString(R.string.str_cache_content, getString(R.string.app_name)))' to retrieve the following String -->
+    <string name="cache_freshness_description">%1$s automaticky ukládá stažené informace pro minimalizaci užívání dat. Toto nastavení Vám umožňuje ovlivnit po jakou dobu jsou tyto data skladovány.</string>
+    <string name="default_cache_days">0\ndní</string>
+    <plurals name="days">
+        <item quantity="one">den</item>
+        <item quantity="few">dny</item>
+        <item quantity="other">dní</item>
+    </plurals>
+    <string name="chat_channel">Kanál chatu</string>
+    <string name="chat_channel_content">Upravte výchozí kanál ke kterému se připojíte po klepnutí na "Chat" v hlavním menu.</string>
+    <string name="save">Uložit</string>
+    <!-- Use 'getString(R.string.chat_channel_toast, "#channel")' to retrieve the following String -->
+    <string name="chat_channel_toast">Nový výchozí kanál je #%1$s</string>
+    <!-- Use 'getString(R.string.invalid_channel, "#channel")' to retrieve the following String -->
+    <string name="invalid_channel">#%1$s není platné jméno kanálu</string>
+    <string name="theme">Vzhled</string>
+    <string name="light">Světlý</string>
+    <string name="dark">Tmavý</string>
+
+    <!-- About -->
+    <string name="about_header">O TripSitu</string>
+    <string name="about_content">Tato apolikace je vytvořena organizací TripSit, která pomáhá poskytovat přesné informace o drogách, a o minimalizaci škod spojených s jejich užíváním. Máme také Chat, kde poskytujeme rady ohledně minimalizace škod, a promluvu.\nhttp://www.tripsit.me/</string>
+    <string name="disclaimer_header">Prohlášení</string>
+    <string name="disclaimer_content">I když máme tým který se stará o aktualizace informací v této aplikaci, není vždy možné poskytovat 100% přesné informace o bezpečnostní úrovni drog. Poskytované informace by měly být používány pouze jako shrnutí faktů, a před požitím substance je důležité zjistit si detailní informace z více zdrojů. Také doporučujeme používat testovací sady a váhy, aby jste se ujistili že aplikujete správnou dávku. Vše potřebné se dá levně koupit na internetu.</string>
+    <string name="support_header">Podpořte TripSit</string>
+    <string name="support_content">TripSit je služba provozovaná dobrovolníky, zdarma. Pokud si přejete pomoci, připojte se k nám na chat, sdílejte náš obsah na sociálních médiích, nebo poskytněte dar na provoz serverů.</string>
+
+    <!-- Contact -->
+    <string name="contact_header">Kontaktujte nás</string>
+    <string name="contact_content">Chcete poskytnout zpětnou vazbu na aplikaci či informace které zobrazujeme? Nebo se jen chcete na něco zeptat? Odkazy níže Vám umožní poslat nám email, nebo můžete zpět do hlavního menu za námi na chat. Připojte se na kanál #content pro zdroje, a více informací k obsahu který poskytujeme.</string>
+    <string name="bug_report">Nahlásit chybu</string>
+    <string name="suggestions">Návrhy / Požadavky</string>
+    <string name="content_issues">Potíže s obsahem / informacemi</string>
+    <string name="say_hi">Řekněte ahoj!</string>
+    <string name="bug_report_email">Před posláním emailu prosím vyplňte tyto informace.\n
+\n
+Verze androidu: \n
+Zařízení: \n
+Co se stalo než jste viděli chybu?:\n
+O jakou chybu jde? Padá aplikace, nebo se chová nezvykle?: \n
+Pokud chcete aby jsme Vás kontaktovali při řešení této chybi, prosím napište nám svoji přezdívku z Chatu, nebo email: </string>
+
+    <!-- Error handling -->
+    <string name="operation_failed">Akce selhala</string>
+    <string name="retry">Znovu</string>
+    <string name="return_to_menu">Zpět do menu</string>
+    <string name="ok">Ok</string>
+    <string name="failed_download_drug_info">Nezdařilo se stáhnout informace o droze. Prosím zkontrolujte připojení k internetu, a zkuste to znovu.</string>
+    <string name="failed_parse_drug_info">"Chyba v analýze drogy: "</string>
+    <string name="failed_download_drug_names">Nezdařilo se získat názvy drog z interface tripbot. Vyhledávání stále může fungovat, ale našeptávač nebude k dispozici.</string>
+    <string name="failed_parse_combinations">"Nezdařilo se analyzovat text o kombinacích, prosím nahlašte tuto chybu: "</string>
+    <string name="failed_download_combinations">Nezdařilo se stáhnout informace o kombinacích. Prosím zkontrolujte připojení k internetu, a zkuste to znovu</string>
+    <string name="error_email_client">Pro užití emailu si musíte stáhnout email klienta.</string>
+
+</resources>
