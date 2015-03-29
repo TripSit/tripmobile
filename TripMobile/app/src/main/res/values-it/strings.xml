@@ -40,10 +40,10 @@
     <string name="deadly">Fatali</string>
     <!-- First and second arguments are the names of the drugs being combined -->
     <string name="safe_synergy_description">Combinare %1$s e %2$s generalmente sano e scaturisce effetti sinergetici. Stai attento a diminuire la dose di ciascuna sostanza poiche` si potenzieranno a vicenda.</string>
-    <string name="safe_no_synergy_description">Combinare %1$s e %2$s generalmente sano, tuttavia non e` prevista alcun aumento o diminuzione dell'effetto.</string>
-    <string name="safe_decrease_description">Combinare %1$s e %2$s generalmente generalmente sano, tuttavia almeno una delle due sostanze avra' un effetto piu` leggelo quando combinata.</string>
+    <string name="safe_no_synergy_description">Combinare %1$s e %2$s generalmente sano, tuttavia non e` prevista alcun aumento o diminuzione dell\'effetto.</string>
+    <string name="safe_decrease_description">Combinare %1$s e %2$s generalmente generalmente sano, tuttavia almeno una delle due sostanze avra\' un effetto piu` leggelo quando combinata.</string>
     <string name="unsafe_description">Combinare %1$s e %2$s non e` sicuro e dovrebbero essere assunti con estrema prudenza, o ancor meglio evitate.</string>
-    <string name="serotonin_syndrome_description">Combinare %1$s e %2$se` aumenta il rischio di una sindrome serotoninica. Fa attenzione che una delle due droghe abbia completamente abbandonato il sistema prima di assumere l'altra.</string>
+    <string name="serotonin_syndrome_description">Combinare %1$s e %2$se` aumenta il rischio di una sindrome serotoninica. Fa attenzione che una delle due droghe abbia completamente abbandonato il sistema prima di assumere l\'altra.</string>
     <string name="deadly_description">Combinare %1$s e %2$s puo` essere mortale e dovrebbe essere evitato anche a dosaggi bassi.</string>
 
     <!-- Settings -->
