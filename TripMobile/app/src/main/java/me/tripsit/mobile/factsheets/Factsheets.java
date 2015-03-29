@@ -16,7 +16,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map.Entry;
@@ -26,6 +25,8 @@ import me.tripsit.mobile.R;
 import me.tripsit.mobile.TripMobileActivity;
 import me.tripsit.mobile.builders.LayoutBuilder;
 import me.tripsit.mobile.utils.CollectionUtils;
+import me.tripsit.mobile.utils.StringUtils;
+import me.tripsit.mobile.utils.ViewUtils;
 
 /**
  * The factsheets activity is used to retrieve data about particular drugs from the tripbot API
@@ -45,16 +46,18 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
 		findViewById.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				findViewById.setText("");
+                if (getString(R.string.factsheets_default_search).equals(findViewById.getText().toString())) {
+                    findViewById.setText("");
+                }
 			}
 		});
 		findViewById.setOnItemClickListener(new OnItemClickListener() {
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-                searchDrug((String)parent.getItemAtPosition(position));
-			}
-		});
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                searchDrug((String) parent.getItemAtPosition(position));
+            }
+        });
 	}
 	
 	public void clickSearch(View v) {
@@ -65,10 +68,16 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
 
     @Override
     public void searchDrug(String drugName) {
+        ViewUtils.hideViewsWithId(this, R.id.txt_drugDisclaimer, R.id.exlist_drugInfo, R.id.txt_drugName);
+        ViewUtils.showViewsWithId(this, R.id.progress_factsheets);
+
+        // Hide keyboard
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
         textView.clearFocus();
+
+        // Search for drug
         new DrugInfoAsyncTask(this, this, drugName).execute(this);
     }
 
@@ -78,18 +87,18 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
     }
 
     @Override
-    public void onDrugListComplete(Collection<String> drugNames) {
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,
-                drugNames.toArray(new String[drugNames.size()]));
+    public void onDrugListComplete(List<String> drugNames) {
+        ArrayAdapter<String> adapter = new DrugNamesAdapter(this, android.R.layout.simple_dropdown_item_1line, drugNames);
         AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
         textView.setAdapter(adapter);
     }
 
     @Override
     public void onDrugSearchComplete(Drug drug) {
+        ViewUtils.showViewsWithId(this, R.id.exlist_drugInfo, R.id.txt_drugName);
+        ViewUtils.hideViewsWithId(this, R.id.progress_factsheets);
+
         if (drug != null) {
-            TextView disclaimer = (TextView) findViewById(R.id.txt_drugDisclaimer);
-            disclaimer.setVisibility(View.GONE);
             updateDrugView(drug);
         }
     }
@@ -135,8 +144,7 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
     }
 
     private String manipulateDrugName(String drugName, Set<String> set) {
-        // If the drug name is less than 4 characters long, assume it's an acronym and capitalise it
-        String name = drugName.length() < 4 ? drugName.toUpperCase() : drugName;
+        String name = StringUtils.formatDrugName(drugName);
         if (set.size() > 0) {
             StringBuilder sb = new StringBuilder();
             sb.append(' ').append('(');

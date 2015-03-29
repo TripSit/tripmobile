@@ -38,4 +38,12 @@ public class About extends TripMobileActivity {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.twitter_url))));
         }
     }
+
+    public void clickBitcoin(View view) {
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.bitcoin_url))));
+        }catch (Exception e) {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.donate_url))));
+        }
+    }
 }

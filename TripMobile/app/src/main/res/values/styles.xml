@@ -10,6 +10,7 @@
     </style>
 
     <style name="DefaultText" parent="android:Widget.TextView">
+        <item name="android:autoLink">web</item>
         <item name="android:textColor">?primaryTextColour</item>
     </style>
 
@@ -140,6 +141,12 @@
         <item name="android:paddingLeft">5dp</item>
         <item name="android:visibility">gone</item>
         <item name="android:textSize">38dp</item>
+    </style>
+
+    <style name="LoadingSpinner" parent="android:Widget.ProgressBar.Large">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_gravity">center</item>
     </style>
 
 </resources>

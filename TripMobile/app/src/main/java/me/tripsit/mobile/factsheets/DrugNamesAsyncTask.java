@@ -11,6 +11,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -83,6 +84,6 @@ public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
 
     @Override
     protected void onPostExecute(Void aVoid) {
-        callback.onDrugListComplete(drugNames);
+        callback.onDrugListComplete(new ArrayList<String>(drugNames));
     }
 }
