@@ -11,6 +11,14 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    signingConfigs {
+        release {
+            storeFile file("../releasekeys.keystore")
+	    storePassword System.console().readLine("\nreleasekeys.keystore password: ")
+            keyAlias "tripmobile"
+            keyPassword System.console().readLine("\ntripmobile key password: ")
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
