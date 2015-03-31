@@ -7,3 +7,4 @@ gen
 local.properties
 TripMobile/build/
 TripMobile/app/build/
+TripMobile/releasekeys.keystore
