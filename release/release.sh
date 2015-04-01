@@ -18,8 +18,6 @@ version_name_line=$(grep versionName $GRADLE_LOCATION)
 version=$(echo $version_line | awk '{print $2}')
 full_version=$(echo $version_name_line | awk '{print $2}' | sed 's/"//g')
 
-echo $version; echo $full_version
-
 major=$(echo $full_version | sed 's/\..*//')
 minor=$(echo $full_version | sed 's/^[0-9]*\.//' | sed 's/\.[0-9]*$//')
 build=$(echo $full_version | sed 's/[0-9]*\.[0-9]*\.//')
