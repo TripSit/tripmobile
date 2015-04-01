@@ -15,8 +15,6 @@ GRADLE_LOCATION=../TripMobile/app/build.gradle
 
 version_line=$(grep versionCode $GRADLE_LOCATION)
 version_name_line=$(grep versionName $GRADLE_LOCATION)
-echo $version_line
-echo $version_name_line
 full_version=$(echo $version_line | awk '{print $2}')
 
 major=$(echo $full_version | sed 's/\..*//')
