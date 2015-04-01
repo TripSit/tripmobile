@@ -12,6 +12,7 @@
 IFS='*' # Change the IFS to prevent bash removing whitespace from variables
  
 GRADLE_LOCATION=../TripMobile/app/build.gradle
+MANIFEST_LOCATION=../TripMobile/app/src/main/AndroidManifest.xml
 
 version_line=$(grep versionCode $GRADLE_LOCATION)
 version_name_line=$(grep versionName $GRADLE_LOCATION)
@@ -43,5 +44,13 @@ new_version_name_line=$(echo $version_name_line | sed "s/$full_version/$new_vers
 
 sed -i "s/$version_line/$new_version_line/" $GRADLE_LOCATION
 sed -i "s/$version_name_line/$new_version_name_line/" $GRADLE_LOCATION
+
+manifest_version_line=$(grep android:versionCode $MANIFEST_LOCATION)
+manifest_version_name_line=$(grep android:versionName $MANIFEST_LOCATION)
+new_manifest_version_line=$(echo $manifest_version_line | sed "s/$version/$new_version/")
+new_manifest_version_name_line=$(echo $manifest_version_name_line | sed "s/$full_version/$new_version_name/")
+
+sed -i "s/$manifest_version_line/$new_manifest_version_line/" $MANIFEST_LOCATION
+sed -i "s/$manifest_version_name_line/$new_manifest_version_name_line/" $MANIFEST_LOCATION
 
 unset IFS # Unset the temp value we stored in IFS
