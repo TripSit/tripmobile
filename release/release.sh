@@ -15,7 +15,10 @@ GRADLE_LOCATION=../TripMobile/app/build.gradle
 
 version_line=$(grep versionCode $GRADLE_LOCATION)
 version_name_line=$(grep versionName $GRADLE_LOCATION)
-full_version=$(echo $version_line | awk '{print $2}')
+version=$(echo $version_line | awk '{print $2}')
+full_version=$(echo $version_name_line | awk '{print $2}' | sed 's/"//g')
+
+echo $version; echo $full_version
 
 major=$(echo $full_version | sed 's/\..*//')
 minor=$(echo $full_version | sed 's/^[0-9]*\.//' | sed 's/\.[0-9]*$//')
@@ -35,9 +38,10 @@ elif [ $1 = 'build' ]
     ((++build))
 fi
 
-new_version=$major.$minor.$build
-new_version_line=$(echo $version_line | sed "s/$full_version/$new_version/")
-new_version_name_line=$(echo $version_name_line | sed "s/$full_version/$new_version/")
+new_version=$((version+1))
+new_version_name=$major.$minor.$build
+new_version_line=$(echo $version_line | sed "s/$version/$new_version/")
+new_version_name_line=$(echo $version_name_line | sed "s/$full_version/$new_version_name/")
 
 sed -i "s/$version_line/$new_version_line/" $GRADLE_LOCATION
 sed -i "s/$version_name_line/$new_version_name_line/" $GRADLE_LOCATION
