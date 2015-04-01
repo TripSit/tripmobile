@@ -14,7 +14,11 @@ IFS='*' # Change the IFS to prevent bash removing whitespace from variables
 GRADLE_LOCATION=../TripMobile/app/build.gradle
 
 version_line=$(grep versionCode $GRADLE_LOCATION)
+version_name_line=$(grep versionName $GRADLE_LOCATION)
+echo $version_line
+echo $version_name_line
 full_version=$(echo $version_line | awk '{print $2}')
+
 major=$(echo $full_version | sed 's/\..*//')
 minor=$(echo $full_version | sed 's/^[0-9]*\.//' | sed 's/\.[0-9]*$//')
 build=$(echo $full_version | sed 's/[0-9]*\.[0-9]*\.//')
@@ -33,7 +37,11 @@ elif [ $1 = 'build' ]
     ((++build))
 fi
 
-new_line=$(echo $version_line | sed "s/$full_version/$major.$minor.$build/")
-sed -i "s/$version_line/$new_line/" $GRADLE_LOCATION
+new_version=$major.$minor.$build
+new_version_line=$(echo $version_line | sed "s/$full_version/$new_version/")
+new_version_name_line=$(echo $version_name_line | sed "s/$full_version/$new_version/")
+
+sed -i "s/$version_line/$new_version_line/" $GRADLE_LOCATION
+sed -i "s/$version_name_line/$new_version_name_line/" $GRADLE_LOCATION
 
 unset IFS # Unset the temp value we stored in IFS
