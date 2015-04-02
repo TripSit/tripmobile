@@ -71,6 +71,8 @@ gradle build
 cd -
 cp ../TripMobile/app/build/outputs/apk/app-release.apk TripMobile-$new_version_name.apk
 
+echo "Apk saved as TripMobile-$new_version_name.apk"
+
 unset KEYSTORE_PASSWORD
 unset KEY_PASSWORD
 unset IFS # Unset the temp value we stored in IFS
