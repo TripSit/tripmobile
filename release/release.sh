@@ -10,8 +10,17 @@
 #
 
 IFS='*' # Change the IFS to prevent bash removing whitespace from variables
- 
-GRADLE_LOCATION=../TripMobile/app/build.gradle
+
+read -s -p "Keystore password: " KEYSTORE_PASSWORD
+echo ""
+read -s -p "Key password: " KEY_PASSWORD
+echo ""
+
+export KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
+export KEY_PASSWORD=$KEY_PASSWORD
+
+GRADLE_DIRECTORY=../TripMobile/app
+GRADLE_LOCATION=$GRADLE_DIRECTORY/build.gradle
 MANIFEST_LOCATION=../TripMobile/app/src/main/AndroidManifest.xml
 
 version_line=$(grep versionCode $GRADLE_LOCATION)
@@ -23,21 +32,25 @@ major=$(echo $full_version | sed 's/\..*//')
 minor=$(echo $full_version | sed 's/^[0-9]*\.//' | sed 's/\.[0-9]*$//')
 build=$(echo $full_version | sed 's/[0-9]*\.[0-9]*\.//')
 
-if [ $1 = 'major' ]
+new_version=$version
+if [ $# -gt 0 ]
   then
-    ((++major))
-    minor=0
-    build=0
-elif [ $1 = 'minor' ]
-  then
-    ((++minor))
-    build=0
-elif [ $1 = 'build' ]
-  then
-    ((++build))
+  if [ $1 = 'major' ]
+    then
+      ((++major))
+      minor=0
+      build=0
+  elif [ $1 = 'minor' ]
+    then
+      ((++minor))
+      build=0
+  elif [ $1 = 'build' ]
+    then
+      ((++build))
+  fi
+  ((++new_version))
 fi
 
-new_version=$((version+1))
 new_version_name=$major.$minor.$build
 new_version_line=$(echo $version_line | sed "s/$version/$new_version/")
 new_version_name_line=$(echo $version_name_line | sed "s/$full_version/$new_version_name/")
@@ -53,4 +66,11 @@ new_manifest_version_name_line=$(echo $manifest_version_name_line | sed "s/$full
 sed -i "s/$manifest_version_line/$new_manifest_version_line/" $MANIFEST_LOCATION
 sed -i "s/$manifest_version_name_line/$new_manifest_version_name_line/" $MANIFEST_LOCATION
 
+cd $GRADLE_DIRECTORY
+gradle build
+cd -
+cp ../TripMobile/app/build/outputs/apk/app-release.apk TripMobile-$new_version_name.apk
+
+unset KEYSTORE_PASSWORD
+unset KEY_PASSWORD
 unset IFS # Unset the temp value we stored in IFS
