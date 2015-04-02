@@ -100,7 +100,7 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
                 drugsForInteraction = new LinkedList<String>();
                 interactionsMap.put(interaction, drugsForInteraction);
             }
-            drugsForInteraction.add(interactionDrugName);
+            drugsForInteraction.add(StringUtils.formatDrugName(interactionDrugName));
         }
         return interactionsMap;
     }
