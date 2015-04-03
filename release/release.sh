@@ -66,12 +66,11 @@ new_manifest_version_name_line=$(echo $manifest_version_name_line | sed "s/$full
 sed -i "s/$manifest_version_line/$new_manifest_version_line/" $MANIFEST_LOCATION
 sed -i "s/$manifest_version_name_line/$new_manifest_version_name_line/" $MANIFEST_LOCATION
 
-cd $GRADLE_DIRECTORY
-gradle build
-cd -
-cp ../TripMobile/app/build/outputs/apk/app-release.apk TripMobile-$new_version_name.apk
-
-echo "Apk saved as TripMobile-$new_version_name.apk"
+if (cd $GRADLE_DIRECTORY && gradle build && cd -)
+  then
+    cp ../TripMobile/app/build/outputs/apk/app-release.apk TripMobile-$new_version_name.apk
+    echo "Apk saved as TripMobile-$new_version_name.apk"
+fi
 
 unset KEYSTORE_PASSWORD
 unset KEY_PASSWORD
