@@ -1,3 +1,1 @@
-inkscape -h512 --export-background-opacity=0 --export-png=src/main/res/drawable-xxxhdpi/icon.png src/main/svg/icon.svg
-HEIGHT=80
-./pngconvert.sh -h$HEIGHT icon.svg
+inkscape -h500 --export-background-opacity=0 --export-png=storeicon.png src/main/svg/trippy_ts.svg
