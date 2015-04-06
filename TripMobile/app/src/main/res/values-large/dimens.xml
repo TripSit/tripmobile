@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="menu_button">130dp</dimen>
-    <dimen name="menu_text">30sp</dimen>
+    <dimen name="menu_text">29sp</dimen>
     <dimen name="heading_padding">3dp</dimen>
     <dimen name="heading_size">30sp</dimen>
     <dimen name="text_padding">9dp</dimen>
