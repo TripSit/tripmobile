@@ -25,6 +25,11 @@ public class Menu extends TripMobileActivity {
 		setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_menu, LayoutBuilder.buildParamsLinearCenterHorizontal()));
 	}
 
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+
     public void clickTripsit(View view) {
 		startChatActivity(generateUrl(Constants.TRIPSIT_CHAN));
 	}
