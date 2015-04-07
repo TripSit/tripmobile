@@ -61,6 +61,7 @@ public class Menu extends TripMobileActivity {
     public void clickSettings(View view) {
         Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
+	finish();
     }
 
     public void clickAbout(View view) {
