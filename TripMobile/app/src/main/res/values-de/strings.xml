@@ -39,9 +39,9 @@
     <string name="serotonin_syndrome">Serotonin-Syndrom</string>
     <string name="deadly">Tödlich</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="safe_synergy_description">Die Kombination von %1$s und %2$s ist generell geringes risiko und verursacht eine synergistische Reaktion. Denke daran, die Dosis beider Substanzen zu reduzieren, da sie sich gegenseitig verstärken.</string>
-    <string name="safe_no_synergy_description">Die Kombination von %1$s und %2$s ist generell geringes risiko und verursacht keine signifikant abgeschwächte oder verstärkte Reaktion.</string>
-    <string name="safe_decrease_description">Die Kombination von %1$s und %2$s ist generell geringes risiko, jedoch wird die gemeinsame Einnahme eine abgeschwächte Reaktion verursachen.</string>
+    <string name="safe_synergy_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko und verursacht eine synergistische Wirkung.</string>
+    <string name="safe_no_synergy_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko und verursacht keine signifikant abgeschwächte oder verstärkte Reaktion.</string>
+    <string name="safe_decrease_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko, jedoch wird die gemeinsame Einnahme eine abgeschwächte Reaktion verursachen.</string>
     <string name="unsafe_description">Die Kombination von %1$s und %2$s ist nicht sicher und sollte nur mit extremer Vorsicht oder besser gar nicht eingenommen werden.</string>
     <string name="serotonin_syndrome_description">Die Kombination von %1$s und %2$s verursacht die Gefahr des Serotoninsyndroms. Eine Substanz sollte deinen Körper komplett verlassen haben, bevor du die Andere einnimmst.</string>
     <string name="deadly_description">Die Kombination von %1$s und %2$s ist möglicherweise tödlich, und sollte selbst in geringen Dosierungen unbedingt vermieden werden.</string>
