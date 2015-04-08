@@ -45,16 +45,16 @@ Duration:
 
 <!-- Combinations -->
  <Select drug>
-Safe & Synergy
-Safe & No Synergy
-Safe & Decrease
+Low Risk & Synergy
+Low Risk & No Synergy
+Low Risk & Decrease
 Unsafe
 Serotonin Syndrome
 Deadly
 <!-- First and second arguments are the names of the drugs being combined -->
-Combining ___ and ___ is generally safe and provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.
-Combining ___ and ___ is generally safe, and doesn't provide any notable potentiated or decreased effects.
-Combining ___ and ___ is generally safe, however one or more of the drugs will have decreased effects when they are combined.
+Combining ___ and ___ is generally low risk and provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.
+Combining ___ and ___ is generally low risk, and doesn't provide any notable potentiated or decreased effects.
+Combining ___ and ___ is generally low risk, however one or more of the drugs will have decreased effects when they are combined.
 Combining ___ and ___ is unsafe and they should be taken with extreme caution, or ideally avoided entirely.
 Combining ___ and ___ increases the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.
 Combining ___ and ___ can be deadly, and should be avoided entirely even in low dosages

@@ -43,16 +43,16 @@
 
     <!-- Combinations -->
     <string name="select_drug"><![CDATA[" <Select drug>"]]></string>
-    <string name="safe_synergy"><![CDATA[Safe & Synergy]]></string>
-    <string name="safe_no_synergy"><![CDATA[Safe & No Synergy]]></string>
-    <string name="safe_decrease"><![CDATA[Safe & Decrease]]></string>
+    <string name="safe_synergy"><![CDATA[Low Risk & Synergy]]></string>
+    <string name="safe_no_synergy"><![CDATA[Low Risk & No Synergy]]></string>
+    <string name="safe_decrease"><![CDATA[Low Risk & Decrease]]></string>
     <string name="unsafe">Unsafe</string>
     <string name="serotonin_syndrome">Serotonin Syndrome</string>
     <string name="deadly">Deadly</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="safe_synergy_description">Combining %1$s and %2$s is generally safe and provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.</string>
-    <string name="safe_no_synergy_description">Combining %1$s and %2$s is generally safe, and doesn\'t provide any notable potentiated or decreased effects.</string>
-    <string name="safe_decrease_description">Combining %1$s and %2$s is generally safe, however one or more of the drugs will have decreased effects when they are combined.</string>
+	<string name="safe_synergy_description">Combining %1$s and %2$s is generally low risk and provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.</string>
+    <string name="safe_no_synergy_description">Combining %1$s and %2$s is generally low risk, and doesn\'t provide any notable potentiated or decreased effects.</string>
+    <string name="safe_decrease_description">Combining %1$s and %2$s is generally low risk, however one or more of the drugs will have decreased effects when they are combined.</string>
     <string name="unsafe_description">Combining %1$s and %2$s is unsafe and they should be taken with extreme caution, or ideally avoided entirely.</string>
     <string name="serotonin_syndrome_description">Combining %1$s and %2$s increases the risks of serotonin syndrome. Make sure that one of the drugs has completely left your system before taking the other.</string>
     <string name="deadly_description">Combining %1$s and %2$s can be deadly, and should be avoided entirely even in low dosages</string>
