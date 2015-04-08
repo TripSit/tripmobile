@@ -32,16 +32,16 @@
 
     <!-- Combinations -->
     <string name="select_drug"><![CDATA[" <Selecteer Drug>"]]></string>
-    <string name="safe_synergy"><![CDATA[Veilig & Voordelig]]></string>
-    <string name="safe_no_synergy"><![CDATA[Veilig & Neutraal]]></string>
-    <string name="safe_decrease"><![CDATA[Veilig & Nadelig]]></string>
+    <string name="safe_synergy"><![CDATA[Beperkt Risico & Voordelig]]></string>
+    <string name="safe_no_synergy"><![CDATA[Beperkt Risico & Neutraal]]></string>
+    <string name="safe_decrease"><![CDATA[Beperkt Risico & Nadelig]]></string>
     <string name="unsafe">Onveilig</string>
     <string name="serotonin_syndrome">Serotoninesyndroom</string>
     <string name="deadly">Dodelijk</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="safe_synergy_description">%1$s en %2$s combineren is over het algemeen veilig, en heeft een voordelige wisselwerking. Houdt er rekening mee dat de substanties elkaars effecten versterken, en doseer lager.</string> 
-    <string name="safe_no_synergy_description">%1$s en %2$s combineren is over het algemeen veilig, maar heeft geen voordelige of verminderende wisselwerking.</string> 
-    <string name="safe_decrease_description">%1$s en %2$s combineren is over het algemeen veilig, maar één of beide substanties verminderen de effecten van de ander.</string> 
+    <string name="safe_synergy_description">%1$s en %2$s combineren kent weinig risico's, en heeft een voordelige wisselwerking. Houdt er rekening mee dat de substanties elkaars effecten versterken, en doseer lager.</string> 
+    <string name="safe_no_synergy_description">%1$s en %2$s combineren kent weinig risico's, maar heeft geen voordelige of verminderende wisselwerking.</string> 
+    <string name="safe_decrease_description">%1$s en %2$s combineren kent weinig risico's, maar één of beide substanties verminderen de effecten van de ander.</string> 
     <string name="unsafe_description">%1$s en %2$s combineren is onveilig en bij voorkeur vermeden. Het is van groot belang zéér behoedzaam te zijn voor deze combinatie.</string> 
     <string name="serotonin_syndrome_description">%1$s en %2$s combineren verhoogt het risico op serotoninesyndroom. Zorg ervoor dat deze substanties nooit gelijktijdig in het lichaam aanwezig kunnen zijn.</string> 
     <string name="deadly_description">%1$s en %2$s combineren kan dodelijk zijn. Het is van levensbelang deze combinatie te vermijden, zelfs in lage dosissen.</string> 
