@@ -32,9 +32,9 @@
 
     <!-- Combinations -->
     <string name="select_drug"><![CDATA[" <Valitse päihde>"]]></string>
-    <string name="safe_synergy"><![CDATA[Vähäriskinen & Synergiaa]]></string>
-    <string name="safe_no_synergy"><![CDATA[Vähäriskinen & Ei synergiaa]]></string>
-    <string name="safe_decrease"><![CDATA[Vähäriskinen & Vähenemistä]]></string>
+    <string name="safe_synergy"><![CDATA[Pienet Riskit & Synergiaa]]></string>
+    <string name="safe_no_synergy"><![CDATA[Pienet Riskit & Ei synergiaa]]></string>
+    <string name="safe_decrease"><![CDATA[Pienet Riskit & Vähenemistä]]></string>
     <string name="unsafe">Vaarallinen</string>
     <string name="serotonin_syndrome">Serotoniinisyndrooma</string>
     <string name="deadly">Tappava</string>
