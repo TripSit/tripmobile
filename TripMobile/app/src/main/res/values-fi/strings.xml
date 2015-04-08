@@ -32,16 +32,16 @@
 
     <!-- Combinations -->
     <string name="select_drug"><![CDATA[" <Valitse päihde>"]]></string>
-    <string name="safe_synergy"><![CDATA[Turvallinen & Synergiaa]]></string>
-    <string name="safe_no_synergy"><![CDATA[Turvallinen & Ei synergiaa]]></string>
-    <string name="safe_decrease"><![CDATA[Turvallinen & Vähenemistä]]></string>
+    <string name="safe_synergy"><![CDATA[Vähäriskinen & Synergiaa]]></string>
+    <string name="safe_no_synergy"><![CDATA[Vähäriskinen & Ei synergiaa]]></string>
+    <string name="safe_decrease"><![CDATA[Vähäriskinen & Vähenemistä]]></string>
     <string name="unsafe">Vaarallinen</string>
     <string name="serotonin_syndrome">Serotoniinisyndrooma</string>
     <string name="deadly">Tappava</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="safe_synergy_description">%1$s ja %2$s on yleisesti turvallinen kombo ja se aiheuttaa synergistisiä vaikutuksia. Ota tämä huomioon ja annostele kumpaakin vähemmän, sillä ne voimistavat toistensa vaikutuksia.</string> 
-    <string name="safe_no_synergy_description">%1$s ja %2$s on yleisesti turvallinen kombo. Se ei kuitenkaan aiheuta voimakkaampia tai vähentyneitä vaikutuksia.</string> 
-    <string name="safe_decrease_description">%1$s ja %2$s on yleisesti turvallinen kombo. Tämä yhdistelmä kuitenkin vähentää yhden tai useamman nautitun päihteen vaikutuksia.</string> 
+    <string name="safe_synergy_description">%1$s ja %2$s on yleisesti vähäriskinen kombo ja se aiheuttaa synergistisiä vaikutuksia. Ota tämä huomioon ja annostele kumpaakin vähemmän, sillä ne voimistavat toistensa vaikutuksia.</string> 
+    <string name="safe_no_synergy_description">%1$s ja %2$s on yleisesti vähäriskinen kombo. Se ei kuitenkaan aiheuta voimakkaampia tai vähentyneitä vaikutuksia.</string> 
+    <string name="safe_decrease_description">%1$s ja %2$s on yleisesti vähäriskinen kombo. Tämä yhdistelmä kuitenkin vähentää yhden tai useamman nautitun päihteen vaikutuksia.</string> 
     <string name="unsafe_description">%1$s ja %2$s yhdessä otettuna on vaarallista ja tähän komboon pitää suhtautua äärimmäisellä varovuudella tai ideaalitilanteessa välttää tätä yhdistelmää kokonaan.</string> 
     <string name="serotonin_syndrome_description">%1$s ja %2$s yhdistettynä kasvattavat serotoniinisyndrooman riskiä. Ole täysin varma siitä, että jompikumpi päihteistä on poistunut kehostasi kokonaan ennen kuin otat kyseisen yhdistelmän toista päihdettä.</string> 
     <string name="deadly_description">%1$s ja %2$s on kombona tappavan vaarallinen. Tätä kombinaatiota tulisi välttää kokonaan vaikka annostus olisikin pieni.</string> 
