@@ -32,16 +32,16 @@
 
     <!-- Combinations -->
     <string name="select_drug"><![CDATA[" <Zvolit drogu>"]]></string>
-    <string name="safe_synergy">Bezpečné + Synergie</string>
-    <string name="safe_no_synergy">Bezpečné + Bez Synergie</string>
-    <string name="safe_decrease"><![CDATA[Bezpečné & Zeslabení]]></string>
+    <string name="safe_synergy">Malé Riziko + Synergie</string>
+    <string name="safe_no_synergy">Malé Riziko + Bez Synergie</string>
+    <string name="safe_decrease"><![CDATA[Malé Riziko & Zeslabení]]></string>
     <string name="unsafe">Nebezpečné</string>
     <string name="serotonin_syndrome">Serotoninový syndrom</string>
     <string name="deadly">Smrtelné</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="safe_synergy_description">Kombinace %1$s a %2$s bývá bezpečná, a poskytuje synergii mezi efekty. Ujistěte se že snížíte dávkování, jelikož se drogy navzájem zesilují.</string>
-    <string name="safe_no_synergy_description">Kombinace %1$s a %2$s bývá bezpečná, a neposkytuje výrazně zeslabený nebo zesílený efekt.</string>
-    <string name="safe_decrease_description">Kombinace %1$s a %2$s bývá bezpečná, ale jedna nebo více z kombinovaných drog bude mít zeslabený efekt.</string>
+    <string name="safe_synergy_description">Kombinace %1$s a %2$s je relativně bezpečná, a poskytuje synergii mezi efekty. Ujistěte se že snížíte dávkování, jelikož se drogy navzájem zesilují.</string>
+    <string name="safe_no_synergy_description">Kombinace %1$s a %2$s je relativně bezpečná, a neposkytuje výrazně zeslabený nebo zesílený efekt.</string>
+    <string name="safe_decrease_description">Kombinace %1$s a %2$s je relativně bezpečná, ale jedna nebo více z kombinovaných drog bude mít zeslabený efekt.</string>
     <string name="unsafe_description">Kombinace %1$s a %2$s je nebezpečná, a mělo by se k ní přistupovat s velkou opatrností, nebo se jí vyhnout.</string>
     <string name="serotonin_syndrome_description">Kombinace %1$s a %2$s zvyšuje risk vzniku serotoninového syndromu. Ujistěte se že droga kompletně opustila váš systém předtím, než požijete další.</string>
     <string name="deadly_description">Kombinace %1$s a %2$s může být smrtelná, a mělo by se jí vyhnout i co se týče malých dávek.</string>
