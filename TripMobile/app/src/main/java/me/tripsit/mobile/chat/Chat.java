@@ -1,6 +1,5 @@
 package me.tripsit.mobile.chat;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
 import android.webkit.WebView;
@@ -25,7 +24,6 @@ public class Chat extends TripMobileActivity {
 	}
 
 	private void initialiseWebView() {
-        final Activity activity = this;
         if (webView == null) {
             webView = (WebView) findViewById(R.id.web_irc);
             webView.getSettings().setJavaScriptEnabled(true);
