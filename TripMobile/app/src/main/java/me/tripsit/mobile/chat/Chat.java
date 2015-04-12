@@ -38,6 +38,7 @@ public class Chat extends TripMobileActivity {
 
     @Override
     public void onBackPressed() {
+        webView.destroy();
         finish();
     }
 
