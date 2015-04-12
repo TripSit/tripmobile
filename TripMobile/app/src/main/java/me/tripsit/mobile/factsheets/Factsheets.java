@@ -97,9 +97,18 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
     public void onDrugSearchComplete(Drug drug) {
         ViewUtils.showViewsWithId(this, R.id.exlist_drugInfo, R.id.txt_drugName);
         ViewUtils.hideViewsWithId(this, R.id.progress_factsheets);
-
         if (drug != null) {
             updateDrugView(drug);
+            final AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
+            textView.setText(getString(R.string.factsheets_default_search));
+            textView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                @Override
+                public void onFocusChange(View v, boolean hasFocus) {
+                    if (hasFocus) {
+                        textView.setText("");
+                    }
+                }
+            });
         }
     }
 
