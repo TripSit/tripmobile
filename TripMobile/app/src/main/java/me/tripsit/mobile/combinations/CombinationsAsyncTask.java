@@ -11,9 +11,9 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
 
 import me.tripsit.mobile.R;
 import me.tripsit.mobile.comms.ContentRetriever;
@@ -25,12 +25,12 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
 
     private final CombinationsCallback callback;
     private final Activity activity;
-    private final Map<String, Map<String, List<String>>> combinationsMap;
+    private final Map<String, Map<String, Set<String>>> combinationsMap;
 
     CombinationsAsyncTask(CombinationsCallback callback, Activity activity) {
         this.callback = callback;
         this.activity = activity;
-        combinationsMap = new HashMap<String, Map<String, List<String>>>();
+        combinationsMap = new HashMap<String, Map<String, Set<String>>>();
     }
 
     @Override
@@ -42,7 +42,7 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
             JSONArray drugNames = combinations.names();
             for (int i = 0; i < drugNames.length(); i++) {
                 String drugName = drugNames.getString(i);
-                Map<String, List<String>> interactionsMap = buildInteractionsMap(combinations, drugName);
+                Map<String, Set<String>> interactionsMap = buildInteractionsMap(combinations, drugName);
                 combinationsMap.put(StringUtils.formatDrugName(drugName), interactionsMap);
             }
         } catch (final JSONException e) {
@@ -86,8 +86,8 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
         return null;
     }
 
-    private Map<String, List<String>> buildInteractionsMap(JSONObject combinations, String drugName) throws JSONException {
-        Map<String, List<String>> interactionsMap = new HashMap<String, List<String>>();
+    private Map<String, Set<String>> buildInteractionsMap(JSONObject combinations, String drugName) throws JSONException {
+        Map<String, Set<String>> interactionsMap = new HashMap<String, Set<String>>();
 
         JSONObject interactions = combinations.getJSONObject(drugName);
         JSONArray interactionDrugNames = interactions.names();
@@ -95,9 +95,9 @@ public class CombinationsAsyncTask extends AsyncTask<Activity, Void, Void> {
             String interactionDrugName = interactionDrugNames.getString(j);
             String interaction = interactions.getString(interactionDrugName);
 
-            List<String> drugsForInteraction = interactionsMap.get(interaction);
+            Set<String> drugsForInteraction = interactionsMap.get(interaction);
             if (drugsForInteraction == null) {
-                drugsForInteraction = new LinkedList<String>();
+                drugsForInteraction = new TreeSet<>();
                 interactionsMap.put(interaction, drugsForInteraction);
             }
             drugsForInteraction.add(StringUtils.formatDrugName(interactionDrugName));

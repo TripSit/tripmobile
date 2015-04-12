@@ -65,7 +65,7 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
     private String leftDrug = null;
     private String rightDrug = null;
 
-    private Map<String, Map<String, List<String>>> combinationsMap = new TreeMap<String, Map<String, List<String>>>();
+    private Map<String, Map<String, Set<String>>> combinationsMap = new TreeMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,7 +91,7 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 leftDrug = getSelectedDrugName(combinationsMap.keySet(), position);
 
-                Map<String, List<String>> interactions = combinationsMap.get(leftDrug);
+                Map<String, Set<String>> interactions = combinationsMap.get(leftDrug);
 
                 if (interactions != null) {
                     updateViewWithInteractions(interactions);
@@ -162,10 +162,10 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
         return combinations;
     }
 
-    private void updateViewWithInteractions(Map<String, List<String>> interactionsMap) {
+    private void updateViewWithInteractions(Map<String, Set<String>> interactionsMap) {
         resetCombinationVisibilities();
 
-        for (Map.Entry<String, List<String>> entry : interactionsMap.entrySet()) {
+        for (Map.Entry<String, Set<String>> entry : interactionsMap.entrySet()) {
             CombinationSeverity severity = CombinationSeverity.getSeverityWithText(entry.getKey());
             if (severity != null) {
                 TextView header = (TextView) findViewById(severity.getHeaderId());
@@ -179,13 +179,13 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
         }
     }
 
-    private void updateViewWithSingleInteraction(Map<String, List<String>> interactionsMap, String drugName) {
+    private void updateViewWithSingleInteraction(Map<String, Set<String>> interactionsMap, String drugName) {
         resetCombinationVisibilities();
 
-        for (Map.Entry<String, List<String>> entry : interactionsMap.entrySet()) {
-            List<String> list = entry.getValue();
-            if (list != null) {
-                for (String interactionDrug : list) {
+        for (Map.Entry<String, Set<String>> entry : interactionsMap.entrySet()) {
+            Set<String> set = entry.getValue();
+            if (set != null) {
+                for (String interactionDrug : set) {
                     if (interactionDrug.equals(drugName)) {
                         CombinationSeverity severity = CombinationSeverity.getSeverityWithText(entry.getKey());
                         TextView textView = (TextView) findViewById(R.id.txt_single_combination);
@@ -199,7 +199,7 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
 
     }
 
-    private String convertListToText(List<String> values) {
+    private String convertListToText(Set<String> values) {
         StringBuilder sb = new StringBuilder();
         for (String s : values) {
             sb.append(s).append("\n");
@@ -222,11 +222,11 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
     }
 
     @Override
-    public void updateCombinationsMap(Map<String, Map<String, List<String>>> combinations) {
+    public void updateCombinationsMap(Map<String, Map<String, Set<String>>> combinations) {
         setProgressBarIndeterminateVisibility(false);
         ProgressBar progressBar = (ProgressBar) findViewById(R.id.progress_combinations);
         progressBar.setVisibility(View.GONE);
-        combinationsMap.put(getString(R.string.select_drug), new TreeMap<String, List<String>>());
+        combinationsMap.put(getString(R.string.select_drug), new TreeMap<String, Set<String>>());
         combinationsMap.putAll(combinations);
         refreshSpinner();
     }
