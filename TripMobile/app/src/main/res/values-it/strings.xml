@@ -32,9 +32,9 @@
 
     <!-- Combinations -->
     <string name="select_drug"><![CDATA[" <Scegli il tipo di sostanza>"]]></string>
-    <string name="safe_synergy"><![CDATA[Sicure & Sinergetiche]]></string>
-    <string name="safe_no_synergy"><![CDATA[Sicure & Non sinergetiche]]></string>
-    <string name="safe_decrease"><![CDATA[Sicure & Diminuzione]]></string>
+    <string name="safe_synergy"><![CDATA[Basso Rischio & Sinergetiche]]></string>
+    <string name="safe_no_synergy"><![CDATA[Basso Rischio & Non sinergetiche]]></string>
+    <string name="safe_decrease"><![CDATA[Basso Rischio & Diminuzione]]></string>
     <string name="unsafe">Non sicure</string>
     <string name="serotonin_syndrome">Sindrome da serotonina</string>
     <string name="deadly">Fatali</string>
