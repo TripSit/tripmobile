@@ -17,7 +17,7 @@ fi
 # PARAMETERS: {multiplier} {destination folder}
 function export {
   VALUE=$(echo "scale=0; $ORIGINAL_VALUE*$1" | bc -l)
-  CMD="inkscape $FLAG$VALUE --export-background-opacity=0 --export-png=src/main/res/$2/$DEST_FILENAME src/main/svg/$FILENAME > /dev/null"
+  CMD="inkscape $FLAG$VALUE --export-background-opacity=0 --export-png=src/main/res/$2/$DEST_FILENAME svg/$FILENAME > /dev/null"
   echo $CMD
   eval $CMD
 } 
