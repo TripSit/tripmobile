@@ -13,8 +13,8 @@ import me.tripsit.mobile.R;
 public class LayoutBuilder {
 	
 	public static LinearLayout buildLinearLayout(Activity origin, int viewId, LayoutParams params) {
-		LayoutInflater inflater = (LayoutInflater) origin.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		
+		LayoutInflater inflater = LayoutInflater.from(origin);
+
 		LinearLayout baseLayout = new LinearLayout(origin);
 		baseLayout.setOrientation(LinearLayout.VERTICAL);
 		

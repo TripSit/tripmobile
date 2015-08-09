@@ -9,11 +9,6 @@
     tools:context="${packageName}.${activityClass}"
     style="@style/BaseThemeWithBackground">
 
-    <ImageView
-        android:id="@+id/img_Logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/logo"
-        android:src="@drawable/logo" />
+    <include layout="@layout/app_header" />
 
 </RelativeLayout>

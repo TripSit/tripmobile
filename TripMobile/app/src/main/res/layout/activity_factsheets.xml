@@ -6,7 +6,11 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     tools:context="${packageName}.${activityClass}"
-    style="@style/BaseThemeWithBackground">
+    style="@style/BaseThemeWithBackground"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <include layout="@layout/app_header" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +25,9 @@
             android:layout_weight="0.7"
             android:singleLine="true"
             android:textColor="?autoCompleteTextColor"
-            android:text="@string/factsheets_default_search" >
+            android:textColorHint="?autoCompleteTextColor"
+            android:imeOptions="actionDone"
+            android:hint="@string/factsheets_default_search" >
             <requestFocus />
         </AutoCompleteTextView>
 
@@ -43,6 +49,7 @@
 
     <ProgressBar
         style="@style/LoadingSpinner"
+        android:layout_height="match_parent"
         android:id="@+id/progress_factsheets"
         android:visibility="gone"/>
 
@@ -57,6 +64,7 @@
         android:id="@+id/exlist_drugInfo"
         android:layout_width="match_parent"
         android:layout_height="0dip"
+        android:groupIndicator="@null"
         android:layout_weight="1" >
     </ExpandableListView>
 

@@ -12,6 +12,11 @@
         android:textSize="17sp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
-        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
- 
+        android:text="@string/Placeholder"/>
+
+    <ImageView android:id="@+id/img_listItemDivider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="?dividerColour"/>
+
 </LinearLayout>
