@@ -1,11 +1,14 @@
 package me.tripsit.mobile.factsheets;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.text.Editable;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -34,35 +37,48 @@ import me.tripsit.mobile.utils.ViewUtils;
  */
 public class Factsheets extends TripMobileActivity implements FactsheetsCallback {
 
+    AutoCompleteTextView drugNameSearch;
+
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_factsheets, LayoutBuilder.buildParams()));
+		setContentView(R.layout.activity_factsheets);
 		searchDrugNames();
-		setDrugNameSearchListeners((AutoCompleteTextView) findViewById(R.id.drugNameSearch));
+        drugNameSearch = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
+		setDrugNameSearchListeners();
 	}
-	
-	private void setDrugNameSearchListeners(final AutoCompleteTextView findViewById) {
-		findViewById.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-                if (getString(R.string.factsheets_default_search).equals(findViewById.getText().toString())) {
-                    findViewById.setText("");
+
+	private void setDrugNameSearchListeners() {
+        drugNameSearch.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (getString(R.string.factsheets_default_search).equals(drugNameSearch.getText().toString())) {
+                    drugNameSearch.setText("");
                 }
-			}
-		});
-		findViewById.setOnItemClickListener(new OnItemClickListener() {
+            }
+        });
+        drugNameSearch.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 searchDrug((String) parent.getItemAtPosition(position));
             }
         });
+        drugNameSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
+                if ( actionId == EditorInfo.IME_ACTION_DONE ) {
+                    searchDrug(drugNameSearch.getText().toString());
+                }
+                return false;
+            }
+        });
+
+
 	}
 	
 	public void clickSearch(View v) {
-		AutoCompleteTextView searchBox = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
-		Editable drugName = searchBox.getText();
+		Editable drugName = drugNameSearch.getText();
         searchDrug(drugName.toString());
 	}
 
@@ -74,8 +90,7 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
         // Hide keyboard
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-        AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
-        textView.clearFocus();
+        drugNameSearch.clearFocus();
 
         // Search for drug
         new DrugInfoAsyncTask(this, this, drugName).execute(this);
@@ -89,8 +104,7 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
     @Override
     public void onDrugListComplete(List<String> drugNames) {
         ArrayAdapter<String> adapter = new DrugNamesAdapter(this, android.R.layout.simple_dropdown_item_1line, drugNames);
-        AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
-        textView.setAdapter(adapter);
+        drugNameSearch.setAdapter(adapter);
     }
 
     @Override
@@ -99,13 +113,12 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
         ViewUtils.hideViewsWithId(this, R.id.progress_factsheets);
         if (drug != null) {
             updateDrugView(drug);
-            final AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
-            textView.setText(getString(R.string.factsheets_default_search));
-            textView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            drugNameSearch.setText(getString(R.string.factsheets_default_search));
+            drugNameSearch.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                 @Override
                 public void onFocusChange(View v, boolean hasFocus) {
                     if (hasFocus) {
-                        textView.setText("");
+                        drugNameSearch.setText("");
                     }
                 }
             });
