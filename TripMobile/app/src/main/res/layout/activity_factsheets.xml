@@ -49,7 +49,6 @@
 
     <ProgressBar
         style="@style/LoadingSpinner"
-        android:layout_height="match_parent"
         android:id="@+id/progress_factsheets"
         android:visibility="gone"/>
 
