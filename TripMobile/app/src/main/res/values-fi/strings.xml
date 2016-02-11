@@ -76,7 +76,7 @@
 
     <!-- Contact -->
     <string name="contact_header">Ota yhteyttä</string>
-    <string name="contact_content">Onko sinulla yhtään palautetta sovelluksesta tai mistään näyttämästämme informaatiosta? Tai ehkä sinä vain haluat sanoa \"Hei!\" ja kysyä kysymyksen? Linkeistä alhaalla voit lähettää meille sähköpostissa palautetta, tai voit myös mennä takaisin päävalikkoon ja chatata meidän kanssa livenä IRC:ssä. Liity #content kanavalle uusille ja opi uusista lähteistä ja lisää meidän tarjoamastamme sisällöstä.</string>
+    <string name="contact_content">Onko sinulla yhtään palautetta sovelluksesta tai mistään näyttämästämme informaatiosta? Tai ehkä sinä vain haluat sanoa \"Hei!\" ja kysyä kysymyksen? Linkeistä alhaalla voit lähettää meille sähköpostissa palautetta, tai voit myös mennä takaisin päävalikkoon ja chatata meidän kanssa livenä IRC:ssä. Liity #content kanavalle saadaksesi lisää tietoa lähteistä sekä tarjoamastamme sisällöstä.</string>
     <string name="bug_report">Raportoi bugi</string>
     <string name="suggestions">Ehdotuksia / Pyyntöjä</string>
     <string name="content_issues">Ongelmia sisällön tai informaation kanssa</string>

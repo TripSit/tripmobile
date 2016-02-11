@@ -2,10 +2,13 @@ package me.tripsit.mobile.factsheets;
 
 import android.content.Context;
 import android.graphics.Typeface;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.LinkedHashMap;
@@ -22,7 +25,7 @@ public class DrugListAdapter extends BaseExpandableListAdapter {
 		this.context = context;
 		this.content = content;
 	}
-	
+
 	@Override
 	public int getGroupCount() {
 		return content.size();
@@ -63,9 +66,7 @@ public class DrugListAdapter extends BaseExpandableListAdapter {
 			View convertView, ViewGroup parent) {
 		String headerTitle = (String) getGroup(groupPosition);
         if (convertView == null) {
-            LayoutInflater infalInflater = (LayoutInflater) this.context
-                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = infalInflater.inflate(R.layout.list_header, null);
+            convertView = LayoutInflater.from(context).inflate(R.layout.list_header, parent, false);
         }
  
         TextView lblListHeader = (TextView) convertView.findViewById(R.id.txt_ListHeader);
@@ -79,17 +80,33 @@ public class DrugListAdapter extends BaseExpandableListAdapter {
 	public View getChildView(int groupPosition, int childPosition,
 			boolean isLastChild, View convertView, ViewGroup parent) {
 		final String childText = (String) getChild(groupPosition, childPosition);
-		 
-        if (convertView == null) {
-            LayoutInflater infalInflater = (LayoutInflater) this.context
-                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = infalInflater.inflate(R.layout.list_item, null);
+
+		LinearLayout layout = (LinearLayout)convertView;
+        if (layout == null || layout.getTag() == null ) {
+            layout = (LinearLayout)LayoutInflater.from(context).inflate(R.layout.list_item, parent, false);
+			layout.setTag(new ChildViewHolder(layout));
         }
- 
-        TextView txtListChild = (TextView) convertView.findViewById(R.id.txt_listItem);
- 
-        txtListChild.setText(childText);
-        return convertView;
+		ChildViewHolder holder = (ChildViewHolder)layout.getTag();
+
+		holder.text.setText(childText);
+
+		if ( isLastChild ) {
+			holder.divider.setVisibility(View.VISIBLE);
+		} else {
+			holder.divider.setVisibility(View.GONE);
+		}
+
+        return layout;
+	}
+
+	private class ChildViewHolder {
+		public TextView text;
+		public ImageView divider;
+
+		public ChildViewHolder(LinearLayout layout) {
+			text = (TextView)layout.findViewById(R.id.txt_listItem);
+			divider = (ImageView)layout.findViewById(R.id.img_listItemDivider);
+		}
 	}
 
 	@Override
