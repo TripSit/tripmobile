@@ -11,10 +11,10 @@ import me.tripsit.mobile.builders.LayoutBuilder;
 public class Contact extends TripMobileActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_contact, LayoutBuilder.buildParamsLinearCenterHorizontal()));
+    public int getLayoutId() {
+        return R.layout.activity_contact;
     }
+
 
     public void bugReport(View view) {
         sendEmail(getString(R.string.android_email_address), getEmailHeader(R.string.email_bug_report_header), getString(R.string.bug_report_email));

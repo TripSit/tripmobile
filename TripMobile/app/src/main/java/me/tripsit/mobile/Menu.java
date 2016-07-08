@@ -19,11 +19,10 @@ import me.tripsit.mobile.wiki.Wiki;
  */
 public class Menu extends TripMobileActivity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_menu, LayoutBuilder.buildParamsLinearCenterHorizontal()));
-	}
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_menu;
+    }
 
     @Override
     public void onBackPressed() {

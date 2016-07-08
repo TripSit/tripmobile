@@ -70,8 +70,12 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_combinations, LayoutBuilder.buildParams()));
         downloadCombinations();
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_combinations;
     }
 
     @Override

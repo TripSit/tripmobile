@@ -40,15 +40,19 @@ public class Factsheets extends TripMobileActivity implements FactsheetsCallback
     AutoCompleteTextView drugNameSearch;
 
     @Override
+    public int getLayoutId() {
+        return R.layout.activity_factsheets;
+    }
+
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_factsheets);
 		searchDrugNames();
         drugNameSearch = (AutoCompleteTextView) findViewById(R.id.drugNameSearch);
 		setDrugNameSearchListeners();
 	}
 
-	private void setDrugNameSearchListeners() {
+    private void setDrugNameSearchListeners() {
         drugNameSearch.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
