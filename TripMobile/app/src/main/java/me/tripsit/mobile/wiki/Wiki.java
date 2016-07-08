@@ -19,11 +19,15 @@ public class Wiki extends TripMobileActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_wiki, LayoutBuilder.buildParams()));
 		initialiseWebView();
 	}
 
-	private void initialiseWebView() {
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_wiki;
+    }
+
+    private void initialiseWebView() {
         if (webView == null) {
             webView = (WebView) findViewById(R.id.web_wiki);
             ProgressBar progressBar = (ProgressBar) findViewById(R.id.wiki_progress);

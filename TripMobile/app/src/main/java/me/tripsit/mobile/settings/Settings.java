@@ -31,10 +31,14 @@ public class Settings extends TripMobileActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_settings, LayoutBuilder.buildParams()));
         setAppNameOnTextContent();
         setUpSeekBar();
         setChatChannels(CHAT_CHANNELS);
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_settings;
     }
 
     /**
