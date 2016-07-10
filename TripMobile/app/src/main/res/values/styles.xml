@@ -1,9 +1,11 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="BaseTheme" parent="Theme.AppCompat.Light">
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="autoCompleteTextColor">?secondaryTextColour</item>
+        <item name="android:textColor">?primaryTextColour</item>
         <item name="android:dropDownItemStyle">@style/DropDownItem</item>
         <item name="android:expandableListViewStyle">@style/ExpandableListView</item>
+        <item name="android:editTextStyle">@style/DefaultEditText</item>
         <item name="android:textViewStyle">@style/DefaultText</item>
         <item name="android:textAppearanceMedium">@style/MediumText</item>
         <item name="android:textAppearanceLarge">@style/LargeText</item>
@@ -11,7 +13,11 @@
 
     <style name="DefaultText" parent="android:Widget.TextView">
         <item name="android:autoLink">web</item>
+    </style>
+
+    <style name="DefaultEditText" parent="TextAppearance.AppCompat">
         <item name="android:textColor">?primaryTextColour</item>
+        <item name="android:textColorHint">?secondaryTextColour</item>
     </style>
 
     <style name="MediumText" parent="DefaultText">
@@ -38,6 +44,7 @@
         <item name="dropDownColour">@color/dark_text_secondary</item>
         <item name="backgroundColour">@color/dark_background</item>
         <item name="android:dropDownItemStyle">@style/DropDownItem</item>
+        <item name="android:windowBackground">@color/dark_background</item>
     </style>
 
     <style name="LightTheme" parent="BaseTheme">
@@ -47,6 +54,7 @@
         <item name="secondaryTextColour">@color/light_text_secondary</item>
         <item name="dropDownColour">@color/light_text_secondary</item>
         <item name="backgroundColour">@color/light_background</item>
+        <item name="android:windowBackground">@color/light_background</item>
     </style>
 
     <style name="LightButton" parent="android:style/Widget.Button">
@@ -57,20 +65,24 @@
         <item name="android:background">@drawable/selector_button_dark</item>
     </style>
 
-    <style name="CombinationsHeader" parent="@android:style/TextAppearance.Large">
+    <style name="CombinationsHeader" parent="DefaultText">
         <item name="android:paddingLeft">4dip</item>
+        <item name="android:textSize">28sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:visibility">gone</item>
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
-    <style name="CombinationsContent" parent="@android:style/TextAppearance.Medium">
+    <style name="CombinationsContent" parent="DefaultText">
         <item name="android:paddingLeft">8dip</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:paddingBottom">3dip</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:visibility">gone</item>
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
     <style name="ProgressBar" parent="android:Widget.ProgressBar.Horizontal">
@@ -81,7 +93,7 @@
         <item name="android:layout_height">10dip</item>
     </style>
 
-    <style name="MenuText" parent="@android:style/TextAppearance.Large">
+    <style name="MenuText" parent="DefaultText">
         <item name="android:textColor">?primaryTextColour</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">0dp</item>

@@ -80,9 +80,7 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
 
     @Override
     public void downloadCombinations() {
-        setProgressBarIndeterminateVisibility(true);
-        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progress_combinations);
-        progressBar.setVisibility(View.VISIBLE);
+        findViewById(R.id.progress_combinations).setVisibility(View.VISIBLE);
         new CombinationsAsyncTask(this, this).execute(this);
     }
 
