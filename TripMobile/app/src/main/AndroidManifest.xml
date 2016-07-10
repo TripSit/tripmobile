@@ -31,38 +31,35 @@
             android:name=".factsheets.Factsheets"
             android:label="@string/factsheets"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:windowSoftInputMode="stateAlwaysHidden" >
-        </activity>
+            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name=".wiki.Wiki"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:label="@string/wiki" >
-        </activity>
+            android:label="@string/wiki" />
         <activity
             android:name=".chat.Chat"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:label="@string/chat_activity" >
-        </activity>
+            android:label="@string/chat_activity" />
+        <activity
+            android:name=".combination.CombinationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/combinations" />
         <activity
             android:name=".combinations.Combinations"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:label="@string/combinations" >
-        </activity>
+            android:label="@string/combinations" />
         <activity
             android:name=".settings.Settings"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:label="@string/settings" >
-        </activity>
+            android:label="@string/settings" />
         <activity
             android:name=".About"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:label="@string/about" >
-        </activity>
+            android:label="@string/about" />
         <activity
             android:name=".Contact"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:label="@string/contact" >
-        </activity>
+            android:label="@string/contact" />
     </application>
 
 </manifest>
