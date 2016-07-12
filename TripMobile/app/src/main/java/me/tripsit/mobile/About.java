@@ -13,7 +13,11 @@ public class About extends TripMobileActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_about, LayoutBuilder.buildParamsLinearCenterHorizontal()));
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_about;
     }
 
     public void clickFacebook(View view) {

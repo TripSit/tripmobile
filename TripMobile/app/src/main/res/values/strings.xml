@@ -42,14 +42,17 @@
     <string name="duration">"Duration: "</string>
 
     <!-- Combinations -->
-    <string name="select_drug"><![CDATA[" <Select drug>"]]></string>
+    <string name="first_drug_input">Drug A</string>
+    <string name="second_drug_input">Drug B</string>
     <string name="safe_synergy"><![CDATA[Low Risk & Synergy]]></string>
     <string name="safe_no_synergy"><![CDATA[Low Risk & No Synergy]]></string>
     <string name="safe_decrease"><![CDATA[Low Risk & Decrease]]></string>
     <string name="unsafe">Unsafe</string>
     <string name="serotonin_syndrome">Serotonin Syndrome</string>
     <string name="deadly">Deadly</string>
+    <string name="caution">Caution</string>
     <!-- First and second arguments are the names of the drugs being combined -->
+    <string name="caution_description">Be cautious if combining %1$s and %2$s.</string>
 	<string name="safe_synergy_description">Combining %1$s and %2$s is generally low risk and provides synergistic effects. Be sure to lower the doses of each, as they will potentiate each other accordingly.</string>
     <string name="safe_no_synergy_description">Combining %1$s and %2$s is generally low risk, and doesn\'t provide any notable potentiated or decreased effects.</string>
     <string name="safe_decrease_description">Combining %1$s and %2$s is generally low risk, however one or more of the drugs will have decreased effects when they are combined.</string>
@@ -110,6 +113,8 @@ If you\'re happy for us to contact you to request more details, please provide y
     <string name="failed_download_drug_names">Could not retrieve drug names from tripbot interface. Search may still work but autocomplete suggestions will not be present.</string>
     <string name="failed_parse_combinations">"Failed to parse combinations text, please report this error: "</string>
     <string name="failed_download_combinations">Failed to download combinations information. Please check your internet connection and try again.</string>
+    <string name="failed_search_combo">Failed to find drug %1$s - try a category or check the factsheets for spelling.</string>
+    <string name="failed_empty_drug">(empty)</string>
     <string name="error_email_client">You need to install an email client to use the email feature.</string>
 
     <!-- #################################################### -->

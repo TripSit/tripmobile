@@ -70,15 +70,17 @@ public class Combinations extends TripMobileActivity implements CombinationsCall
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_combinations, LayoutBuilder.buildParams()));
         downloadCombinations();
     }
 
     @Override
+    public int getLayoutId() {
+        return R.layout.activity_combinations;
+    }
+
+    @Override
     public void downloadCombinations() {
-        setProgressBarIndeterminateVisibility(true);
-        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progress_combinations);
-        progressBar.setVisibility(View.VISIBLE);
+        findViewById(R.id.progress_combinations).setVisibility(View.VISIBLE);
         new CombinationsAsyncTask(this, this).execute(this);
     }
 

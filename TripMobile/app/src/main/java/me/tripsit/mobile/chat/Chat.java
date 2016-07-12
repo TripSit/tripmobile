@@ -17,13 +17,15 @@ public class Chat extends TripMobileActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_PROGRESS);
-        this.setProgressBarVisibility(true);
-		setContentView(R.layout.activity_chat);
 		initialiseWebView();
 	}
 
-	private void initialiseWebView() {
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_chat;
+    }
+
+    private void initialiseWebView() {
         if (webView == null) {
             webView = (WebView) findViewById(R.id.web_irc);
             webView.getSettings().setJavaScriptEnabled(true);

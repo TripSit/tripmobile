@@ -7,6 +7,7 @@ import android.view.View;
 import me.tripsit.mobile.builders.LayoutBuilder;
 import me.tripsit.mobile.chat.Chat;
 import me.tripsit.mobile.chat.Constants;
+import me.tripsit.mobile.combination.CombinationActivity;
 import me.tripsit.mobile.combinations.Combinations;
 import me.tripsit.mobile.common.SharedPreferencesManager;
 import me.tripsit.mobile.factsheets.Factsheets;
@@ -19,11 +20,10 @@ import me.tripsit.mobile.wiki.Wiki;
  */
 public class Menu extends TripMobileActivity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(LayoutBuilder.buildLinearLayout(this, R.layout.activity_menu, LayoutBuilder.buildParamsLinearCenterHorizontal()));
-	}
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_menu;
+    }
 
     @Override
     public void onBackPressed() {
@@ -49,7 +49,7 @@ public class Menu extends TripMobileActivity {
 	}
 
     public void clickCombinations(View view) {
-        Intent intent = new Intent(this, Combinations.class);
+        Intent intent = new Intent(this, CombinationActivity.class);
         startActivity(intent);
     }
 	
@@ -61,7 +61,7 @@ public class Menu extends TripMobileActivity {
     public void clickSettings(View view) {
         Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
-	finish();
+	    finish();
     }
 
     public void clickAbout(View view) {
