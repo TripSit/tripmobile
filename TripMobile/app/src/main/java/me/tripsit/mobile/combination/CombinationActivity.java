@@ -151,11 +151,6 @@ public class CombinationActivity extends TripMobileActivity implements View.OnCl
                 break;
         }
 
-        /*AlertDialog dialog = new AlertDialog.Builder(this)
-                .setMessage(error)
-                .setPositiveButton(R.string.ok, null)
-                .create();
-        dialog.show();*/
         content.setText(error);
         content.setVisibility(View.VISIBLE);
     }
