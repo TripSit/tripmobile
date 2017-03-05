@@ -28,7 +28,6 @@ import java.util.Locale;
 import me.tripsit.mobile.R;
 import me.tripsit.mobile.TripMobileActivity;
 import me.tripsit.mobile.combinations.Combinations;
-//import me.tripsit.mobile.views.BackgroundAnimation;
 
 /**
  * Created by alex on 08/07/16.
@@ -92,8 +91,6 @@ public class CombinationActivity extends TripMobileActivity implements View.OnCl
     }
 
     private void clearCombination() {
-        //BackgroundAnimation animation = new BackgroundAnimation(viewsToAnimate);
-        //animation.setBackgroundColor(Color.TRANSPARENT);
         header.setText("");
         content.setText("");
     }
@@ -192,9 +189,6 @@ public class CombinationActivity extends TripMobileActivity implements View.OnCl
         content.setText(finalContent);
 
         int color = getResources().getColor(severity.backgroundColor);
-
-        //BackgroundAnimation animation = new BackgroundAnimation(viewsToAnimate);
-        //animation.setBackgroundColor(color);
 
         header.setVisibility(View.VISIBLE);
         content.setVisibility(View.VISIBLE);
