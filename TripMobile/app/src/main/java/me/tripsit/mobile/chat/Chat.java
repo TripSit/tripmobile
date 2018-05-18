@@ -30,6 +30,8 @@ public class Chat extends TripMobileActivity {
             webView = (WebView) findViewById(R.id.web_irc);
             webView.getSettings().setJavaScriptEnabled(true);
             final ProgressBar progressBar = (ProgressBar) findViewById(R.id.chat_progress);
+            progressBar.setBackgroundColor(R.attr.progressBackground);
+            webView.getSettings().setDomStorageEnabled(true);
             webView.setWebViewClient(new LoadingWebViewClient(progressBar));
             webView.setWebChromeClient(new LoadingWebChromeClient(progressBar));
             webView.loadUrl((String) getIntent().getExtras().get("url"));

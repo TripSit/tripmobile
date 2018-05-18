@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.v4.animation.ValueAnimatorCompat;
+import android.view.animation.*;
 import android.support.v4.util.Pair;
 import android.support.v7.app.AlertDialog;
 import android.text.Editable;
