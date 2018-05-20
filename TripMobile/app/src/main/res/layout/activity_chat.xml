@@ -8,6 +8,7 @@
 
     <ProgressBar
         style="@style/ProgressBar"
+        android:progressDrawable="@drawable/trippy_progress"
         android:id="@+id/chat_progress" />
 
     <WebView
