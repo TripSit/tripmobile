@@ -36,18 +36,19 @@
     <string name="duration">"Dauer: "</string>
 
     <!-- Combinations -->
+    <string name="select_drug"><![CDATA[" <Wähle Droge>"]]></string>
     <string name="first_drug_input">Droge A</string>
     <string name="second_drug_input">Droge B</string>
-    <string name="safe_synergy">Geringes Risiko &amp; Harmonie</string>
-    <string name="safe_no_synergy">Geringes Risiko &amp; Antagonie</string>
-    <string name="safe_decrease">Geringes Risiko &amp; Verminderung</string>
+    <string name="safe_synergy"><![CDATA[Geringes Risiko & Harmonie]]></string>
+    <string name="safe_no_synergy"><![CDATA[Geringes Risiko & Antagonie]]></string>
+    <string name="safe_decrease"><![CDATA[Geringes Risiko & Verminderung]]></string>
     <string name="unsafe">Unsicher</string>
     <string name="serotonin_syndrome">Serotonin-Syndrom</string>
     <string name="deadly">Tödlich</string>
     <string name="caution">Achtung</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="caution_description">Pass auf beim kombinieren von %1$s und %2$s.</string>
-	<string name="safe_synergy_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko und verursacht eine synergistische Wirkung. Denke daran, die Dosis beider Substanzen zu reduzieren, da sie sich gegenseitig verstärken.</string>
+    <string name="caution_description">Pass auf beim Kombinieren von %1$s und %2$s.</string>
+    <string name="safe_synergy_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko und verursacht eine synergistische Wirkung. Denke daran, die Dosis beider Substanzen zu reduzieren, da sie sich gegenseitig verstärken.</string>
     <string name="safe_no_synergy_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko und verursacht keine signifikant abgeschwächte oder verstärkte Wirkung.</string>
     <string name="safe_decrease_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko, jedoch verursacht die gemeinsame Einnahme eine abgeschwächte Wirkung.</string>
     <string name="unsafe_description">Die Kombination von %1$s und %2$s ist nicht sicher und sollte nur mit extremer Vorsicht oder besser gar nicht eingenommen werden.</string>
@@ -58,8 +59,11 @@
     <string name="cache_freshness">Frische der Daten</string>
     <!-- Use 'getString(R.string.str_cache_content, getString(R.string.app_name)))' to retrieve the following String -->
     <string name="cache_freshness_description">%1$s speichert automatisch heruntergelandene Informationen, um deine Bandbreitennutzung zu minimieren. Diese Einstellung lässt dich verändern, wie lange Informationen gespeichert werden, bevor sie erneut heruntergeladen werden.</string>
-    <string name="default_cache_days">0\n
-  tage</string>
+    <string name="default_cache_days">0\ntage</string>
+    <plurals name="days">
+        <item quantity="one">tag</item>
+        <item quantity="other">tage</item>
+    </plurals>
     <string name="chat_channel">Chatraum</string>
     <string name="chat_channel_content">Modifiziert den voreingestellten Chatram, in den du über die \"Chat\" Option im Hauptmenü verbindest.</string>
     <string name="save">Speichern</string>
@@ -73,8 +77,7 @@
 
     <!-- About -->
     <string name="about_header">Über TripSit</string>
-    <string name="about_content">Diese App wurde von TripSit erschaffen, einer Organisation, die dabei hilft, Informationen über Drogen bereitzustellen und die Gefahr deren Benutzung zu minimieren. Außerdem haben wir haben einen aktives IRC (internet relay chat) Netzwerk, wo wir einen tripsitting Dienst, Tipps für die Schadensminimierung und einen allgemeinen Chat bereitstelllen.\n
-  http://www.tripsit.me/</string>
+    <string name="about_content">Diese App wurde von TripSit erschaffen, einer Organisation, die dabei hilft, Informationen über Drogen bereitzustellen und die Gefahr deren Benutzung zu minimieren. Außerdem haben wir haben einen aktives IRC (internet relay chat) Netzwerk, wo wir einen tripsitting Dienst, Tipps für die Schadensminimierung und einen allgemeinen Chat bereitstelllen.\nhttp://www.tripsit.me/</string>
     <string name="disclaimer_header">Enthaftung</string>
     <string name="disclaimer_content">Obwohl unser Team eifrig Informationen zusammenträgt, um diese App stets aktuell zu halten, ist es nicht immer möglich, 100% korrekte Informationen über die Sicherheit von Drogen anzubieten. Die hier bereitgestellten Informationen sollten lediglich als Richtlinien angesehen werden, und es ist wichtig, dass du selbst Eigene Forschung mit Hilfe so vieler Quellen wie möglich betreibst, bevor du eie Substanz konsumierst. Außerdem raten wir dringend zur Benutzung von Drogentests und Waagen, un sicherzugehen, dass du die richtige Dosis einnimmst. Beides kann für kleines Geld online erworben werden.</string>
     <string name="support_header">Unterstütze TripSit</string>
@@ -88,12 +91,12 @@
     <string name="content_issues">Probleme mit dem Inhalt / Daten</string>
     <string name="say_hi">Sag Hallo!</string>
     <string name="bug_report_email">Bitte fülle die folgenden Informationen aus, bevor du uns eine Email schickst.\n
-   \n
-   Android version: \n
-   Gerät: \n
-   Was geschah, bevor der Fehler aufgetreten ist:\n
-   Was ist der Fehler? Ist die App abgestürzt oder funktioniert nicht mehr richtig?: \n
-   Falls du Rücksprache benötigst oder mehr Details wissen willst, trage hier bitte deine Email-Addresse oder IRC Namen ein:</string>
+\n
+Android version: \n
+Gerät: \n
+Was geschah, bevor der Fehler aufgetreten ist:\n
+Was ist der Fehler? Ist die App abgestürzt oder funktioniert nicht mehr richtig?: \n
+Falls du Rücksprache benötigst oder mehr Details wissen willst, trage hier bitte deine Email-Addresse oder IRC Namen ein: </string>
 
     <!-- Error handling -->
     <string name="operation_failed">Operation fehlgeschlagen</string>
