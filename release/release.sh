@@ -11,10 +11,14 @@
 
 IFS='*' # Change the IFS to prevent bash removing whitespace from variables
 
-read -s -p "Keystore password: " KEYSTORE_PASSWORD
-echo ""
-read -s -p "Key password: " KEY_PASSWORD
-echo ""
+if [[ -z $KEYSTORE_PASSWORD ]]; then
+  read -s -p "Keystore password: " KEYSTORE_PASSWORD
+  echo ""
+fi
+if [[ -z $KEY_PASSWORD ]]; then
+  read -s -p "Key password: " KEY_PASSWORD
+  echo ""
+fi
 
 export KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
 export KEY_PASSWORD=$KEY_PASSWORD
