@@ -21,11 +21,26 @@ before_script:
 
 stages:
   - build
+  - archive
 
-build:
+release:
+  stage: build
+  script:
+    - ./gradlew assembleRelease
+  only:
+    refs:
+      - master
+
+debug:
   stage: build
   script:
     - ./gradlew assembleDebug
+
+artifacts:
+  stage: archive
   artifacts:
     paths:
-    - TripMobile/app/build/outputs/
+    - TripMobile/app/build/outputs/apk/
+  only:
+    refs:
+      - master
