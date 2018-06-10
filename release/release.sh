@@ -20,6 +20,20 @@ if [[ -z $KEY_PASSWORD ]]; then
   echo ""
 fi
 
+KEYSTORE_LOCATION="../TripMobile/releasekeys.keystore"
+if [[ -z $REMOTE_KEYSTORE_LOCATION || ! -f $KEYSTORE_LOCATION ]]; then
+  echo "You need a keystore to run the release script, sorry."
+  exit 1
+fi
+
+if [[ ! -z $REMOTE_KEYSTORE_LOCATION ]]; then
+  wget -O $KEYSTORE_LOCATION $REMOTE_KEYSTORE_LOCATION
+  if [[ $? -ne 0 ]]; then
+    echo "Could not retrieve keystore from remote location, sorry."
+    exit 1
+  fi
+fi
+
 export KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
 export KEY_PASSWORD=$KEY_PASSWORD
 
@@ -71,9 +85,12 @@ sed -i "s/$manifest_version_line/$new_manifest_version_line/" $MANIFEST_LOCATION
 sed -i "s/$manifest_version_name_line/$new_manifest_version_name_line/" $MANIFEST_LOCATION
 
 if (cd ../TripMobile && ./gradlew build && cd -) then
-echo $?
-    cp ../TripMobile/app/build/outputs/apk/app-release.apk TripMobile-$new_version_name.apk
-    echo "Apk saved as TripMobile-$new_version_name.apk"
+  echo $?
+  cp ../TripMobile/app/build/outputs/apk/app-release.apk TripMobile-$new_version_name.apk
+  echo "Apk saved as TripMobile-$new_version_name.apk"
+else
+  echo "Failed to build. Sorry!"
+  exit 1
 fi
 
 unset KEYSTORE_PASSWORD
