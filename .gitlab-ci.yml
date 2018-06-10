@@ -38,6 +38,7 @@ debug:
 
 artifacts:
   stage: archive
+  script: "echo Archiving files."
   artifacts:
     paths:
     - TripMobile/app/build/outputs/apk/
