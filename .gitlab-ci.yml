@@ -36,6 +36,9 @@ debug:
   script:
     - cd TripMobile
     - ./gradlew assembleDebug
+  only:
+    refs:
+      - nonexistent
 
 artifacting:
   stage: archive

@@ -21,7 +21,7 @@ if [[ -z $KEY_PASSWORD ]]; then
 fi
 
 KEYSTORE_LOCATION="../TripMobile/releasekeys.keystore"
-if [[ -z $REMOTE_KEYSTORE_LOCATION || ! -f $KEYSTORE_LOCATION ]]; then
+if [[ -z $REMOTE_KEYSTORE_LOCATION && ! -f $KEYSTORE_LOCATION ]]; then
   echo "You need a keystore to run the release script, sorry."
   exit 1
 fi
