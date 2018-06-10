@@ -27,7 +27,7 @@ if [[ -z $REMOTE_KEYSTORE_LOCATION && ! -f $KEYSTORE_LOCATION ]]; then
 fi
 
 if [[ ! -z $REMOTE_KEYSTORE_LOCATION ]]; then
-  wget -O $KEYSTORE_LOCATION $REMOTE_KEYSTORE_LOCATION
+  wget --quiet -O $KEYSTORE_LOCATION $REMOTE_KEYSTORE_LOCATION
   if [[ $? -ne 0 ]]; then
     echo "Could not retrieve keystore from remote location, sorry."
     exit 1
