@@ -23,15 +23,6 @@ stages:
   - build
   - archive
 
-release:
-  stage: build
-  script:
-    - cd release
-    - ./release.sh
-#  only:
-#    refs:
-#      - master
-
 debug:
   stage: build
   script:
@@ -40,6 +31,15 @@ debug:
   only:
     refs:
       - nonexistent
+
+release:
+  stage: build
+  script:
+    - cd release
+    - ./release.sh
+  only:
+    refs:
+      - master
 
 artifacting:
   stage: archive
