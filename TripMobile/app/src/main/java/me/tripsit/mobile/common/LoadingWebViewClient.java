@@ -35,9 +35,4 @@ public class LoadingWebViewClient extends WebViewClient {
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
         return false;
     }
-
-    @Override
-    public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
-        handler.proceed();
-    }
 }
