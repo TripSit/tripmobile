@@ -88,6 +88,7 @@ if (cd ../TripMobile && ./gradlew build && cd -) then
   echo $?
   cp ../TripMobile/app/build/outputs/apk/app-release.apk TripMobile-$new_version_name.apk
   echo "Apk saved as TripMobile-$new_version_name.apk"
+  echo "Don't commit this. Git is not made for binary files."
 else
   echo "Failed to build. Sorry!"
   exit 1
