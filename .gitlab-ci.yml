@@ -28,9 +28,6 @@ debug:
   script:
     - cd TripMobile
     - ./gradlew assembleDebug
-  only:
-    refs:
-      - nonexistent
 
 release:
   stage: build
