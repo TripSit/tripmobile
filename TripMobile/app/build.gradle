@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "me.tripsit.tripmobile"
-        minSdkVersion 8
+        minSdkVersion 9
         targetSdkVersion 24
         versionCode 13
         versionName "1.2.0"
