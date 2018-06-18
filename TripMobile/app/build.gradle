@@ -10,6 +10,7 @@ android {
         targetSdkVersion 24
         versionCode 13
         versionName "1.2.0"
+        vectorDrawables.useSupportLibrary = true
     }
     signingConfigs {
         release {
