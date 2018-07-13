@@ -21,7 +21,7 @@ public class SharedPreferencesManager {
      */
     private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyyMMdd");
     private static final int DEFAULT_FRESHNESS = 14;
-    private static final String DEFAULT_CHANNEL = "home";
+    private static final String DEFAULT_CHANNEL = "lounge";
 
     public static void saveTheme(Activity activity, Theme theme) {
         SharedPreferences sharedPref = getSharedPreferences(activity);
