@@ -48,6 +48,18 @@ public class SharedPreferencesManager {
         return sharedPref.getString(activity.getString(R.string.shared_preferences_chat_channel), DEFAULT_CHANNEL);
     }
 
+    public static void saveChatUsername(Activity activity, String username) {
+        SharedPreferences sharedPref = getSharedPreferences(activity);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString(activity.getString(R.string.shared_preferences_chat_username), username);
+        editor.commit();
+    }
+
+    public static String getChatUsername(Activity activity) {
+        SharedPreferences sharedPref = getSharedPreferences(activity);
+        return sharedPref.getString(activity.getString(R.string.shared_preferences_chat_username), "");
+    }
+
     public static void saveCacheFreshness(Activity activity, int newValue) {
         SharedPreferences sharedPref = getSharedPreferences(activity);
         SharedPreferences.Editor editor = sharedPref.edit();

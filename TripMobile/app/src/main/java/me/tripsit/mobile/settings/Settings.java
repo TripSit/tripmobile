@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +35,7 @@ public class Settings extends TripMobileActivity {
         setAppNameOnTextContent();
         setUpSeekBar();
         setChatChannels(CHAT_CHANNELS);
+        setChatUsername();
     }
 
     @Override
@@ -67,6 +69,22 @@ public class Settings extends TripMobileActivity {
         textView.clearFocus();
     }
 
+    public void saveChatUsername(View view) {
+        EditText editText = (EditText) findViewById(R.id.defaultIRCUsername);
+        String username = editText.getText().toString();
+        Toast toast;
+        if (username.matches("[a-zA-Z0-9]+")) {
+            SharedPreferencesManager.saveChatUsername(this, username);
+            toast = Toast.makeText(getApplicationContext(), getString(R.string.chat_username_toast, username), Toast.LENGTH_SHORT);
+        } else {
+            toast = Toast.makeText(getApplicationContext(), getString(R.string.invalid_username, username), Toast.LENGTH_SHORT);
+        }
+        toast.show();
+        InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+        editText.clearFocus();
+    }
+
     public void setThemeLight(View view) {
         if (SharedPreferencesManager.getTheme(this) != Theme.LIGHT) {
             SharedPreferencesManager.saveTheme(this, Theme.LIGHT);
@@ -88,6 +106,12 @@ public class Settings extends TripMobileActivity {
         textView.setAdapter(adapter);
         textView.setText(SharedPreferencesManager.getChatChannel(this));
         textView.clearFocus();
+    }
+
+    private void setChatUsername() {
+        EditText editText = (EditText) findViewById(R.id.defaultIRCUsername);
+        editText.setText(SharedPreferencesManager.getChatUsername(this));
+        editText.clearFocus();
     }
 
     private void setAppNameOnTextContent() {
