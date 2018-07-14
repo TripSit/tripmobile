@@ -40,6 +40,7 @@
     <string name="timing">Timing</string>
     <string name="onset">"Onset: "</string>
     <string name="duration">"Duration: "</string>
+    <string name="select_drug">"Select Drug: "</string>
 
     <!-- Combinations -->
     <string name="first_drug_input">Drug A</string>
@@ -76,6 +77,9 @@
     <string name="chat_channel_toast">New default channel is now #%1$s</string>
     <!-- Use 'getString(R.string.invalid_channel, "#channel")' to retrieve the following String -->
     <string name="invalid_channel">#%1$s is not a valid channel name</string>
+    <string name="chat_username_toast">New default username is now @%1$s</string>
+    <!-- Use 'getString(R.string.invalid_channel, "#channel")' to retrieve the following String -->
+    <string name="invalid_username">#%1$s is not a valid username</string>
     <string name="theme">Theme</string>
     <string name="light">Light</string>
     <string name="dark">Dark</string>
@@ -134,16 +138,21 @@ If you\'re happy for us to contact you to request more details, please provide y
     <string name="twitter_url" translatable="false">https://mobile.twitter.com/teamtripsit</string>
     <string name="shared_preferences_cache_freshness" translatable="false">CACHE.FRESHNESS</string>
     <string name="shared_preferences_chat_channel" translatable="false">CHAT.CHANNEL</string>
+    <string name="shared_preferences_chat_username" translatable="false">CHAT.USERNAME</string>
     <string name="shared_preferences_theme" translatable="false">THEME</string>
     <string name="shared_preferences" translatable="false">me.tripsit.mobile.sharedpreferences</string>
     <string name="shared_preferences_url" translatable="false">URL.</string>
     <string name="shared_preferences_date" translatable="false">DATE.</string>
     <string name="txt_chat" translatable="false">drugs</string>
     <string name="str_channel_prefix" translatable="false">#</string>
+    <string name="str_username_prefix" translatable="false">\@</string>
     <string name="mailto" translatable="false">mailto:</string>
     <string name="android_email_address" translatable="false">android@tripsit.me</string>
     <string name="content_email_address" translatable="false">content@tripsit.me</string>
     <string name="say_hi_email_address" translatable="false">tripsitters@tripsit.me</string>
     <string name="Placeholder">Placeholder</string>
+    <string name="username_for_irc">Username for IRC</string>
+    <string name="default_irc_username">Default IRC Username</string>
+    <string name="irc_username_description">Save your username for future logins</string>
 
 </resources>

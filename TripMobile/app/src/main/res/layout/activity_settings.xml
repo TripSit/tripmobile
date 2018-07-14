@@ -10,24 +10,24 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/txt_cache_header"
+            style="@style/LargeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/cache_freshness"
-            android:id="@+id/txt_cache_header"
-            style="@style/LargeText" />
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
+            android:id="@+id/txt_cache_content"
+            style="@style/MediumText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/cache_freshness_description"
-            android:id="@+id/txt_cache_content"
-            style="@style/MediumText" />
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -35,20 +35,20 @@
             android:paddingBottom="10dp">
 
             <TextView
-                android:ems="@integer/days_width"
+                android:id="@+id/txt_cache_days"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textAlignment="gravity"
+                android:ems="@integer/days_width"
                 android:gravity="center"
                 android:text="@string/default_cache_days"
-                android:id="@+id/txt_cache_days" />
+                android:textAlignment="gravity"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <SeekBar
+                android:id="@+id/seek_cache"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:gravity="center"
-                android:id="@+id/seek_cache" />
+                android:gravity="center" />
 
 
         </LinearLayout>
@@ -56,34 +56,34 @@
         <View style="@style/Divider" />
 
         <TextView
-            android:paddingTop="3dp"
+            android:id="@+id/txt_channel_header"
+            style="@style/LargeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:paddingTop="3dp"
             android:text="@string/chat_channel"
-            android:id="@+id/txt_channel_header"
-            style="@style/LargeText"/>
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
+            android:id="@+id/txt_channel_content"
+            style="@style/MediumText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/chat_channel_content"
-            android:id="@+id/txt_channel_content"
-            style="@style/MediumText" />
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingBottom="3dp"
-            tools:context="${packageName}.${activityClass}" >
+            tools:context="${packageName}.${activityClass}">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/str_channel_prefix" />
+                android:text="@string/str_channel_prefix"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <AutoCompleteTextView
                 android:id="@+id/autocomplete_channel"
@@ -91,8 +91,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
                 android:singleLine="true"
-                android:textColor="?attr/primaryTextColour"
-                android:text="@string/txt_chat" >
+                android:text="@string/txt_chat"
+                android:textColor="?attr/primaryTextColour">
+
                 <requestFocus />
             </AutoCompleteTextView>
 
@@ -106,39 +107,92 @@
 
         </LinearLayout>
 
-        <View style="@style/Divider"/>
+        <View style="@style/Divider" />
 
         <TextView
-            android:paddingTop="3dp"
+            android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/theme"
+            android:contentDescription="@string/username_for_irc"
+            android:text="@string/default_irc_username"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/defaultIRCDescription"
+            style="@style/MediumText"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:ems="10"
+            android:text="@string/irc_username_description"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_username_prefix"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/defaultIRCUsername"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:inputType="text"
+                android:textColor="?attr/primaryTextColour" />
+
+            <Button
+                android:id="@+id/saveIRCUsername"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:onClick="saveChatUsername"
+                android:text="@string/save" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <View style="@style/Divider" />
+
+        <TextView
             android:id="@+id/txt_theme_header"
-            style="@style/LargeText" />
+            style="@style/LargeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="@string/theme"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingBottom="3dp"
-            tools:context="${packageName}.${activityClass}" >
+            tools:context="${packageName}.${activityClass}">
 
             <Button
-                android:layout_weight="0.5"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
+                android:layout_weight="0.5"
                 android:background="@drawable/selector_button_light"
-                android:text="@string/light"
-                android:onClick="setThemeLight"/>
+                android:onClick="setThemeLight"
+                android:text="@string/light" />
 
             <Button
-                android:layout_weight="0.5"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
+                android:layout_weight="0.5"
                 android:background="@drawable/selector_button_dark"
-                android:text="@string/dark"
-                android:onClick="setThemeDark"/>
+                android:onClick="setThemeDark"
+                android:text="@string/dark" />
 
         </LinearLayout>
 
