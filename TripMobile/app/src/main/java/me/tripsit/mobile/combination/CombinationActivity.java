@@ -1,18 +1,11 @@
 package me.tripsit.mobile.combination;
 
-import android.animation.ArgbEvaluator;
-import android.animation.ValueAnimator;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.animation.*;
-import android.support.v4.util.Pair;
-import android.support.v7.app.AlertDialog;
+
+import androidx.core.util.Pair;
+import androidx.appcompat.app.AlertDialog;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -27,7 +20,6 @@ import java.util.Locale;
 
 import me.tripsit.mobile.R;
 import me.tripsit.mobile.TripMobileActivity;
-import me.tripsit.mobile.combinations.Combinations;
 
 /**
  * Created by alex on 08/07/16.

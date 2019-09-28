@@ -19,7 +19,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Droge oder Pseudonym</string>
-    <string name="factsheets_intro">Alle Informationen wird über die tripbot API abgerufen, welche auf http://tripbot.tripsit.me/factsheet gefunden werden kann. Bitte sehe diese als allgemeine</string>
+    <string name="factsheets_intro">Alle Informationen wird über die tripbot API abgerufen, welche auf http://drugs.tripsit.me/ gefunden werden kann. Bitte sehe diese als allgemeine</string>
     <string name="search">Suche</string>
     <string name="aliases">Pseudonyme</string>
     <string name="summary">Zusammenfassung</string>

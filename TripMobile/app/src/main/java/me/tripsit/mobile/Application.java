@@ -3,8 +3,6 @@ package me.tripsit.mobile;
 import android.os.Build;
 import android.webkit.WebView;
 
-import com.splunk.mint.Mint;
-
 /**
  * Created by alex on 23/07/16.
  */
@@ -17,6 +15,8 @@ public class Application extends android.app.Application {
             WebView.setWebContentsDebuggingEnabled(true);
         }
         // Only report bugs to Mint in release mode
-        if ( !BuildConfig.DEBUG ) Mint.initAndStartSession(this, "10465a6c");
+        if ( !BuildConfig.DEBUG ) {
+            //Mint.initAndStartSession(this, "10465a6c");
+        }
     }
 }

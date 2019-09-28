@@ -16,7 +16,7 @@
             android:textSize="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             style="@style/DefaultEditText"
             android:id="@+id/first_drug_container"
             android:layout_below="@+id/title"
@@ -26,12 +26,12 @@
             <EditText
                 style="@style/DefaultEditText"
                 android:id="@+id/input_first_drug"
-                android:hint="@string/first_drug_input"
+                android:hint="@string/select_drug"
                 android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             style="@style/DefaultEditText"
             android:id="@+id/second_drug_container"
             android:layout_below="@id/first_drug_container"
@@ -40,12 +40,12 @@
             <EditText
                 style="@style/DefaultEditText"
                 android:id="@+id/input_second_drug"
-                android:hint="@string/second_drug_input"
+                android:hint="@string/select_drug"
                 android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/btn_search"

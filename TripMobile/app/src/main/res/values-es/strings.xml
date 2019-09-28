@@ -19,7 +19,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Droga o alias</string>
-    <string name="factsheets_intro">Todos los datos se obtienen de la tripbot IPA que puedes encontrar en http://tripbot.tripsit.me/factsheet. Por favor, use esto como una guía aproximada, y revise todas las fuentes posibles antes de consumir una sustancia.</string>
+    <string name="factsheets_intro">Todos los datos se obtienen de la tripbot IPA que puedes encontrar en http://drugs.tripsit.me/. Por favor, use esto como una guía aproximada, y revise todas las fuentes posibles antes de consumir una sustancia.</string>
     <string name="search">Buscar</string>
     <string name="aliases">Alias</string>
     <string name="summary">Resumen</string>

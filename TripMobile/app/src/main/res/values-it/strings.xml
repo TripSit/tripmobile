@@ -19,7 +19,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Droghe o simili</string>
-    <string name="factsheets_intro">utti i nostri dati sono raccolti dall\'API di tripbot all\'indirizzo http://tripbot.tripsit.me/factsheet. Per favore considerare queste come lineeguida generali, e controlla piu` fonti possibili prima di ingerire una sostanza.</string>
+    <string name="factsheets_intro">utti i nostri dati sono raccolti dall\'API di tripbot all\'indirizzo http://drugs.tripsit.me/. Per favore considerare queste come lineeguida generali, e controlla piu` fonti possibili prima di ingerire una sostanza.</string>
     <string name="search">Cerca</string>
     <string name="aliases">Detto anche</string>
     <string name="summary">Sommario</string>

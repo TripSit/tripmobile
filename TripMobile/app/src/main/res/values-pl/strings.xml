@@ -19,7 +19,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Substancja lub alias</string>
-    <string name="factsheets_intro">Wszystkie dane pochodzą z API tripbota, który jest dostepny na http://tripbot.tripsit.me/factsheet. Prosimy o korzystanie z tych informacji jako ogólnych wytycznych i o sprawdzanie możliwie jak najwiekszej ilości źródeł przed przyjęciem jakiegoś narkotyku.</string>
+    <string name="factsheets_intro">Wszystkie dane pochodzą z API tripbota, który jest dostepny na http://drugs.tripsit.me/. Prosimy o korzystanie z tych informacji jako ogólnych wytycznych i o sprawdzanie możliwie jak najwiekszej ilości źródeł przed przyjęciem jakiegoś narkotyku.</string>
     <string name="search">Szukaj</string>
     <string name="aliases">Aliasy</string>
     <string name="summary">Podsumowanie</string>

@@ -19,7 +19,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Drug of alias</string>
-    <string name="factsheets_intro">Alle gegevens zijn afkomstig van de tripbot API op http://tripbot.tripsit.me/factsheet. Gebruik deze gegevens slechts als hulpmiddel, en doe uitvoerig onderzoek voordat je een substantie inneemt.</string>
+    <string name="factsheets_intro">Alle gegevens zijn afkomstig van de tripbot API op http://drugs.tripsit.me/. Gebruik deze gegevens slechts als hulpmiddel, en doe uitvoerig onderzoek voordat je een substantie inneemt.</string>
     <string name="search">Zoeken</string>
     <string name="aliases">Aliasen</string>
     <string name="summary">Samenvatting</string>

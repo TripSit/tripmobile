@@ -30,7 +30,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Drug or alias</string>
-    <string name="factsheets_intro">All data is taken from the tripbot API which can be found at http://tripbot.tripsit.me/factsheet. Please use this as rough guidelines, and check as many sources as possible before ingesting a substance.</string>
+    <string name="factsheets_intro">All data is taken from the tripbot API which can be found at http://drugs.tripsit.me/. Please use this as rough guidelines, and check as many sources as possible before ingesting a substance.</string>
     <string name="search">Search</string>
     <string name="aliases">Aliases</string>
     <string name="summary">Summary</string>
@@ -42,8 +42,7 @@
     <string name="duration">"Duration: "</string>
 
     <!-- Combinations -->
-    <string name="first_drug_input">Drug A</string>
-    <string name="second_drug_input">Drug B</string>
+    <string name="select_drug"><![CDATA[" <Zvolit drogu>"]]></string>
     <string name="safe_synergy"><![CDATA[Low Risk & Synergy]]></string>
     <string name="safe_no_synergy"><![CDATA[Low Risk & No Synergy]]></string>
     <string name="safe_decrease"><![CDATA[Low Risk & Decrease]]></string>
@@ -124,7 +123,7 @@ If you\'re happy for us to contact you to request more details, please provide y
     <string name="wiki_main_page" translatable="false">https://wiki.tripsit.me/wiki/Main_Page</string>
     <string name="wiki_domain" translatable="false">wiki.tripsit.me</string>
     <string name="bitcoin_url" translatable="false">bitcoin:1EDqf32gw73tc1WtgdT2FymfmDN4RyC9RN</string>
-    <string name="donate_url" translatable="false">http://tripsit.me/support-tripsit</string>
+    <string name="donate_url" translatable="false">http://tripsit.me/donate</string>
     <!-- ID comes from https://graph.facebook.com/tripsitme -->
     <string name="facebook_app" translatable="false">fb://page/575082419170561</string>
     <string name="facebook_url" translatable="false">https://www.facebook.com/tripsitme</string>
@@ -144,6 +143,5 @@ If you\'re happy for us to contact you to request more details, please provide y
     <string name="android_email_address" translatable="false">android@tripsit.me</string>
     <string name="content_email_address" translatable="false">content@tripsit.me</string>
     <string name="say_hi_email_address" translatable="false">tripsitters@tripsit.me</string>
-    <string name="Placeholder">Placeholder</string>
 
 </resources>

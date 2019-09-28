@@ -19,7 +19,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Droga</string>
-    <string name="factsheets_intro">Všechna data jsou převzata z tripbot API, které najdete na http://tripbot.tripsit.me/factsheet. Používejte tyto informace jako shrnutí faktů, a před požitím substancí si dohledejte co nejvíce informací.</string>
+    <string name="factsheets_intro">Všechna data jsou převzata z tripbot API, které najdete na http://drugs.tripsit.me/. Používejte tyto informace jako shrnutí faktů, a před požitím substancí si dohledejte co nejvíce informací.</string>
     <string name="search">Hledat</string>
     <string name="aliases">Přezdívky</string>
     <string name="summary">Shrnutí</string>

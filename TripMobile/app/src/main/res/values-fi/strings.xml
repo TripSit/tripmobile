@@ -19,7 +19,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Päihde tai alias (englanniksi)</string>
-    <string name="factsheets_intro">Kaikki data on otettu tripbot API:sta jonka voi löytää osoitteesta http://tripbot.tripsit.me/factsheet. Käytä tätä suuntaa antavana arviona ja käytä avuksesi mahdollisimman monta eri lähdettä ennen kuin nautit jotain ainetta.</string>
+    <string name="factsheets_intro">Kaikki data on otettu tripbot API:sta jonka voi löytää osoitteesta http://drugs.tripsit.me/. Käytä tätä suuntaa antavana arviona ja käytä avuksesi mahdollisimman monta eri lähdettä ennen kuin nautit jotain ainetta.</string>
     <string name="search">Hae</string>
     <string name="aliases">Aliakset</string>
     <string name="summary">Yhteenveto</string>
