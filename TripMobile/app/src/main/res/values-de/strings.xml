@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- User facing, non translating Strings -->
+    <!-- Although these strings technically could be translated, we'd prefer to only receive emails in English right now -->
+
+    <!-- #################################################### -->
+
     <!-- USER FACING STRINGS -->
     <!-- The following Strings are seen by the user and need translation and proper grammar -->
     <string name="logo">Tripsit Logo</string>
@@ -32,13 +37,17 @@
 
     <!-- Combinations -->
     <string name="select_drug"><![CDATA[" <Wähle Droge>"]]></string>
+    <string name="first_drug_input">Droge A</string>
+    <string name="second_drug_input">Droge B</string>
     <string name="safe_synergy"><![CDATA[Geringes Risiko & Harmonie]]></string>
     <string name="safe_no_synergy"><![CDATA[Geringes Risiko & Antagonie]]></string>
     <string name="safe_decrease"><![CDATA[Geringes Risiko & Verminderung]]></string>
     <string name="unsafe">Unsicher</string>
     <string name="serotonin_syndrome">Serotonin-Syndrom</string>
     <string name="deadly">Tödlich</string>
+    <string name="caution">Achtung</string>
     <!-- First and second arguments are the names of the drugs being combined -->
+    <string name="caution_description">Pass auf beim Kombinieren von %1$s und %2$s.</string>
     <string name="safe_synergy_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko und verursacht eine synergistische Wirkung. Denke daran, die Dosis beider Substanzen zu reduzieren, da sie sich gegenseitig verstärken.</string>
     <string name="safe_no_synergy_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko und verursacht keine signifikant abgeschwächte oder verstärkte Wirkung.</string>
     <string name="safe_decrease_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko, jedoch verursacht die gemeinsame Einnahme eine abgeschwächte Wirkung.</string>
@@ -99,6 +108,15 @@ Falls du Rücksprache benötigst oder mehr Details wissen willst, trage hier bit
     <string name="failed_download_drug_names">Fehler beim Empfangen der Substanznamen aus der tripbot Schnittstelle. Die Suche kann noch funktionieren, aber die automatische Verwollständigung wird nicht vorhanden sein.</string>
     <string name="failed_parse_combinations">"Fehler beim Parsen des Kombinationstexts, bitte melde diesen Fehler: "</string>
     <string name="failed_download_combinations">Fehler beim Herunterladen der Kombinationsdaten. Bitte überprüfe deine Verbindung und versuche es erneut.</string>
+    <string name="failed_search_combo">Fehler beim Finden der Droge %1$s - Versuche es mit einer Kategorie oder prüfe mit dem Datenblatt die Rechtschreibung.</string>
+    <string name="failed_empty_drug">(leer)</string>
     <string name="error_email_client">Du musst eine Email App installieren, um diese Funktion zu benutzen.</string>
+
+    <!-- #################################################### -->
+
+    <!-- HIDDEN STRINGS -->
+    <!-- The following Strings should be hidden from the user, and therefore don't require any translation -->
+    <!-- ID comes from https://graph.facebook.com/tripsitme -->
+    <string name="Placeholder">Platzhalter</string>
 
 </resources>
