@@ -19,7 +19,7 @@ import me.tripsit.mobile.comms.ContentRetriever;
  */
 public class CombinationAsyncTask extends AsyncTask<String, Integer, Combination> {
 
-    private final static String queryFormat = "http://tripbot.tripsit.me/api/tripsit/getInteraction"+
+    private final static String queryFormat = "https://tripbot.tripsit.me/api/tripsit/getInteraction"+
                                            "?drugA=%1$s&drugB=%2$s";
     private static final String LOG_TAG = "CombinationAsyncTask";
 
