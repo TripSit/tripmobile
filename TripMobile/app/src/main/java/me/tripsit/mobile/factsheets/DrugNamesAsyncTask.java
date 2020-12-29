@@ -20,7 +20,7 @@ import me.tripsit.mobile.comms.ContentRetriever;
 
 public class DrugNamesAsyncTask extends AsyncTask<Activity, Void, Void>  {
 
-	private static final String ALL_DRUGS_URL = "http://tripbot.tripsit.me/api/tripsit/getAllDrugNames";
+	private static final String ALL_DRUGS_URL = "https://tripbot.tripsit.me/api/tripsit/getAllDrugNames";
 	private static final String DATA = "data";
 	private static final String SPLIT = "\",\""; // Split by ","
 
