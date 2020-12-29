@@ -38,8 +38,10 @@
     <string name="unsafe">Vaarallinen</string>
     <string name="serotonin_syndrome">Serotoniinisyndrooma</string>
     <string name="deadly">Tappava</string>
+    <string name="caution">Varoitus</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="safe_synergy_description">%1$s ja %2$s on yleisesti vähäriskinen kombo ja se aiheuttaa synergistisiä vaikutuksia. Ota tämä huomioon ja annostele kumpaakin vähemmän, sillä ne voimistavat toistensa vaikutuksia.</string> 
+    <string name="caution_description">Ole varovainen, jos yhdistät %1$s ja %2$s.</string>
+    <string name="safe_synergy_description">%1$s ja %2$s on yleisesti vähäriskinen kombo ja se aiheuttaa synergistisiä vaikutuksia. Ota tämä huomioon ja annostele kumpaakin vähemmän, sillä ne voimistavat toistensa vaikutuksia.</string>
     <string name="safe_no_synergy_description">%1$s ja %2$s on yleisesti vähäriskinen kombo. Se ei kuitenkaan aiheuta voimakkaampia tai vähentyneitä vaikutuksia.</string> 
     <string name="safe_decrease_description">%1$s ja %2$s on yleisesti vähäriskinen kombo. Tämä yhdistelmä kuitenkin vähentää yhden tai useamman nautitun päihteen vaikutuksia.</string> 
     <string name="unsafe_description">%1$s ja %2$s yhdessä otettuna on vaarallista ja tähän komboon pitää suhtautua äärimmäisellä varovuudella tai ideaalitilanteessa välttää tätä yhdistelmää kokonaan.</string> 
@@ -99,6 +101,8 @@ Jos haluat meidän ottavan sinuun yhteyttä lisätiedoista, ole hyvä ja kerro s
     <string name="failed_download_drug_names">Päihteiden nimiä ei voitu noutaa tripbot käyttöliittymästä. Haku saattaa vielä toimia mutta automaattinen täydennys ei ole käytössä.</string>
     <string name="failed_parse_combinations">"Kombojen tekstien jäsennys epäonnistui, ole hyvä ja raportoi tästä virheestä: "</string>
     <string name="failed_download_combinations">Kombojen tietojen lataus epäonnistui. Ole hyvä ja tarkista internet-yhteytesi ja yritä uudestaan.</string>
+    <string name="failed_search_combo">Huumeiden löytäminen epäonnistui %1$s - kokeile luokkaa tai tarkista tietosivujen oikeinkirjoitus.</string>
+    <string name="failed_empty_drug">(empty)</string>
     <string name="error_email_client">Sinun täytyy asentaa sähköpostiohjelma jotta voit käyttää sähköpostiominaisuutta.</string>
 
 </resources>
