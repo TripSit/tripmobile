@@ -16,7 +16,7 @@ import me.tripsit.mobile.comms.ContentRetriever;
 
 public class DrugInfoAsyncTask extends AsyncTask<Activity, Void, Void>  {
 
-    private static final String DRUG_URL = "http://tripbot.tripsit.me/api/tripsit/getDrug?name=";
+    private static final String DRUG_URL = "https://tripbot.tripsit.me/api/tripsit/getDrug?name=";
 
     private final FactsheetsCallback callback;
     private final Activity activity;
