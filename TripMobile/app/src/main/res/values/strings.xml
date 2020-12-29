@@ -42,7 +42,7 @@
     <string name="duration">"Duration: "</string>
 
     <!-- Combinations -->
-    <string name="select_drug"><![CDATA[" <Zvolit drogu>"]]></string>
+    <string name="select_drug"><![CDATA[Select Drug]]></string>
     <string name="safe_synergy"><![CDATA[Low Risk & Synergy]]></string>
     <string name="safe_no_synergy"><![CDATA[Low Risk & No Synergy]]></string>
     <string name="safe_decrease"><![CDATA[Low Risk & Decrease]]></string>
