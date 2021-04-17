@@ -16,7 +16,7 @@ import me.tripsit.mobile.comms.ContentRetriever;
 
 public class DrugInfoAsyncTask extends AsyncTask<Activity, Void, Void>  {
 
-    private static final String DRUG_URL = "http://tripbot.tripsit.me/api/tripsit/getDrug?name=";
+    private static final String DRUG_URL = "https://tripbot.tripsit.me/api/tripsit/getDrug?name=";
 
     private final FactsheetsCallback callback;
     private final Activity activity;
@@ -51,20 +51,24 @@ public class DrugInfoAsyncTask extends AsyncTask<Activity, Void, Void>  {
             activities[0].runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    new AlertDialog.Builder(activity)
-                            .setTitle(activity.getString(R.string.operation_failed))
-                            .setMessage(activity.getString(R.string.failed_download_drug_info))
-                            .setPositiveButton(activity.getString(R.string.retry), new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    callback.searchDrug(drugName);
-                                }
-                            })
-                            .setNegativeButton(activity.getString(R.string.return_to_menu), new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    callback.finishActivity();
-                                }
-                            })
-                            .show();
+                    try {
+                        new AlertDialog.Builder(activity)
+                                .setTitle(activity.getString(R.string.operation_failed))
+                                .setMessage(activity.getString(R.string.failed_download_drug_info))
+                                .setPositiveButton(activity.getString(R.string.retry), new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        callback.searchDrug(drugName);
+                                    }
+                                })
+                                .setNegativeButton(activity.getString(R.string.return_to_menu), new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        callback.finishActivity();
+                                    }
+                                })
+                                .show();
+                    } catch (Exception ex) {
+                        // Suppress crashes caused by showing from a background thread that may complete after an activity is destroyed
+                    }
                 }
             });
 

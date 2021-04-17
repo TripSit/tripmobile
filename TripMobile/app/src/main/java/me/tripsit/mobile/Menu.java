@@ -1,6 +1,7 @@
 package me.tripsit.mobile;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -54,8 +55,7 @@ public class Menu extends TripMobileActivity {
     }
 	
 	public void clickWiki(View view) {
-		Intent intent = new Intent(this, Wiki.class);
-		startActivity(intent);
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.wiki_main_page))));
 	}
 
     public void clickSettings(View view) {
@@ -75,8 +75,6 @@ public class Menu extends TripMobileActivity {
     }
 
 	private void startChatActivity(String chatUrl) {
-		Intent intent = new Intent(this, Chat.class);
-		intent.putExtra("url", chatUrl);
-		startActivity(intent);
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(chatUrl)));
 	}
 }

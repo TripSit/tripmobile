@@ -6,4 +6,5 @@
     <attr name="primaryTextColour" format="reference|color" />
     <attr name="secondaryTextColour" format="reference|color" />
     <attr name="dropDownColour" format="reference|color" />
+    <attr name="progressBackground" format="reference|color" />
 </resources>

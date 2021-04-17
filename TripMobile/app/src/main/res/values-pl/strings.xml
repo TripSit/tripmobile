@@ -19,7 +19,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Substancja lub alias</string>
-    <string name="factsheets_intro">Wszystkie dane pochodzą z API tripbota, który jest dostepny na http://tripbot.tripsit.me/factsheet. Prosimy o korzystanie z tych informacji jako ogólnych wytycznych i o sprawdzanie możliwie jak najwiekszej ilości źródeł przed przyjęciem jakiegoś narkotyku.</string>
+    <string name="factsheets_intro">Wszystkie dane pochodzą z API tripbota, który jest dostepny na http://drugs.tripsit.me/. Prosimy o korzystanie z tych informacji jako ogólnych wytycznych i o sprawdzanie możliwie jak najwiekszej ilości źródeł przed przyjęciem jakiegoś narkotyku.</string>
     <string name="search">Szukaj</string>
     <string name="aliases">Aliasy</string>
     <string name="summary">Podsumowanie</string>
@@ -38,7 +38,9 @@
     <string name="unsafe">Niebezpieczne</string>
     <string name="serotonin_syndrome">Zespół serotoninowy</string>
     <string name="deadly">Śmiertelne</string>
+    <string name="caution">Uwaga</string>
     <!-- First and second arguments are the names of the drugs being combined -->
+    <string name="caution_description">Zachowaj ostrożność podczas łączenia %1$s i %2$s.</string>
     <string name="safe_synergy_description">%1$s i %2$s. Połączenie jest w zasadzie bezpieczne i powoduje efekt synergii. Pamiętaj, aby zastosować obniżone dawki obu substancji, ponieważ takie połączenie wzmacnia działanie każdej z nich.</string>
     <string name="safe_no_synergy_description">%1$s i %2$s. Połączenie jest w zasadzie bezpieczne i nie powoduje odczuwalnego wzmocnienia ani obniżenia działania żadnej z użytych substancji.</string>
     <string name="safe_decrease_description">%1$s i %2$s. Połączenie jest w zasadzie bezpieczne, jednak powoduje, że efekty działania jednej lub obu substancji są zmniejszone.</string>
@@ -101,6 +103,8 @@ Jeżeli chcesz abyśmy się z tobą skontaktowali aby uzyskać więcej informacj
     <string name="failed_download_drug_names">Nie można pobrać informacji o substancji z interfesju tripbota. Szukanie może wciąż działać, ale autouzupełnianie może nie być dostępne.</string>
     <string name="failed_parse_combinations">"Nie rozpoznano kombinacji. Prosimy o zgłoszenie tego błędu: "</string>
     <string name="failed_download_combinations">Nie udało się pobrać informacji o kombinacji substancji.  Proszę sprawdzić swoje połączenie internetowe i spróbować ponownie.</string>
+    <string name="failed_search_combo">Nie udało się znaleźć leku %1$s - wypróbuj kategorię lub sprawdź pisownię w arkuszach informacyjnych.</string>
+    <string name="failed_empty_drug">(pusty)</string>
     <string name="error_email_client">Musisz zainstalować klienta poczty, aby korzystać z funkcji e-mail.</string>
 
 </resources>

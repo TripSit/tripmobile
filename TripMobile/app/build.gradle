@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "24.0.0"
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "me.tripsit.tripmobile"
-        minSdkVersion 8
-        targetSdkVersion 23
-        versionCode 13
-        versionName "1.2.0"
+        minSdkVersion 14
+        targetSdkVersion 29
+        vectorDrawables.useSupportLibrary = true
+        versionCode 16
+        versionName "1.2.3"
     }
     signingConfigs {
         release {
@@ -32,8 +32,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:design:23.4.0'
-    compile 'com.splunk.mint:mint:5.0.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.android.support:design:28.0.0'
+    //implementation 'com.google.android.material:material:1.0.0'
+    //compile 'com.splunk.mint:mint:5.0.0'
 }

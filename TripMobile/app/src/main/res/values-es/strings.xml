@@ -19,7 +19,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Droga o alias</string>
-    <string name="factsheets_intro">Todos los datos se obtienen de la tripbot IPA que puedes encontrar en http://tripbot.tripsit.me/factsheet. Por favor, use esto como una guía aproximada, y revise todas las fuentes posibles antes de consumir una sustancia.</string>
+    <string name="factsheets_intro">Todos los datos se obtienen de la tripbot IPA que puedes encontrar en http://drugs.tripsit.me/. Por favor, use esto como una guía aproximada, y revise todas las fuentes posibles antes de consumir una sustancia.</string>
     <string name="search">Buscar</string>
     <string name="aliases">Alias</string>
     <string name="summary">Resumen</string>
@@ -38,8 +38,10 @@
     <string name="unsafe">Inseguro</string>
     <string name="serotonin_syndrome">Síndrome de Serotonina</string>
     <string name="deadly">Mortal</string>
+    <string name="caution">Precaución</string>
     <!-- First and second arguments are the names of the drugs being combined -->
-    <string name="safe_synergy_description">Combinar %1$s y %2$s es generalmente seguro, y los efectos de ambos se combinan. Baja las dosis de cada droga, ya que sus efectos se potencian mutuamente.</string> 
+    <string name="caution_description">Tenga cuidado si combina %1$s y %2$s.</string>
+    <string name="safe_synergy_description">Combinar %1$s y %2$s es generalmente seguro, y los efectos de ambos se combinan. Baja las dosis de cada droga, ya que sus efectos se potencian mutuamente.</string>
     <string name="safe_no_synergy_description">Combinar %1$s y %2$s es generalmente seguro, y los efectos no se potencian ni aminoran.</string> 
     <string name="safe_decrease_description">Combinar %1$s y %2$s es generalmente seguro, aunque una o mas de estas verá sus efectos reducidos al ser combinadas.</string> 
     <string name="unsafe_description">Combinar %1$s y %2$s no es seguro y debería tomarse con mucha cautela, e incluso evitarlas.</string> 
@@ -99,6 +101,8 @@ Si está bien que ponemos en contacto contigo para pedirte más detalles, por fa
     <string name="failed_download_drug_names">No se pudo obtener los nombres de drogas de interfaz tripbot. La búsqueda aún puede funcionar pero las sugerencias de autocompletado no estará presente.</string>
     <string name="failed_parse_combinations">"No se ha encontrado la combinación. Por favor, reporta este error: "</string>
     <string name="failed_download_combinations">Error al descargar la información de combinaciones. Por favor, revisa tu conexión e intentar de nuevo.</string>
+    <string name="failed_search_combo">No se pudo encontrar la droga %1$s - prueba una categoría o revisa la ortografía de las hojas informativas.</string>
+    <string name="failed_empty_drug">(vacío)</string>
     <string name="error_email_client">Es necesario instalar un cliente de correo electrónico para utilizar la función de correo electrónico.</string>
 
 </resources>

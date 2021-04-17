@@ -19,7 +19,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Droga</string>
-    <string name="factsheets_intro">Všechna data jsou převzata z tripbot API, které najdete na http://tripbot.tripsit.me/factsheet. Používejte tyto informace jako shrnutí faktů, a před požitím substancí si dohledejte co nejvíce informací.</string>
+    <string name="factsheets_intro">Všechna data jsou převzata z tripbot API, které najdete na http://drugs.tripsit.me/. Používejte tyto informace jako shrnutí faktů, a před požitím substancí si dohledejte co nejvíce informací.</string>
     <string name="search">Hledat</string>
     <string name="aliases">Přezdívky</string>
     <string name="summary">Shrnutí</string>
@@ -38,7 +38,9 @@
     <string name="unsafe">Nebezpečné</string>
     <string name="serotonin_syndrome">Serotoninový syndrom</string>
     <string name="deadly">Smrtelné</string>
+    <string name="caution">Pozor</string>
     <!-- First and second arguments are the names of the drugs being combined -->
+    <string name="caution_description">Při kombinování buďte opatrní %1$s a %2$s.</string>
     <string name="safe_synergy_description">Kombinace %1$s a %2$s je relativně bezpečná, a poskytuje synergii mezi efekty. Ujistěte se že snížíte dávkování, jelikož se drogy navzájem zesilují.</string>
     <string name="safe_no_synergy_description">Kombinace %1$s a %2$s je relativně bezpečná, a neposkytuje výrazně zeslabený nebo zesílený efekt.</string>
     <string name="safe_decrease_description">Kombinace %1$s a %2$s je relativně bezpečná, ale jedna nebo více z kombinovaných drog bude mít zeslabený efekt.</string>
@@ -100,6 +102,8 @@ Pokud chcete aby jsme Vás kontaktovali při řešení této chybi, prosím napi
     <string name="failed_download_drug_names">Nezdařilo se získat názvy drog z interface tripbot. Vyhledávání stále může fungovat, ale našeptávač nebude k dispozici.</string>
     <string name="failed_parse_combinations">"Nezdařilo se analyzovat text o kombinacích, prosím nahlašte tuto chybu: "</string>
     <string name="failed_download_combinations">Nezdařilo se stáhnout informace o kombinacích. Prosím zkontrolujte připojení k internetu, a zkuste to znovu</string>
+    <string name="failed_search_combo">Nepodařilo se najít drogu %1$s - zkuste kategorii nebo zkontrolujte pravopisné listy.</string>
+    <string name="failed_empty_drug">(prázdný)</string>
     <string name="error_email_client">Pro užití emailu si musíte stáhnout email klienta.</string>
 
 </resources>

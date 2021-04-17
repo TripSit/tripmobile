@@ -11,8 +11,7 @@
         android:layout_height="wrap_content"
         android:textSize="17sp"
         android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:text="@string/Placeholder"/>
+        android:paddingBottom="5dp"/>
 
     <ImageView android:id="@+id/img_listItemDivider"
         android:layout_width="match_parent"

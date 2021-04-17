@@ -1,6 +1,7 @@
 package me.tripsit.mobile;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +26,7 @@ public class About extends TripMobileActivity {
         try {
             getPackageManager().getPackageInfo(getString(R.string.facebook_package), 0);
             intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.facebook_app)));
-        } catch (Exception e) {
+        } catch (PackageManager.NameNotFoundException e) {
             intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.facebook_url)));
         }
         startActivity(intent);

@@ -24,7 +24,7 @@ import me.tripsit.mobile.common.Theme;
 public class Settings extends TripMobileActivity {
 
     private static final String[] CHAT_CHANNELS = new String[] {
-      "home","drugs","sanctuary","psychonaut","dreaming","opiates","stims", "psychopharm","news","gaming","compsci","music"
+      "lounge","drugs","sanctuary","psychonaut","dreaming","opiates","stims", "psychopharm","news","gaming","compsci","music"
     };
     private static final int MAX_CACHE_DURATION = 60;
 

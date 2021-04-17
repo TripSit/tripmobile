@@ -19,7 +19,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Droge oder Pseudonym</string>
-    <string name="factsheets_intro">Alle Informationen wird über die tripbot API abgerufen, welche auf http://tripbot.tripsit.me/factsheet gefunden werden kann. Bitte sehe diese als allgemeine</string>
+    <string name="factsheets_intro">Alle Informationen wird über die tripbot API abgerufen, welche auf http://drugs.tripsit.me/ gefunden werden kann. Bitte sehe diese als allgemeine</string>
     <string name="search">Suche</string>
     <string name="aliases">Pseudonyme</string>
     <string name="summary">Zusammenfassung</string>
@@ -38,7 +38,9 @@
     <string name="unsafe">Unsicher</string>
     <string name="serotonin_syndrome">Serotonin-Syndrom</string>
     <string name="deadly">Tödlich</string>
+    <string name="caution">Vorsicht</string>
     <!-- First and second arguments are the names of the drugs being combined -->
+    <string name="caution_description">Seien Sie vorsichtig beim Kombinieren %1$s und %2$s.</string>
     <string name="safe_synergy_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko und verursacht eine synergistische Wirkung. Denke daran, die Dosis beider Substanzen zu reduzieren, da sie sich gegenseitig verstärken.</string>
     <string name="safe_no_synergy_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko und verursacht keine signifikant abgeschwächte oder verstärkte Wirkung.</string>
     <string name="safe_decrease_description">Die Kombination von %1$s und %2$s verfügt über ein generell geringes Risiko, jedoch verursacht die gemeinsame Einnahme eine abgeschwächte Wirkung.</string>
@@ -99,6 +101,8 @@ Falls du Rücksprache benötigst oder mehr Details wissen willst, trage hier bit
     <string name="failed_download_drug_names">Fehler beim Empfangen der Substanznamen aus der tripbot Schnittstelle. Die Suche kann noch funktionieren, aber die automatische Verwollständigung wird nicht vorhanden sein.</string>
     <string name="failed_parse_combinations">"Fehler beim Parsen des Kombinationstexts, bitte melde diesen Fehler: "</string>
     <string name="failed_download_combinations">Fehler beim Herunterladen der Kombinationsdaten. Bitte überprüfe deine Verbindung und versuche es erneut.</string>
+    <string name="failed_search_combo">Droge konnte nicht gefunden werden %1$s - Probieren Sie eine Kategorie aus oder überprüfen Sie die Faktenblätter auf Rechtschreibung.</string>
+    <string name="failed_empty_drug">(empty)</string>
     <string name="error_email_client">Du musst eine Email App installieren, um diese Funktion zu benutzen.</string>
 
 </resources>

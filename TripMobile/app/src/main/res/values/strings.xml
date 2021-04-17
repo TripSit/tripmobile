@@ -30,7 +30,7 @@
 
     <!-- Factsheets -->
     <string name="factsheets_default_search">Drug or alias</string>
-    <string name="factsheets_intro">All data is taken from the tripbot API which can be found at http://tripbot.tripsit.me/factsheet. Please use this as rough guidelines, and check as many sources as possible before ingesting a substance.</string>
+    <string name="factsheets_intro">All data is taken from the tripbot API which can be found at http://drugs.tripsit.me/. Please use this as rough guidelines, and check as many sources as possible before ingesting a substance.</string>
     <string name="search">Search</string>
     <string name="aliases">Aliases</string>
     <string name="summary">Summary</string>
@@ -42,8 +42,7 @@
     <string name="duration">"Duration: "</string>
 
     <!-- Combinations -->
-    <string name="first_drug_input">Drug A</string>
-    <string name="second_drug_input">Drug B</string>
+    <string name="select_drug"><![CDATA[Select Drug]]></string>
     <string name="safe_synergy"><![CDATA[Low Risk & Synergy]]></string>
     <string name="safe_no_synergy"><![CDATA[Low Risk & No Synergy]]></string>
     <string name="safe_decrease"><![CDATA[Low Risk & Decrease]]></string>
@@ -84,7 +83,7 @@
     <string name="about_header">About TripSit</string>
     <string name="about_content">This app is created by TripSit, an organisation which helps to provide factual information about drugs and how to reduce the harms involved in using them. We also have an active IRC (internet relay chat) network where we provide tripsitting services, harm reduction advice, and general chat.\nhttp://www.tripsit.me/</string>
     <string name="disclaimer_header">Disclaimer</string>
-    <string name="disclaimer_content">Although we have a team dedicated to keeping the information on this app up to date, it is not always possible to provide 100% accurate information on the safety level of drugs. The information here should be used as guidelines only, and it is important to do your own research from multiple sources before ingesting a substance. We also strongly advise using a testing kit and scales to ensure you are taking the correct dosage. These can both be bought online for reasonable prices.</string>
+    <string name="disclaimer_content">Although we have a team dedicated to keeping the information on this app up to date, it is not always possible to provide entirely accurate information on the safety level of drugs. The information here should be used as guidelines only, and it is important to do your own research from multiple sources before ingesting a substance. We also strongly advise using a testing kit and scales to ensure you are taking the correct dosage. These can both be bought online for reasonable prices.</string>
     <string name="support_header">Support TripSit</string>
     <string name="support_content">TripSit is a completely free service run by volunteers. If you wish to help out, feel free to join the IRC, follow and share our content on social media, or make a donation to keep the servers running.</string>
 
@@ -124,7 +123,7 @@ If you\'re happy for us to contact you to request more details, please provide y
     <string name="wiki_main_page" translatable="false">https://wiki.tripsit.me/wiki/Main_Page</string>
     <string name="wiki_domain" translatable="false">wiki.tripsit.me</string>
     <string name="bitcoin_url" translatable="false">bitcoin:1EDqf32gw73tc1WtgdT2FymfmDN4RyC9RN</string>
-    <string name="donate_url" translatable="false">http://tripsit.me/support-tripsit</string>
+    <string name="donate_url" translatable="false">http://tripsit.me/donate</string>
     <!-- ID comes from https://graph.facebook.com/tripsitme -->
     <string name="facebook_app" translatable="false">fb://page/575082419170561</string>
     <string name="facebook_url" translatable="false">https://www.facebook.com/tripsitme</string>
@@ -144,6 +143,5 @@ If you\'re happy for us to contact you to request more details, please provide y
     <string name="android_email_address" translatable="false">android@tripsit.me</string>
     <string name="content_email_address" translatable="false">content@tripsit.me</string>
     <string name="say_hi_email_address" translatable="false">tripsitters@tripsit.me</string>
-    <string name="Placeholder">Placeholder</string>
 
 </resources>
