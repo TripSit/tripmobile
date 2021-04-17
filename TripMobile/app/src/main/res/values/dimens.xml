@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_button">65dp</dimen>
+    <dimen name="menu_text">20sp</dimen>
+    <dimen name="heading_padding">2dp</dimen>
+    <dimen name="heading_size">22sp</dimen>
+    <dimen name="text_padding">6dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="factsheets_text_width">15dp</dimen>
+</resources>
