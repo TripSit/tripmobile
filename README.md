@@ -1,3 +1,7 @@
+This repo is abandoned
+==========
+Please check out the new https://github.com/TripSit/TripMobileExpo
+
 tripmobile
 ==========
 An Android project for the Tripsit mobile app. If you have any suggestions or ideas to contribute, please add them to the [wiki](../../wiki) or raise an issue.
